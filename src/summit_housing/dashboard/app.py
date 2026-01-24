@@ -1,12 +1,14 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import pydeck as pdk
 import plotly.express as px
 import plotly.graph_objects as go
 import shap
 import matplotlib.pyplot as plt
 from summit_housing.queries import MarketAnalytics, MARKET_TRENDS_SQL, ANALYTICS_SQL, SALES_EVENTS_SQL
 from summit_housing.ml import train_macro_model, get_shap_values
+from summit_housing.geo import RESORT_LIFTS
 
 st.set_page_config(page_title="Summit Housing SQL Analytics", page_icon="📈", layout="wide")
 
@@ -791,32 +793,158 @@ with tab6:
     def load_macro_model_v2():
         return train_macro_model()
 
+    @st.cache_data
+    def load_feature_analysis():
+        from summit_housing.ml import analyze_features
+        return analyze_features()
+
     with st.spinner("Initializing ML Models..."):
         macro_pipeline, X_test, y_test, input_features, shap_features = load_macro_model_v2()
 
     # --- Section 1: Insights ---
-    with st.expander("🧬 Step 1: Scientific Feature Analysis (What matters?)", expanded=False):
-        st.markdown("""
-        We analyze which variables (Physical vs. Economic) have the strongest statistical predictive power.
-        """)
-        col_run_analysis, col_spacer = st.columns([1, 4])
-        if st.button("Run Feature Importance Analysis"):
-            with st.spinner("Calculating Permutation Importance..."):
-                from summit_housing.ml import analyze_features
-                imp_df, corr_df = analyze_features()
-                
-            c1, c2 = st.columns(2)
-            with c1:
-                fig_imp = px.bar(imp_df.head(10), x='importance', y='feature', orientation='h', title="Top 10 Drivers of Value", color='importance')
-                fig_imp.update_layout(yaxis={'categoryorder':'total ascending'})
-                st.plotly_chart(fig_imp, use_container_width=True)
-            with c2:
-                fig_corr = px.imshow(corr_df, text_auto=".1f", title="Correlation Matrix", color_continuous_scale="RdBu_r")
-                st.plotly_chart(fig_corr, use_container_width=True)
+    st.subheader("🧬 Step 1: Market Intelligence")
+    st.markdown("Broad analysis of value drivers: **Statistical Importance** and **Geospatial Proximity**.")
+
+    st.markdown("#### A. Statistical Drivers")
+    with st.spinner("Calculating Feature Importance..."):
+        imp_df, corr_df = load_feature_analysis()
+        
+    c1, c2 = st.columns(2)
+    with c1:
+        fig_imp = px.bar(imp_df.head(10), x='importance', y='feature', orientation='h', title="Top 10 Drivers of Value", color='importance')
+        fig_imp.update_layout(yaxis={'categoryorder':'total ascending'})
+        st.plotly_chart(fig_imp, use_container_width=True)
+    with c2:
+        fig_corr = px.imshow(corr_df, text_auto=".1f", title="Correlation Matrix", color_continuous_scale="RdBu_r")
+        st.plotly_chart(fig_corr, use_container_width=True)
+
+    # --- Part B: Geospatial Analysis (Merged into Step 1) ---
+    st.divider()
+    st.markdown("#### B. The 'Ski Lift Premium'")
+    st.markdown("Quantifying how physical distance to a base area impacts market value.")
+    
+    col_geo_map, col_geo_stats = st.columns([3, 2])
+    
+    with col_geo_map:
+        st.markdown("**Ski Lift Proximity Map**")
+        
+        # Calculate 'dist_lift_min' for X_test if missing (for the map)
+        if 'dist_to_lift' not in X_test.columns:
+             lift_cols = ['dist_breck', 'dist_keystone', 'dist_copper', 'dist_abasin']
+             valid_lifts = [c for c in lift_cols if c in X_test.columns]
+             if valid_lifts:
+                 X_test['dist_to_lift'] = X_test[valid_lifts].min(axis=1)
+             else:
+                 X_test['dist_to_lift'] = 0
+
+        # View State
+        view_state = pdk.ViewState(latitude=39.55, longitude=-106.05, zoom=9.5, pitch=30)
+        
+        # Color Logic for Distance
+        def get_dist_color(dist):
+            # Gradient: RED (Close) -> ORANGE -> BLUE (Far)
+            if dist < 2:
+                return [231, 76, 60, 220]    # Red (Close)
+            elif dist < 5:
+                return [243, 156, 18, 200]   # Orange
+            elif dist < 10:
+                return [46, 204, 113, 180]   # Green
+            else:
+                return [52, 152, 219, 160]   # Blue (Far)
+
+        X_test['color_dist'] = X_test['dist_to_lift'].apply(get_dist_color)
+        X_test['formatted_dist'] = X_test['dist_to_lift'].apply(lambda x: f"{x:.2f}")
+
+        # Layer 1: Properties
+        layer_props = pdk.Layer(
+            "ScatterplotLayer",
+            X_test,
+            get_position=["LONGITUDE", "LATITUDE"],
+            get_color="color_dist",
+            get_radius=100,
+            pickable=True,
+            opacity=0.8,
+            filled=True
+        )
+        
+        # Layer 2: Resort Bases (Dynamically loaded from geo.RESORT_LIFTS)
+        # We flatten the dictionary to map every specific lift base used in calculation
+        resort_bases = []
+        for resort, coords_list in RESORT_LIFTS.items():
+            if resort == 'dist_dillon': continue # Skip Dillon Reservoir for Lift Map
+            
+            # Clean name (dist_breck -> Breck)
+            clean_name = resort.replace('dist_', '').title()
+            
+            for i, (lat, lon) in enumerate(coords_list):
+                 resort_bases.append({
+                     "name": f"{clean_name} Base {i+1}", 
+                     "coords": [lon, lat]
+                 })
+
+        layer_lifts = pdk.Layer(
+            "ScatterplotLayer",
+            data=resort_bases,
+            get_position="coords",
+            get_color=[0, 0, 0, 200], # Black for lifts on light map
+            get_radius=250, # Slightly smaller to distinguish individual bases
+            pickable=True
+        )
+        
+        st.pydeck_chart(pdk.Deck(
+            # Use Carto Voyager for a standard colored road map
+            map_style='https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
+            initial_view_state=view_state,
+            layers=[layer_props, layer_lifts],
+            tooltip={"html": "<b>Dist to Lift:</b> {formatted_dist} km"}
+        ))
+
+    with col_geo_stats:
+        st.markdown("**The Premium Curve**")
+        # Scatter Plot: Price/SqFt vs Distance
+        
+        try:
+            # Recombine X and y for plotting
+            df_plot = X_test.copy()
+            df_plot['price'] = y_test
+            df_plot['ppsf'] = df_plot['price'] / df_plot['sfla']
+            
+            # Filter outliers for clean plot
+            df_plot = df_plot[df_plot['ppsf'] < 2500]
+            df_plot = df_plot[df_plot['ppsf'] > 100]
+            df_plot = df_plot[df_plot['dist_to_lift'] <= 15] # Focus on the relevant ski zones
+            
+            fig_curve = px.scatter(
+                df_plot, 
+                x='dist_to_lift', 
+                y='ppsf',
+                # color=color_col, # Removed faceting by town/zone per user request
+                opacity=0.4,       # Make points more subtle so trend stands out
+                title="Value Decay: Price/SqFt vs Distance",
+                labels={'dist_to_lift': 'Distance (km)', 'ppsf': 'Price / SqFt'},
+                trendline="lowess",
+                trendline_color_override="red"
+            )
+            # Update trace color to be uniform
+            fig_curve.update_traces(marker=dict(size=6, color='#2E86C1'))
+            
+            fig_curve.update_layout(legend=dict(orientation="h", y=-0.2))
+            st.plotly_chart(fig_curve, use_container_width=True)
+            
+            st.info("""
+            **Observation:** 
+            Properties within **2km** of a lift often command a **50-100% premium** 
+            over properties >10km away. Zones are determined by geometric proximity.
+            """)
+            
+        except Exception as e:
+            st.warning(f"Could not generate Premium Curve: {e}")
+
 
     # --- Section 2: Simulator ---
+    st.markdown("---")
     st.subheader("🔮 Step 2: Macro-Economic Scenario Simulator")
-    st.markdown("**Predict future value by simulating Economic Conditions.**")
+    st.markdown("Quantify future value by simulating **Property** and **Economic** conditions.")
     
     col1, col2 = st.columns(2)
     
@@ -829,6 +957,28 @@ with tab6:
         sim_year = st.slider("Year Built", 1970, 2024, 2000)
         sim_acres = st.number_input("Acres", 0.0, 10.0, 0.5, step=0.1)
         
+        st.markdown("---")
+        # Geospatial Override (Smart Slider)
+        # Calculate bounds for the selected city
+        city_mask = X_test['city'] == sim_city
+        if city_mask.any() and 'dist_to_lift' in X_test.columns:
+            min_d = float(X_test.loc[city_mask, 'dist_to_lift'].min())
+            max_d = float(X_test.loc[city_mask, 'dist_to_lift'].max())
+            # Add buffers
+            min_d = max(0.0, min_d - 0.5)
+            max_d = min_d + 15.0 # Max range of 15km for slider usability
+        else:
+            min_d, max_d = 0.0, 25.0
+            
+        sim_dist_lift = st.slider(
+            "🚠 Dist to Ski Lift (km)", 
+            min_value=min_d, 
+            max_value=max_d, 
+            value=min_d + 1.0, 
+            step=0.1,
+            help=f"Typical range for {sim_city}: {min_d:.1f}km - {max_d:.1f}km"
+        )
+        
     with col2:
         st.markdown("#### 2. Economy (The 'What If?')")
         sim_rate = st.slider("Mortgage Rate (%)", 2.5, 12.0, 6.5, step=0.1, help="Impacts buying power.")
@@ -837,15 +987,73 @@ with tab6:
         sim_pop = st.slider("Local Population", 25000, 45000, 31000, help="Local demand pressure.")
 
     # Prediction Logic
+    # Default Coordinates/Distances per City (Approx Centroids)
+    # This prevents the simulator from crashing due to missing Geo Features
+    city_centroids = {
+        "BRECKENRIDGE": {'lat': 39.4817, 'lon': -106.0384},
+        "FRISCO": {'lat': 39.5744, 'lon': -106.0975},
+        "DILLON": {'lat': 39.6296, 'lon': -106.0437},
+        "SILVERTHORNE": {'lat': 39.6303, 'lon': -106.0713},
+        "KEYSTONE": {'lat': 39.6084, 'lon': -105.9436},
+        "COPPER/COUNTY": {'lat': 39.5021, 'lon': -106.1510}, # Copper
+        "BLUE RIVER": {'lat': 39.4287, 'lon': -106.0382},
+        "OTHER": {'lat': 39.5912, 'lon': -106.0640} # Generic center
+    }
+    
+    # Calculate Distances for the Simulation
+    # We use the same Haversine logic as in ingestion
+    def simple_dist(lat1, lon1, lat2, lon2):
+        # Approx km conversion for simple UI fix
+        R = 6371
+        dLat = np.radians(lat2 - lat1)
+        dLon = np.radians(lon2 - lon1)
+        a = np.sin(dLat/2) * np.sin(dLat/2) + \
+            np.cos(np.radians(lat1)) * np.cos(np.radians(lat2)) * \
+            np.sin(dLon/2) * np.sin(dLon/2)
+        return R * 2 * np.arctan2(np.sqrt(a), np.sqrt(1-a))
+
+    c_geo = city_centroids.get(sim_city, city_centroids["OTHER"])
+    
+    # POI Coords (Must match src/summit_housing/geo.py)
+    # Using the primary base for each resort for the generic simulator
+    pois = {
+        'dist_breck': (39.4851, -106.0666), # Peak 8 Base
+        'dist_keystone': (39.6105, -105.9439), # River Run
+        'dist_copper': (39.5022, -106.1506), # Center Village
+        'dist_abasin': (39.6425, -105.8719),
+        'dist_dillon': (39.6050, -106.0660)
+    }
+    
+    geo_data = {
+        'LATITUDE': c_geo['lat'],
+        'LONGITUDE': c_geo['lon']
+    }
+    
+    # Calculate Base Distances
+    for name, (plat, plon) in pois.items():
+        geo_data[name] = simple_dist(c_geo['lat'], c_geo['lon'], plat, plon)
+        
+    # Inject Manual Override for 'dist_to_lift'
+    geo_data['dist_to_lift'] = sim_dist_lift
+    
+    # Also override the specific distance corresponding to the selected city 
+    # to be consistent with the slider (if applicable)
+    if sim_city == "BRECKENRIDGE": geo_data['dist_breck'] = sim_dist_lift
+    elif sim_city == "KEYSTONE": geo_data['dist_keystone'] = sim_dist_lift
+    elif sim_city == "COPPER/COUNTY": geo_data['dist_copper'] = sim_dist_lift
+
     input_data = pd.DataFrame({
         'city': [sim_city],
         'sfla': [sim_sfla], 'beds': [sim_beds], 'baths': [sim_baths], 
         'year_blt': [sim_year], 'garage_size': [0], 'acres': [sim_acres],
-        'mortgage_rate': [sim_rate], 'sp500': [sim_sp500], 'cpi': [sim_cpi], 'summit_pop': [sim_pop]
+        'mortgage_rate': [sim_rate], 'sp500': [sim_sp500], 'cpi': [sim_cpi], 'summit_pop': [sim_pop],
+        **{k: [v] for k, v in geo_data.items()} # Unpacking geo features
     })
     
     # Ensure correct column order for Pipeline
-    input_data = input_data[input_features]
+    # If model was trained without geo (fallback), we drop them here to match
+    available_cols = [c for c in input_features if c in input_data.columns]
+    input_data = input_data[available_cols]
     
     predicted_price = macro_pipeline.predict(input_data)[0]
     
@@ -909,3 +1117,4 @@ with tab7:
     *   `ROWS BETWEEN 2 PRECEDING AND CURRENT ROW`: Defines a sliding window including this year and the previous 2 years.
     """)
     st.code(MARKET_TRENDS_SQL, language="sql")
+

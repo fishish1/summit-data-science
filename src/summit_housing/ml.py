@@ -17,6 +17,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 
 from summit_housing.queries import MarketAnalytics
+from summit_housing.geo import enrich_with_geo_features
 
 # Ensure models directory exists
 os.makedirs("models", exist_ok=True)
@@ -30,8 +31,20 @@ def analyze_features():
     """
     df = load_and_prep_data()
     
+    # Calculate 'dist_to_lift' if possible
+    # We exclude dist_dillon (Lake) for this specific ski metric
+    lift_cols = ['dist_breck', 'dist_keystone', 'dist_copper', 'dist_abasin']
+    valid_lifts = [c for c in lift_cols if c in df.columns]
+    
+    extra_features = []
+    if valid_lifts:
+        df['dist_to_lift'] = df[valid_lifts].min(axis=1)
+        # Handle cases where all were NaN/Inf
+        df['dist_to_lift'] = df['dist_to_lift'].replace([np.inf, -np.inf], np.nan)
+        extra_features.append('dist_to_lift')
+
     # Define Features
-    numeric_features = ['sfla', 'year_blt', 'beds', 'baths', 'garage_size', 'acres', 'mortgage_rate', 'cpi', 'sp500', 'summit_pop']
+    numeric_features = ['sfla', 'year_blt', 'beds', 'baths', 'garage_size', 'acres', 'mortgage_rate', 'cpi', 'sp500', 'summit_pop'] + extra_features
     
     # 1. Correlation Analysis (Scientific Selection Step 1)
     # Filter to numeric only for correlation
@@ -67,7 +80,14 @@ def load_and_prep_data():
     print("Fetching Sales Data...")
     analytics = MarketAnalytics()
     df = analytics.get_training_data()
+    # --- Geospatial Enrichment ---
+    try:
+        print("📍 Enriching with Geospatial Data...")
+        df = enrich_with_geo_features(df)
+    except Exception as e:
+        print(f"⚠️ Geospatial Enrichment Failed: {e}")
     
+    # 
     # 1. Convert Dates
     df['tx_date'] = pd.to_datetime(df['tx_date'])
     df['year'] = df['tx_date'].dt.year
@@ -128,14 +148,41 @@ def train_macro_model():
     df = load_and_prep_data()
     
     # Define Features
-    # Added 'city' for Hyper-Locality
-    numeric_features = [
+    # Added 'city' for Hyper-Locality and Geospatial Distances
+    base_numeric_features = [
         'sfla', 'beds', 'baths', 'year_blt', 'garage_size', 'acres', 
         'mortgage_rate', 'sp500', 'cpi', 'summit_pop'
     ]
+    
+    geo_features = [
+        'dist_breck', 'dist_keystone', 'dist_copper', 'dist_abasin', 'dist_dillon',
+        'LATITUDE', 'LONGITUDE'
+    ]
+    
+    # Only include geo features if they exist (Enrichment might have failed)
+    numeric_features = base_numeric_features.copy()
+    existing_geo = [f for f in geo_features if f in df.columns]
+    
+    if existing_geo:
+        # Calculate 'dist_to_lift' (Min of all resort distances)
+        # We exclude dist_dillon (Lake) for this specific ski metric
+        lift_cols = ['dist_breck', 'dist_keystone', 'dist_copper', 'dist_abasin']
+        valid_lifts = [c for c in lift_cols if c in df.columns]
+        
+        if valid_lifts:
+            df['dist_to_lift'] = df[valid_lifts].min(axis=1)
+            numeric_features.append('dist_to_lift')
+            
+        numeric_features += existing_geo
+    else:
+        print("⚠️ Warning: Geospatial features missing from dataframe. Training without them.")
+
     categorical_features = ['city']
     
     target = 'price'
+    
+    # Cleaning: Replace Infinity with NaN (Crucial for StandardScaler)
+    df = df.replace([np.inf, -np.inf], np.nan)
     
     # Filter for valid data
     df = df.dropna(subset=numeric_features + categorical_features + [target])

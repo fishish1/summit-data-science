@@ -357,6 +357,7 @@ class MarketAnalytics:
             {sales_cte}
         )
         SELECT 
+            s.schno,
             s.tx_date,
             s.estimated_price as price,
             r.beds,
