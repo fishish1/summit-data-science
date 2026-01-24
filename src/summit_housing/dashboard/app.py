@@ -62,14 +62,13 @@ exclude_multiunit = st.sidebar.checkbox(
     help="Removes bulk sales (e.g., apartment complexes) that skew the average price."
 )
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     "📈 Market Trends", 
     "💰 Investment Analysis", 
     "🏗️ Supply & Owners", 
     "📊 Examine Data", 
     "💰 Value Estimator", 
-    "🧬 ML Insights", 
-    "🔮 Macro Simulator",
+    "🤖 ML & Simulator",
     "🔍 SQL Showcase"
 ])
 
@@ -782,306 +781,99 @@ with tab4:
     st.caption(f"Showing {len(df_sample)} rows. Data is joined from `raw_records` and the calculated `sales_events` CTE.")
 
 with tab6:
-    st.header("🧬 Scientific Feature Selection")
-    
-    # Shared Imports & Model Logic
-    from summit_housing.ml import load_and_prep_data
-    from sklearn.linear_model import LinearRegression
-    import numpy as np
-
-    # Cache the linear model fit so it doesn't re-run on every interaction
-    @st.cache_data
-    def get_base_model():
-        df_lin = load_and_prep_data()
-        # Modified features: Removed 'year', Added 'mortgage_rate'
-        lin_features = ['sfla', 'beds', 'baths', 'garage_size', 'year_blt', 'acres', 'mortgage_rate']
-        X = df_lin[lin_features].fillna(0)
-        y = df_lin['price']
-        lr = LinearRegression()
-        lr.fit(X, y)
-        return dict(zip(lin_features, lr.coef_)), lr.intercept_
-
-    st.subheader("Step 1: Analyze Market Drivers")
+    st.header("� Machine Learning & Market Simulation")
     st.markdown("""
-    Before building a model, we must understand the "Physics" of the market. 
-    Use **Permutation Importance**, **Correlation**, and **PDP** to scientifically validate which variables matter.
+    This lab combines **Scientific Feature Selection** (understanding what drives value) with a **Macro-Economic Simulator** (predicting future value under different conditions).
     """)
-    
-    col_run_analysis, col_spacer = st.columns([1, 4])
-    with col_run_analysis:
-        run_analysis = st.button("Run Feature Analysis", type="primary")
 
-    if run_analysis:
-        with st.spinner("Training Random Forest & Calculating Permutations..."):
-            from summit_housing.ml import analyze_features, get_pdp_data
-            imp_df, corr_df = analyze_features()
-            # Also fetch linear coefs for display
-            base_coefs_ana, _ = get_base_model()
-            
-        # Display Headline Insight
-        st.success(f"**Insight:** Statistical Analysis suggests a 1% increase in Interest Rates reduces value by **${abs(int(base_coefs_ana['mortgage_rate'])):,.0f}**. This is used as the default in Step 2.")
-
-        t1, t2, t3 = st.tabs(["Feature Importance", "Correlation Matrix", "Partial Dependence (PDP)"])
-        
-        with t1:
-            st.caption("How much does the model error increase if we scramble this variable? (Permutation Importance)")
-            fig_imp = px.bar(imp_df, x='importance', y='feature', orientation='h', title="Relative Importance", color='importance', color_continuous_scale='Viridis')
-            fig_imp.update_layout(yaxis={'categoryorder':'total ascending'})
-            st.plotly_chart(fig_imp, use_container_width=True)
-            
-        with t2:
-            st.caption("Linear relationship between variables (-1 to 1).")
-            fig_corr = px.imshow(corr_df, text_auto=".2f", aspect="auto", title="Correlation Heatmap", color_continuous_scale="RdBu_r", zmin=-1, zmax=1)
-            st.plotly_chart(fig_corr, use_container_width=True)
-            
-        with t3:
-            st.caption("Shape of the relationship (Marginal Effect).")
-            pdp_col1, pdp_col2 = st.columns([1, 3])
-            with pdp_col1:
-                 pdp_feature = st.selectbox("Select Feature", ['sfla', 'mortgage_rate', 'year_blt', 'summit_pop', 'cpi'])
-            with pdp_col2:
-                 df_pdp = get_pdp_data(pdp_feature)
-                 if not df_pdp.empty:
-                     fig_pdp = px.line(df_pdp, x='value', y='average_prediction', markers=True, title=f"Effect of {pdp_feature}")
-                     st.plotly_chart(fig_pdp, use_container_width=True)
-
-    st.divider()
-    
-    st.subheader("Step 2: Build Prediction Model")
-    st.markdown("""
-    **"White Box" Modeling:**
-    Below, we've pre-filled a Linear Model with the **statistically derived weights** from the data.
-    You can use the **Presets** to switch property types, or **Override Weights** based on your domain knowledge.
-    """)
-    
-    with st.spinner("Calibrating Statistical Baseline..."):
-        base_coefs, base_intercept = get_base_model()
-        
-        # Calculate Historical CAGR (10-Year)
-        try:
-            df_hist = analytics.get_market_trends(exclude_multiunit=True)
-            df_hist['year'] = pd.to_numeric(df_hist['tx_year'])
-            # County-wide weighted average price per year
-            county_trend = df_hist.groupby('year').apply(lambda x: np.average(x['avg_price'], weights=x['sales_count']) if x['sales_count'].sum() > 0 else x['avg_price'].mean()).sort_index()
-            
-            # Use last 10 years or max available
-            if len(county_trend) > 1:
-                idx_start = max(county_trend.index.min(), county_trend.index.max() - 10)
-                idx_end = county_trend.index.max()
-                
-                # Ensure we have data for start/end
-                if idx_start in county_trend.index and idx_end in county_trend.index:
-                    start_p = county_trend.loc[idx_start]
-                    end_p = county_trend.loc[idx_end]
-                    yrs = idx_end - idx_start
-                    
-                    cagr = (end_p / start_p) ** (1/yrs) - 1 if yrs > 0 else 0.05
-                    base_coefs['appreciation_pct'] = cagr * 100.0
-                else:
-                    base_coefs['appreciation_pct'] = 5.3
-            else:
-                base_coefs['appreciation_pct'] = 5.2
-        except Exception as e:
-            # Fallback
-            base_coefs['appreciation_pct'] = 5.0
-
-    # PRESETS SECTION
-    preset_map = {
-        "Custom": {},
-        "Breckenridge Luxury SF": {"sfla": 3500, "beds": 4, "baths": 3.5, "garage": 600, "year": 2005, "acres": 0.5},
-        "Frisco Condo": {"sfla": 900, "beds": 2, "baths": 2, "garage": 0, "year": 1990, "acres": 0},
-        "Silverthorne Townhome": {"sfla": 1600, "beds": 3, "baths": 2.5, "garage": 400, "year": 2000, "acres": 0.05}
-    }
-    
-    selected_preset = st.selectbox("Load Property Preset", list(preset_map.keys()))
-    preset = preset_map[selected_preset]
-
-    st.markdown("##### A. Model Coefficients (The 'Brain')")
-    with st.expander("⚙️ Fine-Tune Valuation Weights (Advanced)", expanded=False):
-        col_w1, col_w2, col_w3 = st.columns(3)
-        user_coefs = {}
-        with col_w1:
-            st.markdown("**Physical**")
-            user_coefs['sfla'] = st.number_input("$/SqFt", value=int(base_coefs['sfla']), step=10)
-            user_coefs['garage_size'] = st.number_input("$/Garage SqFt", value=int(base_coefs['garage_size']), step=10)
-            user_coefs['acres'] = st.number_input("$/Acre", value=int(base_coefs['acres']), step=1000)
-        with col_w2:
-            st.markdown("**Config**")
-            user_coefs['beds'] = st.number_input("$/Bed", value=int(base_coefs['beds']), step=1000)
-            user_coefs['baths'] = st.number_input("$/Bath", value=int(base_coefs['baths']), step=1000)
-            user_coefs['year_blt'] = st.number_input("$/Year Newer", value=int(base_coefs['year_blt']), step=100)
-        with col_w3:
-            st.markdown("**Macro**")
-            st.caption("Interest rates & Time.")
-            user_coefs['mortgage_rate'] = st.number_input("Impact of 1% Rate Increase ($)", value=int(base_coefs['mortgage_rate']), step=5000, help="Typically negative (rates up = prices down).")
-            st.markdown("---")
-            user_coefs['appreciation_pct'] = st.number_input("Annual Appreciation (%)", value=float(base_coefs.get('appreciation_pct', 5.0)), step=0.5, format="%.2f", help="Compound Annual Growth. Default derived from 10y history.")
-
-    st.markdown("##### B. Scenario Planning")
-    
-    c_p1, c_p2 = st.columns([1, 2])
-    with c_p1:
-        st.info("👇 **Adjust these to forecast value**")
-        
-        # Use Preset values if available, else defaults
-        def get_val(key, default):
-            return preset.get(key, default) if selected_preset != "Custom" else default
-            
-        t_sfla = st.number_input("SqFt", value=get_val("sfla", 2000), step=100)
-        t_year_blt = st.number_input("Year Built", value=get_val("year", 2000), step=1)
-        t_garage = st.number_input("Garage SqFt", value=get_val("garage", 400), step=100)
-        
-        st.divider()
-        t_rate = st.slider("Predicted 30y Interest Rate (%)", 2.5, 12.0, 6.5, 0.1, help="The model relies on this rate to set the price context.")
-        
-        # Hidden/Less important inputs
-        t_beds = preset.get("beds", 3)
-        t_baths = preset.get("baths", 2.5)
-        t_acres = preset.get("acres", 0.1)
-    
-    with c_p2:
-        def predict_manual(coefs, intercept, **kwargs):
-            price = intercept
-            for k, v in kwargs.items():
-                price += coefs.get(k, 0) * v
-            return price
-            
-        custom_price = predict_manual(
-            user_coefs, base_intercept, 
-            sfla=t_sfla, garage_size=t_garage, beds=t_beds, baths=t_baths, year_blt=t_year_blt, acres=t_acres, mortgage_rate=t_rate
-        )
-        
-        stats_price = predict_manual(
-            base_coefs, base_intercept, 
-            sfla=t_sfla, garage_size=t_garage, beds=t_beds, baths=t_baths, year_blt=t_year_blt, acres=t_acres, mortgage_rate=t_rate
-        )
-        
-        # Visualizing the Result
-        delta = custom_price - stats_price
-        
-        st.metric("Predicted Market Value", f"${custom_price:,.0f}", delta=f"${delta:,.0f} vs Baseline" if abs(delta) > 1 else None)
-        
-        # Sensitivity Chart
-        st.caption("Interest Rate Sensitivity Curve")
-        
-        sim_rates = np.linspace(2.5, 10.5, 40)
-        sim_prices = [predict_manual(user_coefs, base_intercept, sfla=t_sfla, garage_size=t_garage, beds=t_beds, baths=t_baths, year_blt=t_year_blt, acres=t_acres, mortgage_rate=r) for r in sim_rates]
-        
-        fig_sens = px.line(x=sim_rates, y=sim_prices, title=None, labels={'x': 'Mortgage Rate (%)', 'y': 'Estimated Price'}, height=300)
-        # Add Current Point
-        fig_sens.add_scatter(x=[t_rate], y=[custom_price], mode='markers', marker=dict(size=15, color='red'), name='Your Forecast')
-        
-        st.plotly_chart(fig_sens, use_container_width=True)
-        
-        # Forecast Over Time
-        st.divider()
-        st.caption("Future Value Forecast (10-Year)")
-        
-        years_hold = 10
-        future_years = range(2026, 2026 + years_hold + 1)
-        future_vals = [custom_price * ((1 + user_coefs['appreciation_pct']/100) ** (y - 2026)) for y in future_years]
-        
-        fig_time = px.line(x=future_years, y=future_vals, markers=True, labels={'x': 'Year', 'y': 'Projected Value'})
-        st.plotly_chart(fig_time, use_container_width=True, height=250)
-
-    st.caption(f"Base Intercept: ${base_intercept:,.0f}")
-
-with tab7:
-    st.header("🔮 Macro-Economic Scenario Simulator")
-    st.markdown("""
-    **"What happens to my home value if interest rates hit 8%?"**
-    
-    This simulation uses a **Gradient Boosting Regressor** trained on historical sales + economic indicators.
-    It learns how factors like **Mortgage Rates**, **S&P 500 Performance**, and **CPI (Inflation)** impact Summit County prices,
-    combined with the physical attributes of the home.
-    """)
-    
+    # --- Shared Model Logic ---
     @st.cache_resource
-    def load_model():
+    def load_macro_model():
         return train_macro_model()
 
-    with st.spinner("Training Macro-Economic Model (This happens once)..."):
-        macro_pipeline, X_test, y_test, features = load_model()
+    with st.spinner("Initializing ML Models..."):
+        macro_pipeline, X_test, y_test, features = load_macro_model()
 
+    # --- Section 1: Insights ---
+    with st.expander("🧬 Step 1: Scientific Feature Analysis (What matters?)", expanded=False):
+        st.markdown("""
+        We analyze which variables (Physical vs. Economic) have the strongest statistical predictive power.
+        """)
+        col_run_analysis, col_spacer = st.columns([1, 4])
+        if st.button("Run Feature Importance Analysis"):
+            with st.spinner("Calculating Permutation Importance..."):
+                from summit_housing.ml import analyze_features
+                imp_df, corr_df = analyze_features()
+                
+            c1, c2 = st.columns(2)
+            with c1:
+                fig_imp = px.bar(imp_df.head(10), x='importance', y='feature', orientation='h', title="Top 10 Drivers of Value", color='importance')
+                fig_imp.update_layout(yaxis={'categoryorder':'total ascending'})
+                st.plotly_chart(fig_imp, use_container_width=True)
+            with c2:
+                fig_corr = px.imshow(corr_df, text_auto=".1f", title="Correlation Matrix", color_continuous_scale="RdBu_r")
+                st.plotly_chart(fig_corr, use_container_width=True)
+
+    # --- Section 2: Simulator ---
+    st.subheader("🔮 Step 2: Macro-Economic Scenario Simulator")
+    st.markdown("**Predict future value by simulating Economic Conditions.**")
+    
     col1, col2 = st.columns(2)
     
     with col1:
-        st.subheader("1. Property Details")
-        sim_sfla = st.slider("Square Feet", 500, 5000, 1500, key='sim_sfla')
-        sim_beds = st.slider("Bedrooms", 1, 8, 3, key='sim_beds')
-        sim_baths = st.slider("Bathrooms", 1, 6, 2, key='sim_baths')
-        sim_year = st.slider("Year Built", 1970, 2024, 2000, key='sim_year')
-        sim_acres = st.number_input("Acres", 0.0, 10.0, 0.5, step=0.1, key='sim_acres')
+        st.markdown("#### 1. Property Specs")
+        sim_sfla = st.slider("Square Feet", 500, 5000, 1500)
+        sim_beds = st.slider("Bedrooms", 1, 8, 3)
+        sim_baths = st.slider("Bathrooms", 1, 6, 2)
+        sim_year = st.slider("Year Built", 1970, 2024, 2000)
+        sim_acres = st.number_input("Acres", 0.0, 10.0, 0.5, step=0.1)
         
     with col2:
-        st.subheader("2. Economic Conditions")
-        st.info("Tune these to simulate a Recession vs. Boom")
-        
-        # Get defaults from recent data
-        sim_rate = st.slider("Mortgage Rate (%)", 2.5, 12.0, 6.5, step=0.1, help="30-Year Fixed Rate")
-        sim_sp500 = st.slider("S&P 500 Level", 2000, 8000, 5500, step=100, help="Wealth Effect Indicator")
-        sim_cpi = st.slider("CPI (Inflation Index)", 250, 400, 315, help="Purchasing Power")
-        sim_pop = st.slider("Summit County Population", 30000, 40000, 31000, help="Local Demand")
+        st.markdown("#### 2. Economy (The 'What If?')")
+        sim_rate = st.slider("Mortgage Rate (%)", 2.5, 12.0, 6.5, step=0.1, help="Impacts buying power.")
+        sim_sp500 = st.slider("S&P 500 Level", 2000, 8000, 5500, step=100, help="Wealth effect.")
+        sim_cpi = st.slider("CPI (Inflation)", 250, 400, 315, help="Cost of goods/materials.")
+        sim_pop = st.slider("Local Population", 25000, 45000, 31000, help="Local demand pressure.")
 
-        sim_garage = 0 # Hidden default
-    
-    # Predict
+    # Prediction Logic
     input_data = pd.DataFrame({
-        'sfla': [sim_sfla],
-        'beds': [sim_beds],
-        'baths': [sim_baths],
-        'year_blt': [sim_year],
-        'garage_size': [sim_garage],
-        'acres': [sim_acres],
-        'mortgage_rate': [sim_rate],
-        'sp500': [sim_sp500],
-        'cpi': [sim_cpi],
-        'summit_pop': [sim_pop]
-    })
-    
-    # Reorder columns to match training
-    input_data = input_data[features]
+        'sfla': [sim_sfla], 'beds': [sim_beds], 'baths': [sim_baths], 
+        'year_blt': [sim_year], 'garage_size': [0], 'acres': [sim_acres],
+        'mortgage_rate': [sim_rate], 'sp500': [sim_sp500], 'cpi': [sim_cpi], 'summit_pop': [sim_pop]
+    })[features] # Ensure column order
     
     predicted_price = macro_pipeline.predict(input_data)[0]
     
     st.divider()
     
-    c1, c2 = st.columns([1, 2])
+    # Results Section
+    r_col1, r_col2 = st.columns([1, 2])
     
-    with c1:
+    with r_col1:
         st.metric("Predicted Market Value", f"${predicted_price:,.0f}")
+        st.info("👈 Change the S&P 500 or Rates to see how this value reacts!")
         
-    with c2:
-        st.subheader("🤖 Why this price? (SHAP Analysis)")
-        st.caption("This chart explains how each factor pushed the price UP (Red) or DOWN (Blue) from the baseline.")
-        
+    with r_col2:
+        st.subheader("Why this price? (SHAP Explainability)")
+        st.caption("This chart reveals how much each factor contributed to the final price.")
         try:
              explainer, shap_values = get_shap_values(macro_pipeline, input_data)
-             
-             # Handle shape differences between detail vs generic explainers
              vals = shap_values[0] if hasattr(shap_values, "__len__") else shap_values.values[0]
              
-             impact_df = pd.DataFrame({
-                 'Feature': features,
-                 'Impact': vals
-             })
+             impact_df = pd.DataFrame({'Feature': features, 'Impact': vals})
              impact_df['Sign'] = impact_df['Impact'] > 0
              impact_df['AbsImpact'] = impact_df['Impact'].abs()
              impact_df = impact_df.sort_values('AbsImpact', ascending=True)
              
-             # Matplotlib Bar Chart
-             fig, ax = plt.subplots(figsize=(8, 5))
+             fig, ax = plt.subplots(figsize=(8, 4))
              colors = ['#ff4b4b' if x else '#1f77b4' for x in impact_df['Sign']]
-             
              ax.barh(impact_df['Feature'], impact_df['Impact'], color=colors)
              ax.set_xlabel("Price Impact ($)")
-             ax.grid(axis='x', linestyle='--', alpha=0.7)
              st.pyplot(fig)
-             
         except Exception as e:
-            st.warning(f"Could not render SHAP plot (Model complexity): {e}")
+            st.warning(f"SHAP Plot Error: {e}")
 
-with tab8:
+with tab7:
     st.header("Raw SQL Playground")
     st.markdown("The full queries used in this analysis.")
     
