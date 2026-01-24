@@ -1,0 +1,18 @@
+OwnershipCategory,OwnerType,NumberOfOwners
+1 Property,Church / Religious,12
+1 Property,Corporation,257
+1 Property,Individual,17977
+1 Property,LLC / Limited Liability,3473
+1 Property,Partnership,231
+1 Property,Trust,5659
+2 Properties,Church / Religious,1
+2 Properties,Corporation,18
+2 Properties,Individual,615
+2 Properties,LLC / Limited Liability,130
+2 Properties,Partnership,6
+2 Properties,Trust,187
+3+ Properties,Corporation,8
+3+ Properties,Individual,130
+3+ Properties,LLC / Limited Liability,87
+3+ Properties,Partnership,9
+3+ Properties,Trust,36

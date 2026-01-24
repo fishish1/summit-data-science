@@ -1,0 +1,10 @@
+OwnershipCategory,LocationType,NumberOfOwners
+1 Property,In-County,8326
+1 Property,In-State (Out of County),10856
+1 Property,Out of State,8427
+2 Properties,In-County,395
+2 Properties,In-State (Out of County),310
+2 Properties,Out of State,252
+3+ Properties,In-County,123
+3+ Properties,In-State (Out of County),83
+3+ Properties,Out of State,64

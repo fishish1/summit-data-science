@@ -1,0 +1,13 @@
+OwnerType,BuildingType,PropertyCount,Percentage
+Church / Religious,Apartment/Condo/Townhome,2,28.57142857142857
+Church / Religious,Single Family Home,5,71.42857142857143
+Corporation,Apartment/Condo/Townhome,546,81.37108792846497
+Corporation,Single Family Home,125,18.628912071535023
+Individual,Apartment/Condo/Townhome,12485,62.73554092759158
+Individual,Single Family Home,7416,37.26445907240842
+LLC / Limited Liability,Apartment/Condo/Townhome,3565,71.80261832829808
+LLC / Limited Liability,Single Family Home,1400,28.197381671701915
+Partnership,Apartment/Condo/Townhome,179,61.092150170648466
+Partnership,Single Family Home,114,38.907849829351534
+Trust,Apartment/Condo/Townhome,4017,62.433944668946225
+Trust,Single Family Home,2417,37.566055331053775

@@ -1,0 +1,7 @@
+LocationType,BuildingType,AvgSqFt,PctWithGarage,UnitCount
+In-County,Apartment/Condo/Townhome,1121.8958333333333,34.1820987654321,5184
+In-County,Single Family Home,2539.4231205137894,79.48621080468456,5294
+In-State (Out of County),Apartment/Condo/Townhome,1168.8016162958043,30.33322262814126,9033
+In-State (Out of County),Single Family Home,2754.641842852635,74.66077627011676,3169
+Out of State,Apartment/Condo/Townhome,1260.409913334347,32.50722213775277,6577
+Out of State,Single Family Home,3412.0786330457863,83.94160583941606,3014
