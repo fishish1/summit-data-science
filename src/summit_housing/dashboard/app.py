@@ -788,11 +788,11 @@ with tab6:
 
     # --- Shared Model Logic ---
     @st.cache_resource
-    def load_macro_model():
+    def load_macro_model_v2():
         return train_macro_model()
 
     with st.spinner("Initializing ML Models..."):
-        macro_pipeline, X_test, y_test, features = load_macro_model()
+        macro_pipeline, X_test, y_test, input_features, shap_features = load_macro_model_v2()
 
     # --- Section 1: Insights ---
     with st.expander("🧬 Step 1: Scientific Feature Analysis (What matters?)", expanded=False):
@@ -822,6 +822,7 @@ with tab6:
     
     with col1:
         st.markdown("#### 1. Property Specs")
+        sim_city = st.selectbox("Location", ["BRECKENRIDGE", "FRISCO", "DILLON", "SILVERTHORNE", "KEYSTONE", "COPPER/COUNTY", "BLUE RIVER", "OTHER"])
         sim_sfla = st.slider("Square Feet", 500, 5000, 1500)
         sim_beds = st.slider("Bedrooms", 1, 8, 3)
         sim_baths = st.slider("Bathrooms", 1, 6, 2)
@@ -837,10 +838,14 @@ with tab6:
 
     # Prediction Logic
     input_data = pd.DataFrame({
+        'city': [sim_city],
         'sfla': [sim_sfla], 'beds': [sim_beds], 'baths': [sim_baths], 
         'year_blt': [sim_year], 'garage_size': [0], 'acres': [sim_acres],
         'mortgage_rate': [sim_rate], 'sp500': [sim_sp500], 'cpi': [sim_cpi], 'summit_pop': [sim_pop]
-    })[features] # Ensure column order
+    })
+    
+    # Ensure correct column order for Pipeline
+    input_data = input_data[input_features]
     
     predicted_price = macro_pipeline.predict(input_data)[0]
     
@@ -860,7 +865,7 @@ with tab6:
              explainer, shap_values = get_shap_values(macro_pipeline, input_data)
              vals = shap_values[0] if hasattr(shap_values, "__len__") else shap_values.values[0]
              
-             impact_df = pd.DataFrame({'Feature': features, 'Impact': vals})
+             impact_df = pd.DataFrame({'Feature': shap_features, 'Impact': vals})
              impact_df['Sign'] = impact_df['Impact'] > 0
              impact_df['AbsImpact'] = impact_df['Impact'].abs()
              impact_df = impact_df.sort_values('AbsImpact', ascending=True)

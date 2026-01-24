@@ -128,27 +128,36 @@ def train_macro_model():
     df = load_and_prep_data()
     
     # Define Features
-    # We include 'year_blt' etc. AND 'mortgage_rate', 'sp500', 'cpi'
-    features = [
+    # Added 'city' for Hyper-Locality
+    numeric_features = [
         'sfla', 'beds', 'baths', 'year_blt', 'garage_size', 'acres', 
         'mortgage_rate', 'sp500', 'cpi', 'summit_pop'
     ]
+    categorical_features = ['city']
+    
     target = 'price'
     
     # Filter for valid data
-    df = df.dropna(subset=features + [target])
+    df = df.dropna(subset=numeric_features + categorical_features + [target])
     df = df[df['price'] > 100000] # Remove non-market transfers
     
-    X = df[features]
+    X = df[numeric_features + categorical_features]
     y = df[target]
     
     # Split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
-    # Pipeline: Scale features then HGBR
-    # HGBR handles NaNs natively, but scaling helps with interpretation
+    # Preprocessor
+    preprocessor = ColumnTransformer(
+        transformers=[
+            ('num', StandardScaler(), numeric_features),
+            ('cat', OneHotEncoder(handle_unknown='ignore', sparse_output=False), categorical_features)
+        ]
+    )
+    
+    # Pipeline: Scale/Encode -> HGBR
     pipeline = Pipeline([
-        ('scaler', StandardScaler()),
+        ('preprocessor', preprocessor),
         ('model', HistGradientBoostingRegressor(
             random_state=42, 
             max_iter=200, 
@@ -159,34 +168,37 @@ def train_macro_model():
     
     pipeline.fit(X_train, y_train)
     
-    return pipeline, X_test, y_test, features
+    # Get Feature Names after encoding
+    ohe_feature_names = pipeline.named_steps['preprocessor'].named_transformers_['cat'].get_feature_names_out(categorical_features)
+    shap_feature_names = numeric_features + list(ohe_feature_names)
+    
+    input_features = numeric_features + categorical_features
+    
+    return pipeline, X_test, y_test, input_features, shap_feature_names
 
 def get_shap_values(model_pipeline, X_sample):
     """
-    Calculates SHAP values for a sample using TreeExplainer (if applicable) or KernelExplainer.
-    Since HGBR is tree-based but widely wrapped, we might need a generic approach.
+    Calculates SHAP values for a sample.
     """
     import shap
     
-    # Extract the actual estimator from pipeline
+    # Extract
     model = model_pipeline.named_steps['model']
-    scaler = model_pipeline.named_steps['scaler']
+    preprocessor = model_pipeline.named_steps['preprocessor']
     
-    # Transform input
-    X_scaled = scaler.transform(X_sample)
+    # Transform input (Scale + Encode)
+    # X_sample must be a DataFrame with same columns as X_train
+    X_transformed = preprocessor.transform(X_sample)
     
-    # Create Explainer - HGBR is supported by TreeExplainer since recent versions, 
-    # but sometimes finicky. Fallback to generic if needed.
+    # Create Explainer
     try:
+        # For HGBR, TreeExplainer is usually best
         explainer = shap.TreeExplainer(model)
-        shap_values = explainer.shap_values(X_scaled)
+        shap_values = explainer.shap_values(X_transformed)
     except Exception as e:
-        # Fallback for generic models
         print(f"TreeExplainer failed: {e}. Using PermutationExplainer.")
-        # Make a callable that wraps the pipeline prediction for SHAP
-        # But here use the model directly on scaled data
-        explainer = shap.PermutationExplainer(model.predict, X_scaled)
-        shap_values = explainer(X_scaled).values
+        explainer = shap.PermutationExplainer(model.predict, X_transformed)
+        shap_values = explainer(X_transformed).values
         
     return explainer, shap_values
 
