@@ -3,7 +3,10 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import shap
+import matplotlib.pyplot as plt
 from summit_housing.queries import MarketAnalytics, MARKET_TRENDS_SQL, ANALYTICS_SQL, SALES_EVENTS_SQL
+from summit_housing.ml import train_macro_model, get_shap_values
 
 st.set_page_config(page_title="Summit Housing SQL Analytics", page_icon="📈", layout="wide")
 
@@ -59,7 +62,16 @@ exclude_multiunit = st.sidebar.checkbox(
     help="Removes bulk sales (e.g., apartment complexes) that skew the average price."
 )
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["📈 Market Trends", "💰 Investment Analysis", "🏗️ Supply & Owners", "📊 Examine Data", "💰 Value Estimator", "🧬 ML Insights", "🔍 SQL Showcase"])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
+    "📈 Market Trends", 
+    "💰 Investment Analysis", 
+    "🏗️ Supply & Owners", 
+    "📊 Examine Data", 
+    "💰 Value Estimator", 
+    "🧬 ML Insights", 
+    "🔮 Macro Simulator",
+    "🔍 SQL Showcase"
+])
 
 with tab1:
     st.header("Price Trends & Moving Averages")
@@ -975,6 +987,101 @@ with tab6:
     st.caption(f"Base Intercept: ${base_intercept:,.0f}")
 
 with tab7:
+    st.header("🔮 Macro-Economic Scenario Simulator")
+    st.markdown("""
+    **"What happens to my home value if interest rates hit 8%?"**
+    
+    This simulation uses a **Gradient Boosting Regressor** trained on historical sales + economic indicators.
+    It learns how factors like **Mortgage Rates**, **S&P 500 Performance**, and **CPI (Inflation)** impact Summit County prices,
+    combined with the physical attributes of the home.
+    """)
+    
+    @st.cache_resource
+    def load_model():
+        return train_macro_model()
+
+    with st.spinner("Training Macro-Economic Model (This happens once)..."):
+        macro_pipeline, X_test, y_test, features = load_model()
+
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("1. Property Details")
+        sim_sfla = st.slider("Square Feet", 500, 5000, 1500, key='sim_sfla')
+        sim_beds = st.slider("Bedrooms", 1, 8, 3, key='sim_beds')
+        sim_baths = st.slider("Bathrooms", 1, 6, 2, key='sim_baths')
+        sim_year = st.slider("Year Built", 1970, 2024, 2000, key='sim_year')
+        sim_acres = st.number_input("Acres", 0.0, 10.0, 0.5, step=0.1, key='sim_acres')
+        
+    with col2:
+        st.subheader("2. Economic Conditions")
+        st.info("Tune these to simulate a Recession vs. Boom")
+        
+        # Get defaults from recent data
+        sim_rate = st.slider("Mortgage Rate (%)", 2.5, 12.0, 6.5, step=0.1, help="30-Year Fixed Rate")
+        sim_sp500 = st.slider("S&P 500 Level", 2000, 8000, 5500, step=100, help="Wealth Effect Indicator")
+        sim_cpi = st.slider("CPI (Inflation Index)", 250, 400, 315, help="Purchasing Power")
+        sim_pop = st.slider("Summit County Population", 30000, 40000, 31000, help="Local Demand")
+
+        sim_garage = 0 # Hidden default
+    
+    # Predict
+    input_data = pd.DataFrame({
+        'sfla': [sim_sfla],
+        'beds': [sim_beds],
+        'baths': [sim_baths],
+        'year_blt': [sim_year],
+        'garage_size': [sim_garage],
+        'acres': [sim_acres],
+        'mortgage_rate': [sim_rate],
+        'sp500': [sim_sp500],
+        'cpi': [sim_cpi],
+        'summit_pop': [sim_pop]
+    })
+    
+    # Reorder columns to match training
+    input_data = input_data[features]
+    
+    predicted_price = macro_pipeline.predict(input_data)[0]
+    
+    st.divider()
+    
+    c1, c2 = st.columns([1, 2])
+    
+    with c1:
+        st.metric("Predicted Market Value", f"${predicted_price:,.0f}")
+        
+    with c2:
+        st.subheader("🤖 Why this price? (SHAP Analysis)")
+        st.caption("This chart explains how each factor pushed the price UP (Red) or DOWN (Blue) from the baseline.")
+        
+        try:
+             explainer, shap_values = get_shap_values(macro_pipeline, input_data)
+             
+             # Handle shape differences between detail vs generic explainers
+             vals = shap_values[0] if hasattr(shap_values, "__len__") else shap_values.values[0]
+             
+             impact_df = pd.DataFrame({
+                 'Feature': features,
+                 'Impact': vals
+             })
+             impact_df['Sign'] = impact_df['Impact'] > 0
+             impact_df['AbsImpact'] = impact_df['Impact'].abs()
+             impact_df = impact_df.sort_values('AbsImpact', ascending=True)
+             
+             # Matplotlib Bar Chart
+             fig, ax = plt.subplots(figsize=(8, 5))
+             colors = ['#ff4b4b' if x else '#1f77b4' for x in impact_df['Sign']]
+             
+             ax.barh(impact_df['Feature'], impact_df['Impact'], color=colors)
+             ax.set_xlabel("Price Impact ($)")
+             ax.grid(axis='x', linestyle='--', alpha=0.7)
+             st.pyplot(fig)
+             
+        except Exception as e:
+            st.warning(f"Could not render SHAP plot (Model complexity): {e}")
+
+with tab8:
     st.header("Raw SQL Playground")
     st.markdown("The full queries used in this analysis.")
     

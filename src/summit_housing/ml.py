@@ -116,6 +116,80 @@ def load_and_prep_data():
     
     return df
 
+def train_macro_model():
+    """
+    Trains a HistGradientBoostingRegressor specifically for the Macro Simulator.
+    Returns:
+        - model: Trained sklearn pipeline
+        - X_test: Test features for evaluation/SHAP
+        - y_test: Test targets
+        - feature_names: List of feature names
+    """
+    df = load_and_prep_data()
+    
+    # Define Features
+    # We include 'year_blt' etc. AND 'mortgage_rate', 'sp500', 'cpi'
+    features = [
+        'sfla', 'beds', 'baths', 'year_blt', 'garage_size', 'acres', 
+        'mortgage_rate', 'sp500', 'cpi', 'summit_pop'
+    ]
+    target = 'price'
+    
+    # Filter for valid data
+    df = df.dropna(subset=features + [target])
+    df = df[df['price'] > 100000] # Remove non-market transfers
+    
+    X = df[features]
+    y = df[target]
+    
+    # Split
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    
+    # Pipeline: Scale features then HGBR
+    # HGBR handles NaNs natively, but scaling helps with interpretation
+    pipeline = Pipeline([
+        ('scaler', StandardScaler()),
+        ('model', HistGradientBoostingRegressor(
+            random_state=42, 
+            max_iter=200, 
+            learning_rate=0.1,
+            max_depth=10
+        ))
+    ])
+    
+    pipeline.fit(X_train, y_train)
+    
+    return pipeline, X_test, y_test, features
+
+def get_shap_values(model_pipeline, X_sample):
+    """
+    Calculates SHAP values for a sample using TreeExplainer (if applicable) or KernelExplainer.
+    Since HGBR is tree-based but widely wrapped, we might need a generic approach.
+    """
+    import shap
+    
+    # Extract the actual estimator from pipeline
+    model = model_pipeline.named_steps['model']
+    scaler = model_pipeline.named_steps['scaler']
+    
+    # Transform input
+    X_scaled = scaler.transform(X_sample)
+    
+    # Create Explainer - HGBR is supported by TreeExplainer since recent versions, 
+    # but sometimes finicky. Fallback to generic if needed.
+    try:
+        explainer = shap.TreeExplainer(model)
+        shap_values = explainer.shap_values(X_scaled)
+    except Exception as e:
+        # Fallback for generic models
+        print(f"TreeExplainer failed: {e}. Using PermutationExplainer.")
+        # Make a callable that wraps the pipeline prediction for SHAP
+        # But here use the model directly on scaled data
+        explainer = shap.PermutationExplainer(model.predict, X_scaled)
+        shap_values = explainer(X_scaled).values
+        
+    return explainer, shap_values
+
 def train_gbm():
     """
     Trains a Gradient Boosting Regressor (Scikit-Learn).
