@@ -124,3 +124,7 @@ cython_debug/
 
 # Local Database
 summit_housing.db
+
+# Machine Learning Artifacts
+models/*_v*.pth
+models/*_v*.pkl

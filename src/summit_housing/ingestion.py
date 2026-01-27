@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from pydantic import ValidationError
 from summit_housing.database import SummitDB
-from summit_housing.models import PropertyRecord
+from summit_housing.schemas import PropertyRecord
 
 BATCH_SIZE = 1000
 DATA_DIR = "data"
@@ -34,7 +34,10 @@ CREATE TABLE IF NOT EXISTS raw_records (
     beds REAL,
     bath_tot REAL,
     garage_size REAL,
-    lot_size REAL
+    lot_size REAL,
+    grade TEXT,
+    cond TEXT,
+    scenic_view INTEGER
 );
 
 CREATE INDEX IF NOT EXISTS idx_records_city ON raw_records(town); -- Index on Property Location Code
@@ -97,7 +100,8 @@ def ingest_records():
                             data['sfla'], data['year_blt'], data['adj_year_blt'], data['units'],
                             data['address'], data['city'], data['state'], data['zip_code'], str(data['town']),
                             data['abst1'], data['abst2'],
-                            data['beds'], data['bath_tot'], data['garage_size'], data['lot_size']
+                            data['beds'], data['bath_tot'], data['garage_size'], data['lot_size'],
+                            data.get('grade'), data.get('cond'), data.get('scenic_view')
                         ))
 
                     except ValidationError as e:
@@ -113,12 +117,12 @@ def ingest_records():
 
 
                 if batch_data:
-                    placeholders = ", ".join(["?"] * 24)
+                    placeholders = ", ".join(["?"] * 27)
                     sql = f"""
                     INSERT OR REPLACE INTO raw_records 
                     (schno, recdate1, docfee1, recdate2, docfee2, recdate3, docfee3, recdate4, docfee4, 
                      sfla, year_blt, adj_year_blt, units, address, city, state, zip_code, town, abst1, abst2,
-                     beds, bath_tot, garage_size, lot_size)
+                     beds, bath_tot, garage_size, lot_size, grade, cond, scenic_view)
                     VALUES ({placeholders})
                     """
                     db.execute_many(sql, batch_data)

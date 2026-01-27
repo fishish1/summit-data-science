@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
 # Copy dependencies first for caching (optimization attempt)
 COPY pyproject.toml .
 COPY Makefile .
+COPY Address_Points_*.csv .
 
 # Copy Source Code (Required for pip install .)
 COPY src/ src/

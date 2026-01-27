@@ -1,0 +1,197 @@
+[
+  {
+    "run_id": 1,
+    "timestamp": "2026-01-27T11:29:02.803957",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 872686.8781989132,
+      "r2": -556.562621316239
+    },
+    "parameters": {
+      "epochs": 200,
+      "batch_size": 128,
+      "lr": 0.0001,
+      "features": [
+        "sfla",
+        "beds",
+        "baths",
+        "year_blt",
+        "garage_size",
+        "acres",
+        "mortgage_rate",
+        "sp500",
+        "cpi",
+        "summit_pop",
+        "grade_numeric",
+        "cond_numeric",
+        "scenic_view",
+        "dist_to_lift",
+        "dist_breck",
+        "dist_keystone",
+        "dist_copper",
+        "dist_abasin",
+        "dist_dillon",
+        "city",
+        "prop_type"
+      ],
+      "monotonic_constraints": true
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 2,
+    "timestamp": "2026-01-27T11:41:37.840203",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 239075.17824365007,
+      "r2": 0.044724411943299125
+    },
+    "parameters": {
+      "epochs": 200,
+      "batch_size": 128,
+      "lr": 0.0001,
+      "features": [
+        "sfla",
+        "beds",
+        "baths",
+        "year_blt",
+        "garage_size",
+        "acres",
+        "mortgage_rate",
+        "sp500",
+        "cpi",
+        "summit_pop",
+        "grade_numeric",
+        "cond_numeric",
+        "scenic_view",
+        "dist_to_lift",
+        "dist_breck",
+        "dist_keystone",
+        "dist_copper",
+        "dist_abasin",
+        "dist_dillon",
+        "city",
+        "prop_type"
+      ],
+      "monotonic_constraints": true
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 3,
+    "timestamp": "2026-01-27T11:48:27.725174",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 238304.19316019103,
+      "r2": 0.04530297114034998
+    },
+    "parameters": {
+      "epochs": 200,
+      "batch_size": 128,
+      "lr": 0.0001,
+      "features": [
+        "sfla",
+        "beds",
+        "baths",
+        "year_blt",
+        "garage_size",
+        "acres",
+        "mortgage_rate",
+        "sp500",
+        "cpi",
+        "summit_pop",
+        "grade_numeric",
+        "cond_numeric",
+        "scenic_view",
+        "dist_to_lift",
+        "dist_breck",
+        "dist_keystone",
+        "dist_copper",
+        "dist_abasin",
+        "dist_dillon",
+        "city",
+        "prop_type"
+      ],
+      "monotonic_constraints": true
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 4,
+    "timestamp": "2026-01-27T12:05:20.416351",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 218373.87986270708,
+      "r2": 0.048564416854469994
+    },
+    "parameters": {
+      "epochs": 200,
+      "batch_size": 128,
+      "lr": 0.0001,
+      "features": [
+        "sfla",
+        "beds",
+        "baths",
+        "year_blt",
+        "garage_size",
+        "acres",
+        "mortgage_rate",
+        "sp500",
+        "cpi",
+        "summit_pop",
+        "grade_numeric",
+        "cond_numeric",
+        "scenic_view",
+        "dist_to_lift",
+        "dist_breck",
+        "dist_keystone",
+        "dist_copper",
+        "dist_abasin",
+        "dist_dillon",
+        "city",
+        "prop_type"
+      ],
+      "monotonic_constraints": true
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 5,
+    "timestamp": "2026-01-27T12:12:45.955154",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 218740.94647057238,
+      "r2": 0.048273899584650004
+    },
+    "parameters": {
+      "epochs": 200,
+      "batch_size": 128,
+      "lr": 0.0001,
+      "features": [
+        "sfla",
+        "beds",
+        "baths",
+        "year_blt",
+        "garage_size",
+        "acres",
+        "mortgage_rate",
+        "sp500",
+        "cpi",
+        "summit_pop",
+        "grade_numeric",
+        "cond_numeric",
+        "scenic_view",
+        "dist_to_lift",
+        "dist_breck",
+        "dist_keystone",
+        "dist_copper",
+        "dist_abasin",
+        "dist_dillon",
+        "city",
+        "prop_type"
+      ],
+      "monotonic_constraints": true
+    },
+    "tags": {}
+  }
+]

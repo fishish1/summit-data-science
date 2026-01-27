@@ -77,7 +77,11 @@ sales_with_metrics AS (
         -- Renovation Logic: If Effective Year > Actual Year
         CASE WHEN r.adj_year_blt > r.year_blt THEN 1 ELSE 0 END as is_renovated,
         r.units,
-        r.address
+        r.address,
+        -- Quality Features (The Kitchen Sink)
+        r.grade,
+        r.cond,
+        r.scenic_view
     FROM sales s
     JOIN raw_records r ON s.schno = r.schno
 )
@@ -366,6 +370,10 @@ class MarketAnalytics:
             r.year_blt,
             r.garage_size,
             r.lot_size as acres,
+            -- Quality Features
+            r.grade,
+            r.cond,
+            r.scenic_view,
             r.town as city_code, -- Use code if needed, but case below handles names
             -- Use CASE for Clean City
             CASE 

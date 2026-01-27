@@ -15,7 +15,7 @@ ingest:
 	$(VENV)/python -m summit_housing.ingestion
 
 run:
-	$(VENV)/streamlit run src/summit_housing/dashboard/app.py
+	$(VENV)/streamlit run src/summit_housing/dashboard/Analysis.py
 
 scrape:
 	$(VENV)/python src/summit_housing/scraper_v2.py --workers 10

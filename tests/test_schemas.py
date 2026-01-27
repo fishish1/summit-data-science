@@ -1,4 +1,4 @@
-from summit_housing.models import PropertyRecord
+from summit_housing.schemas import PropertyRecord
 from pydantic import ValidationError
 import pytest
 

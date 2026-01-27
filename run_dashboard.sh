@@ -12,9 +12,9 @@ else
 fi
 
 # Install dependencies if needed (fast check)
-# We need streamlit, joblib, torch, pandas, plotting
+# We need streamlit, joblib, torch, pandas, plotting, shap/statsmodels
 echo "Checking dependencies..."
-pip install streamlit joblib scikit-learn pandas plotly torch --quiet
+pip install streamlit joblib scikit-learn pandas plotly torch shap statsmodels matplotlib --quiet
 
 # Run Dashboard
 echo "Launching Summit Housing Dashboard..."
