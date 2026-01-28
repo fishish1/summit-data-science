@@ -41,9 +41,13 @@ def load_address_points(data_dir: str = ".") -> pd.DataFrame:
     p = Path(data_dir)
     files = list(p.glob("Address_Points*.csv"))
     if not files:
-        # Fallback to check if it's in the root when data_dir is data
-        p_root = Path(".")
-        files = list(p_root.glob("Address_Points*.csv"))
+        # Fallback to check if it's in data/ or root
+        search_paths = [Path("data"), Path(".")]
+        for p_search in search_paths:
+            files = list(p_search.glob("Address_Points*.csv"))
+            if files:
+                break
+        
         if not files:
             raise FileNotFoundError("Could not find Address_Points csv file.")
     

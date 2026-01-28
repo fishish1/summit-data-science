@@ -10,8 +10,10 @@ A production-grade analytics platform that combines **Advanced SQL Engineering**
 This project demonstrates the full Data Science lifecycle:
 1.  **Ingestion**: Scraping and validating property records (~40k rows).
 2.  **Engineering**: Building a normalized SQLite warehouse with complex window functions.
-3.  **Modeling**: Training Neural Networks and Gradient Boosting models for price prediction.
-4.  **Deployment**: Serving insights via an interactive Streamlit dashboard.
+3.  **Modeling**: Unified GBM and Neural Network training with temporal cross-validation.
+4.  **MLOps**: Automated "Champion/Challenger" registry and centralized YAML-driven configuration.
+5.  **Productization**: Uncertainty estimation (Quantile Regression) and luxury segment calibration.
+6.  **Deployment**: Serving insights via an interactive Streamlit dashboard.
 
 ## 🚀 Key Technical Features
 
@@ -20,8 +22,18 @@ Beyond simple regression, this project leverages modern ML techniques to underst
 -   **Neural Network (PyTorch)**: Custom feed-forward architecture for high-accuracy price prediction (`src/summit_housing/models.py`).
 -   **Explainable AI (XAI)**:
     -   **SHAP Values**: Deconstructs individual predictions (e.g., "This home is $50k cheaper because of its distance to Breckenridge").
-    -   **Partial Dependence Plots (PDP)**: Visualizes non-linear relationships between features like Square Footage and Price.
--   **Geospatial Feature Engineering**: Calculates haversine distances to major ski resorts (Breckenridge, Keystone, Copper) to quantify location value.
+    -   **Partial Dependence Plots (PDP)**: Visualizes non-linear relationships between features for global model understanding.
+-   **MLOps Maturity**:
+    -   **Automated Tournament**: Run `make tournament` to clear old artifacts, perform a 5-run parameter sweep, and promote the best models automatically.
+    -   **Centralized Configuration**: All features and hyperparameters (including monotonicity constraints) managed via [ml_config.yaml](file:///Users/brian/Documents/summit/config/ml_config.yaml).
+    -   **Champion Registry**: The system tracks the "current best" in `models/champion_registry.json`. New models are only promoted if they reduce the Mean Absolute Error (MAE) compared to the current champion.
+-   **Productization**:
+    -   **Confidence Intervals**: Predicts a "Likely Range" (10th-90th percentile) using Quantile Regression.
+    -   **Luxury Calibration**: Focused sample weighting to reduce high-variance errors in the \$2M+ segment.
+-   **Validation Rigor**: Implements **Walk-Forward Cross-Validation** to prevent temporal leakage. You can run a standalone evaluation without promoting a model using:
+    ```bash
+    python src/summit_housing/ml/pipeline.py eval gbm  # or nn
+    ```
 
 ### 2. Advanced SQL Analytics
 Logic is pushed to the database layer to ensure performance and demonstrate SQL mastery:
@@ -32,7 +44,8 @@ Logic is pushed to the database layer to ensure performance and demonstrate SQL 
 ### 3. Resilient Data Pipeline (The "DLQ" Pattern)
 Real-world data is messy. The pipeline (`src/summit_housing/ingestion.py`) implements a **Dead Letter Queue** pattern:
 -   **Validation**: Every record is checked against strict **Pydantic** models.
--   **Fault Tolerance**: The pipeline fails gracefully. Malformed records (bad dates, mixed types) are quarantined in `data/rejected_records.csv` for audit, ensuring good data isn't blocked.
+-   **Fault Tolerance**: The pipeline fails gracefully. Malformed records are quarantined in `data/rejected_records.csv`.
+-   **Stateful Scraping**: The scraper (`scraper_v2.py`) is resumable. It automatically detects existing records in the output and skips them, allowing for graceful recovery from network failures.
 
 ### 4. Production Engineering
 -   **Dockerized**: Zero-dependency deployment.
@@ -59,11 +72,13 @@ make setup
 # 2. Run ETL Pipeline (Builds/Resets DB)
 make ingest
 
-# 3. Launch Dashboard
-make run
+# 3. Trigger Training (Optional - Current Champions are provided)
+make tournament # Purge and sweep for best parameters (Recommended)
+make train-gbm
+make train-nn
 
-# (Optional) Run Scraper to get fresh data
-# make scrape
+# 4. Launch Dashboard
+make run
 ```
 
 ## 📂 Project Structure
@@ -71,6 +86,8 @@ make run
 ```text
 ├── data/                  # Raw CSVs, SQLite DB, and quarantined records
 ├── models/                # Saved PyTorch (.pth) and Scikit-Learn pipelines
+├── notebooks/             # Jupyter notebooks for exploratory analysis
+├── scripts/               # Utility and debugging scripts
 ├── src/
 │   └── summit_housing/
 │       ├── dashboard/     # Streamlit application
@@ -84,10 +101,19 @@ make run
 └── Makefile               # Task runner
 ```
 
-## 📊 Dashboard Modules
+## 🛠️ Developer Reference
 
-The dashboard is structured into narrative tabs:
-1.  **Data & Limits**: Dataset overview, bias analysis (survivorship bias), and quality checks.
-2.  **Market Context**: Macro-trends (Mortgage Rates vs. Price), buyer demographics, and supply vs. demand.
-3.  **Drivers (Feature Importance)**: SHAP analysis and correlation matrices showing what drives value.
-4.  **Price Predictor**: A "What-If" simulator letting users adjust property attributes to see predicted prices in real-time.
+### Scraper CLI Arguments
+While `make scrape` uses defaults, you can customize the collection:
+```bash
+python src/summit_housing/scraper_v2.py --workers 20 --input data/custom_ids.csv --output data/new_collection.csv
+```
+*Note: Progress is automatically tracked via `data/metadata.json`.*
+
+### ML Configuration Schema
+The `config/ml_config.yaml` controls the engine. Key sections include:
+- **Monotonicity**: Set to `1` (positive), `-1` (negative), or `0` (none). This forces the Neural Network to respect physical laws (e.g., more square footage cannot decrease the price).
+- **Temporal Split**: `test_months` defines the "hold-out" period for the walk-forward evaluation.
+
+### Model Registry
+The "Champion" system sources its live models from `models/champion_registry.json`. To manually override a champion, update this file with the desired `run_id`.

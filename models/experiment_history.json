@@ -1,16 +1,16 @@
 [
   {
     "run_id": 1,
-    "timestamp": "2026-01-27T11:29:02.803957",
-    "model_name": "price_net_macro",
+    "timestamp": "2026-01-28T08:20:49.614236",
+    "model_name": "gbm",
     "metrics": {
-      "mae": 872686.8781989132,
-      "r2": -556.562621316239
+      "mae": 502375.78204933525,
+      "r2": 0.2605421623460902
     },
     "parameters": {
-      "epochs": 200,
-      "batch_size": 128,
-      "lr": 0.0001,
+      "learning_rate": 0.01,
+      "max_iter": 1000,
+      "max_depth": 5,
       "features": [
         "sfla",
         "beds",
@@ -25,7 +25,6 @@
         "grade_numeric",
         "cond_numeric",
         "scenic_view",
-        "dist_to_lift",
         "dist_breck",
         "dist_keystone",
         "dist_copper",
@@ -33,23 +32,22 @@
         "dist_dillon",
         "city",
         "prop_type"
-      ],
-      "monotonic_constraints": true
+      ]
     },
     "tags": {}
   },
   {
     "run_id": 2,
-    "timestamp": "2026-01-27T11:41:37.840203",
-    "model_name": "price_net_macro",
+    "timestamp": "2026-01-28T08:21:09.786388",
+    "model_name": "gbm",
     "metrics": {
-      "mae": 239075.17824365007,
-      "r2": 0.044724411943299125
+      "mae": 477174.82033823716,
+      "r2": 0.2913106713000122
     },
     "parameters": {
-      "epochs": 200,
-      "batch_size": 128,
-      "lr": 0.0001,
+      "learning_rate": 0.01,
+      "max_iter": 2000,
+      "max_depth": 6,
       "features": [
         "sfla",
         "beds",
@@ -64,7 +62,6 @@
         "grade_numeric",
         "cond_numeric",
         "scenic_view",
-        "dist_to_lift",
         "dist_breck",
         "dist_keystone",
         "dist_copper",
@@ -72,23 +69,22 @@
         "dist_dillon",
         "city",
         "prop_type"
-      ],
-      "monotonic_constraints": true
+      ]
     },
     "tags": {}
   },
   {
     "run_id": 3,
-    "timestamp": "2026-01-27T11:48:27.725174",
-    "model_name": "price_net_macro",
+    "timestamp": "2026-01-28T08:21:19.648704",
+    "model_name": "gbm",
     "metrics": {
-      "mae": 238304.19316019103,
-      "r2": 0.04530297114034998
+      "mae": 459394.51243400585,
+      "r2": 0.30234987350982967
     },
     "parameters": {
-      "epochs": 200,
-      "batch_size": 128,
-      "lr": 0.0001,
+      "learning_rate": 0.05,
+      "max_iter": 500,
+      "max_depth": 8,
       "features": [
         "sfla",
         "beds",
@@ -103,7 +99,6 @@
         "grade_numeric",
         "cond_numeric",
         "scenic_view",
-        "dist_to_lift",
         "dist_breck",
         "dist_keystone",
         "dist_copper",
@@ -111,23 +106,22 @@
         "dist_dillon",
         "city",
         "prop_type"
-      ],
-      "monotonic_constraints": true
+      ]
     },
     "tags": {}
   },
   {
     "run_id": 4,
-    "timestamp": "2026-01-27T12:05:20.416351",
-    "model_name": "price_net_macro",
+    "timestamp": "2026-01-28T08:21:40.621304",
+    "model_name": "gbm",
     "metrics": {
-      "mae": 218373.87986270708,
-      "r2": 0.048564416854469994
+      "mae": 458184.01236366614,
+      "r2": 0.31448865704036266
     },
     "parameters": {
-      "epochs": 200,
-      "batch_size": 128,
-      "lr": 0.0001,
+      "learning_rate": 0.02,
+      "max_iter": 1500,
+      "max_depth": 7,
       "features": [
         "sfla",
         "beds",
@@ -142,7 +136,6 @@
         "grade_numeric",
         "cond_numeric",
         "scenic_view",
-        "dist_to_lift",
         "dist_breck",
         "dist_keystone",
         "dist_copper",
@@ -150,23 +143,22 @@
         "dist_dillon",
         "city",
         "prop_type"
-      ],
-      "monotonic_constraints": true
+      ]
     },
     "tags": {}
   },
   {
     "run_id": 5,
-    "timestamp": "2026-01-27T12:12:45.955154",
-    "model_name": "price_net_macro",
+    "timestamp": "2026-01-28T08:21:50.036952",
+    "model_name": "gbm",
     "metrics": {
-      "mae": 218740.94647057238,
-      "r2": 0.048273899584650004
+      "mae": 476084.8810465999,
+      "r2": 0.29085022522808945
     },
     "parameters": {
-      "epochs": 200,
-      "batch_size": 128,
-      "lr": 0.0001,
+      "learning_rate": 0.1,
+      "max_iter": 300,
+      "max_depth": 5,
       "features": [
         "sfla",
         "beds",
@@ -181,7 +173,6 @@
         "grade_numeric",
         "cond_numeric",
         "scenic_view",
-        "dist_to_lift",
         "dist_breck",
         "dist_keystone",
         "dist_copper",
@@ -189,8 +180,309 @@
         "dist_dillon",
         "city",
         "prop_type"
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 6,
+    "timestamp": "2026-01-28T08:23:33.874731",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 210983.23219276668,
+      "r2": 0.06319435689175867
+    },
+    "parameters": {
+      "lr": 0.001,
+      "epochs": 200,
+      "batch_size": 128,
+      "hidden_dims": [
+        128,
+        64,
+        32
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 7,
+    "timestamp": "2026-01-28T08:29:15.711966",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 211031.95542992317,
+      "r2": -0.3908101064660763
+    },
+    "parameters": {
+      "lr": 0.0005,
+      "epochs": 400,
+      "batch_size": 64,
+      "hidden_dims": [
+        256,
+        128,
+        64
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 8,
+    "timestamp": "2026-01-28T08:31:20.358981",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 234587.60881691086,
+      "r2": 0.05448835834514498
+    },
+    "parameters": {
+      "lr": 0.001,
+      "epochs": 300,
+      "batch_size": 128,
+      "hidden_dims": [
+        64,
+        32
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 9,
+    "timestamp": "2026-01-28T08:32:24.273846",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 224644.72343839772,
+      "r2": 0.057529139149912756
+    },
+    "parameters": {
+      "lr": 0.002,
+      "epochs": 150,
+      "batch_size": 256,
+      "hidden_dims": [
+        128,
+        128
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 10,
+    "timestamp": "2026-01-28T08:36:23.086645",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 214107.7951446244,
+      "r2": 0.05963388729112107
+    },
+    "parameters": {
+      "lr": 0.0001,
+      "epochs": 500,
+      "batch_size": 128,
+      "hidden_dims": [
+        128,
+        64,
+        32
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 11,
+    "timestamp": "2026-01-28T08:52:17.209316",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 193460.8112970411,
+      "r2": 0.12837117481160176
+    },
+    "parameters": {
+      "epochs": 750,
+      "lr": 0.0008,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        64,
+        32
+      ]
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 12,
+    "timestamp": "2026-01-28T09:10:06.559885",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 226043.0484968999,
+      "r2": -1.0468247475628663
+    },
+    "parameters": {
+      "epochs": 750,
+      "lr": 0.0008,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        64,
+        32
       ],
-      "monotonic_constraints": true
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.01
+      }
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 13,
+    "timestamp": "2026-01-28T09:21:39.159617",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 196389.82356378075,
+      "r2": 0.06954221008387695
+    },
+    "parameters": {
+      "epochs": 750,
+      "lr": 0.0008,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        64,
+        32
+      ],
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.01,
+        "constraints": {
+          "sfla": 1,
+          "beds": 1,
+          "baths": 1,
+          "year_blt": 1,
+          "garage_size": 1,
+          "acres": 1,
+          "grade_numeric": 1,
+          "cond_numeric": 1,
+          "scenic_view": 1,
+          "mortgage_rate": -1,
+          "dist_to_lift": -1,
+          "dist_breck": -1,
+          "dist_keystone": -1,
+          "dist_copper": -1
+        }
+      }
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 14,
+    "timestamp": "2026-01-28T09:36:02.711425",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 237423.18811943408,
+      "r2": -2.6565145460126143
+    },
+    "parameters": {
+      "epochs": 750,
+      "lr": 0.0008,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        64,
+        32
+      ],
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.05,
+        "constraints": {
+          "sfla": 1,
+          "beds": 1,
+          "baths": 0,
+          "year_blt": 1,
+          "garage_size": 0,
+          "acres": 1,
+          "grade_numeric": 1,
+          "cond_numeric": 1,
+          "scenic_view": 0,
+          "mortgage_rate": 0,
+          "dist_to_lift": -1,
+          "dist_breck": 0,
+          "dist_keystone": 0,
+          "dist_copper": 0
+        }
+      }
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 15,
+    "timestamp": "2026-01-28T09:47:38.667981",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 203967.87678498754,
+      "r2": 0.07199175405830849
+    },
+    "parameters": {
+      "epochs": 750,
+      "lr": 0.0008,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        64,
+        32
+      ],
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.005,
+        "constraints": {
+          "sfla": 1,
+          "beds": 1,
+          "baths": 0,
+          "year_blt": 1,
+          "garage_size": 0,
+          "acres": 1,
+          "grade_numeric": 1,
+          "cond_numeric": 1,
+          "scenic_view": 0,
+          "mortgage_rate": 0,
+          "dist_to_lift": -1,
+          "dist_breck": 0,
+          "dist_keystone": 0,
+          "dist_copper": 0
+        }
+      }
+    },
+    "tags": {}
+  },
+  {
+    "run_id": 16,
+    "timestamp": "2026-01-28T10:01:59.406354",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 199965.1017109996,
+      "r2": 0.06841758510024687
+    },
+    "parameters": {
+      "epochs": 750,
+      "lr": 0.0008,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        64,
+        32
+      ],
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.005,
+        "constraints": {
+          "sfla": 2,
+          "beds": 1,
+          "baths": 0,
+          "year_blt": 1,
+          "garage_size": 0,
+          "acres": 1,
+          "grade_numeric": 1,
+          "cond_numeric": 1,
+          "scenic_view": 0,
+          "mortgage_rate": 0,
+          "dist_to_lift": -1,
+          "dist_breck": 0,
+          "dist_keystone": 0,
+          "dist_copper": 0
+        }
+      }
     },
     "tags": {}
   }

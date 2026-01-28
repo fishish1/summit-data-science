@@ -5,6 +5,7 @@ from typing import Dict, Any, Optional
 import logging
 
 TRACKING_FILE = "models/experiment_history.json"
+REGISTRY_FILE = "models/champion_registry.json"
 
 class ExperimentTracker:
     """
@@ -59,6 +60,42 @@ class ExperimentTracker:
         self._save_history(history)
         self.logger.info(f"Experiment logged: Run {run_entry['run_id']} for {model_name}")
         return run_entry['run_id']
+
+    def _load_registry(self) -> Dict[str, Any]:
+        if not os.path.exists(REGISTRY_FILE):
+            return {}
+        try:
+            with open(REGISTRY_FILE, 'r') as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            return {}
+
+    def _save_registry(self, registry: Dict[str, Any]):
+        os.makedirs(os.path.dirname(REGISTRY_FILE), exist_ok=True)
+        with open(REGISTRY_FILE, 'w') as f:
+            json.dump(registry, f, indent=2)
+
+    def promote_to_champion(self, run_id: int):
+        """
+        Promotes a specific run to 'Champion' for its model type.
+        """
+        history = self._load_history()
+        run_entry = next((r for r in history if r['run_id'] == run_id), None)
+        if not run_entry:
+            raise ValueError(f"Run {run_id} not found in history.")
+        
+        registry = self._load_registry()
+        model_name = run_entry['model_name']
+        registry[model_name] = run_entry
+        self._save_registry(registry)
+        self.logger.info(f"Model {model_name} (Run {run_id}) promoted to champion.")
+
+    def get_champion(self, model_name: str) -> Optional[Dict[str, Any]]:
+        """
+        Retrieves the current champion run for a given model type.
+        """
+        registry = self._load_registry()
+        return registry.get(model_name)
 
 # Singleton instance for easy import
 tracker = ExperimentTracker()

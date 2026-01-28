@@ -25,4 +25,4 @@ RUN pip install --upgrade pip && \
 EXPOSE 8501
 
 # Default Command: Check for DB, if missing ingest, then run
-CMD ["sh", "-c", "python -m summit_housing.ingestion && streamlit run src/summit_housing/dashboard/app.py"]
+CMD ["sh", "-c", "python -m summit_housing.ingestion && streamlit run src/summit_housing/dashboard/Introduction.py"]

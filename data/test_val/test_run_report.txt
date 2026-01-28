@@ -1,0 +1,10 @@
+Validation Report: test_run
+Timestamp: 2026-01-27T13:44:46.410073
+Overall MAE: $54,923
+Overall MAPE: 5.00%
+
+Error by city:
+              MAE  MAPE  Count
+city                          
+BRECK   60820.775   5.0      4
+FRISCO  43128.625   5.0      2

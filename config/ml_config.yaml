@@ -1,0 +1,67 @@
+features:
+  numeric:
+    - sfla
+    - beds
+    - baths
+    - year_blt
+    - garage_size
+    - acres
+    - mortgage_rate
+    - sp500
+    - cpi
+    - summit_pop
+    - grade_numeric
+    - cond_numeric
+    - scenic_view
+    - dist_breck
+    - dist_keystone
+    - dist_copper
+    - dist_abasin
+    - dist_dillon
+    - dist_to_lift
+
+  categorical:
+    - city
+    - prop_type
+
+  target: price
+
+preprocessing:
+  log_transform_target: true
+  handle_missing: 
+    strategy: median
+    fill_value: 0
+
+training:
+  temporal_split:
+    test_months: 6
+    n_folds: 3
+  
+  gbm:
+    max_iter: 2500
+    learning_rate: 0.01
+    max_depth: 10
+    
+  nn:
+    epochs: 750
+    lr: 0.0008
+    batch_size: 128
+    hidden_dims: [256, 64, 32]
+    monotonicity:
+      enabled: true
+      penalty_weight: 0.005
+      constraints:
+        sfla: 2
+        beds: 1
+        baths: 0
+        year_blt: 1
+        garage_size: 0
+        acres: 1
+        grade_numeric: 1
+        cond_numeric: 1
+        scenic_view: 0
+        mortgage_rate: 0
+        dist_to_lift: -1
+        dist_breck: 0
+        dist_keystone: 0
+        dist_copper: 0

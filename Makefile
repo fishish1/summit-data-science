@@ -15,10 +15,19 @@ ingest:
 	$(VENV)/python -m summit_housing.ingestion
 
 run:
-	$(VENV)/streamlit run src/summit_housing/dashboard/Analysis.py
+	$(VENV)/streamlit run src/summit_housing/dashboard/Introduction.py
 
 scrape:
 	$(VENV)/python src/summit_housing/scraper_v2.py --workers 10
+
+train-gbm:
+	$(VENV)/python src/summit_housing/ml/pipeline.py train gbm
+
+train-nn:
+	$(VENV)/python src/summit_housing/ml/pipeline.py train nn
+
+tournament:
+	$(VENV)/python src/summit_housing/ml/tournament.py --runs 5
 
 clean:
 	rm -rf __pycache__
