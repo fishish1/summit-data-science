@@ -68,7 +68,20 @@ def section_3_chart():
     with tab_pdp:
         pdp_placeholder.empty()
         st.caption("Marginal effect of specific features on price.")
-        feature = st.selectbox("Select Feature for PDP", ["sfla", "year_blt", "dist_to_lift"])
+        
+        # Import the function to get available features
+        from summit_housing.ml import get_available_pdp_features
+        
+        # Get all available features dynamically
+        try:
+            available_features = get_available_pdp_features()
+            # Sort for better UX
+            available_features = sorted(available_features)
+        except Exception as e:
+            st.error(f"Could not load available features: {e}")
+            available_features = ["sfla", "year_blt", "dist_to_lift"]  # Fallback
+        
+        feature = st.selectbox("Select Feature for PDP", available_features)
         with st.spinner(f"Computing PDP for {feature}..."):
             df_pdp = get_pdp_data_cached(feature)
             if not df_pdp.empty:
