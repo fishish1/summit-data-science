@@ -163,7 +163,14 @@ def train_macro_nn(df=None, params_override=None):
         
         if isinstance(shap_values, list): shap_values = shap_values[0]
         
+        # Ensure it's numpy
+        if hasattr(shap_values, 'numpy'): shap_values = shap_values.numpy()
+        
+        # Mean absolute importance
         mean_shap = np.abs(shap_values).mean(axis=0)
+        
+        # FLATTEN IT to ensure it's 1D for DataFrame
+        mean_shap = mean_shap.flatten()
         
         # Get feature names
         feature_names = []
