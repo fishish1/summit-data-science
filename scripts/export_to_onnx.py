@@ -9,9 +9,44 @@ import json
 import io
 from summit_housing.ml.nn import PriceNet
 
+def get_champion_run_id(model_type, default_id):
+    """
+    Retrieves the run_id for the current champion model from the registry.
+    """
+    try:
+        with open("models/champion_registry.json", "r") as f:
+            registry = json.load(f)
+        
+        # Map internal types to registry keys
+        key_map = {
+            'gbm': 'gbm',
+            'nn': 'price_net_macro'
+        }
+        reg_key = key_map.get(model_type, model_type)
+        
+        if reg_key in registry:
+            run_id = registry[reg_key]['run_id']
+            print(f"🏆 Found champion {model_type} (run_id: {run_id})")
+            return run_id
+            
+    except FileNotFoundError:
+        print("⚠️ Champion registry not found.")
+    except Exception as e:
+        print(f"⚠️ Error reading registry: {e}")
+    
+    print(f"⚠️ Using fallback run_id: {default_id}")
+    return default_id
+
 def export_gbm(target_dir):
-    print(f"Exporting GBM model to {target_dir}...")
-    pipeline = joblib.load("models/price_predictor_gbm_v4.pkl")
+    run_id = get_champion_run_id('gbm', 4)
+    print(f"Exporting GBM model v{run_id} to {target_dir}...")
+    
+    model_path = f"models/price_predictor_gbm_v{run_id}.pkl"
+    if not os.path.exists(model_path):
+        print(f"❌ Model file not found: {model_path}")
+        return
+
+    pipeline = joblib.load(model_path)
     preprocessor = pipeline.named_steps['preprocessor']
     regressor_wrapper = pipeline.named_steps['model']
     actual_model = regressor_wrapper.regressor_
@@ -36,26 +71,43 @@ def export_gbm(target_dir):
         "input_features": {
             "numeric": scaler.feature_names_in_.tolist(),
             "categorical": ohe.feature_names_in_.tolist()
-        }
+        },
+        "run_id": run_id
     }
     with open(os.path.join(target_dir, "gbm_metadata.json"), "w") as f:
         json.dump(metadata, f)
-    print("GBM exported successfully.")
+    print("✅ GBM exported successfully.")
 
 def export_nn(target_dir):
-    print(f"Exporting NN model to {target_dir}...")
-    run_id = 12
-    with open("models/experiment_history.json", "r") as f:
-        history = json.load(f)
-        run_data = next((r for r in history if r['run_id'] == run_id), None)
-        params = run_data['parameters']
+    run_id = get_champion_run_id('nn', 12)
+    print(f"Exporting NN model v{run_id} to {target_dir}...")
     
-    preprocessor = joblib.load(f"models/nn_preprocessor_v{run_id}.pkl")
+    # Load params from history
+    try:
+        with open("models/experiment_history.json", "r") as f:
+            history = json.load(f)
+            run_data = next((r for r in history if r['run_id'] == run_id), None)
+            if not run_data:
+                print(f"❌ Run data not found in history for run_id {run_id}")
+                return
+            params = run_data['parameters']
+    except Exception as e:
+        print(f"❌ Error loading experiment history: {e}")
+        return
+    
+    preprocessor_path = f"models/nn_preprocessor_v{run_id}.pkl"
+    model_path = f"models/price_predictor_nn_v{run_id}.pth"
+    
+    if not os.path.exists(preprocessor_path) or not os.path.exists(model_path):
+        print(f"❌ Model artifacts missing for run {run_id}")
+        return
+
+    preprocessor = joblib.load(preprocessor_path)
     input_dim = preprocessor.named_transformers_['num'].get_feature_names_out().shape[0] + \
                 preprocessor.named_transformers_['cat'].get_feature_names_out().shape[0]
                 
     model = PriceNet(input_dim, params=params)
-    model.load_state_dict(torch.load(f"models/price_predictor_nn_v{run_id}.pth", map_location='cpu', weights_only=True))
+    model.load_state_dict(torch.load(model_path, map_location='cpu', weights_only=True))
     model.eval()
     
     dummy_input = torch.randn(1, input_dim)
@@ -92,11 +144,12 @@ def export_nn(target_dir):
         "input_features": {
             "numeric": scaler.feature_names_in_.tolist(),
             "categorical": ohe.feature_names_in_.tolist()
-        }
+        },
+        "run_id": run_id
     }
     with open(os.path.join(target_dir, "nn_metadata.json"), "w") as f:
         json.dump(metadata, f)
-    print("NN exported successfully.")
+    print("✅ NN exported successfully.")
 
 if __name__ == "__main__":
     target = "models/export_output"
