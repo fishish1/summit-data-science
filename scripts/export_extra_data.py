@@ -89,12 +89,43 @@ def main():
     # 2. Raw Data (Cleaned)
     print("Exporting Raw Sample (Summit Only)...")
     try:
-        # Use the ML pipeline's data loader to get enriched data (Macro + Geo + Cleaned)
-        from summit_housing.ml.data import load_and_prep_data
+        # Load Raw Data (to keep all original columns)
+        df_raw = pd.read_csv("data/records.csv", low_memory=False)
+        target_cities = ['BRECKENRIDGE', 'FRISCO', 'SILVERTHORNE', 'DILLON', 'KEYSTONE', 'COPPER MOUNTAIN', 'BLUE RIVER']
+        df_clean = df_raw[df_raw['city'].isin(target_cities)].copy()
         
-        print("   Loading enriched training data...")
-        df_clean = load_and_prep_data()
+        # --- ENRICHMENT (Geo + Macro) ---
+        print("   Enriching Raw Sample...")
         
+        # 1. Geo
+        from summit_housing.geo import enrich_with_geo_features
+        try:
+             df_clean = enrich_with_geo_features(df_clean)
+        except Exception as e:
+             print(f"   Warning: Geo enrichment failed within export: {e}")
+
+        # 2. Macro (Manually merge to preserve raw columns)
+        try:
+            df_clean['sale_date'] = pd.to_datetime(df_clean['sale_date'], errors='coerce')
+            df_clean = df_clean.sort_values('sale_date')
+            
+            macro_files = {
+                'mortgage_rate': 'data/mortgage_rate.csv',
+                'cpi': 'data/cpi.csv',
+                'sp500': 'data/sp500.csv'
+            }
+            
+            for name, path in macro_files.items():
+                if os.path.exists(path):
+                    macro_df = pd.read_csv(path)
+                    macro_df['date'] = pd.to_datetime(macro_df['date'])
+                    macro_df = macro_df.sort_values('date').rename(columns={'value': name})
+                    df_clean = pd.merge_asof(df_clean, macro_df[['date', name]], left_on='sale_date', right_on='date', direction='backward')
+        except Exception as e:
+            print(f"   Warning: Macro enrichment failed: {e}")
+
+        # -------------------------------
+
         # Take a robust sample
         if len(df_clean) > 200:
             df_curated = df_clean.sample(200, random_state=42)
