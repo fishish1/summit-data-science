@@ -44,7 +44,7 @@ def export_gbm(target_dir):
 
 def export_nn(target_dir):
     print(f"Exporting NN model to {target_dir}...")
-    run_id = 16
+    run_id = 12
     with open("models/experiment_history.json", "r") as f:
         history = json.load(f)
         run_data = next((r for r in history if r['run_id'] == run_id), None)
