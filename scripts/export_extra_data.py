@@ -135,20 +135,17 @@ def main():
         # Basic columns for default view
         basic_cols = ['schno', 'address', 'city', 'year_blt', 'sfla', 'beds', 'f_baths', 'totactval']
         
-        # Extended columns for "Show All" - include all numeric + key categorical
-        extended_cols = basic_cols + [
-            'baths', 'garage_size', 'acres', 'lot_size',
-            'grade', 'cond', 'heat_type', 'subdivish', 'descrip',
-            'act_year', 'adj_year_blt', 'scenic_view',
-            'dist_breck', 'dist_keystone', 'dist_copper', 'dist_abasin',
-            'sale_price', 'sale_date', 'mortgage_rate', 'cpi', 'sp500'
-        ]
+        # Export ALL columns for "Show All" functionality
+        print(f"   Exporting ALL {len(df_curated.columns)} columns...")
         
-        # Filter to only existing columns
-        final_cols = [c for c in extended_cols if c in df_curated.columns]
+        # Handle NaN for JSON export (fill numeric with 0, strings with "")
+        # Actually, let's just use fillna(0) for simplicity or let JSON encoder handle nulls (pandas to_json handles nulls usually)
+        # But our export_to_json helper uses orient='records'.
         
-        print(f"   Exporting {len(final_cols)} columns: {', '.join(final_cols[:10])}...")
-        export_to_json(df_curated[final_cols].fillna(0), "records_sample_curated.json")
+        # Let's replace NaNs with None so they show as empty/null in JSON
+        df_export = df_curated.where(pd.notnull(df_curated), None)
+        
+        export_to_json(df_export, "records_sample_curated.json")
     except Exception as e:
         print(f"Error exporting raw sample: {e}")
 
