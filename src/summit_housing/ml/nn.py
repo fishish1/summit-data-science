@@ -137,10 +137,58 @@ def train_macro_nn(df=None, params_override=None):
         mae_actual = np.mean(np.abs(test_preds - y_test_actual))
         r2_actual = r2_score(y_test_actual, test_preds)
     
+    # Calculate SHAP for NN
+    shap_list = None
+    try:
+        import shap
+        import pandas as pd
+        # Use simple permutation importance if SHAP is too complex, but let's try GradientExplainer first
+        # GradientExplainer requires model to be in training mode? No, eval is fine usually but gradients needed.
+        # Actually KernelExplainer is safer for generic PyTorch models if dataset is small
+        
+        # Use KernelExplainer with a summarized background
+        # It's slower but robust
+        # Limit background and test samples strictly
+        background = X_train[:25] # numpy array
+        test_samples = X_test[:25] # numpy array
+        
+        # Wrapper for model to take numpy
+        def model_wrapper(x_numpy):
+            with torch.no_grad():
+                tensor_x = torch.FloatTensor(x_numpy)
+                return model(tensor_x).numpy()
+        
+        explainer = shap.KernelExplainer(model_wrapper, background)
+        shap_values = explainer.shap_values(test_samples, nsamples=100)
+        
+        if isinstance(shap_values, list): shap_values = shap_values[0]
+        
+        mean_shap = np.abs(shap_values).mean(axis=0)
+        
+        # Get feature names
+        feature_names = []
+        for name, trans, cols in preprocessor.transformers_:
+             if hasattr(trans, 'get_feature_names_out'):
+                 feature_names.extend(trans.get_feature_names_out())
+             else:
+                 feature_names.extend(cols)
+                 
+        # Ensure length match
+        if len(feature_names) != len(mean_shap):
+            feature_names = [f"Feature {i}" for i in range(len(mean_shap))]
+            
+        shap_df = pd.DataFrame({'feature': feature_names, 'importance': mean_shap})
+        shap_df = shap_df.sort_values('importance', ascending=False).head(15)
+        shap_list = shap_df.to_dict('records')
+        
+    except Exception as e:
+        print(f"⚠️ Warning: Could not generate SHAP for NN: {e}")
+
     run_id = tracker.log_run(
         model_name="price_net_macro", 
         metrics={"mae": float(mae_actual), "r2": float(r2_actual)}, 
-        params=nn_params
+        params=nn_params,
+        shap_summary=shap_list
     )
     torch.save(model.state_dict(), f"models/price_predictor_nn_v{run_id}.pth")
     joblib.dump(preprocessor, f"models/nn_preprocessor_v{run_id}.pkl")

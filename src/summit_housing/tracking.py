@@ -35,7 +35,8 @@ class ExperimentTracker:
                 model_name: str, 
                 metrics: Dict[str, float], 
                 params: Dict[str, Any], 
-                tags: Optional[Dict[str, str]] = None):
+                tags: Optional[Dict[str, str]] = None,
+                shap_summary: Optional[list] = None):
         """
         Log a training run.
         
@@ -44,6 +45,7 @@ class ExperimentTracker:
             metrics: Dictionary of result metrics (e.g., {"mae": 50000, "r2": 0.85}).
             params: Dictionary of hyperparameters (e.g., {"epochs": 100, "lr": 0.001}).
             tags: Optional metadata.
+            shap_summary: Optional list of top features and their importance.
         """
         history = self._load_history()
         
@@ -53,7 +55,8 @@ class ExperimentTracker:
             "model_name": model_name,
             "metrics": metrics,
             "parameters": params,
-            "tags": tags or {}
+            "tags": tags or {},
+            "shap_summary": shap_summary
         }
         
         history.append(run_entry)

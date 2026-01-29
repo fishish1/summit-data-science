@@ -109,8 +109,32 @@ def get_shap_values(model_pipeline, X_sample):
         shap_values = explainer(X_transformed).values
     return explainer, shap_values
 
-def get_pdp_data(feature_name):
+def get_available_pdp_features():
+    """Return a list of feature names that can be used for PDP calculations.
+    This includes all numeric columns from the prepared dataframe plus any
+    derived features such as `dist_to_lift` that are created on‑the‑fly.
+    """
     df = load_and_prep_data()
+    # Identify numeric columns (int or float) – exclude the target column.
+    numeric_cols = [c for c, dtype in df.dtypes.items() if dtype.kind in "iuf" and c != "price"]
+    # Add derived lift distance if possible.
+    lift_cols = ['dist_breck', 'dist_keystone', 'dist_copper', 'dist_abasin']
+    valid_lifts = [c for c in lift_cols if c in df.columns]
+    if valid_lifts:
+        numeric_cols.append('dist_to_lift')
+    return numeric_cols
+
+
+def get_pdp_data(feature_name):
+    """Calculate PDP data for a given feature.
+    The function now dynamically determines the set of numeric features
+    (including any derived features) rather than relying on a hard‑coded list.
+    If the requested feature is not available, an empty DataFrame is returned.
+    
+    Outliers are filtered using the IQR method to provide cleaner, more interpretable plots.
+    """
+    df = load_and_prep_data()
+    # Ensure derived lift distance is present when needed.
     lift_cols = ['dist_breck', 'dist_keystone', 'dist_copper', 'dist_abasin']
     valid_lifts = [c for c in lift_cols if c in df.columns]
     extra_features = []
@@ -118,9 +142,31 @@ def get_pdp_data(feature_name):
         df['dist_to_lift'] = df[valid_lifts].min(axis=1)
         df['dist_to_lift'] = df['dist_to_lift'].replace([np.inf, -np.inf], np.nan)
         extra_features.append('dist_to_lift')
-    numeric_features = ['sfla', 'year_blt', 'beds', 'baths', 'garage_size', 'acres', 'mortgage_rate', 'cpi', 'sp500', 'summit_pop'] + extra_features
-    if feature_name not in numeric_features: return pd.DataFrame()
-    X, y = df[numeric_features].fillna(0), df['price']
+    # Dynamically collect numeric columns.
+    numeric_features = [c for c, dtype in df.dtypes.items() if dtype.kind in "iuf" and c != "price"]
+    # Ensure any extra derived features are included.
+    numeric_features = list(set(numeric_features + extra_features))
+    if feature_name not in numeric_features:
+        return pd.DataFrame()
+    
+    # Filter outliers using IQR method for the target feature
+    # This removes extreme values that distort the PDP plot
+    Q1 = df[feature_name].quantile(0.25)
+    Q3 = df[feature_name].quantile(0.75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    
+    # Keep only non-outlier rows for this feature
+    df_filtered = df[(df[feature_name] >= lower_bound) & (df[feature_name] <= upper_bound)].copy()
+    
+    # If filtering removed too much data, fall back to percentile filtering (1st to 99th)
+    if len(df_filtered) < 100:
+        lower_pct = df[feature_name].quantile(0.01)
+        upper_pct = df[feature_name].quantile(0.99)
+        df_filtered = df[(df[feature_name] >= lower_pct) & (df[feature_name] <= upper_pct)].copy()
+    
+    X, y = df_filtered[numeric_features].fillna(0), df_filtered['price']
     model = RandomForestRegressor(n_estimators=50, max_depth=10, random_state=42, n_jobs=-1)
     model.fit(X, y)
     try:
@@ -128,7 +174,7 @@ def get_pdp_data(feature_name):
         grid = pdp_results['grid_values'][0] if 'grid_values' in pdp_results else pdp_results['values'][0]
         preds = pdp_results['average'][0]
         return pd.DataFrame({'value': grid, 'average_prediction': preds})
-    except:
+    except Exception:
         return pd.DataFrame()
 
 def backtest_gbm(n_folds=3):
@@ -180,6 +226,53 @@ def train_gbm(params_override=None):
     mae = mean_absolute_error(y_test, y_pred)
     r2 = r2_score(y_test, y_pred)
     
+    # Calculate SHAP summary
+    import numpy as np
+    import pandas as pd
+    shap_list = None
+    try:
+        # We need a sample for SHAP (X_test is already split)
+        # Use first 100 rows to speed it up
+        X_sample = X_test.iloc[:100].copy()
+        
+        preprocessor = pipeline.named_steps['preprocessor']
+        regressor = pipeline.named_steps['regressor']
+        
+        X_transformed = preprocessor.transform(X_sample)
+        
+        # Use TreeExplainer for GBM
+        import shap
+        explainer = shap.TreeExplainer(regressor)
+        shap_values = explainer.shap_values(X_transformed)
+        
+        # Handle potential list output from shap
+        if isinstance(shap_values, list):
+            shap_values = shap_values[0]
+            
+        # Calculate mean absolute importance
+        mean_shap = np.abs(shap_values).mean(axis=0)
+        
+        # Map to features
+        # Note: features list from train_macro_model should match transformed columns order ideally
+        # But OneHotEncoder might expand features.
+        # Let's try to get feature names from preprocessor if possible
+        try:
+            feature_names = preprocessor.get_feature_names_out()
+        except:
+            # Fallback if get_feature_names_out not supported or complex
+            feature_names = features 
+            # If lengths don't match, we might have an issue, but let's try
+            if len(feature_names) != len(mean_shap):
+                # Try to generate names
+                feature_names = [f"Feature {i}" for i in range(len(mean_shap))]
+
+        shap_df = pd.DataFrame({'feature': feature_names, 'importance': mean_shap})
+        shap_df = shap_df.sort_values('importance', ascending=False).head(15)
+        shap_list = shap_df.to_dict('records')
+        
+    except Exception as e:
+        print(f"⚠️ Warning: Could not generate SHAP summary: {e}")
+
     # Consolidate parameters for logging
     log_params = params_override if params_override else CONFIG['training']['gbm'].copy()
     log_params['features'] = features
@@ -187,7 +280,8 @@ def train_gbm(params_override=None):
     run_id = tracker.log_run(
         model_name="gbm", 
         metrics={"mae": float(mae), "r2": float(r2)}, 
-        params=log_params
+        params=log_params,
+        shap_summary=shap_list
     )
     
     joblib.dump(pipeline, f"models/price_predictor_gbm_v{run_id}.pkl")
