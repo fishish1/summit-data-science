@@ -134,6 +134,36 @@ def main():
 
         # -------------------------------
 
+        # -------------------------------
+        
+        # Export Correlation Matrix
+        print("   Calculating Correlation Matrix...")
+        corr_cols = {
+            'totactval': 'Price',
+            'sfla': 'SqFt',
+            'beds': 'Beds', 
+            'f_baths': 'Baths',
+            'year_blt': 'Year Built',
+            'acres': 'Acres',
+            'garage_size': 'Garage',
+            'mortgage_rate': 'Rate',
+            'cpi': 'CPI',
+            'dist_breck': 'Dist Breck'
+        }
+        
+        # Select and Rename
+        df_corr = df_clean.copy()
+        valid_cols = [c for c in corr_cols.keys() if c in df_corr.columns]
+        
+        if len(valid_cols) > 2:
+            df_corr = df_corr[valid_cols].rename(columns=corr_cols)
+            # Ensure numeric
+            for c in df_corr.columns:
+                df_corr[c] = pd.to_numeric(df_corr[c], errors='coerce')
+            
+            corr_out = df_corr.corr().round(3).reset_index()
+            export_to_json(corr_out, "correlation_matrix.json")
+
         # Take a robust sample
         if len(df_clean) > 200:
             df_curated = df_clean.sample(200, random_state=42)
