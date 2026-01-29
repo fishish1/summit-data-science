@@ -236,7 +236,9 @@ def train_gbm(params_override=None):
         X_sample = X_test.iloc[:100].copy()
         
         preprocessor = pipeline.named_steps['preprocessor']
-        regressor = pipeline.named_steps['regressor']
+        # The model step is named 'model' (see train_macro_model), but it's a TransformedTargetRegressor
+        # We need the inner fitted regressor which is stored in .regressor_
+        regressor = pipeline.named_steps['model'].regressor_
         
         X_transformed = preprocessor.transform(X_sample)
         
