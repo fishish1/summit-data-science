@@ -57,7 +57,7 @@ if [ "$choice" = "2" ]; then
     echo "🚀 Launching Static Dashboard..."
     echo "   Ensure you have run 'make export' recently to see latest data."
     echo ""
-    make view-static
+    make serve-static
 else
     echo ""
     echo "🚀 Launching Streamlit App..."
