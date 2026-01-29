@@ -68,6 +68,7 @@ function initUI() {
             btn.classList.add('active');
             state.activePage = btn.dataset.page;
             togglePage(state.activePage);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             updateDashboard();
         });
     });
