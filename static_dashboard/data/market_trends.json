@@ -1,0 +1,3206 @@
+[
+  {
+    "tx_year": "1980",
+    "city": "BRECKENRIDGE",
+    "avg_price": 127247.45762711864,
+    "avg_ppsf": 106.98462694662136,
+    "sales_count": 59,
+    "avg_price_3yr_ma": 127247.45762711864,
+    "avg_ppsf_3yr_ma": 106.98462694662136
+  },
+  {
+    "tx_year": "1981",
+    "city": "BRECKENRIDGE",
+    "avg_price": 223937.5,
+    "avg_ppsf": 134.659080698724,
+    "sales_count": 64,
+    "avg_price_3yr_ma": 175592.4788135593,
+    "avg_ppsf_3yr_ma": 120.8218538226727
+  },
+  {
+    "tx_year": "1982",
+    "city": "BRECKENRIDGE",
+    "avg_price": 135790.47619047618,
+    "avg_ppsf": 134.60452462827837,
+    "sales_count": 42,
+    "avg_price_3yr_ma": 162325.14460586495,
+    "avg_ppsf_3yr_ma": 125.41607742454124
+  },
+  {
+    "tx_year": "1983",
+    "city": "BRECKENRIDGE",
+    "avg_price": 120429.38235294117,
+    "avg_ppsf": 124.29432142353815,
+    "sales_count": 34,
+    "avg_price_3yr_ma": 160052.45284780578,
+    "avg_ppsf_3yr_ma": 131.1859755835135
+  },
+  {
+    "tx_year": "1984",
+    "city": "BRECKENRIDGE",
+    "avg_price": 113217.63235294117,
+    "avg_ppsf": 139.97062402724117,
+    "sales_count": 68,
+    "avg_price_3yr_ma": 123145.83029878617,
+    "avg_ppsf_3yr_ma": 132.95649002635255
+  },
+  {
+    "tx_year": "1985",
+    "city": "BRECKENRIDGE",
+    "avg_price": 163814.54545454544,
+    "avg_ppsf": 148.36978322797887,
+    "sales_count": 55,
+    "avg_price_3yr_ma": 132487.1867201426,
+    "avg_ppsf_3yr_ma": 137.54490955958605
+  },
+  {
+    "tx_year": "1986",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1161504.2253521127,
+    "avg_ppsf": 97.259679618331,
+    "sales_count": 71,
+    "avg_price_3yr_ma": 479512.1343865331,
+    "avg_ppsf_3yr_ma": 128.5333622911837
+  },
+  {
+    "tx_year": "1987",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1625903.826923077,
+    "avg_ppsf": 92.0579502766006,
+    "sales_count": 52,
+    "avg_price_3yr_ma": 983740.8659099117,
+    "avg_ppsf_3yr_ma": 112.56247104097015
+  },
+  {
+    "tx_year": "1988",
+    "city": "BRECKENRIDGE",
+    "avg_price": 778922.9885057472,
+    "avg_ppsf": 220.0362878628115,
+    "sales_count": 87,
+    "avg_price_3yr_ma": 1188777.0135936455,
+    "avg_ppsf_3yr_ma": 136.4513059192477
+  },
+  {
+    "tx_year": "1989",
+    "city": "BRECKENRIDGE",
+    "avg_price": 727612.4031007752,
+    "avg_ppsf": 692.9351655766579,
+    "sales_count": 129,
+    "avg_price_3yr_ma": 1044146.4061765331,
+    "avg_ppsf_3yr_ma": 335.00980123869
+  },
+  {
+    "tx_year": "1990",
+    "city": "BRECKENRIDGE",
+    "avg_price": 119883.33333333333,
+    "avg_ppsf": 110.10285131147326,
+    "sales_count": 120,
+    "avg_price_3yr_ma": 542139.574979952,
+    "avg_ppsf_3yr_ma": 341.02476825031425
+  },
+  {
+    "tx_year": "1991",
+    "city": "BRECKENRIDGE",
+    "avg_price": 170339.83050847458,
+    "avg_ppsf": 119.5648014298594,
+    "sales_count": 118,
+    "avg_price_3yr_ma": 339278.52231419436,
+    "avg_ppsf_3yr_ma": 307.53427277266354
+  },
+  {
+    "tx_year": "1992",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1443258.3333333333,
+    "avg_ppsf": 2233.164808264312,
+    "sales_count": 108,
+    "avg_price_3yr_ma": 577827.1657250471,
+    "avg_ppsf_3yr_ma": 820.9441536685482
+  },
+  {
+    "tx_year": "1993",
+    "city": "BRECKENRIDGE",
+    "avg_price": 997954.4775280899,
+    "avg_ppsf": 132.81454943829024,
+    "sales_count": 178,
+    "avg_price_3yr_ma": 870517.5471232993,
+    "avg_ppsf_3yr_ma": 828.5147197108205
+  },
+  {
+    "tx_year": "1994",
+    "city": "BRECKENRIDGE",
+    "avg_price": 3462757.0029850747,
+    "avg_ppsf": 6647.984548290017,
+    "sales_count": 335,
+    "avg_price_3yr_ma": 1967989.9379488325,
+    "avg_ppsf_3yr_ma": 3004.654635330873
+  },
+  {
+    "tx_year": "1995",
+    "city": "BRECKENRIDGE",
+    "avg_price": 185788.9527559055,
+    "avg_ppsf": 160.3372133830613,
+    "sales_count": 127,
+    "avg_price_3yr_ma": 1548833.4777563568,
+    "avg_ppsf_3yr_ma": 2313.7121037037896
+  },
+  {
+    "tx_year": "1996",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1017236.8755555556,
+    "avg_ppsf": 178.71915463370874,
+    "sales_count": 225,
+    "avg_price_3yr_ma": 1555260.943765512,
+    "avg_ppsf_3yr_ma": 2329.013638768929
+  },
+  {
+    "tx_year": "1997",
+    "city": "BRECKENRIDGE",
+    "avg_price": 905135.4923664122,
+    "avg_ppsf": 173.2801226910387,
+    "sales_count": 262,
+    "avg_price_3yr_ma": 702720.4402259578,
+    "avg_ppsf_3yr_ma": 170.77883023593623
+  },
+  {
+    "tx_year": "1998",
+    "city": "BRECKENRIDGE",
+    "avg_price": 262498.08530805685,
+    "avg_ppsf": 197.58063587003693,
+    "sales_count": 211,
+    "avg_price_3yr_ma": 728290.1510766749,
+    "avg_ppsf_3yr_ma": 183.19330439826146
+  },
+  {
+    "tx_year": "1999",
+    "city": "BRECKENRIDGE",
+    "avg_price": 418727.8985507246,
+    "avg_ppsf": 237.11234687850435,
+    "sales_count": 276,
+    "avg_price_3yr_ma": 528787.1587417312,
+    "avg_ppsf_3yr_ma": 202.6577018131933
+  },
+  {
+    "tx_year": "2000",
+    "city": "BRECKENRIDGE",
+    "avg_price": 351586.29122807016,
+    "avg_ppsf": 229.33933289690728,
+    "sales_count": 285,
+    "avg_price_3yr_ma": 344270.7583622839,
+    "avg_ppsf_3yr_ma": 221.3441052151495
+  },
+  {
+    "tx_year": "2001",
+    "city": "BRECKENRIDGE",
+    "avg_price": 463609.8210526316,
+    "avg_ppsf": 261.2358968441106,
+    "sales_count": 190,
+    "avg_price_3yr_ma": 411308.00361047545,
+    "avg_ppsf_3yr_ma": 242.56252553984075
+  },
+  {
+    "tx_year": "2002",
+    "city": "BRECKENRIDGE",
+    "avg_price": 402536.1723076923,
+    "avg_ppsf": 285.26643136034096,
+    "sales_count": 325,
+    "avg_price_3yr_ma": 405910.7615294647,
+    "avg_ppsf_3yr_ma": 258.6138870337863
+  },
+  {
+    "tx_year": "2003",
+    "city": "BRECKENRIDGE",
+    "avg_price": 628494.0382352942,
+    "avg_ppsf": 263.1800876112372,
+    "sales_count": 340,
+    "avg_price_3yr_ma": 498213.343865206,
+    "avg_ppsf_3yr_ma": 269.89413860522956
+  },
+  {
+    "tx_year": "2004",
+    "city": "BRECKENRIDGE",
+    "avg_price": 395234.62735849054,
+    "avg_ppsf": 283.40982098267887,
+    "sales_count": 424,
+    "avg_price_3yr_ma": 475421.6126338257,
+    "avg_ppsf_3yr_ma": 277.285446651419
+  },
+  {
+    "tx_year": "2005",
+    "city": "BRECKENRIDGE",
+    "avg_price": 435757.9981549815,
+    "avg_ppsf": 302.1238602799348,
+    "sales_count": 542,
+    "avg_price_3yr_ma": 486495.5545829221,
+    "avg_ppsf_3yr_ma": 282.9045896246169
+  },
+  {
+    "tx_year": "2006",
+    "city": "BRECKENRIDGE",
+    "avg_price": 609199.2070393375,
+    "avg_ppsf": 371.0284713341181,
+    "sales_count": 483,
+    "avg_price_3yr_ma": 480063.9441842698,
+    "avg_ppsf_3yr_ma": 318.8540508655772
+  },
+  {
+    "tx_year": "2007",
+    "city": "BRECKENRIDGE",
+    "avg_price": 705801.979498861,
+    "avg_ppsf": 429.2394729911933,
+    "sales_count": 439,
+    "avg_price_3yr_ma": 583586.3948977267,
+    "avg_ppsf_3yr_ma": 367.4639348684154
+  },
+  {
+    "tx_year": "2008",
+    "city": "BRECKENRIDGE",
+    "avg_price": 810395.006779661,
+    "avg_ppsf": 528.9413228098491,
+    "sales_count": 295,
+    "avg_price_3yr_ma": 708465.3977726199,
+    "avg_ppsf_3yr_ma": 443.0697557117201
+  },
+  {
+    "tx_year": "2009",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1057663.3818897638,
+    "avg_ppsf": 1130.5915078386847,
+    "sales_count": 254,
+    "avg_price_3yr_ma": 857953.4560560953,
+    "avg_ppsf_3yr_ma": 696.2574345465756
+  },
+  {
+    "tx_year": "2010",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1012167.4196428572,
+    "avg_ppsf": 489.20386215636455,
+    "sales_count": 336,
+    "avg_price_3yr_ma": 960075.2694374273,
+    "avg_ppsf_3yr_ma": 716.2455642682994
+  },
+  {
+    "tx_year": "2011",
+    "city": "BRECKENRIDGE",
+    "avg_price": 632947.9170854271,
+    "avg_ppsf": 358.05412747916745,
+    "sales_count": 398,
+    "avg_price_3yr_ma": 900926.2395393493,
+    "avg_ppsf_3yr_ma": 659.2831658247388
+  },
+  {
+    "tx_year": "2012",
+    "city": "BRECKENRIDGE",
+    "avg_price": 637268.4549763033,
+    "avg_ppsf": 371.4211654883224,
+    "sales_count": 422,
+    "avg_price_3yr_ma": 760794.5972348625,
+    "avg_ppsf_3yr_ma": 406.2263850412848
+  },
+  {
+    "tx_year": "2013",
+    "city": "BRECKENRIDGE",
+    "avg_price": 645818.4099616858,
+    "avg_ppsf": 388.0529086866963,
+    "sales_count": 522,
+    "avg_price_3yr_ma": 638678.2606744721,
+    "avg_ppsf_3yr_ma": 372.5094005513954
+  },
+  {
+    "tx_year": "2014",
+    "city": "BRECKENRIDGE",
+    "avg_price": 681793.3309090909,
+    "avg_ppsf": 404.55664689400294,
+    "sales_count": 550,
+    "avg_price_3yr_ma": 654960.0652823601,
+    "avg_ppsf_3yr_ma": 388.01024035634055
+  },
+  {
+    "tx_year": "2015",
+    "city": "BRECKENRIDGE",
+    "avg_price": 951486.8412942989,
+    "avg_ppsf": 479.08038855153285,
+    "sales_count": 649,
+    "avg_price_3yr_ma": 759699.5273883585,
+    "avg_ppsf_3yr_ma": 423.8966480440774
+  },
+  {
+    "tx_year": "2016",
+    "city": "BRECKENRIDGE",
+    "avg_price": 811681.7472353871,
+    "avg_ppsf": 465.6444645051576,
+    "sales_count": 633,
+    "avg_price_3yr_ma": 814987.3064795923,
+    "avg_ppsf_3yr_ma": 449.76049998356444
+  },
+  {
+    "tx_year": "2017",
+    "city": "BRECKENRIDGE",
+    "avg_price": 908104.4634873323,
+    "avg_ppsf": 539.7969559895223,
+    "sales_count": 671,
+    "avg_price_3yr_ma": 890424.3506723394,
+    "avg_ppsf_3yr_ma": 494.8406030154042
+  },
+  {
+    "tx_year": "2018",
+    "city": "BRECKENRIDGE",
+    "avg_price": 929100.5485799701,
+    "avg_ppsf": 547.6662282465547,
+    "sales_count": 669,
+    "avg_price_3yr_ma": 882962.2531008966,
+    "avg_ppsf_3yr_ma": 517.7025495804115
+  },
+  {
+    "tx_year": "2019",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1321012.001584786,
+    "avg_ppsf": 600.9897366431503,
+    "sales_count": 631,
+    "avg_price_3yr_ma": 1052739.0045506961,
+    "avg_ppsf_3yr_ma": 562.8176402930758
+  },
+  {
+    "tx_year": "2020",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1168575.3949044587,
+    "avg_ppsf": 653.6281751550946,
+    "sales_count": 785,
+    "avg_price_3yr_ma": 1139562.6483564049,
+    "avg_ppsf_3yr_ma": 600.7613800149333
+  },
+  {
+    "tx_year": "2021",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1903383.417136415,
+    "avg_ppsf": 861.4339358882673,
+    "sales_count": 887,
+    "avg_price_3yr_ma": 1464323.6045418866,
+    "avg_ppsf_3yr_ma": 705.3506158955041
+  },
+  {
+    "tx_year": "2022",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1755984.9584245076,
+    "avg_ppsf": 1509.0342464531398,
+    "sales_count": 457,
+    "avg_price_3yr_ma": 1609314.5901551272,
+    "avg_ppsf_3yr_ma": 1008.0321191655006
+  },
+  {
+    "tx_year": "2023",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1457818.2335025382,
+    "avg_ppsf": 893.5705481934041,
+    "sales_count": 394,
+    "avg_price_3yr_ma": 1705728.86968782,
+    "avg_ppsf_3yr_ma": 1088.0129101782704
+  },
+  {
+    "tx_year": "2024",
+    "city": "BRECKENRIDGE",
+    "avg_price": 2078010.197894737,
+    "avg_ppsf": 940.9453965679571,
+    "sales_count": 475,
+    "avg_price_3yr_ma": 1763937.7966072608,
+    "avg_ppsf_3yr_ma": 1114.5167304048337
+  },
+  {
+    "tx_year": "2025",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1825009.3051224945,
+    "avg_ppsf": 953.4403041889037,
+    "sales_count": 449,
+    "avg_price_3yr_ma": 1786945.9121732565,
+    "avg_ppsf_3yr_ma": 929.3187496500883
+  },
+  {
+    "tx_year": "2026",
+    "city": "BRECKENRIDGE",
+    "avg_price": 1799800.2,
+    "avg_ppsf": 1011.5972646596755,
+    "sales_count": 5,
+    "avg_price_3yr_ma": 1900939.9010057438,
+    "avg_ppsf_3yr_ma": 968.6609884721788
+  },
+  {
+    "tx_year": "1980",
+    "city": "COPPER/COUNTY",
+    "avg_price": 476563.3546511628,
+    "avg_ppsf": 340.76589804992784,
+    "sales_count": 172,
+    "avg_price_3yr_ma": 476563.3546511628,
+    "avg_ppsf_3yr_ma": 340.76589804992784
+  },
+  {
+    "tx_year": "1981",
+    "city": "COPPER/COUNTY",
+    "avg_price": 886694.4444444445,
+    "avg_ppsf": 363.9761226973714,
+    "sales_count": 126,
+    "avg_price_3yr_ma": 681628.8995478037,
+    "avg_ppsf_3yr_ma": 352.3710103736496
+  },
+  {
+    "tx_year": "1982",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1898441.836734694,
+    "avg_ppsf": 72.62189407352956,
+    "sales_count": 98,
+    "avg_price_3yr_ma": 1087233.2119434339,
+    "avg_ppsf_3yr_ma": 259.1213049402763
+  },
+  {
+    "tx_year": "1983",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1789394.78125,
+    "avg_ppsf": 150.98551514508333,
+    "sales_count": 96,
+    "avg_price_3yr_ma": 1524843.6874763796,
+    "avg_ppsf_3yr_ma": 195.86117730532808
+  },
+  {
+    "tx_year": "1984",
+    "city": "COPPER/COUNTY",
+    "avg_price": 3312910.1910828026,
+    "avg_ppsf": 2536.4230821591977,
+    "sales_count": 157,
+    "avg_price_3yr_ma": 2333582.2696891655,
+    "avg_ppsf_3yr_ma": 920.0101637926035
+  },
+  {
+    "tx_year": "1985",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1675925.4385964912,
+    "avg_ppsf": 310.8764192057702,
+    "sales_count": 114,
+    "avg_price_3yr_ma": 2259410.1369764316,
+    "avg_ppsf_3yr_ma": 999.4283388366838
+  },
+  {
+    "tx_year": "1986",
+    "city": "COPPER/COUNTY",
+    "avg_price": 628152.4,
+    "avg_ppsf": 58.31156361064348,
+    "sales_count": 145,
+    "avg_price_3yr_ma": 1872329.3432264312,
+    "avg_ppsf_3yr_ma": 968.5370216585371
+  },
+  {
+    "tx_year": "1987",
+    "city": "COPPER/COUNTY",
+    "avg_price": 988938.3116883116,
+    "avg_ppsf": 282.2559002193119,
+    "sales_count": 154,
+    "avg_price_3yr_ma": 1097672.0500949344,
+    "avg_ppsf_3yr_ma": 217.14796101190856
+  },
+  {
+    "tx_year": "1988",
+    "city": "COPPER/COUNTY",
+    "avg_price": 2599199.99408284,
+    "avg_ppsf": 65.88410941409057,
+    "sales_count": 169,
+    "avg_price_3yr_ma": 1405430.2352570507,
+    "avg_ppsf_3yr_ma": 135.4838577480153
+  },
+  {
+    "tx_year": "1989",
+    "city": "COPPER/COUNTY",
+    "avg_price": 440045.7393617021,
+    "avg_ppsf": 739.2755386391443,
+    "sales_count": 188,
+    "avg_price_3yr_ma": 1342728.0150442848,
+    "avg_ppsf_3yr_ma": 362.47184942418227
+  },
+  {
+    "tx_year": "1990",
+    "city": "COPPER/COUNTY",
+    "avg_price": 912819.9739130435,
+    "avg_ppsf": 771.4650927829399,
+    "sales_count": 230,
+    "avg_price_3yr_ma": 1317355.235785862,
+    "avg_ppsf_3yr_ma": 525.541580278725
+  },
+  {
+    "tx_year": "1991",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1549373.6395348837,
+    "avg_ppsf": 653.228651827655,
+    "sales_count": 258,
+    "avg_price_3yr_ma": 967413.1176032098,
+    "avg_ppsf_3yr_ma": 721.3230944165798
+  },
+  {
+    "tx_year": "1992",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1444900.0,
+    "avg_ppsf": 827.9274646860905,
+    "sales_count": 333,
+    "avg_price_3yr_ma": 1302364.5378159757,
+    "avg_ppsf_3yr_ma": 750.8737364322284
+  },
+  {
+    "tx_year": "1993",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1210234.0058651026,
+    "avg_ppsf": 567.796669264525,
+    "sales_count": 341,
+    "avg_price_3yr_ma": 1401502.548466662,
+    "avg_ppsf_3yr_ma": 682.9842619260902
+  },
+  {
+    "tx_year": "1994",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1096039.578034682,
+    "avg_ppsf": 635.0288455382372,
+    "sales_count": 346,
+    "avg_price_3yr_ma": 1250391.1946332615,
+    "avg_ppsf_3yr_ma": 676.9176598296176
+  },
+  {
+    "tx_year": "1995",
+    "city": "COPPER/COUNTY",
+    "avg_price": 949277.8047337278,
+    "avg_ppsf": 533.7022315843329,
+    "sales_count": 338,
+    "avg_price_3yr_ma": 1085183.7962111707,
+    "avg_ppsf_3yr_ma": 578.8425821290317
+  },
+  {
+    "tx_year": "1996",
+    "city": "COPPER/COUNTY",
+    "avg_price": 158206.04792332268,
+    "avg_ppsf": 106.24162600254749,
+    "sales_count": 313,
+    "avg_price_3yr_ma": 734507.8102305775,
+    "avg_ppsf_3yr_ma": 424.9909010417059
+  },
+  {
+    "tx_year": "1997",
+    "city": "COPPER/COUNTY",
+    "avg_price": 826691.6886363636,
+    "avg_ppsf": 592.2483966962418,
+    "sales_count": 440,
+    "avg_price_3yr_ma": 644725.180431138,
+    "avg_ppsf_3yr_ma": 410.7307514277074
+  },
+  {
+    "tx_year": "1998",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1251365.069148936,
+    "avg_ppsf": 954.9338844694715,
+    "sales_count": 564,
+    "avg_price_3yr_ma": 745420.9352362076,
+    "avg_ppsf_3yr_ma": 551.1413023894203
+  },
+  {
+    "tx_year": "1999",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1078999.461419753,
+    "avg_ppsf": 2066.3610038627494,
+    "sales_count": 648,
+    "avg_price_3yr_ma": 1052352.0730683508,
+    "avg_ppsf_3yr_ma": 1204.514428342821
+  },
+  {
+    "tx_year": "2000",
+    "city": "COPPER/COUNTY",
+    "avg_price": 537620.7830609212,
+    "avg_ppsf": 204.88869533480397,
+    "sales_count": 673,
+    "avg_price_3yr_ma": 955995.1045432035,
+    "avg_ppsf_3yr_ma": 1075.3945278890083
+  },
+  {
+    "tx_year": "2001",
+    "city": "COPPER/COUNTY",
+    "avg_price": 473650.7034883721,
+    "avg_ppsf": 224.25029840046156,
+    "sales_count": 516,
+    "avg_price_3yr_ma": 696756.9826563488,
+    "avg_ppsf_3yr_ma": 831.8333325326716
+  },
+  {
+    "tx_year": "2002",
+    "city": "COPPER/COUNTY",
+    "avg_price": 860231.440776699,
+    "avg_ppsf": 641.0737191605989,
+    "sales_count": 515,
+    "avg_price_3yr_ma": 623834.3091086642,
+    "avg_ppsf_3yr_ma": 356.7375709652881
+  },
+  {
+    "tx_year": "2003",
+    "city": "COPPER/COUNTY",
+    "avg_price": 618108.990521327,
+    "avg_ppsf": 307.5320268323143,
+    "sales_count": 633,
+    "avg_price_3yr_ma": 650663.711595466,
+    "avg_ppsf_3yr_ma": 390.9520147977916
+  },
+  {
+    "tx_year": "2004",
+    "city": "COPPER/COUNTY",
+    "avg_price": 579075.6895261846,
+    "avg_ppsf": 432.8014543360884,
+    "sales_count": 802,
+    "avg_price_3yr_ma": 685805.3736080702,
+    "avg_ppsf_3yr_ma": 460.4690667763339
+  },
+  {
+    "tx_year": "2005",
+    "city": "COPPER/COUNTY",
+    "avg_price": 602478.4062877871,
+    "avg_ppsf": 253.6885691715692,
+    "sales_count": 827,
+    "avg_price_3yr_ma": 599887.6954450995,
+    "avg_ppsf_3yr_ma": 331.3406834466573
+  },
+  {
+    "tx_year": "2006",
+    "city": "COPPER/COUNTY",
+    "avg_price": 414938.53519553074,
+    "avg_ppsf": 308.4822091165042,
+    "sales_count": 895,
+    "avg_price_3yr_ma": 532164.2103365008,
+    "avg_ppsf_3yr_ma": 331.6574108747206
+  },
+  {
+    "tx_year": "2007",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1489778.5244755244,
+    "avg_ppsf": 340.21793589289535,
+    "sales_count": 1001,
+    "avg_price_3yr_ma": 835731.8219862807,
+    "avg_ppsf_3yr_ma": 300.7962380603229
+  },
+  {
+    "tx_year": "2008",
+    "city": "COPPER/COUNTY",
+    "avg_price": 727524.2935779816,
+    "avg_ppsf": 370.6350471206933,
+    "sales_count": 545,
+    "avg_price_3yr_ma": 877413.7844163455,
+    "avg_ppsf_3yr_ma": 339.77839737669757
+  },
+  {
+    "tx_year": "2009",
+    "city": "COPPER/COUNTY",
+    "avg_price": 6620202.649462366,
+    "avg_ppsf": 5408.557633191602,
+    "sales_count": 465,
+    "avg_price_3yr_ma": 2945835.1558386236,
+    "avg_ppsf_3yr_ma": 2039.8035387350635
+  },
+  {
+    "tx_year": "2010",
+    "city": "COPPER/COUNTY",
+    "avg_price": 704931.1087420043,
+    "avg_ppsf": 495.3634430082516,
+    "sales_count": 469,
+    "avg_price_3yr_ma": 2684219.350594117,
+    "avg_ppsf_3yr_ma": 2091.5187077735154
+  },
+  {
+    "tx_year": "2011",
+    "city": "COPPER/COUNTY",
+    "avg_price": 458822.4030131827,
+    "avg_ppsf": 227.98113200270396,
+    "sales_count": 531,
+    "avg_price_3yr_ma": 2594652.053739184,
+    "avg_ppsf_3yr_ma": 2043.967402734186
+  },
+  {
+    "tx_year": "2012",
+    "city": "COPPER/COUNTY",
+    "avg_price": 787151.3651050081,
+    "avg_ppsf": 845.9066996921889,
+    "sales_count": 619,
+    "avg_price_3yr_ma": 650301.625620065,
+    "avg_ppsf_3yr_ma": 523.0837582343814
+  },
+  {
+    "tx_year": "2013",
+    "city": "COPPER/COUNTY",
+    "avg_price": 632601.9302325582,
+    "avg_ppsf": 298.2556254265624,
+    "sales_count": 774,
+    "avg_price_3yr_ma": 626191.8994502496,
+    "avg_ppsf_3yr_ma": 457.3811523738184
+  },
+  {
+    "tx_year": "2014",
+    "city": "COPPER/COUNTY",
+    "avg_price": 919810.304494382,
+    "avg_ppsf": 489.1727795546462,
+    "sales_count": 890,
+    "avg_price_3yr_ma": 779854.533277316,
+    "avg_ppsf_3yr_ma": 544.4450348911324
+  },
+  {
+    "tx_year": "2015",
+    "city": "COPPER/COUNTY",
+    "avg_price": 436924.6412429378,
+    "avg_ppsf": 250.80142597923668,
+    "sales_count": 1062,
+    "avg_price_3yr_ma": 663112.2919899593,
+    "avg_ppsf_3yr_ma": 346.0766103201484
+  },
+  {
+    "tx_year": "2016",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1042859.7947284345,
+    "avg_ppsf": 392.986096289562,
+    "sales_count": 1252,
+    "avg_price_3yr_ma": 799864.9134885847,
+    "avg_ppsf_3yr_ma": 377.65343394114825
+  },
+  {
+    "tx_year": "2017",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1072540.752627324,
+    "avg_ppsf": 361.07866631453453,
+    "sales_count": 1237,
+    "avg_price_3yr_ma": 850775.0628662322,
+    "avg_ppsf_3yr_ma": 334.9553961944444
+  },
+  {
+    "tx_year": "2018",
+    "city": "COPPER/COUNTY",
+    "avg_price": 679057.1487263764,
+    "avg_ppsf": 364.1244203328342,
+    "sales_count": 1217,
+    "avg_price_3yr_ma": 931485.8986940449,
+    "avg_ppsf_3yr_ma": 372.72972764564355
+  },
+  {
+    "tx_year": "2019",
+    "city": "COPPER/COUNTY",
+    "avg_price": 673530.39375,
+    "avg_ppsf": 375.8379209747393,
+    "sales_count": 1120,
+    "avg_price_3yr_ma": 808376.0983679001,
+    "avg_ppsf_3yr_ma": 367.01366920736933
+  },
+  {
+    "tx_year": "2020",
+    "city": "COPPER/COUNTY",
+    "avg_price": 703569.0533235939,
+    "avg_ppsf": 420.3157468825692,
+    "sales_count": 1369,
+    "avg_price_3yr_ma": 685385.5319333235,
+    "avg_ppsf_3yr_ma": 386.75936273004754
+  },
+  {
+    "tx_year": "2021",
+    "city": "COPPER/COUNTY",
+    "avg_price": 929271.4304993253,
+    "avg_ppsf": 524.8039053279658,
+    "sales_count": 1482,
+    "avg_price_3yr_ma": 768790.2925243065,
+    "avg_ppsf_3yr_ma": 440.3191910617581
+  },
+  {
+    "tx_year": "2022",
+    "city": "COPPER/COUNTY",
+    "avg_price": 2524077.214364641,
+    "avg_ppsf": 753.2761860689451,
+    "sales_count": 905,
+    "avg_price_3yr_ma": 1385639.2327291865,
+    "avg_ppsf_3yr_ma": 566.1319460931601
+  },
+  {
+    "tx_year": "2023",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1040881.0500641848,
+    "avg_ppsf": 700.0267286468933,
+    "sales_count": 779,
+    "avg_price_3yr_ma": 1498076.5649760503,
+    "avg_ppsf_3yr_ma": 659.3689400146014
+  },
+  {
+    "tx_year": "2024",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1144206.7945879458,
+    "avg_ppsf": 681.1724591536889,
+    "sales_count": 813,
+    "avg_price_3yr_ma": 1569721.6863389239,
+    "avg_ppsf_3yr_ma": 711.4917912898424
+  },
+  {
+    "tx_year": "2025",
+    "city": "COPPER/COUNTY",
+    "avg_price": 1335500.9021276596,
+    "avg_ppsf": 647.9317826476178,
+    "sales_count": 705,
+    "avg_price_3yr_ma": 1173529.58225993,
+    "avg_ppsf_3yr_ma": 676.3769901494001
+  },
+  {
+    "tx_year": "2026",
+    "city": "COPPER/COUNTY",
+    "avg_price": 881654.5454545454,
+    "avg_ppsf": 610.2025685152557,
+    "sales_count": 11,
+    "avg_price_3yr_ma": 1120454.0807233837,
+    "avg_ppsf_3yr_ma": 646.4356034388542
+  },
+  {
+    "tx_year": "1980",
+    "city": "DILLON",
+    "avg_price": 466194.1176470588,
+    "avg_ppsf": 118.91902598576242,
+    "sales_count": 17,
+    "avg_price_3yr_ma": 466194.1176470588,
+    "avg_ppsf_3yr_ma": 118.91902598576242
+  },
+  {
+    "tx_year": "1981",
+    "city": "DILLON",
+    "avg_price": 398216.6666666667,
+    "avg_ppsf": 118.04822996168623,
+    "sales_count": 6,
+    "avg_price_3yr_ma": 432205.39215686277,
+    "avg_ppsf_3yr_ma": 118.48362797372432
+  },
+  {
+    "tx_year": "1982",
+    "city": "DILLON",
+    "avg_price": 208927.27272727274,
+    "avg_ppsf": 184.8156073994113,
+    "sales_count": 11,
+    "avg_price_3yr_ma": 357779.3523469994,
+    "avg_ppsf_3yr_ma": 140.59428778228664
+  },
+  {
+    "tx_year": "1983",
+    "city": "DILLON",
+    "avg_price": 1248452.0,
+    "avg_ppsf": 1128.9241629632227,
+    "sales_count": 25,
+    "avg_price_3yr_ma": 618531.9797979798,
+    "avg_ppsf_3yr_ma": 477.2626667747734
+  },
+  {
+    "tx_year": "1984",
+    "city": "DILLON",
+    "avg_price": 143500.0,
+    "avg_ppsf": 160.7282388356684,
+    "sales_count": 14,
+    "avg_price_3yr_ma": 533626.4242424242,
+    "avg_ppsf_3yr_ma": 491.4893363994341
+  },
+  {
+    "tx_year": "1985",
+    "city": "DILLON",
+    "avg_price": 102916.66666666667,
+    "avg_ppsf": 87.2982911493908,
+    "sales_count": 6,
+    "avg_price_3yr_ma": 498289.55555555556,
+    "avg_ppsf_3yr_ma": 458.9835643160939
+  },
+  {
+    "tx_year": "1986",
+    "city": "DILLON",
+    "avg_price": 107875.0,
+    "avg_ppsf": 98.88886640204493,
+    "sales_count": 12,
+    "avg_price_3yr_ma": 118097.22222222223,
+    "avg_ppsf_3yr_ma": 115.63846546236805
+  },
+  {
+    "tx_year": "1987",
+    "city": "DILLON",
+    "avg_price": 73385.0,
+    "avg_ppsf": 64.58284106492343,
+    "sales_count": 20,
+    "avg_price_3yr_ma": 94725.55555555556,
+    "avg_ppsf_3yr_ma": 83.58999953878639
+  },
+  {
+    "tx_year": "1988",
+    "city": "DILLON",
+    "avg_price": 104626.92307692308,
+    "avg_ppsf": 73.32291717786337,
+    "sales_count": 26,
+    "avg_price_3yr_ma": 95295.64102564102,
+    "avg_ppsf_3yr_ma": 78.93154154827725
+  },
+  {
+    "tx_year": "1989",
+    "city": "DILLON",
+    "avg_price": 110600.0,
+    "avg_ppsf": 88.93939708966148,
+    "sales_count": 19,
+    "avg_price_3yr_ma": 96203.97435897436,
+    "avg_ppsf_3yr_ma": 75.61505177748276
+  },
+  {
+    "tx_year": "1990",
+    "city": "DILLON",
+    "avg_price": 102586.08333333333,
+    "avg_ppsf": 83.54818657343309,
+    "sales_count": 36,
+    "avg_price_3yr_ma": 105937.6688034188,
+    "avg_ppsf_3yr_ma": 81.93683361365265
+  },
+  {
+    "tx_year": "1991",
+    "city": "DILLON",
+    "avg_price": 92800.0,
+    "avg_ppsf": 89.59073118436766,
+    "sales_count": 19,
+    "avg_price_3yr_ma": 101995.36111111111,
+    "avg_ppsf_3yr_ma": 87.35943828248742
+  },
+  {
+    "tx_year": "1992",
+    "city": "DILLON",
+    "avg_price": 138259.375,
+    "avg_ppsf": 95.81965394512514,
+    "sales_count": 32,
+    "avg_price_3yr_ma": 111215.15277777777,
+    "avg_ppsf_3yr_ma": 89.65285723430863
+  },
+  {
+    "tx_year": "1993",
+    "city": "DILLON",
+    "avg_price": 2185585.714285714,
+    "avg_ppsf": 110.84321211256226,
+    "sales_count": 49,
+    "avg_price_3yr_ma": 805548.363095238,
+    "avg_ppsf_3yr_ma": 98.75119908068501
+  },
+  {
+    "tx_year": "1994",
+    "city": "DILLON",
+    "avg_price": 228493.10344827586,
+    "avg_ppsf": 112.26284757323106,
+    "sales_count": 58,
+    "avg_price_3yr_ma": 850779.3975779967,
+    "avg_ppsf_3yr_ma": 106.30857121030614
+  },
+  {
+    "tx_year": "1995",
+    "city": "DILLON",
+    "avg_price": 183035.48387096773,
+    "avg_ppsf": 154.78867319043044,
+    "sales_count": 31,
+    "avg_price_3yr_ma": 865704.7672016526,
+    "avg_ppsf_3yr_ma": 125.96491095874126
+  },
+  {
+    "tx_year": "1996",
+    "city": "DILLON",
+    "avg_price": 215479.4358974359,
+    "avg_ppsf": 134.65200887019688,
+    "sales_count": 39,
+    "avg_price_3yr_ma": 209002.6744055598,
+    "avg_ppsf_3yr_ma": 133.90117654461946
+  },
+  {
+    "tx_year": "1997",
+    "city": "DILLON",
+    "avg_price": 221444.11764705883,
+    "avg_ppsf": 144.1141693934584,
+    "sales_count": 68,
+    "avg_price_3yr_ma": 206653.0124718208,
+    "avg_ppsf_3yr_ma": 144.51828381802858
+  },
+  {
+    "tx_year": "1998",
+    "city": "DILLON",
+    "avg_price": 303335.55555555556,
+    "avg_ppsf": 160.0964987174777,
+    "sales_count": 45,
+    "avg_price_3yr_ma": 246753.03636668343,
+    "avg_ppsf_3yr_ma": 146.28755899371097
+  },
+  {
+    "tx_year": "1999",
+    "city": "DILLON",
+    "avg_price": 287785.98,
+    "avg_ppsf": 171.37941418826858,
+    "sales_count": 50,
+    "avg_price_3yr_ma": 270855.2177342048,
+    "avg_ppsf_3yr_ma": 158.53002743306823
+  },
+  {
+    "tx_year": "2000",
+    "city": "DILLON",
+    "avg_price": 358020.0,
+    "avg_ppsf": 190.0332678893686,
+    "sales_count": 45,
+    "avg_price_3yr_ma": 316380.5118518518,
+    "avg_ppsf_3yr_ma": 173.83639359837161
+  },
+  {
+    "tx_year": "2001",
+    "city": "DILLON",
+    "avg_price": 295342.1052631579,
+    "avg_ppsf": 238.13573875002564,
+    "sales_count": 38,
+    "avg_price_3yr_ma": 313716.0284210527,
+    "avg_ppsf_3yr_ma": 199.84947360922092
+  },
+  {
+    "tx_year": "2002",
+    "city": "DILLON",
+    "avg_price": 346031.48148148146,
+    "avg_ppsf": 226.9704322998267,
+    "sales_count": 54,
+    "avg_price_3yr_ma": 333131.19558154646,
+    "avg_ppsf_3yr_ma": 218.37981297974034
+  },
+  {
+    "tx_year": "2003",
+    "city": "DILLON",
+    "avg_price": 307748.76829268294,
+    "avg_ppsf": 205.37444409719572,
+    "sales_count": 82,
+    "avg_price_3yr_ma": 316374.11834577407,
+    "avg_ppsf_3yr_ma": 223.49353838234936
+  },
+  {
+    "tx_year": "2004",
+    "city": "DILLON",
+    "avg_price": 310988.60759493674,
+    "avg_ppsf": 232.34200844145627,
+    "sales_count": 79,
+    "avg_price_3yr_ma": 321589.6191230337,
+    "avg_ppsf_3yr_ma": 221.56229494615957
+  },
+  {
+    "tx_year": "2005",
+    "city": "DILLON",
+    "avg_price": 321661.52747252746,
+    "avg_ppsf": 248.33006825389543,
+    "sales_count": 91,
+    "avg_price_3yr_ma": 313466.30112004903,
+    "avg_ppsf_3yr_ma": 228.6821735975158
+  },
+  {
+    "tx_year": "2006",
+    "city": "DILLON",
+    "avg_price": 361726.30263157893,
+    "avg_ppsf": 282.0461765600725,
+    "sales_count": 76,
+    "avg_price_3yr_ma": 331458.8125663477,
+    "avg_ppsf_3yr_ma": 254.23941775180808
+  },
+  {
+    "tx_year": "2007",
+    "city": "DILLON",
+    "avg_price": 390345.4534883721,
+    "avg_ppsf": 320.7253284634965,
+    "sales_count": 86,
+    "avg_price_3yr_ma": 357911.09453082614,
+    "avg_ppsf_3yr_ma": 283.70052442582147
+  },
+  {
+    "tx_year": "2008",
+    "city": "DILLON",
+    "avg_price": 556953.8205128205,
+    "avg_ppsf": 344.33204768828364,
+    "sales_count": 39,
+    "avg_price_3yr_ma": 436341.85887759057,
+    "avg_ppsf_3yr_ma": 315.7011842372842
+  },
+  {
+    "tx_year": "2009",
+    "city": "DILLON",
+    "avg_price": 410850.0,
+    "avg_ppsf": 297.46474507601,
+    "sales_count": 22,
+    "avg_price_3yr_ma": 452716.42466706416,
+    "avg_ppsf_3yr_ma": 320.8407070759301
+  },
+  {
+    "tx_year": "2010",
+    "city": "DILLON",
+    "avg_price": 485974.97222222225,
+    "avg_ppsf": 287.29459030908146,
+    "sales_count": 36,
+    "avg_price_3yr_ma": 484592.9309116809,
+    "avg_ppsf_3yr_ma": 309.697127691125
+  },
+  {
+    "tx_year": "2011",
+    "city": "DILLON",
+    "avg_price": 283503.5714285714,
+    "avg_ppsf": 264.2082069277705,
+    "sales_count": 42,
+    "avg_price_3yr_ma": 393442.8478835979,
+    "avg_ppsf_3yr_ma": 282.98918077095396
+  },
+  {
+    "tx_year": "2012",
+    "city": "DILLON",
+    "avg_price": 612141.6666666666,
+    "avg_ppsf": 254.7542593896302,
+    "sales_count": 72,
+    "avg_price_3yr_ma": 460540.07010582014,
+    "avg_ppsf_3yr_ma": 268.7523522088274
+  },
+  {
+    "tx_year": "2013",
+    "city": "DILLON",
+    "avg_price": 383920.253164557,
+    "avg_ppsf": 257.022869154029,
+    "sales_count": 79,
+    "avg_price_3yr_ma": 426521.83041993174,
+    "avg_ppsf_3yr_ma": 258.6617784904766
+  },
+  {
+    "tx_year": "2014",
+    "city": "DILLON",
+    "avg_price": 380708.1896551724,
+    "avg_ppsf": 263.62710126510297,
+    "sales_count": 116,
+    "avg_price_3yr_ma": 458923.36982879863,
+    "avg_ppsf_3yr_ma": 258.46807660292075
+  },
+  {
+    "tx_year": "2015",
+    "city": "DILLON",
+    "avg_price": 1079370.4,
+    "avg_ppsf": 315.501084177174,
+    "sales_count": 125,
+    "avg_price_3yr_ma": 614666.2809399097,
+    "avg_ppsf_3yr_ma": 278.7170181987687
+  },
+  {
+    "tx_year": "2016",
+    "city": "DILLON",
+    "avg_price": 415287.9125,
+    "avg_ppsf": 314.26590960787826,
+    "sales_count": 80,
+    "avg_price_3yr_ma": 625122.1673850574,
+    "avg_ppsf_3yr_ma": 297.7980316833851
+  },
+  {
+    "tx_year": "2017",
+    "city": "DILLON",
+    "avg_price": 1914219.1102941176,
+    "avg_ppsf": 369.05708231421625,
+    "sales_count": 136,
+    "avg_price_3yr_ma": 1136292.4742647058,
+    "avg_ppsf_3yr_ma": 332.94135869975617
+  },
+  {
+    "tx_year": "2018",
+    "city": "DILLON",
+    "avg_price": 516619.0722891566,
+    "avg_ppsf": 408.3374489846741,
+    "sales_count": 83,
+    "avg_price_3yr_ma": 948708.6983610913,
+    "avg_ppsf_3yr_ma": 363.88681363558953
+  },
+  {
+    "tx_year": "2019",
+    "city": "DILLON",
+    "avg_price": 554645.1779661017,
+    "avg_ppsf": 468.7165567714762,
+    "sales_count": 118,
+    "avg_price_3yr_ma": 995161.1201831253,
+    "avg_ppsf_3yr_ma": 415.3703626901222
+  },
+  {
+    "tx_year": "2020",
+    "city": "DILLON",
+    "avg_price": 693688.8870967742,
+    "avg_ppsf": 489.68133850181823,
+    "sales_count": 124,
+    "avg_price_3yr_ma": 588317.7124506775,
+    "avg_ppsf_3yr_ma": 455.5784480859895
+  },
+  {
+    "tx_year": "2021",
+    "city": "DILLON",
+    "avg_price": 791489.6739130435,
+    "avg_ppsf": 582.6837028268842,
+    "sales_count": 138,
+    "avg_price_3yr_ma": 679941.2463253065,
+    "avg_ppsf_3yr_ma": 513.6938660333929
+  },
+  {
+    "tx_year": "2022",
+    "city": "DILLON",
+    "avg_price": 1058588.0,
+    "avg_ppsf": 751.2546291834242,
+    "sales_count": 80,
+    "avg_price_3yr_ma": 847922.1870032726,
+    "avg_ppsf_3yr_ma": 607.8732235040421
+  },
+  {
+    "tx_year": "2023",
+    "city": "DILLON",
+    "avg_price": 841638.373493976,
+    "avg_ppsf": 814.6733008140442,
+    "sales_count": 83,
+    "avg_price_3yr_ma": 897238.6824690065,
+    "avg_ppsf_3yr_ma": 716.2038776081175
+  },
+  {
+    "tx_year": "2024",
+    "city": "DILLON",
+    "avg_price": 1642227.5684210525,
+    "avg_ppsf": 799.150844936054,
+    "sales_count": 95,
+    "avg_price_3yr_ma": 1180817.980638343,
+    "avg_ppsf_3yr_ma": 788.3595916445074
+  },
+  {
+    "tx_year": "2025",
+    "city": "DILLON",
+    "avg_price": 846378.5714285715,
+    "avg_ppsf": 755.9788811966586,
+    "sales_count": 70,
+    "avg_price_3yr_ma": 1110081.5044478667,
+    "avg_ppsf_3yr_ma": 789.9343423155856
+  },
+  {
+    "tx_year": "2026",
+    "city": "DILLON",
+    "avg_price": 615000.0,
+    "avg_ppsf": 919.2825112107623,
+    "sales_count": 1,
+    "avg_price_3yr_ma": 1034535.3799498747,
+    "avg_ppsf_3yr_ma": 824.8040791144916
+  },
+  {
+    "tx_year": "1980",
+    "city": "FRISCO",
+    "avg_price": 155863.88888888888,
+    "avg_ppsf": 57.111903888495384,
+    "sales_count": 36,
+    "avg_price_3yr_ma": 155863.88888888888,
+    "avg_ppsf_3yr_ma": 57.111903888495384
+  },
+  {
+    "tx_year": "1981",
+    "city": "FRISCO",
+    "avg_price": 97042.85714285714,
+    "avg_ppsf": 74.21211358529608,
+    "sales_count": 21,
+    "avg_price_3yr_ma": 126453.37301587302,
+    "avg_ppsf_3yr_ma": 65.66200873689573
+  },
+  {
+    "tx_year": "1982",
+    "city": "FRISCO",
+    "avg_price": 1712169.696969697,
+    "avg_ppsf": 95.17600777570233,
+    "sales_count": 33,
+    "avg_price_3yr_ma": 655025.481000481,
+    "avg_ppsf_3yr_ma": 75.50000841649793
+  },
+  {
+    "tx_year": "1983",
+    "city": "FRISCO",
+    "avg_price": 110565.625,
+    "avg_ppsf": 85.54568821611058,
+    "sales_count": 32,
+    "avg_price_3yr_ma": 639926.0597041846,
+    "avg_ppsf_3yr_ma": 84.977936525703
+  },
+  {
+    "tx_year": "1984",
+    "city": "FRISCO",
+    "avg_price": 92156.41025641025,
+    "avg_ppsf": 79.13346012810496,
+    "sales_count": 39,
+    "avg_price_3yr_ma": 638297.2440753691,
+    "avg_ppsf_3yr_ma": 86.61838537330595
+  },
+  {
+    "tx_year": "1985",
+    "city": "FRISCO",
+    "avg_price": 117187.17948717948,
+    "avg_ppsf": 86.24421140372546,
+    "sales_count": 39,
+    "avg_price_3yr_ma": 106636.40491452992,
+    "avg_ppsf_3yr_ma": 83.64111991598033
+  },
+  {
+    "tx_year": "1986",
+    "city": "FRISCO",
+    "avg_price": 97290.32258064517,
+    "avg_ppsf": 75.05381388840391,
+    "sales_count": 31,
+    "avg_price_3yr_ma": 102211.3041080783,
+    "avg_ppsf_3yr_ma": 80.14382847341143
+  },
+  {
+    "tx_year": "1987",
+    "city": "FRISCO",
+    "avg_price": 97958.79411764706,
+    "avg_ppsf": 63.51190558757382,
+    "sales_count": 34,
+    "avg_price_3yr_ma": 104145.4320618239,
+    "avg_ppsf_3yr_ma": 74.93664362656773
+  },
+  {
+    "tx_year": "1988",
+    "city": "FRISCO",
+    "avg_price": 1439392.4528301887,
+    "avg_ppsf": 65.46342329751694,
+    "sales_count": 53,
+    "avg_price_3yr_ma": 544880.5231761603,
+    "avg_ppsf_3yr_ma": 68.00971425783156
+  },
+  {
+    "tx_year": "1989",
+    "city": "FRISCO",
+    "avg_price": 580103.1746031746,
+    "avg_ppsf": 373.5891762169973,
+    "sales_count": 63,
+    "avg_price_3yr_ma": 705818.1405170034,
+    "avg_ppsf_3yr_ma": 167.52150170069604
+  },
+  {
+    "tx_year": "1990",
+    "city": "FRISCO",
+    "avg_price": 117627.58620689655,
+    "avg_ppsf": 70.24265427467753,
+    "sales_count": 58,
+    "avg_price_3yr_ma": 712374.4045467532,
+    "avg_ppsf_3yr_ma": 169.76508459639726
+  },
+  {
+    "tx_year": "1991",
+    "city": "FRISCO",
+    "avg_price": 163248.31666666668,
+    "avg_ppsf": 74.93918700939706,
+    "sales_count": 60,
+    "avg_price_3yr_ma": 286993.02582557924,
+    "avg_ppsf_3yr_ma": 172.9236725003573
+  },
+  {
+    "tx_year": "1992",
+    "city": "FRISCO",
+    "avg_price": 128825.25263157894,
+    "avg_ppsf": 81.97725965800366,
+    "sales_count": 95,
+    "avg_price_3yr_ma": 136567.0518350474,
+    "avg_ppsf_3yr_ma": 75.71970031402608
+  },
+  {
+    "tx_year": "1993",
+    "city": "FRISCO",
+    "avg_price": 125251.66292134831,
+    "avg_ppsf": 96.12528250712356,
+    "sales_count": 89,
+    "avg_price_3yr_ma": 139108.41073986466,
+    "avg_ppsf_3yr_ma": 84.34724305817475
+  },
+  {
+    "tx_year": "1994",
+    "city": "FRISCO",
+    "avg_price": 179697.35652173913,
+    "avg_ppsf": 113.0460305258679,
+    "sales_count": 115,
+    "avg_price_3yr_ma": 144591.4240248888,
+    "avg_ppsf_3yr_ma": 97.04952423033171
+  },
+  {
+    "tx_year": "1995",
+    "city": "FRISCO",
+    "avg_price": 274825.2162162162,
+    "avg_ppsf": 192.7643288529947,
+    "sales_count": 111,
+    "avg_price_3yr_ma": 193258.0785531012,
+    "avg_ppsf_3yr_ma": 133.97854729532872
+  },
+  {
+    "tx_year": "1996",
+    "city": "FRISCO",
+    "avg_price": 193231.95901639343,
+    "avg_ppsf": 131.1548470421425,
+    "sales_count": 122,
+    "avg_price_3yr_ma": 215918.17725144958,
+    "avg_ppsf_3yr_ma": 145.6550688070017
+  },
+  {
+    "tx_year": "1997",
+    "city": "FRISCO",
+    "avg_price": 201017.32283464566,
+    "avg_ppsf": 130.53803163604374,
+    "sales_count": 127,
+    "avg_price_3yr_ma": 223024.83268908513,
+    "avg_ppsf_3yr_ma": 151.48573584372699
+  },
+  {
+    "tx_year": "1998",
+    "city": "FRISCO",
+    "avg_price": 243889.54228855722,
+    "avg_ppsf": 159.10783925812473,
+    "sales_count": 201,
+    "avg_price_3yr_ma": 212712.94137986543,
+    "avg_ppsf_3yr_ma": 140.26690597877032
+  },
+  {
+    "tx_year": "1999",
+    "city": "FRISCO",
+    "avg_price": 306906.3617021277,
+    "avg_ppsf": 182.16757322747503,
+    "sales_count": 188,
+    "avg_price_3yr_ma": 250604.40894177684,
+    "avg_ppsf_3yr_ma": 157.27114804054784
+  },
+  {
+    "tx_year": "2000",
+    "city": "FRISCO",
+    "avg_price": 327953.99,
+    "avg_ppsf": 186.12352939487255,
+    "sales_count": 200,
+    "avg_price_3yr_ma": 292916.6313302283,
+    "avg_ppsf_3yr_ma": 175.79964729349078
+  },
+  {
+    "tx_year": "2001",
+    "city": "FRISCO",
+    "avg_price": 312255.64137931034,
+    "avg_ppsf": 205.12470384900115,
+    "sales_count": 145,
+    "avg_price_3yr_ma": 315705.331027146,
+    "avg_ppsf_3yr_ma": 191.13860215711625
+  },
+  {
+    "tx_year": "2002",
+    "city": "FRISCO",
+    "avg_price": 377557.92215568863,
+    "avg_ppsf": 209.07490959237313,
+    "sales_count": 167,
+    "avg_price_3yr_ma": 339255.851178333,
+    "avg_ppsf_3yr_ma": 200.10771427874894
+  },
+  {
+    "tx_year": "2003",
+    "city": "FRISCO",
+    "avg_price": 342893.7451923077,
+    "avg_ppsf": 222.59264829211693,
+    "sales_count": 208,
+    "avg_price_3yr_ma": 344235.7695757689,
+    "avg_ppsf_3yr_ma": 212.26408724449706
+  },
+  {
+    "tx_year": "2004",
+    "city": "FRISCO",
+    "avg_price": 398137.2,
+    "avg_ppsf": 232.73634929996882,
+    "sales_count": 215,
+    "avg_price_3yr_ma": 372862.9557826654,
+    "avg_ppsf_3yr_ma": 221.4679690614863
+  },
+  {
+    "tx_year": "2005",
+    "city": "FRISCO",
+    "avg_price": 457907.55026455026,
+    "avg_ppsf": 255.0387219347617,
+    "sales_count": 189,
+    "avg_price_3yr_ma": 399646.165152286,
+    "avg_ppsf_3yr_ma": 236.78923984228246
+  },
+  {
+    "tx_year": "2006",
+    "city": "FRISCO",
+    "avg_price": 1189065.4713114754,
+    "avg_ppsf": 295.51655734458035,
+    "sales_count": 244,
+    "avg_price_3yr_ma": 681703.4071920086,
+    "avg_ppsf_3yr_ma": 261.097209526437
+  },
+  {
+    "tx_year": "2007",
+    "city": "FRISCO",
+    "avg_price": 530810.9369369369,
+    "avg_ppsf": 336.3797214535206,
+    "sales_count": 222,
+    "avg_price_3yr_ma": 725927.9861709876,
+    "avg_ppsf_3yr_ma": 295.64500024428753
+  },
+  {
+    "tx_year": "2008",
+    "city": "FRISCO",
+    "avg_price": 442350.0,
+    "avg_ppsf": 336.1657380500892,
+    "sales_count": 99,
+    "avg_price_3yr_ma": 720742.1360828042,
+    "avg_ppsf_3yr_ma": 322.6873389493967
+  },
+  {
+    "tx_year": "2009",
+    "city": "FRISCO",
+    "avg_price": 451289.7961165049,
+    "avg_ppsf": 278.81375722475093,
+    "sales_count": 103,
+    "avg_price_3yr_ma": 474816.91101781395,
+    "avg_ppsf_3yr_ma": 317.1197389094536
+  },
+  {
+    "tx_year": "2010",
+    "city": "FRISCO",
+    "avg_price": 446276.825,
+    "avg_ppsf": 291.423613192599,
+    "sales_count": 120,
+    "avg_price_3yr_ma": 446638.87370550167,
+    "avg_ppsf_3yr_ma": 302.13436948914637
+  },
+  {
+    "tx_year": "2011",
+    "city": "FRISCO",
+    "avg_price": 463665.6193181818,
+    "avg_ppsf": 277.14171500296504,
+    "sales_count": 176,
+    "avg_price_3yr_ma": 453744.08014489553,
+    "avg_ppsf_3yr_ma": 282.459695140105
+  },
+  {
+    "tx_year": "2012",
+    "city": "FRISCO",
+    "avg_price": 425812.6089108911,
+    "avg_ppsf": 276.6461929742745,
+    "sales_count": 202,
+    "avg_price_3yr_ma": 445251.684409691,
+    "avg_ppsf_3yr_ma": 281.7371737232795
+  },
+  {
+    "tx_year": "2013",
+    "city": "FRISCO",
+    "avg_price": 472070.7129186603,
+    "avg_ppsf": 291.8018409297455,
+    "sales_count": 209,
+    "avg_price_3yr_ma": 453849.64704924444,
+    "avg_ppsf_3yr_ma": 281.8632496356617
+  },
+  {
+    "tx_year": "2014",
+    "city": "FRISCO",
+    "avg_price": 478092.30078125,
+    "avg_ppsf": 311.83427868873093,
+    "sales_count": 256,
+    "avg_price_3yr_ma": 458658.54087026714,
+    "avg_ppsf_3yr_ma": 293.42743753091696
+  },
+  {
+    "tx_year": "2015",
+    "city": "FRISCO",
+    "avg_price": 507371.4510385757,
+    "avg_ppsf": 335.33495134585235,
+    "sales_count": 337,
+    "avg_price_3yr_ma": 485844.82157949527,
+    "avg_ppsf_3yr_ma": 312.99035698810957
+  },
+  {
+    "tx_year": "2016",
+    "city": "FRISCO",
+    "avg_price": 579481.2491694352,
+    "avg_ppsf": 382.910763599302,
+    "sales_count": 301,
+    "avg_price_3yr_ma": 521648.33366308693,
+    "avg_ppsf_3yr_ma": 343.3599978779618
+  },
+  {
+    "tx_year": "2017",
+    "city": "FRISCO",
+    "avg_price": 619750.9446494465,
+    "avg_ppsf": 436.0264263382649,
+    "sales_count": 271,
+    "avg_price_3yr_ma": 568867.8816191525,
+    "avg_ppsf_3yr_ma": 384.7573804278065
+  },
+  {
+    "tx_year": "2018",
+    "city": "FRISCO",
+    "avg_price": 752969.425925926,
+    "avg_ppsf": 464.06931419478536,
+    "sales_count": 270,
+    "avg_price_3yr_ma": 650733.8732482692,
+    "avg_ppsf_3yr_ma": 427.6688347107841
+  },
+  {
+    "tx_year": "2019",
+    "city": "FRISCO",
+    "avg_price": 753608.1868512111,
+    "avg_ppsf": 513.2269613089225,
+    "sales_count": 289,
+    "avg_price_3yr_ma": 708776.1858088612,
+    "avg_ppsf_3yr_ma": 471.1075672806576
+  },
+  {
+    "tx_year": "2020",
+    "city": "FRISCO",
+    "avg_price": 856052.1364902507,
+    "avg_ppsf": 519.4882522875963,
+    "sales_count": 359,
+    "avg_price_3yr_ma": 787543.2497557959,
+    "avg_ppsf_3yr_ma": 498.9281759304347
+  },
+  {
+    "tx_year": "2021",
+    "city": "FRISCO",
+    "avg_price": 1186295.3052325582,
+    "avg_ppsf": 673.2503952486178,
+    "sales_count": 344,
+    "avg_price_3yr_ma": 931985.2095246734,
+    "avg_ppsf_3yr_ma": 568.6552029483788
+  },
+  {
+    "tx_year": "2022",
+    "city": "FRISCO",
+    "avg_price": 1267770.388,
+    "avg_ppsf": 730.0707179106843,
+    "sales_count": 250,
+    "avg_price_3yr_ma": 1103372.609907603,
+    "avg_ppsf_3yr_ma": 640.9364551489662
+  },
+  {
+    "tx_year": "2023",
+    "city": "FRISCO",
+    "avg_price": 1231701.1937984496,
+    "avg_ppsf": 757.516755626668,
+    "sales_count": 258,
+    "avg_price_3yr_ma": 1228588.9623436693,
+    "avg_ppsf_3yr_ma": 720.2792895953233
+  },
+  {
+    "tx_year": "2024",
+    "city": "FRISCO",
+    "avg_price": 1297751.2833333334,
+    "avg_ppsf": 774.2866310457154,
+    "sales_count": 240,
+    "avg_price_3yr_ma": 1265740.9550439278,
+    "avg_ppsf_3yr_ma": 753.9580348610225
+  },
+  {
+    "tx_year": "2025",
+    "city": "FRISCO",
+    "avg_price": 1249450.3757575757,
+    "avg_ppsf": 780.7854913147246,
+    "sales_count": 165,
+    "avg_price_3yr_ma": 1259634.284296453,
+    "avg_ppsf_3yr_ma": 770.862959329036
+  },
+  {
+    "tx_year": "2026",
+    "city": "FRISCO",
+    "avg_price": 1030000.0,
+    "avg_ppsf": 823.221238287516,
+    "sales_count": 2,
+    "avg_price_3yr_ma": 1192400.553030303,
+    "avg_ppsf_3yr_ma": 792.7644535493187
+  },
+  {
+    "tx_year": "1980",
+    "city": "KEYSTONE",
+    "avg_price": 139454.54545454544,
+    "avg_ppsf": 132.2217884627161,
+    "sales_count": 11,
+    "avg_price_3yr_ma": 139454.54545454544,
+    "avg_ppsf_3yr_ma": 132.2217884627161
+  },
+  {
+    "tx_year": "1981",
+    "city": "KEYSTONE",
+    "avg_price": 167271.42857142858,
+    "avg_ppsf": 154.5170705098702,
+    "sales_count": 14,
+    "avg_price_3yr_ma": 153362.98701298703,
+    "avg_ppsf_3yr_ma": 143.36942948629314
+  },
+  {
+    "tx_year": "1982",
+    "city": "KEYSTONE",
+    "avg_price": 256633.33333333334,
+    "avg_ppsf": 153.84779695677236,
+    "sales_count": 15,
+    "avg_price_3yr_ma": 187786.43578643576,
+    "avg_ppsf_3yr_ma": 146.86221864311955
+  },
+  {
+    "tx_year": "1983",
+    "city": "KEYSTONE",
+    "avg_price": 272221.05263157893,
+    "avg_ppsf": 168.60250112082562,
+    "sales_count": 19,
+    "avg_price_3yr_ma": 232041.93817878028,
+    "avg_ppsf_3yr_ma": 158.98912286248938
+  },
+  {
+    "tx_year": "1984",
+    "city": "KEYSTONE",
+    "avg_price": 205173.33333333334,
+    "avg_ppsf": 132.84234354910012,
+    "sales_count": 15,
+    "avg_price_3yr_ma": 244675.90643274854,
+    "avg_ppsf_3yr_ma": 151.76421387556604
+  },
+  {
+    "tx_year": "1985",
+    "city": "KEYSTONE",
+    "avg_price": 154040.0,
+    "avg_ppsf": 109.9957390069185,
+    "sales_count": 10,
+    "avg_price_3yr_ma": 210478.12865497076,
+    "avg_ppsf_3yr_ma": 137.14686122561474
+  },
+  {
+    "tx_year": "1986",
+    "city": "KEYSTONE",
+    "avg_price": 513425.0,
+    "avg_ppsf": 84.63130500611916,
+    "sales_count": 20,
+    "avg_price_3yr_ma": 290879.44444444444,
+    "avg_ppsf_3yr_ma": 109.1564625207126
+  },
+  {
+    "tx_year": "1987",
+    "city": "KEYSTONE",
+    "avg_price": 2990639.285714286,
+    "avg_ppsf": 122.46485023477027,
+    "sales_count": 28,
+    "avg_price_3yr_ma": 1219368.0952380954,
+    "avg_ppsf_3yr_ma": 105.69729808260264
+  },
+  {
+    "tx_year": "1988",
+    "city": "KEYSTONE",
+    "avg_price": 235487.1794871795,
+    "avg_ppsf": 82.10761374046402,
+    "sales_count": 39,
+    "avg_price_3yr_ma": 1246517.1550671551,
+    "avg_ppsf_3yr_ma": 96.40125632711782
+  },
+  {
+    "tx_year": "1989",
+    "city": "KEYSTONE",
+    "avg_price": 769681.552631579,
+    "avg_ppsf": 870.1766006380387,
+    "sales_count": 38,
+    "avg_price_3yr_ma": 1331936.0059443482,
+    "avg_ppsf_3yr_ma": 358.24968820442433
+  },
+  {
+    "tx_year": "1990",
+    "city": "KEYSTONE",
+    "avg_price": 320326.3157894737,
+    "avg_ppsf": 247.9981831344645,
+    "sales_count": 38,
+    "avg_price_3yr_ma": 441831.68263607734,
+    "avg_ppsf_3yr_ma": 400.09413250432243
+  },
+  {
+    "tx_year": "1991",
+    "city": "KEYSTONE",
+    "avg_price": 141900.0,
+    "avg_ppsf": 105.59209090178331,
+    "sales_count": 25,
+    "avg_price_3yr_ma": 410635.95614035084,
+    "avg_ppsf_3yr_ma": 407.92229155809554
+  },
+  {
+    "tx_year": "1992",
+    "city": "KEYSTONE",
+    "avg_price": 190815.21739130435,
+    "avg_ppsf": 112.85669454528129,
+    "sales_count": 46,
+    "avg_price_3yr_ma": 217680.51106025933,
+    "avg_ppsf_3yr_ma": 155.4823228605097
+  },
+  {
+    "tx_year": "1993",
+    "city": "KEYSTONE",
+    "avg_price": 152170.0,
+    "avg_ppsf": 119.70847848617915,
+    "sales_count": 70,
+    "avg_price_3yr_ma": 161628.40579710144,
+    "avg_ppsf_3yr_ma": 112.7190879777479
+  },
+  {
+    "tx_year": "1994",
+    "city": "KEYSTONE",
+    "avg_price": 1383246.4788732394,
+    "avg_ppsf": 124.79664657879124,
+    "sales_count": 71,
+    "avg_price_3yr_ma": 575410.5654215146,
+    "avg_ppsf_3yr_ma": 119.12060653675057
+  },
+  {
+    "tx_year": "1995",
+    "city": "KEYSTONE",
+    "avg_price": 274677.4647887324,
+    "avg_ppsf": 154.7440133696962,
+    "sales_count": 71,
+    "avg_price_3yr_ma": 603364.6478873239,
+    "avg_ppsf_3yr_ma": 133.08304614488887
+  },
+  {
+    "tx_year": "1996",
+    "city": "KEYSTONE",
+    "avg_price": 256208.64197530865,
+    "avg_ppsf": 199.11841218721045,
+    "sales_count": 81,
+    "avg_price_3yr_ma": 638044.1952124268,
+    "avg_ppsf_3yr_ma": 159.55302404523263
+  },
+  {
+    "tx_year": "1997",
+    "city": "KEYSTONE",
+    "avg_price": 260409.83606557376,
+    "avg_ppsf": 189.3193267377261,
+    "sales_count": 122,
+    "avg_price_3yr_ma": 263765.31427653827,
+    "avg_ppsf_3yr_ma": 181.06058409821094
+  },
+  {
+    "tx_year": "1998",
+    "city": "KEYSTONE",
+    "avg_price": 307122.1828571429,
+    "avg_ppsf": 301.64276179129394,
+    "sales_count": 175,
+    "avg_price_3yr_ma": 274580.2202993418,
+    "avg_ppsf_3yr_ma": 230.02683357207684
+  },
+  {
+    "tx_year": "1999",
+    "city": "KEYSTONE",
+    "avg_price": 357321.3418803419,
+    "avg_ppsf": 265.31037557770395,
+    "sales_count": 117,
+    "avg_price_3yr_ma": 308284.4536010195,
+    "avg_ppsf_3yr_ma": 252.090821368908
+  },
+  {
+    "tx_year": "2000",
+    "city": "KEYSTONE",
+    "avg_price": 425210.1304347826,
+    "avg_ppsf": 314.9261128799083,
+    "sales_count": 138,
+    "avg_price_3yr_ma": 363217.8850574225,
+    "avg_ppsf_3yr_ma": 293.9597500829687
+  },
+  {
+    "tx_year": "2001",
+    "city": "KEYSTONE",
+    "avg_price": 464368.8278688525,
+    "avg_ppsf": 382.9017588738095,
+    "sales_count": 122,
+    "avg_price_3yr_ma": 415633.433394659,
+    "avg_ppsf_3yr_ma": 321.0460824438073
+  },
+  {
+    "tx_year": "2002",
+    "city": "KEYSTONE",
+    "avg_price": 323866.64814814815,
+    "avg_ppsf": 290.7556264384943,
+    "sales_count": 108,
+    "avg_price_3yr_ma": 404481.86881726113,
+    "avg_ppsf_3yr_ma": 329.5278327307374
+  },
+  {
+    "tx_year": "2003",
+    "city": "KEYSTONE",
+    "avg_price": 318160.8011695906,
+    "avg_ppsf": 300.323873183893,
+    "sales_count": 171,
+    "avg_price_3yr_ma": 368798.75906219706,
+    "avg_ppsf_3yr_ma": 324.66041949873227
+  },
+  {
+    "tx_year": "2004",
+    "city": "KEYSTONE",
+    "avg_price": 367483.6564417178,
+    "avg_ppsf": 295.7134550789299,
+    "sales_count": 163,
+    "avg_price_3yr_ma": 336503.7019198188,
+    "avg_ppsf_3yr_ma": 295.59765156710574
+  },
+  {
+    "tx_year": "2005",
+    "city": "KEYSTONE",
+    "avg_price": 357750.3142857143,
+    "avg_ppsf": 297.26922080571296,
+    "sales_count": 245,
+    "avg_price_3yr_ma": 347798.25729900756,
+    "avg_ppsf_3yr_ma": 297.7688496895119
+  },
+  {
+    "tx_year": "2006",
+    "city": "KEYSTONE",
+    "avg_price": 358229.9285714286,
+    "avg_ppsf": 330.5055203693804,
+    "sales_count": 294,
+    "avg_price_3yr_ma": 361154.63309962023,
+    "avg_ppsf_3yr_ma": 307.8293987513411
+  },
+  {
+    "tx_year": "2007",
+    "city": "KEYSTONE",
+    "avg_price": 490509.91949152545,
+    "avg_ppsf": 401.67818212689554,
+    "sales_count": 236,
+    "avg_price_3yr_ma": 402163.3874495561,
+    "avg_ppsf_3yr_ma": 343.1509744339963
+  },
+  {
+    "tx_year": "2008",
+    "city": "KEYSTONE",
+    "avg_price": 557833.816993464,
+    "avg_ppsf": 430.4414028927691,
+    "sales_count": 153,
+    "avg_price_3yr_ma": 468857.8883521394,
+    "avg_ppsf_3yr_ma": 387.5417017963484
+  },
+  {
+    "tx_year": "2009",
+    "city": "KEYSTONE",
+    "avg_price": 524507.8859649122,
+    "avg_ppsf": 372.51193059383814,
+    "sales_count": 114,
+    "avg_price_3yr_ma": 524283.8741499672,
+    "avg_ppsf_3yr_ma": 401.5438385378343
+  },
+  {
+    "tx_year": "2010",
+    "city": "KEYSTONE",
+    "avg_price": 414110.27659574465,
+    "avg_ppsf": 337.4515745662002,
+    "sales_count": 141,
+    "avg_price_3yr_ma": 498817.3265180403,
+    "avg_ppsf_3yr_ma": 380.1349693509358
+  },
+  {
+    "tx_year": "2011",
+    "city": "KEYSTONE",
+    "avg_price": 487884.94736842107,
+    "avg_ppsf": 317.4961899956431,
+    "sales_count": 114,
+    "avg_price_3yr_ma": 475501.036643026,
+    "avg_ppsf_3yr_ma": 342.4865650518938
+  },
+  {
+    "tx_year": "2012",
+    "city": "KEYSTONE",
+    "avg_price": 457536.68224299065,
+    "avg_ppsf": 312.7691091858603,
+    "sales_count": 214,
+    "avg_price_3yr_ma": 453177.3020690521,
+    "avg_ppsf_3yr_ma": 322.5722912492345
+  },
+  {
+    "tx_year": "2013",
+    "city": "KEYSTONE",
+    "avg_price": 376063.133640553,
+    "avg_ppsf": 303.6333980016104,
+    "sales_count": 217,
+    "avg_price_3yr_ma": 440494.9210839882,
+    "avg_ppsf_3yr_ma": 311.2995657277046
+  },
+  {
+    "tx_year": "2014",
+    "city": "KEYSTONE",
+    "avg_price": 354832.8178694158,
+    "avg_ppsf": 309.39065010502827,
+    "sales_count": 291,
+    "avg_price_3yr_ma": 396144.21125098644,
+    "avg_ppsf_3yr_ma": 308.5977190974997
+  },
+  {
+    "tx_year": "2015",
+    "city": "KEYSTONE",
+    "avg_price": 448474.2891566265,
+    "avg_ppsf": 342.17015683986295,
+    "sales_count": 332,
+    "avg_price_3yr_ma": 393123.41355553176,
+    "avg_ppsf_3yr_ma": 318.39806831550055
+  },
+  {
+    "tx_year": "2016",
+    "city": "KEYSTONE",
+    "avg_price": 478142.43161094224,
+    "avg_ppsf": 375.24398232182443,
+    "sales_count": 329,
+    "avg_price_3yr_ma": 427149.8462123282,
+    "avg_ppsf_3yr_ma": 342.26826308890526
+  },
+  {
+    "tx_year": "2017",
+    "city": "KEYSTONE",
+    "avg_price": 568846.0274314214,
+    "avg_ppsf": 432.93236614440724,
+    "sales_count": 401,
+    "avg_price_3yr_ma": 498487.5827329967,
+    "avg_ppsf_3yr_ma": 383.4488351020315
+  },
+  {
+    "tx_year": "2018",
+    "city": "KEYSTONE",
+    "avg_price": 616644.2004310344,
+    "avg_ppsf": 469.6278631004893,
+    "sales_count": 464,
+    "avg_price_3yr_ma": 554544.219824466,
+    "avg_ppsf_3yr_ma": 425.93473718890704
+  },
+  {
+    "tx_year": "2019",
+    "city": "KEYSTONE",
+    "avg_price": 583146.801369863,
+    "avg_ppsf": 466.99817767438316,
+    "sales_count": 438,
+    "avg_price_3yr_ma": 589545.676410773,
+    "avg_ppsf_3yr_ma": 456.5194689730932
+  },
+  {
+    "tx_year": "2020",
+    "city": "KEYSTONE",
+    "avg_price": 690685.7849686848,
+    "avg_ppsf": 507.38662207798365,
+    "sales_count": 479,
+    "avg_price_3yr_ma": 630158.9289231941,
+    "avg_ppsf_3yr_ma": 481.3375542842853
+  },
+  {
+    "tx_year": "2021",
+    "city": "KEYSTONE",
+    "avg_price": 1167219.166015625,
+    "avg_ppsf": 647.167341273597,
+    "sales_count": 512,
+    "avg_price_3yr_ma": 813683.917451391,
+    "avg_ppsf_3yr_ma": 540.517380341988
+  },
+  {
+    "tx_year": "2022",
+    "city": "KEYSTONE",
+    "avg_price": 998508.6658163265,
+    "avg_ppsf": 800.0294451901773,
+    "sales_count": 392,
+    "avg_price_3yr_ma": 952137.8722668787,
+    "avg_ppsf_3yr_ma": 651.5278028472527
+  },
+  {
+    "tx_year": "2023",
+    "city": "KEYSTONE",
+    "avg_price": 1159192.511904762,
+    "avg_ppsf": 794.9667897286529,
+    "sales_count": 252,
+    "avg_price_3yr_ma": 1108306.781245571,
+    "avg_ppsf_3yr_ma": 747.3878587308091
+  },
+  {
+    "tx_year": "2024",
+    "city": "KEYSTONE",
+    "avg_price": 1164540.0616438356,
+    "avg_ppsf": 821.5958091472689,
+    "sales_count": 292,
+    "avg_price_3yr_ma": 1107413.7464549746,
+    "avg_ppsf_3yr_ma": 805.5306813553665
+  },
+  {
+    "tx_year": "2025",
+    "city": "KEYSTONE",
+    "avg_price": 1350438.3684210526,
+    "avg_ppsf": 842.4106891857126,
+    "sales_count": 228,
+    "avg_price_3yr_ma": 1224723.6473232165,
+    "avg_ppsf_3yr_ma": 819.6577626872114
+  },
+  {
+    "tx_year": "2026",
+    "city": "KEYSTONE",
+    "avg_price": 892400.0,
+    "avg_ppsf": 691.2475213262908,
+    "sales_count": 5,
+    "avg_price_3yr_ma": 1135792.8100216293,
+    "avg_ppsf_3yr_ma": 785.0846732197574
+  },
+  {
+    "tx_year": "1980",
+    "city": "MONTEZUMA",
+    "avg_price": 12501250.0,
+    "avg_ppsf": null,
+    "sales_count": 4,
+    "avg_price_3yr_ma": 12501250.0,
+    "avg_ppsf_3yr_ma": null
+  },
+  {
+    "tx_year": "1986",
+    "city": "MONTEZUMA",
+    "avg_price": 7047500.0,
+    "avg_ppsf": 12189.120547479384,
+    "sales_count": 2,
+    "avg_price_3yr_ma": 9774375.0,
+    "avg_ppsf_3yr_ma": 12189.120547479384
+  },
+  {
+    "tx_year": "1988",
+    "city": "MONTEZUMA",
+    "avg_price": 60000.0,
+    "avg_ppsf": 42.82655246252676,
+    "sales_count": 1,
+    "avg_price_3yr_ma": 6536250.0,
+    "avg_ppsf_3yr_ma": 6115.973549970956
+  },
+  {
+    "tx_year": "1989",
+    "city": "MONTEZUMA",
+    "avg_price": 102500.0,
+    "avg_ppsf": 49.58877600387034,
+    "sales_count": 2,
+    "avg_price_3yr_ma": 2403333.3333333335,
+    "avg_ppsf_3yr_ma": 4093.845291981927
+  },
+  {
+    "tx_year": "1992",
+    "city": "MONTEZUMA",
+    "avg_price": 35000000.0,
+    "avg_ppsf": null,
+    "sales_count": 1,
+    "avg_price_3yr_ma": 11720833.333333334,
+    "avg_ppsf_3yr_ma": 46.20766423319856
+  },
+  {
+    "tx_year": "1993",
+    "city": "MONTEZUMA",
+    "avg_price": 4615800.0,
+    "avg_ppsf": 14.37793427230047,
+    "sales_count": 5,
+    "avg_price_3yr_ma": 13239433.333333334,
+    "avg_ppsf_3yr_ma": 31.983355138085408
+  },
+  {
+    "tx_year": "1995",
+    "city": "MONTEZUMA",
+    "avg_price": 12501250.0,
+    "avg_ppsf": null,
+    "sales_count": 2,
+    "avg_price_3yr_ma": 17372350.0,
+    "avg_ppsf_3yr_ma": 14.37793427230047
+  },
+  {
+    "tx_year": "1996",
+    "city": "MONTEZUMA",
+    "avg_price": 100000.0,
+    "avg_ppsf": 151.285930408472,
+    "sales_count": 1,
+    "avg_price_3yr_ma": 5739016.666666667,
+    "avg_ppsf_3yr_ma": 82.83193234038625
+  },
+  {
+    "tx_year": "1997",
+    "city": "MONTEZUMA",
+    "avg_price": 8387833.333333333,
+    "avg_ppsf": 7483.630779694672,
+    "sales_count": 6,
+    "avg_price_3yr_ma": 6996361.111111111,
+    "avg_ppsf_3yr_ma": 3817.458355051572
+  },
+  {
+    "tx_year": "1999",
+    "city": "MONTEZUMA",
+    "avg_price": 90666.66666666667,
+    "avg_ppsf": 91.93692414684229,
+    "sales_count": 3,
+    "avg_price_3yr_ma": 2859500.0,
+    "avg_ppsf_3yr_ma": 2575.617878083329
+  },
+  {
+    "tx_year": "2001",
+    "city": "MONTEZUMA",
+    "avg_price": 100000.0,
+    "avg_ppsf": 65.776946616797,
+    "sales_count": 5,
+    "avg_price_3yr_ma": 2859500.0,
+    "avg_ppsf_3yr_ma": 2547.1148834861037
+  },
+  {
+    "tx_year": "2002",
+    "city": "MONTEZUMA",
+    "avg_price": 111250.0,
+    "avg_ppsf": 107.93626658490024,
+    "sales_count": 4,
+    "avg_price_3yr_ma": 100638.88888888889,
+    "avg_ppsf_3yr_ma": 88.55004578284651
+  },
+  {
+    "tx_year": "2003",
+    "city": "MONTEZUMA",
+    "avg_price": 128750.0,
+    "avg_ppsf": 59.507781515728446,
+    "sales_count": 2,
+    "avg_price_3yr_ma": 113333.33333333333,
+    "avg_ppsf_3yr_ma": 77.74033157247523
+  },
+  {
+    "tx_year": "2004",
+    "city": "MONTEZUMA",
+    "avg_price": 117400.0,
+    "avg_ppsf": 55.669485309666086,
+    "sales_count": 5,
+    "avg_price_3yr_ma": 119133.33333333333,
+    "avg_ppsf_3yr_ma": 74.37117780343159
+  },
+  {
+    "tx_year": "2006",
+    "city": "MONTEZUMA",
+    "avg_price": 242875.0,
+    "avg_ppsf": 176.9574395262355,
+    "sales_count": 4,
+    "avg_price_3yr_ma": 163008.33333333334,
+    "avg_ppsf_3yr_ma": 97.37823545054334
+  },
+  {
+    "tx_year": "2007",
+    "city": "MONTEZUMA",
+    "avg_price": 376875.0,
+    "avg_ppsf": 246.8178093835504,
+    "sales_count": 8,
+    "avg_price_3yr_ma": 245716.66666666666,
+    "avg_ppsf_3yr_ma": 159.81491140648401
+  },
+  {
+    "tx_year": "2010",
+    "city": "MONTEZUMA",
+    "avg_price": 170000.0,
+    "avg_ppsf": 239.8081534772182,
+    "sales_count": 2,
+    "avg_price_3yr_ma": 263250.0,
+    "avg_ppsf_3yr_ma": 221.1944674623347
+  },
+  {
+    "tx_year": "2011",
+    "city": "MONTEZUMA",
+    "avg_price": 125000.0,
+    "avg_ppsf": null,
+    "sales_count": 2,
+    "avg_price_3yr_ma": 223958.33333333334,
+    "avg_ppsf_3yr_ma": 243.3129814303843
+  },
+  {
+    "tx_year": "2013",
+    "city": "MONTEZUMA",
+    "avg_price": 291666.6666666667,
+    "avg_ppsf": 170.65616396451514,
+    "sales_count": 3,
+    "avg_price_3yr_ma": 195555.5555555556,
+    "avg_ppsf_3yr_ma": 205.23215872086666
+  },
+  {
+    "tx_year": "2015",
+    "city": "MONTEZUMA",
+    "avg_price": 495000.0,
+    "avg_ppsf": 234.26326017553848,
+    "sales_count": 3,
+    "avg_price_3yr_ma": 303888.88888888893,
+    "avg_ppsf_3yr_ma": 202.4597120700268
+  },
+  {
+    "tx_year": "2016",
+    "city": "MONTEZUMA",
+    "avg_price": 600000.0,
+    "avg_ppsf": 380.46924540266326,
+    "sales_count": 1,
+    "avg_price_3yr_ma": 462222.22222222225,
+    "avg_ppsf_3yr_ma": 261.79622318090566
+  },
+  {
+    "tx_year": "2017",
+    "city": "MONTEZUMA",
+    "avg_price": 608875.0,
+    "avg_ppsf": 326.9462236862282,
+    "sales_count": 4,
+    "avg_price_3yr_ma": 567958.3333333334,
+    "avg_ppsf_3yr_ma": 313.89290975481
+  },
+  {
+    "tx_year": "2018",
+    "city": "MONTEZUMA",
+    "avg_price": 414000.0,
+    "avg_ppsf": 243.3862433862434,
+    "sales_count": 2,
+    "avg_price_3yr_ma": 540958.3333333334,
+    "avg_ppsf_3yr_ma": 316.9339041583783
+  },
+  {
+    "tx_year": "2019",
+    "city": "MONTEZUMA",
+    "avg_price": 523000.0,
+    "avg_ppsf": 620.7232109422732,
+    "sales_count": 3,
+    "avg_price_3yr_ma": 515291.6666666667,
+    "avg_ppsf_3yr_ma": 397.0185593382483
+  },
+  {
+    "tx_year": "2020",
+    "city": "MONTEZUMA",
+    "avg_price": 299375.0,
+    "avg_ppsf": 231.4583602654024,
+    "sales_count": 8,
+    "avg_price_3yr_ma": 412125.0,
+    "avg_ppsf_3yr_ma": 365.18927153130636
+  },
+  {
+    "tx_year": "2021",
+    "city": "MONTEZUMA",
+    "avg_price": 978750.0,
+    "avg_ppsf": 497.93358481715,
+    "sales_count": 8,
+    "avg_price_3yr_ma": 600375.0,
+    "avg_ppsf_3yr_ma": 450.03838534160855
+  },
+  {
+    "tx_year": "2023",
+    "city": "MONTEZUMA",
+    "avg_price": 664600.0,
+    "avg_ppsf": 486.5030505421298,
+    "sales_count": 5,
+    "avg_price_3yr_ma": 647575.0,
+    "avg_ppsf_3yr_ma": 405.2983318748941
+  },
+  {
+    "tx_year": "1980",
+    "city": "RURAL",
+    "avg_price": 383490.9090909091,
+    "avg_ppsf": 35.99829777488164,
+    "sales_count": 11,
+    "avg_price_3yr_ma": 383490.9090909091,
+    "avg_ppsf_3yr_ma": 35.99829777488164
+  },
+  {
+    "tx_year": "1981",
+    "city": "RURAL",
+    "avg_price": 460144.44444444444,
+    "avg_ppsf": 94.25133689839572,
+    "sales_count": 9,
+    "avg_price_3yr_ma": 421817.6767676768,
+    "avg_ppsf_3yr_ma": 65.12481733663869
+  },
+  {
+    "tx_year": "1982",
+    "city": "RURAL",
+    "avg_price": 53100.0,
+    "avg_ppsf": 49.2039112431362,
+    "sales_count": 4,
+    "avg_price_3yr_ma": 298911.7845117845,
+    "avg_ppsf_3yr_ma": 59.81784863880452
+  },
+  {
+    "tx_year": "1983",
+    "city": "RURAL",
+    "avg_price": 89310.0,
+    "avg_ppsf": 35.23159041641271,
+    "sales_count": 10,
+    "avg_price_3yr_ma": 200851.4814814815,
+    "avg_ppsf_3yr_ma": 59.56227951931487
+  },
+  {
+    "tx_year": "1984",
+    "city": "RURAL",
+    "avg_price": 226500.0,
+    "avg_ppsf": 78.67336449360418,
+    "sales_count": 3,
+    "avg_price_3yr_ma": 122970.0,
+    "avg_ppsf_3yr_ma": 54.36962205105103
+  },
+  {
+    "tx_year": "1985",
+    "city": "RURAL",
+    "avg_price": 85900.0,
+    "avg_ppsf": 38.627984702827554,
+    "sales_count": 5,
+    "avg_price_3yr_ma": 133903.33333333334,
+    "avg_ppsf_3yr_ma": 50.844313204281484
+  },
+  {
+    "tx_year": "1986",
+    "city": "RURAL",
+    "avg_price": 150000.0,
+    "avg_ppsf": 58.45052036794825,
+    "sales_count": 6,
+    "avg_price_3yr_ma": 154133.33333333334,
+    "avg_ppsf_3yr_ma": 58.58395652146
+  },
+  {
+    "tx_year": "1987",
+    "city": "RURAL",
+    "avg_price": 80938.46153846153,
+    "avg_ppsf": 43.01988904830504,
+    "sales_count": 13,
+    "avg_price_3yr_ma": 105612.8205128205,
+    "avg_ppsf_3yr_ma": 46.69946470636028
+  },
+  {
+    "tx_year": "1988",
+    "city": "RURAL",
+    "avg_price": 8269000.0,
+    "avg_ppsf": 68.7222163839888,
+    "sales_count": 11,
+    "avg_price_3yr_ma": 2833312.8205128205,
+    "avg_ppsf_3yr_ma": 56.730875266747354
+  },
+  {
+    "tx_year": "1989",
+    "city": "RURAL",
+    "avg_price": 168222.22222222222,
+    "avg_ppsf": 53.162251402515025,
+    "sales_count": 9,
+    "avg_price_3yr_ma": 2839386.8945868947,
+    "avg_ppsf_3yr_ma": 54.968118944936286
+  },
+  {
+    "tx_year": "1990",
+    "city": "RURAL",
+    "avg_price": 141100.0,
+    "avg_ppsf": 57.21060837401551,
+    "sales_count": 8,
+    "avg_price_3yr_ma": 2859440.7407407407,
+    "avg_ppsf_3yr_ma": 59.69835872017311
+  },
+  {
+    "tx_year": "1991",
+    "city": "RURAL",
+    "avg_price": 3771814.285714286,
+    "avg_ppsf": 87.370005780024,
+    "sales_count": 14,
+    "avg_price_3yr_ma": 1360378.835978836,
+    "avg_ppsf_3yr_ma": 65.9142885188515
+  },
+  {
+    "tx_year": "1992",
+    "city": "RURAL",
+    "avg_price": 109050.0,
+    "avg_ppsf": 84.76030272576692,
+    "sales_count": 10,
+    "avg_price_3yr_ma": 1340654.761904762,
+    "avg_ppsf_3yr_ma": 76.44697229326881
+  },
+  {
+    "tx_year": "1993",
+    "city": "RURAL",
+    "avg_price": 92072.72727272728,
+    "avg_ppsf": 54.08609293074978,
+    "sales_count": 22,
+    "avg_price_3yr_ma": 1324312.3376623376,
+    "avg_ppsf_3yr_ma": 75.40546714551357
+  },
+  {
+    "tx_year": "1994",
+    "city": "RURAL",
+    "avg_price": 218100.0,
+    "avg_ppsf": 96.36947751195366,
+    "sales_count": 29,
+    "avg_price_3yr_ma": 139740.9090909091,
+    "avg_ppsf_3yr_ma": 78.40529105615678
+  },
+  {
+    "tx_year": "1995",
+    "city": "RURAL",
+    "avg_price": 331277.77777777775,
+    "avg_ppsf": 129.48662067846848,
+    "sales_count": 9,
+    "avg_price_3yr_ma": 213816.83501683502,
+    "avg_ppsf_3yr_ma": 93.3140637070573
+  },
+  {
+    "tx_year": "1996",
+    "city": "RURAL",
+    "avg_price": 410793.3333333333,
+    "avg_ppsf": 134.01856286549273,
+    "sales_count": 15,
+    "avg_price_3yr_ma": 320057.037037037,
+    "avg_ppsf_3yr_ma": 119.95822035197163
+  },
+  {
+    "tx_year": "1997",
+    "city": "RURAL",
+    "avg_price": 196677.77777777778,
+    "avg_ppsf": 90.81019448566066,
+    "sales_count": 18,
+    "avg_price_3yr_ma": 312916.2962962963,
+    "avg_ppsf_3yr_ma": 118.10512600987396
+  },
+  {
+    "tx_year": "1998",
+    "city": "RURAL",
+    "avg_price": 194694.44444444444,
+    "avg_ppsf": 115.81106036308834,
+    "sales_count": 18,
+    "avg_price_3yr_ma": 267388.5185185185,
+    "avg_ppsf_3yr_ma": 113.54660590474725
+  },
+  {
+    "tx_year": "1999",
+    "city": "RURAL",
+    "avg_price": 265250.0,
+    "avg_ppsf": 129.61455362555077,
+    "sales_count": 24,
+    "avg_price_3yr_ma": 218874.07407407407,
+    "avg_ppsf_3yr_ma": 112.0786028247666
+  },
+  {
+    "tx_year": "2000",
+    "city": "RURAL",
+    "avg_price": 419996.4736842105,
+    "avg_ppsf": 193.4597091617986,
+    "sales_count": 38,
+    "avg_price_3yr_ma": 293313.6393762183,
+    "avg_ppsf_3yr_ma": 146.29510771681257
+  },
+  {
+    "tx_year": "2001",
+    "city": "RURAL",
+    "avg_price": 4645852.380952381,
+    "avg_ppsf": 166.5038932523311,
+    "sales_count": 21,
+    "avg_price_3yr_ma": 1777032.9515455302,
+    "avg_ppsf_3yr_ma": 163.1927186798935
+  },
+  {
+    "tx_year": "2002",
+    "city": "RURAL",
+    "avg_price": 4659735.294117647,
+    "avg_ppsf": 164.41374962441066,
+    "sales_count": 17,
+    "avg_price_3yr_ma": 3241861.38291808,
+    "avg_ppsf_3yr_ma": 174.79245067951345
+  },
+  {
+    "tx_year": "2003",
+    "city": "RURAL",
+    "avg_price": 2320274.1612903224,
+    "avg_ppsf": 2027.9343698766381,
+    "sales_count": 31,
+    "avg_price_3yr_ma": 3875287.2787867836,
+    "avg_ppsf_3yr_ma": 786.2840042511266
+  },
+  {
+    "tx_year": "2004",
+    "city": "RURAL",
+    "avg_price": 305710.5,
+    "avg_ppsf": 139.34787184405207,
+    "sales_count": 38,
+    "avg_price_3yr_ma": 2428573.318469323,
+    "avg_ppsf_3yr_ma": 777.2319971150337
+  },
+  {
+    "tx_year": "2005",
+    "city": "RURAL",
+    "avg_price": 477887.7551020408,
+    "avg_ppsf": 236.01495631954856,
+    "sales_count": 49,
+    "avg_price_3yr_ma": 1034624.1387974544,
+    "avg_ppsf_3yr_ma": 801.099066013413
+  },
+  {
+    "tx_year": "2006",
+    "city": "RURAL",
+    "avg_price": 480602.43902439025,
+    "avg_ppsf": 205.9900508381482,
+    "sales_count": 41,
+    "avg_price_3yr_ma": 421400.23137547704,
+    "avg_ppsf_3yr_ma": 193.78429300058292
+  },
+  {
+    "tx_year": "2007",
+    "city": "RURAL",
+    "avg_price": 654658.0645161291,
+    "avg_ppsf": 287.20238378421993,
+    "sales_count": 31,
+    "avg_price_3yr_ma": 537716.0862141867,
+    "avg_ppsf_3yr_ma": 243.0691303139722
+  },
+  {
+    "tx_year": "2008",
+    "city": "RURAL",
+    "avg_price": 744945.4545454546,
+    "avg_ppsf": 281.53455947504943,
+    "sales_count": 22,
+    "avg_price_3yr_ma": 626735.3193619914,
+    "avg_ppsf_3yr_ma": 258.24233136580585
+  },
+  {
+    "tx_year": "2009",
+    "city": "RURAL",
+    "avg_price": 516706.25,
+    "avg_ppsf": 242.67937795741315,
+    "sales_count": 32,
+    "avg_price_3yr_ma": 638769.9230205278,
+    "avg_ppsf_3yr_ma": 270.4721070722275
+  },
+  {
+    "tx_year": "2010",
+    "city": "RURAL",
+    "avg_price": 394847.61904761905,
+    "avg_ppsf": 173.08086587712472,
+    "sales_count": 21,
+    "avg_price_3yr_ma": 552166.4411976911,
+    "avg_ppsf_3yr_ma": 232.4316011031958
+  },
+  {
+    "tx_year": "2011",
+    "city": "RURAL",
+    "avg_price": 507907.641025641,
+    "avg_ppsf": 194.522057859277,
+    "sales_count": 39,
+    "avg_price_3yr_ma": 473153.83669108665,
+    "avg_ppsf_3yr_ma": 203.42743389793827
+  },
+  {
+    "tx_year": "2012",
+    "city": "RURAL",
+    "avg_price": 580114.5454545454,
+    "avg_ppsf": 204.42107089409473,
+    "sales_count": 55,
+    "avg_price_3yr_ma": 494289.9351759351,
+    "avg_ppsf_3yr_ma": 190.67466487683214
+  },
+  {
+    "tx_year": "2013",
+    "city": "RURAL",
+    "avg_price": 577646.4912280702,
+    "avg_ppsf": 261.7159184627973,
+    "sales_count": 57,
+    "avg_price_3yr_ma": 555222.8925694189,
+    "avg_ppsf_3yr_ma": 220.21968240538968
+  },
+  {
+    "tx_year": "2014",
+    "city": "RURAL",
+    "avg_price": 588037.7358490566,
+    "avg_ppsf": 247.15554442318756,
+    "sales_count": 53,
+    "avg_price_3yr_ma": 581932.9241772242,
+    "avg_ppsf_3yr_ma": 237.76417792669318
+  },
+  {
+    "tx_year": "2015",
+    "city": "RURAL",
+    "avg_price": 553547.7160493827,
+    "avg_ppsf": 251.4327732119685,
+    "sales_count": 81,
+    "avg_price_3yr_ma": 573077.3143755031,
+    "avg_ppsf_3yr_ma": 253.43474536598444
+  },
+  {
+    "tx_year": "2016",
+    "city": "RURAL",
+    "avg_price": 645589.0410958905,
+    "avg_ppsf": 262.7290022565822,
+    "sales_count": 73,
+    "avg_price_3yr_ma": 595724.83099811,
+    "avg_ppsf_3yr_ma": 253.77243996391277
+  },
+  {
+    "tx_year": "2017",
+    "city": "RURAL",
+    "avg_price": 606673.24,
+    "avg_ppsf": 272.2730871442249,
+    "sales_count": 75,
+    "avg_price_3yr_ma": 601936.665715091,
+    "avg_ppsf_3yr_ma": 262.14495420425857
+  },
+  {
+    "tx_year": "2018",
+    "city": "RURAL",
+    "avg_price": 869748.75,
+    "avg_ppsf": 308.8582119905964,
+    "sales_count": 40,
+    "avg_price_3yr_ma": 707337.0103652967,
+    "avg_ppsf_3yr_ma": 281.2867671304678
+  },
+  {
+    "tx_year": "2019",
+    "city": "RURAL",
+    "avg_price": 854641.0158730159,
+    "avg_ppsf": 347.69549271985426,
+    "sales_count": 63,
+    "avg_price_3yr_ma": 777021.0019576721,
+    "avg_ppsf_3yr_ma": 309.6089306182252
+  },
+  {
+    "tx_year": "2020",
+    "city": "RURAL",
+    "avg_price": 928272.1518987342,
+    "avg_ppsf": 380.79402395004956,
+    "sales_count": 79,
+    "avg_price_3yr_ma": 884220.63925725,
+    "avg_ppsf_3yr_ma": 345.78257622016673
+  },
+  {
+    "tx_year": "2021",
+    "city": "RURAL",
+    "avg_price": 1237541.0582524273,
+    "avg_ppsf": 554.3436975567911,
+    "sales_count": 103,
+    "avg_price_3yr_ma": 1006818.0753413924,
+    "avg_ppsf_3yr_ma": 427.61107140889834
+  },
+  {
+    "tx_year": "2022",
+    "city": "RURAL",
+    "avg_price": 1677754.5454545454,
+    "avg_ppsf": 655.452263520931,
+    "sales_count": 55,
+    "avg_price_3yr_ma": 1281189.251868569,
+    "avg_ppsf_3yr_ma": 530.1966616759238
+  },
+  {
+    "tx_year": "2023",
+    "city": "RURAL",
+    "avg_price": 1754859.350877193,
+    "avg_ppsf": 683.6938870297527,
+    "sales_count": 57,
+    "avg_price_3yr_ma": 1556718.3181947218,
+    "avg_ppsf_3yr_ma": 631.1632827024915
+  },
+  {
+    "tx_year": "2024",
+    "city": "RURAL",
+    "avg_price": 1613507.3846153845,
+    "avg_ppsf": 718.150616618709,
+    "sales_count": 52,
+    "avg_price_3yr_ma": 1682040.4269823742,
+    "avg_ppsf_3yr_ma": 685.7655890564643
+  },
+  {
+    "tx_year": "2025",
+    "city": "RURAL",
+    "avg_price": 1608848.5076923077,
+    "avg_ppsf": 643.820278359152,
+    "sales_count": 65,
+    "avg_price_3yr_ma": 1659071.747728295,
+    "avg_ppsf_3yr_ma": 681.8882606692046
+  },
+  {
+    "tx_year": "2026",
+    "city": "RURAL",
+    "avg_price": 500000.0,
+    "avg_ppsf": null,
+    "sales_count": 1,
+    "avg_price_3yr_ma": 1240785.2974358974,
+    "avg_ppsf_3yr_ma": 680.9854474889305
+  },
+  {
+    "tx_year": "1980",
+    "city": "SILVERTHORNE",
+    "avg_price": 9236772.222222222,
+    "avg_ppsf": 5528.078982104326,
+    "sales_count": 18,
+    "avg_price_3yr_ma": 9236772.222222222,
+    "avg_ppsf_3yr_ma": 5528.078982104326
+  },
+  {
+    "tx_year": "1981",
+    "city": "SILVERTHORNE",
+    "avg_price": 979475.8620689656,
+    "avg_ppsf": 59.68598011000237,
+    "sales_count": 29,
+    "avg_price_3yr_ma": 5108124.042145594,
+    "avg_ppsf_3yr_ma": 2793.8824811071645
+  },
+  {
+    "tx_year": "1982",
+    "city": "SILVERTHORNE",
+    "avg_price": 85353.33333333333,
+    "avg_ppsf": 58.45896477931283,
+    "sales_count": 15,
+    "avg_price_3yr_ma": 3433867.1392081734,
+    "avg_ppsf_3yr_ma": 1882.074642331214
+  },
+  {
+    "tx_year": "1983",
+    "city": "SILVERTHORNE",
+    "avg_price": 82375.0,
+    "avg_ppsf": 80.00062003968254,
+    "sales_count": 4,
+    "avg_price_3yr_ma": 382401.39846743294,
+    "avg_ppsf_3yr_ma": 66.04852164299925
+  },
+  {
+    "tx_year": "1984",
+    "city": "SILVERTHORNE",
+    "avg_price": 87445.45454545454,
+    "avg_ppsf": 52.2609176453258,
+    "sales_count": 11,
+    "avg_price_3yr_ma": 85057.92929292929,
+    "avg_ppsf_3yr_ma": 63.57350082144038
+  },
+  {
+    "tx_year": "1985",
+    "city": "SILVERTHORNE",
+    "avg_price": 76464.70588235294,
+    "avg_ppsf": 42.77592516964882,
+    "sales_count": 17,
+    "avg_price_3yr_ma": 82095.05347593583,
+    "avg_ppsf_3yr_ma": 58.34582095155239
+  },
+  {
+    "tx_year": "1986",
+    "city": "SILVERTHORNE",
+    "avg_price": 82789.47368421052,
+    "avg_ppsf": 39.404458214715085,
+    "sales_count": 19,
+    "avg_price_3yr_ma": 82233.21137067267,
+    "avg_ppsf_3yr_ma": 44.813767009896566
+  },
+  {
+    "tx_year": "1987",
+    "city": "SILVERTHORNE",
+    "avg_price": 79600.0,
+    "avg_ppsf": 49.62622629282932,
+    "sales_count": 10,
+    "avg_price_3yr_ma": 79618.05985552115,
+    "avg_ppsf_3yr_ma": 43.93553655906441
+  },
+  {
+    "tx_year": "1988",
+    "city": "SILVERTHORNE",
+    "avg_price": 80500.0,
+    "avg_ppsf": 51.170425048761444,
+    "sales_count": 8,
+    "avg_price_3yr_ma": 80963.15789473684,
+    "avg_ppsf_3yr_ma": 46.73370318543528
+  },
+  {
+    "tx_year": "1989",
+    "city": "SILVERTHORNE",
+    "avg_price": 68141.66666666667,
+    "avg_ppsf": 44.61387422129149,
+    "sales_count": 36,
+    "avg_price_3yr_ma": 76080.55555555556,
+    "avg_ppsf_3yr_ma": 48.47017518762741
+  },
+  {
+    "tx_year": "1990",
+    "city": "SILVERTHORNE",
+    "avg_price": 81280.0,
+    "avg_ppsf": 41.52984044102113,
+    "sales_count": 20,
+    "avg_price_3yr_ma": 76640.55555555556,
+    "avg_ppsf_3yr_ma": 45.771379903691354
+  },
+  {
+    "tx_year": "1991",
+    "city": "SILVERTHORNE",
+    "avg_price": 2661385.714285714,
+    "avg_ppsf": 2047.6721345793815,
+    "sales_count": 35,
+    "avg_price_3yr_ma": 936935.7936507935,
+    "avg_ppsf_3yr_ma": 711.2719497472314
+  },
+  {
+    "tx_year": "1992",
+    "city": "SILVERTHORNE",
+    "avg_price": 86843.58974358975,
+    "avg_ppsf": 46.539801303021875,
+    "sales_count": 39,
+    "avg_price_3yr_ma": 943169.7680097679,
+    "avg_ppsf_3yr_ma": 711.9139254411415
+  },
+  {
+    "tx_year": "1993",
+    "city": "SILVERTHORNE",
+    "avg_price": 151550.80327868852,
+    "avg_ppsf": 123.74898527247187,
+    "sales_count": 61,
+    "avg_price_3yr_ma": 966593.3691026642,
+    "avg_ppsf_3yr_ma": 739.320307051625
+  },
+  {
+    "tx_year": "1994",
+    "city": "SILVERTHORNE",
+    "avg_price": 235737.70491803277,
+    "avg_ppsf": 88.41693661245614,
+    "sales_count": 61,
+    "avg_price_3yr_ma": 158044.03264677036,
+    "avg_ppsf_3yr_ma": 86.23524106264996
+  },
+  {
+    "tx_year": "1995",
+    "city": "SILVERTHORNE",
+    "avg_price": 170114.54545454544,
+    "avg_ppsf": 93.15648355484088,
+    "sales_count": 55,
+    "avg_price_3yr_ma": 185801.0178837556,
+    "avg_ppsf_3yr_ma": 101.77413514658963
+  },
+  {
+    "tx_year": "1996",
+    "city": "SILVERTHORNE",
+    "avg_price": 207911.11111111112,
+    "avg_ppsf": 107.03881252132992,
+    "sales_count": 45,
+    "avg_price_3yr_ma": 204587.7871612298,
+    "avg_ppsf_3yr_ma": 96.20407756287564
+  },
+  {
+    "tx_year": "1997",
+    "city": "SILVERTHORNE",
+    "avg_price": 164961.11111111112,
+    "avg_ppsf": 108.22159610468667,
+    "sales_count": 36,
+    "avg_price_3yr_ma": 180995.5892255892,
+    "avg_ppsf_3yr_ma": 102.80563072695249
+  },
+  {
+    "tx_year": "1998",
+    "city": "SILVERTHORNE",
+    "avg_price": 201969.79452054793,
+    "avg_ppsf": 114.02274203369218,
+    "sales_count": 73,
+    "avg_price_3yr_ma": 191614.0055809234,
+    "avg_ppsf_3yr_ma": 109.76105021990293
+  },
+  {
+    "tx_year": "1999",
+    "city": "SILVERTHORNE",
+    "avg_price": 284136.1810344828,
+    "avg_ppsf": 120.43085191263589,
+    "sales_count": 116,
+    "avg_price_3yr_ma": 217022.3622220473,
+    "avg_ppsf_3yr_ma": 114.22506335033825
+  },
+  {
+    "tx_year": "2000",
+    "city": "SILVERTHORNE",
+    "avg_price": 285962.87903225806,
+    "avg_ppsf": 136.3181280707221,
+    "sales_count": 124,
+    "avg_price_3yr_ma": 257356.2848624296,
+    "avg_ppsf_3yr_ma": 123.5905740056834
+  },
+  {
+    "tx_year": "2001",
+    "city": "SILVERTHORNE",
+    "avg_price": 2062296.5979381443,
+    "avg_ppsf": 163.72253859121838,
+    "sales_count": 97,
+    "avg_price_3yr_ma": 877465.2193349617,
+    "avg_ppsf_3yr_ma": 140.15717285819213
+  },
+  {
+    "tx_year": "2002",
+    "city": "SILVERTHORNE",
+    "avg_price": 318619.2211538461,
+    "avg_ppsf": 152.8143884471036,
+    "sales_count": 104,
+    "avg_price_3yr_ma": 888959.5660414161,
+    "avg_ppsf_3yr_ma": 150.95168503634804
+  },
+  {
+    "tx_year": "2003",
+    "city": "SILVERTHORNE",
+    "avg_price": 376167.96116504853,
+    "avg_ppsf": 176.23344402622112,
+    "sales_count": 103,
+    "avg_price_3yr_ma": 919027.9267523462,
+    "avg_ppsf_3yr_ma": 164.2567903548477
+  },
+  {
+    "tx_year": "2004",
+    "city": "SILVERTHORNE",
+    "avg_price": 314922.3125,
+    "avg_ppsf": 170.0592563803838,
+    "sales_count": 112,
+    "avg_price_3yr_ma": 336569.8316062982,
+    "avg_ppsf_3yr_ma": 166.36902961790284
+  },
+  {
+    "tx_year": "2005",
+    "city": "SILVERTHORNE",
+    "avg_price": 4961469.988888889,
+    "avg_ppsf": 202.5975062720624,
+    "sales_count": 180,
+    "avg_price_3yr_ma": 1884186.7541846456,
+    "avg_ppsf_3yr_ma": 182.96340222622243
+  },
+  {
+    "tx_year": "2006",
+    "city": "SILVERTHORNE",
+    "avg_price": 464147.7124183007,
+    "avg_ppsf": 211.26378409417902,
+    "sales_count": 153,
+    "avg_price_3yr_ma": 1913513.33793573,
+    "avg_ppsf_3yr_ma": 194.64018224887505
+  },
+  {
+    "tx_year": "2007",
+    "city": "SILVERTHORNE",
+    "avg_price": 541836.9047619047,
+    "avg_ppsf": 220.49497078602926,
+    "sales_count": 168,
+    "avg_price_3yr_ma": 1989151.5353563644,
+    "avg_ppsf_3yr_ma": 211.4520870507569
+  },
+  {
+    "tx_year": "2008",
+    "city": "SILVERTHORNE",
+    "avg_price": 1153089.1129032257,
+    "avg_ppsf": 268.52800934804867,
+    "sales_count": 124,
+    "avg_price_3yr_ma": 719691.2433611437,
+    "avg_ppsf_3yr_ma": 233.428921409419
+  },
+  {
+    "tx_year": "2009",
+    "city": "SILVERTHORNE",
+    "avg_price": 739619.4,
+    "avg_ppsf": 267.927078641089,
+    "sales_count": 85,
+    "avg_price_3yr_ma": 811515.1392217102,
+    "avg_ppsf_3yr_ma": 252.31668625838896
+  },
+  {
+    "tx_year": "2010",
+    "city": "SILVERTHORNE",
+    "avg_price": 587172.4387755102,
+    "avg_ppsf": 245.0672867588323,
+    "sales_count": 98,
+    "avg_price_3yr_ma": 826626.983892912,
+    "avg_ppsf_3yr_ma": 260.5074582493233
+  },
+  {
+    "tx_year": "2011",
+    "city": "SILVERTHORNE",
+    "avg_price": 451534.65346534655,
+    "avg_ppsf": 219.61595548182714,
+    "sales_count": 101,
+    "avg_price_3yr_ma": 592775.497413619,
+    "avg_ppsf_3yr_ma": 244.20344029391615
+  },
+  {
+    "tx_year": "2012",
+    "city": "SILVERTHORNE",
+    "avg_price": 520022.9491525424,
+    "avg_ppsf": 223.84044211930828,
+    "sales_count": 118,
+    "avg_price_3yr_ma": 519576.6804644664,
+    "avg_ppsf_3yr_ma": 229.50789478665592
+  },
+  {
+    "tx_year": "2013",
+    "city": "SILVERTHORNE",
+    "avg_price": 542959.2554744525,
+    "avg_ppsf": 227.7849289165326,
+    "sales_count": 137,
+    "avg_price_3yr_ma": 504838.9526974472,
+    "avg_ppsf_3yr_ma": 223.7471088392227
+  },
+  {
+    "tx_year": "2014",
+    "city": "SILVERTHORNE",
+    "avg_price": 531697.2517482517,
+    "avg_ppsf": 243.81200892044404,
+    "sales_count": 143,
+    "avg_price_3yr_ma": 531559.8187917488,
+    "avg_ppsf_3yr_ma": 231.81245998542832
+  },
+  {
+    "tx_year": "2015",
+    "city": "SILVERTHORNE",
+    "avg_price": 649475.5051020408,
+    "avg_ppsf": 259.40233461754303,
+    "sales_count": 196,
+    "avg_price_3yr_ma": 574710.670774915,
+    "avg_ppsf_3yr_ma": 243.66642415150656
+  },
+  {
+    "tx_year": "2016",
+    "city": "SILVERTHORNE",
+    "avg_price": 666402.5535714285,
+    "avg_ppsf": 292.88639759384375,
+    "sales_count": 224,
+    "avg_price_3yr_ma": 615858.4368072404,
+    "avg_ppsf_3yr_ma": 265.3669137106103
+  },
+  {
+    "tx_year": "2017",
+    "city": "SILVERTHORNE",
+    "avg_price": 806781.350877193,
+    "avg_ppsf": 348.26031230700795,
+    "sales_count": 285,
+    "avg_price_3yr_ma": 707553.1365168873,
+    "avg_ppsf_3yr_ma": 300.18301483946493
+  },
+  {
+    "tx_year": "2018",
+    "city": "SILVERTHORNE",
+    "avg_price": 1979981.8909774437,
+    "avg_ppsf": 3025.2305604703934,
+    "sales_count": 266,
+    "avg_price_3yr_ma": 1151055.2651420217,
+    "avg_ppsf_3yr_ma": 1222.1257567904152
+  },
+  {
+    "tx_year": "2019",
+    "city": "SILVERTHORNE",
+    "avg_price": 818120.6207865168,
+    "avg_ppsf": 379.68375628677273,
+    "sales_count": 356,
+    "avg_price_3yr_ma": 1201627.9542137177,
+    "avg_ppsf_3yr_ma": 1251.058209688058
+  },
+  {
+    "tx_year": "2020",
+    "city": "SILVERTHORNE",
+    "avg_price": 881898.0892857143,
+    "avg_ppsf": 452.47209043711285,
+    "sales_count": 392,
+    "avg_price_3yr_ma": 1226666.8670165583,
+    "avg_ppsf_3yr_ma": 1285.7954690647596
+  },
+  {
+    "tx_year": "2021",
+    "city": "SILVERTHORNE",
+    "avg_price": 1076163.0494382023,
+    "avg_ppsf": 512.4390144729829,
+    "sales_count": 445,
+    "avg_price_3yr_ma": 925393.9198368111,
+    "avg_ppsf_3yr_ma": 448.19828706562276
+  },
+  {
+    "tx_year": "2022",
+    "city": "SILVERTHORNE",
+    "avg_price": 1338310.387862797,
+    "avg_ppsf": 631.8743459038864,
+    "sales_count": 379,
+    "avg_price_3yr_ma": 1098790.5088622377,
+    "avg_ppsf_3yr_ma": 532.261816937994
+  },
+  {
+    "tx_year": "2023",
+    "city": "SILVERTHORNE",
+    "avg_price": 1303662.9106145252,
+    "avg_ppsf": 645.4261858522494,
+    "sales_count": 358,
+    "avg_price_3yr_ma": 1239378.7826385081,
+    "avg_ppsf_3yr_ma": 596.5798487430396
+  },
+  {
+    "tx_year": "2024",
+    "city": "SILVERTHORNE",
+    "avg_price": 1524455.0869565217,
+    "avg_ppsf": 786.3139560534032,
+    "sales_count": 299,
+    "avg_price_3yr_ma": 1388809.4618112813,
+    "avg_ppsf_3yr_ma": 687.871495936513
+  },
+  {
+    "tx_year": "2025",
+    "city": "SILVERTHORNE",
+    "avg_price": 1611756.1450777203,
+    "avg_ppsf": 698.6384668792392,
+    "sales_count": 193,
+    "avg_price_3yr_ma": 1479958.0475495893,
+    "avg_ppsf_3yr_ma": 710.1262029282974
+  },
+  {
+    "tx_year": "2026",
+    "city": "SILVERTHORNE",
+    "avg_price": 791545.0,
+    "avg_ppsf": 506.90946882354336,
+    "sales_count": 3,
+    "avg_price_3yr_ma": 1309252.0773447473,
+    "avg_ppsf_3yr_ma": 663.9539639187286
+  }
+]

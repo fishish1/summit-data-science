@@ -23,6 +23,10 @@ ingest:
 run:
 	$(VENV)/streamlit run src/summit_housing/dashboard/Introduction.py
 
+view-static:
+	@echo "Serving static dashboard at http://localhost:8000"
+	@cd static_dashboard && python3 -m http.server 8000
+
 scrape:
 	$(VENV)/python src/summit_housing/scraper_v2.py --workers 10
 

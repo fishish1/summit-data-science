@@ -1,0 +1,674 @@
+[
+  {
+    "year_blt": 1901,
+    "units_built": 1,
+    "cumulative_units": 1,
+    "cumulative_sqft": 1039.0
+  },
+  {
+    "year_blt": 1902,
+    "units_built": 2,
+    "cumulative_units": 3,
+    "cumulative_sqft": 4647.0
+  },
+  {
+    "year_blt": 1904,
+    "units_built": 2,
+    "cumulative_units": 5,
+    "cumulative_sqft": 5976.0
+  },
+  {
+    "year_blt": 1905,
+    "units_built": 5,
+    "cumulative_units": 10,
+    "cumulative_sqft": 14196.0
+  },
+  {
+    "year_blt": 1908,
+    "units_built": 1,
+    "cumulative_units": 11,
+    "cumulative_sqft": 15506.0
+  },
+  {
+    "year_blt": 1910,
+    "units_built": 7,
+    "cumulative_units": 18,
+    "cumulative_sqft": 28804.0
+  },
+  {
+    "year_blt": 1912,
+    "units_built": 1,
+    "cumulative_units": 19,
+    "cumulative_sqft": 31708.0
+  },
+  {
+    "year_blt": 1913,
+    "units_built": 1,
+    "cumulative_units": 20,
+    "cumulative_sqft": 32449.0
+  },
+  {
+    "year_blt": 1915,
+    "units_built": 4,
+    "cumulative_units": 24,
+    "cumulative_sqft": 38237.0
+  },
+  {
+    "year_blt": 1916,
+    "units_built": 1,
+    "cumulative_units": 25,
+    "cumulative_sqft": 40089.0
+  },
+  {
+    "year_blt": 1917,
+    "units_built": 3,
+    "cumulative_units": 28,
+    "cumulative_sqft": 47630.0
+  },
+  {
+    "year_blt": 1918,
+    "units_built": 1,
+    "cumulative_units": 29,
+    "cumulative_sqft": 47870.0
+  },
+  {
+    "year_blt": 1920,
+    "units_built": 13,
+    "cumulative_units": 42,
+    "cumulative_sqft": 64571.0
+  },
+  {
+    "year_blt": 1921,
+    "units_built": 1,
+    "cumulative_units": 43,
+    "cumulative_sqft": 70083.0
+  },
+  {
+    "year_blt": 1922,
+    "units_built": 1,
+    "cumulative_units": 44,
+    "cumulative_sqft": 70867.0
+  },
+  {
+    "year_blt": 1923,
+    "units_built": 2,
+    "cumulative_units": 46,
+    "cumulative_sqft": 74808.0
+  },
+  {
+    "year_blt": 1924,
+    "units_built": 1,
+    "cumulative_units": 47,
+    "cumulative_sqft": 76350.0
+  },
+  {
+    "year_blt": 1925,
+    "units_built": 3,
+    "cumulative_units": 50,
+    "cumulative_sqft": 84382.0
+  },
+  {
+    "year_blt": 1926,
+    "units_built": 1,
+    "cumulative_units": 51,
+    "cumulative_sqft": 85807.0
+  },
+  {
+    "year_blt": 1928,
+    "units_built": 1,
+    "cumulative_units": 52,
+    "cumulative_sqft": 87114.0
+  },
+  {
+    "year_blt": 1930,
+    "units_built": 11,
+    "cumulative_units": 63,
+    "cumulative_sqft": 106465.0
+  },
+  {
+    "year_blt": 1931,
+    "units_built": 1,
+    "cumulative_units": 64,
+    "cumulative_sqft": 106795.0
+  },
+  {
+    "year_blt": 1932,
+    "units_built": 5,
+    "cumulative_units": 69,
+    "cumulative_sqft": 112591.0
+  },
+  {
+    "year_blt": 1933,
+    "units_built": 3,
+    "cumulative_units": 72,
+    "cumulative_sqft": 117752.0
+  },
+  {
+    "year_blt": 1935,
+    "units_built": 6,
+    "cumulative_units": 78,
+    "cumulative_sqft": 127078.0
+  },
+  {
+    "year_blt": 1936,
+    "units_built": 3,
+    "cumulative_units": 81,
+    "cumulative_sqft": 130900.0
+  },
+  {
+    "year_blt": 1938,
+    "units_built": 15,
+    "cumulative_units": 96,
+    "cumulative_sqft": 143414.0
+  },
+  {
+    "year_blt": 1939,
+    "units_built": 5,
+    "cumulative_units": 101,
+    "cumulative_sqft": 150354.0
+  },
+  {
+    "year_blt": 1940,
+    "units_built": 13,
+    "cumulative_units": 114,
+    "cumulative_sqft": 176531.0
+  },
+  {
+    "year_blt": 1941,
+    "units_built": 1,
+    "cumulative_units": 115,
+    "cumulative_sqft": 177880.0
+  },
+  {
+    "year_blt": 1942,
+    "units_built": 4,
+    "cumulative_units": 119,
+    "cumulative_sqft": 180692.0
+  },
+  {
+    "year_blt": 1943,
+    "units_built": 1,
+    "cumulative_units": 120,
+    "cumulative_sqft": 183018.0
+  },
+  {
+    "year_blt": 1944,
+    "units_built": 1,
+    "cumulative_units": 121,
+    "cumulative_sqft": 186475.0
+  },
+  {
+    "year_blt": 1945,
+    "units_built": 3,
+    "cumulative_units": 124,
+    "cumulative_sqft": 189400.0
+  },
+  {
+    "year_blt": 1946,
+    "units_built": 4,
+    "cumulative_units": 128,
+    "cumulative_sqft": 194725.0
+  },
+  {
+    "year_blt": 1947,
+    "units_built": 1,
+    "cumulative_units": 129,
+    "cumulative_sqft": 197383.0
+  },
+  {
+    "year_blt": 1948,
+    "units_built": 13,
+    "cumulative_units": 142,
+    "cumulative_sqft": 215528.0
+  },
+  {
+    "year_blt": 1950,
+    "units_built": 17,
+    "cumulative_units": 159,
+    "cumulative_sqft": 239402.0
+  },
+  {
+    "year_blt": 1951,
+    "units_built": 4,
+    "cumulative_units": 163,
+    "cumulative_sqft": 242957.0
+  },
+  {
+    "year_blt": 1952,
+    "units_built": 4,
+    "cumulative_units": 167,
+    "cumulative_sqft": 249074.0
+  },
+  {
+    "year_blt": 1953,
+    "units_built": 6,
+    "cumulative_units": 173,
+    "cumulative_sqft": 256447.0
+  },
+  {
+    "year_blt": 1954,
+    "units_built": 2,
+    "cumulative_units": 175,
+    "cumulative_sqft": 257899.0
+  },
+  {
+    "year_blt": 1955,
+    "units_built": 14,
+    "cumulative_units": 189,
+    "cumulative_sqft": 278936.0
+  },
+  {
+    "year_blt": 1956,
+    "units_built": 15,
+    "cumulative_units": 204,
+    "cumulative_sqft": 297664.0
+  },
+  {
+    "year_blt": 1957,
+    "units_built": 6,
+    "cumulative_units": 210,
+    "cumulative_sqft": 305437.0
+  },
+  {
+    "year_blt": 1958,
+    "units_built": 15,
+    "cumulative_units": 225,
+    "cumulative_sqft": 326135.0
+  },
+  {
+    "year_blt": 1959,
+    "units_built": 9,
+    "cumulative_units": 234,
+    "cumulative_sqft": 337432.0
+  },
+  {
+    "year_blt": 1960,
+    "units_built": 24,
+    "cumulative_units": 258,
+    "cumulative_sqft": 374125.0
+  },
+  {
+    "year_blt": 1961,
+    "units_built": 40,
+    "cumulative_units": 298,
+    "cumulative_sqft": 428639.0
+  },
+  {
+    "year_blt": 1962,
+    "units_built": 44,
+    "cumulative_units": 342,
+    "cumulative_sqft": 489764.0
+  },
+  {
+    "year_blt": 1963,
+    "units_built": 76,
+    "cumulative_units": 418,
+    "cumulative_sqft": 609402.0
+  },
+  {
+    "year_blt": 1964,
+    "units_built": 82,
+    "cumulative_units": 500,
+    "cumulative_sqft": 699993.0
+  },
+  {
+    "year_blt": 1965,
+    "units_built": 213,
+    "cumulative_units": 713,
+    "cumulative_sqft": 1017210.0
+  },
+  {
+    "year_blt": 1966,
+    "units_built": 229,
+    "cumulative_units": 942,
+    "cumulative_sqft": 1286122.0
+  },
+  {
+    "year_blt": 1967,
+    "units_built": 125,
+    "cumulative_units": 1067,
+    "cumulative_sqft": 1475152.0
+  },
+  {
+    "year_blt": 1968,
+    "units_built": 208,
+    "cumulative_units": 1275,
+    "cumulative_sqft": 1764449.0
+  },
+  {
+    "year_blt": 1969,
+    "units_built": 231,
+    "cumulative_units": 1506,
+    "cumulative_sqft": 2032033.0
+  },
+  {
+    "year_blt": 1970,
+    "units_built": 303,
+    "cumulative_units": 1809,
+    "cumulative_sqft": 2456340.0
+  },
+  {
+    "year_blt": 1971,
+    "units_built": 433,
+    "cumulative_units": 2242,
+    "cumulative_sqft": 2986385.0
+  },
+  {
+    "year_blt": 1972,
+    "units_built": 1506,
+    "cumulative_units": 3748,
+    "cumulative_sqft": 4609246.0
+  },
+  {
+    "year_blt": 1973,
+    "units_built": 1285,
+    "cumulative_units": 5033,
+    "cumulative_sqft": 6124052.0
+  },
+  {
+    "year_blt": 1974,
+    "units_built": 883,
+    "cumulative_units": 5916,
+    "cumulative_sqft": 7029770.0
+  },
+  {
+    "year_blt": 1975,
+    "units_built": 274,
+    "cumulative_units": 6190,
+    "cumulative_sqft": 7435185.0
+  },
+  {
+    "year_blt": 1976,
+    "units_built": 303,
+    "cumulative_units": 6493,
+    "cumulative_sqft": 7908272.0
+  },
+  {
+    "year_blt": 1977,
+    "units_built": 542,
+    "cumulative_units": 7035,
+    "cumulative_sqft": 8685870.0
+  },
+  {
+    "year_blt": 1978,
+    "units_built": 600,
+    "cumulative_units": 7635,
+    "cumulative_sqft": 9668499.0
+  },
+  {
+    "year_blt": 1979,
+    "units_built": 1412,
+    "cumulative_units": 9047,
+    "cumulative_sqft": 11607786.0
+  },
+  {
+    "year_blt": 1980,
+    "units_built": 1333,
+    "cumulative_units": 10380,
+    "cumulative_sqft": 13492844.0
+  },
+  {
+    "year_blt": 1981,
+    "units_built": 959,
+    "cumulative_units": 11339,
+    "cumulative_sqft": 15005845.0
+  },
+  {
+    "year_blt": 1982,
+    "units_built": 720,
+    "cumulative_units": 12059,
+    "cumulative_sqft": 16059615.0
+  },
+  {
+    "year_blt": 1983,
+    "units_built": 727,
+    "cumulative_units": 12786,
+    "cumulative_sqft": 16950560.0
+  },
+  {
+    "year_blt": 1984,
+    "units_built": 654,
+    "cumulative_units": 13440,
+    "cumulative_sqft": 17806083.0
+  },
+  {
+    "year_blt": 1985,
+    "units_built": 652,
+    "cumulative_units": 14092,
+    "cumulative_sqft": 18448336.0
+  },
+  {
+    "year_blt": 1986,
+    "units_built": 259,
+    "cumulative_units": 14351,
+    "cumulative_sqft": 18775104.0
+  },
+  {
+    "year_blt": 1987,
+    "units_built": 142,
+    "cumulative_units": 14493,
+    "cumulative_sqft": 19044878.0
+  },
+  {
+    "year_blt": 1988,
+    "units_built": 96,
+    "cumulative_units": 14589,
+    "cumulative_sqft": 19245610.0
+  },
+  {
+    "year_blt": 1989,
+    "units_built": 257,
+    "cumulative_units": 14846,
+    "cumulative_sqft": 19730378.0
+  },
+  {
+    "year_blt": 1990,
+    "units_built": 297,
+    "cumulative_units": 15143,
+    "cumulative_sqft": 20412935.0
+  },
+  {
+    "year_blt": 1991,
+    "units_built": 310,
+    "cumulative_units": 15453,
+    "cumulative_sqft": 21130269.0
+  },
+  {
+    "year_blt": 1992,
+    "units_built": 334,
+    "cumulative_units": 15787,
+    "cumulative_sqft": 21987829.0
+  },
+  {
+    "year_blt": 1993,
+    "units_built": 453,
+    "cumulative_units": 16240,
+    "cumulative_sqft": 23068721.0
+  },
+  {
+    "year_blt": 1994,
+    "units_built": 884,
+    "cumulative_units": 17124,
+    "cumulative_sqft": 24914944.0
+  },
+  {
+    "year_blt": 1995,
+    "units_built": 881,
+    "cumulative_units": 18005,
+    "cumulative_sqft": 26631237.0
+  },
+  {
+    "year_blt": 1996,
+    "units_built": 986,
+    "cumulative_units": 18991,
+    "cumulative_sqft": 28317443.0
+  },
+  {
+    "year_blt": 1997,
+    "units_built": 995,
+    "cumulative_units": 19986,
+    "cumulative_sqft": 30180024.0
+  },
+  {
+    "year_blt": 1998,
+    "units_built": 1220,
+    "cumulative_units": 21206,
+    "cumulative_sqft": 32313452.0
+  },
+  {
+    "year_blt": 1999,
+    "units_built": 1406,
+    "cumulative_units": 22612,
+    "cumulative_sqft": 34706428.0
+  },
+  {
+    "year_blt": 2000,
+    "units_built": 1228,
+    "cumulative_units": 23840,
+    "cumulative_sqft": 36912269.0
+  },
+  {
+    "year_blt": 2001,
+    "units_built": 513,
+    "cumulative_units": 24353,
+    "cumulative_sqft": 38104564.0
+  },
+  {
+    "year_blt": 2002,
+    "units_built": 425,
+    "cumulative_units": 24778,
+    "cumulative_sqft": 39121409.0
+  },
+  {
+    "year_blt": 2003,
+    "units_built": 357,
+    "cumulative_units": 25135,
+    "cumulative_sqft": 40064192.0
+  },
+  {
+    "year_blt": 2004,
+    "units_built": 363,
+    "cumulative_units": 25498,
+    "cumulative_sqft": 41179365.0
+  },
+  {
+    "year_blt": 2005,
+    "units_built": 512,
+    "cumulative_units": 26010,
+    "cumulative_sqft": 42539109.0
+  },
+  {
+    "year_blt": 2006,
+    "units_built": 392,
+    "cumulative_units": 26402,
+    "cumulative_sqft": 43845374.0
+  },
+  {
+    "year_blt": 2007,
+    "units_built": 595,
+    "cumulative_units": 26997,
+    "cumulative_sqft": 45305759.0
+  },
+  {
+    "year_blt": 2008,
+    "units_built": 359,
+    "cumulative_units": 27356,
+    "cumulative_sqft": 46207245.0
+  },
+  {
+    "year_blt": 2009,
+    "units_built": 86,
+    "cumulative_units": 27442,
+    "cumulative_sqft": 46502854.0
+  },
+  {
+    "year_blt": 2010,
+    "units_built": 116,
+    "cumulative_units": 27558,
+    "cumulative_sqft": 46817121.0
+  },
+  {
+    "year_blt": 2011,
+    "units_built": 241,
+    "cumulative_units": 27799,
+    "cumulative_sqft": 47224291.0
+  },
+  {
+    "year_blt": 2012,
+    "units_built": 146,
+    "cumulative_units": 27945,
+    "cumulative_sqft": 47603446.0
+  },
+  {
+    "year_blt": 2013,
+    "units_built": 242,
+    "cumulative_units": 28187,
+    "cumulative_sqft": 48191147.0
+  },
+  {
+    "year_blt": 2014,
+    "units_built": 389,
+    "cumulative_units": 28576,
+    "cumulative_sqft": 48878291.0
+  },
+  {
+    "year_blt": 2015,
+    "units_built": 245,
+    "cumulative_units": 28821,
+    "cumulative_sqft": 49566489.0
+  },
+  {
+    "year_blt": 2016,
+    "units_built": 256,
+    "cumulative_units": 29077,
+    "cumulative_sqft": 50265974.0
+  },
+  {
+    "year_blt": 2017,
+    "units_built": 499,
+    "cumulative_units": 29576,
+    "cumulative_sqft": 51239046.0
+  },
+  {
+    "year_blt": 2018,
+    "units_built": 506,
+    "cumulative_units": 30082,
+    "cumulative_sqft": 52196702.0
+  },
+  {
+    "year_blt": 2019,
+    "units_built": 492,
+    "cumulative_units": 30574,
+    "cumulative_sqft": 53165470.0
+  },
+  {
+    "year_blt": 2020,
+    "units_built": 322,
+    "cumulative_units": 30896,
+    "cumulative_sqft": 53910025.0
+  },
+  {
+    "year_blt": 2021,
+    "units_built": 339,
+    "cumulative_units": 31235,
+    "cumulative_sqft": 54846357.0
+  },
+  {
+    "year_blt": 2022,
+    "units_built": 296,
+    "cumulative_units": 31531,
+    "cumulative_sqft": 55613602.0
+  },
+  {
+    "year_blt": 2023,
+    "units_built": 277,
+    "cumulative_units": 31808,
+    "cumulative_sqft": 56222616.0
+  },
+  {
+    "year_blt": 2024,
+    "units_built": 182,
+    "cumulative_units": 31990,
+    "cumulative_sqft": 56674625.0
+  }
+]

@@ -1,0 +1,848 @@
+[
+  {
+    "purchase_year": "1980",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 33,
+    "avg_purchase_price": 3922490.909090909
+  },
+  {
+    "purchase_year": "1980",
+    "location_type": "Local (In-County)",
+    "buyer_count": 68,
+    "avg_purchase_price": 1845564.705882353
+  },
+  {
+    "purchase_year": "1980",
+    "location_type": "Out-of-State",
+    "buyer_count": 28,
+    "avg_purchase_price": 1896285.7142857143
+  },
+  {
+    "purchase_year": "1981",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 40,
+    "avg_purchase_price": 2298920.0
+  },
+  {
+    "purchase_year": "1981",
+    "location_type": "Local (In-County)",
+    "buyer_count": 53,
+    "avg_purchase_price": 931832.0754716981
+  },
+  {
+    "purchase_year": "1981",
+    "location_type": "Out-of-State",
+    "buyer_count": 33,
+    "avg_purchase_price": 271984.8484848485
+  },
+  {
+    "purchase_year": "1982",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 32,
+    "avg_purchase_price": 5683443.75
+  },
+  {
+    "purchase_year": "1982",
+    "location_type": "Local (In-County)",
+    "buyer_count": 38,
+    "avg_purchase_price": 1492660.5263157894
+  },
+  {
+    "purchase_year": "1982",
+    "location_type": "Out-of-State",
+    "buyer_count": 17,
+    "avg_purchase_price": 149676.4705882353
+  },
+  {
+    "purchase_year": "1983",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 27,
+    "avg_purchase_price": 2940125.925925926
+  },
+  {
+    "purchase_year": "1983",
+    "location_type": "Local (In-County)",
+    "buyer_count": 39,
+    "avg_purchase_price": 2755110.2564102565
+  },
+  {
+    "purchase_year": "1983",
+    "location_type": "Out-of-State",
+    "buyer_count": 19,
+    "avg_purchase_price": 344405.2631578947
+  },
+  {
+    "purchase_year": "1984",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 42,
+    "avg_purchase_price": 2540783.3333333335
+  },
+  {
+    "purchase_year": "1984",
+    "location_type": "Local (In-County)",
+    "buyer_count": 61,
+    "avg_purchase_price": 4845501.639344262
+  },
+  {
+    "purchase_year": "1984",
+    "location_type": "Out-of-State",
+    "buyer_count": 39,
+    "avg_purchase_price": 2823712.8205128205
+  },
+  {
+    "purchase_year": "1985",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 39,
+    "avg_purchase_price": 1767464.1025641025
+  },
+  {
+    "purchase_year": "1985",
+    "location_type": "Local (In-County)",
+    "buyer_count": 70,
+    "avg_purchase_price": 1702041.4285714286
+  },
+  {
+    "purchase_year": "1985",
+    "location_type": "Out-of-State",
+    "buyer_count": 27,
+    "avg_purchase_price": 126503.70370370371
+  },
+  {
+    "purchase_year": "1986",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 41,
+    "avg_purchase_price": 2360856.0975609757
+  },
+  {
+    "purchase_year": "1986",
+    "location_type": "Local (In-County)",
+    "buyer_count": 55,
+    "avg_purchase_price": 1441125.4545454546
+  },
+  {
+    "purchase_year": "1986",
+    "location_type": "Out-of-State",
+    "buyer_count": 35,
+    "avg_purchase_price": 227565.7142857143
+  },
+  {
+    "purchase_year": "1987",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 40,
+    "avg_purchase_price": 4856870.0
+  },
+  {
+    "purchase_year": "1987",
+    "location_type": "Local (In-County)",
+    "buyer_count": 59,
+    "avg_purchase_price": 1432974.5762711863
+  },
+  {
+    "purchase_year": "1987",
+    "location_type": "Out-of-State",
+    "buyer_count": 36,
+    "avg_purchase_price": 924686.1111111111
+  },
+  {
+    "purchase_year": "1988",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 62,
+    "avg_purchase_price": 283354.8387096774
+  },
+  {
+    "purchase_year": "1988",
+    "location_type": "Local (In-County)",
+    "buyer_count": 52,
+    "avg_purchase_price": 2437509.6153846155
+  },
+  {
+    "purchase_year": "1988",
+    "location_type": "Out-of-State",
+    "buyer_count": 41,
+    "avg_purchase_price": 2297375.6097560977
+  },
+  {
+    "purchase_year": "1989",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 70,
+    "avg_purchase_price": 923462.8571428572
+  },
+  {
+    "purchase_year": "1989",
+    "location_type": "Local (In-County)",
+    "buyer_count": 76,
+    "avg_purchase_price": 984330.2631578947
+  },
+  {
+    "purchase_year": "1989",
+    "location_type": "Out-of-State",
+    "buyer_count": 61,
+    "avg_purchase_price": 1094772.1311475409
+  },
+  {
+    "purchase_year": "1990",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 55,
+    "avg_purchase_price": 1662096.3636363635
+  },
+  {
+    "purchase_year": "1990",
+    "location_type": "Local (In-County)",
+    "buyer_count": 93,
+    "avg_purchase_price": 610031.1827956989
+  },
+  {
+    "purchase_year": "1990",
+    "location_type": "Out-of-State",
+    "buyer_count": 81,
+    "avg_purchase_price": 823518.5185185185
+  },
+  {
+    "purchase_year": "1991",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 55,
+    "avg_purchase_price": 3834803.6363636362
+  },
+  {
+    "purchase_year": "1991",
+    "location_type": "Local (In-County)",
+    "buyer_count": 113,
+    "avg_purchase_price": 2880083.1858407077
+  },
+  {
+    "purchase_year": "1991",
+    "location_type": "Out-of-State",
+    "buyer_count": 67,
+    "avg_purchase_price": 137265.67164179104
+  },
+  {
+    "purchase_year": "1992",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 119,
+    "avg_purchase_price": 957551.2605042016
+  },
+  {
+    "purchase_year": "1992",
+    "location_type": "Local (In-County)",
+    "buyer_count": 110,
+    "avg_purchase_price": 3546176.3636363638
+  },
+  {
+    "purchase_year": "1992",
+    "location_type": "Out-of-State",
+    "buyer_count": 77,
+    "avg_purchase_price": 145216.8831168831
+  },
+  {
+    "purchase_year": "1993",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 111,
+    "avg_purchase_price": 1890742.3423423423
+  },
+  {
+    "purchase_year": "1993",
+    "location_type": "Local (In-County)",
+    "buyer_count": 116,
+    "avg_purchase_price": 1495293.103448276
+  },
+  {
+    "purchase_year": "1993",
+    "location_type": "Out-of-State",
+    "buyer_count": 89,
+    "avg_purchase_price": 1474125.8426966292
+  },
+  {
+    "purchase_year": "1994",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 120,
+    "avg_purchase_price": 3068929.1666666665
+  },
+  {
+    "purchase_year": "1994",
+    "location_type": "Local (In-County)",
+    "buyer_count": 131,
+    "avg_purchase_price": 786229.7709923664
+  },
+  {
+    "purchase_year": "1994",
+    "location_type": "Out-of-State",
+    "buyer_count": 162,
+    "avg_purchase_price": 3482958.024691358
+  },
+  {
+    "purchase_year": "1995",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 95,
+    "avg_purchase_price": 1851954.7368421052
+  },
+  {
+    "purchase_year": "1995",
+    "location_type": "Local (In-County)",
+    "buyer_count": 120,
+    "avg_purchase_price": 1029774.1666666666
+  },
+  {
+    "purchase_year": "1995",
+    "location_type": "Out-of-State",
+    "buyer_count": 91,
+    "avg_purchase_price": 686403.2967032967
+  },
+  {
+    "purchase_year": "1996",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 123,
+    "avg_purchase_price": 1239691.8699186991
+  },
+  {
+    "purchase_year": "1996",
+    "location_type": "Local (In-County)",
+    "buyer_count": 119,
+    "avg_purchase_price": 194312.6050420168
+  },
+  {
+    "purchase_year": "1996",
+    "location_type": "Out-of-State",
+    "buyer_count": 102,
+    "avg_purchase_price": 228293.13725490196
+  },
+  {
+    "purchase_year": "1997",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 203,
+    "avg_purchase_price": 158891.13300492612
+  },
+  {
+    "purchase_year": "1997",
+    "location_type": "Local (In-County)",
+    "buyer_count": 151,
+    "avg_purchase_price": 3264692.0529801324
+  },
+  {
+    "purchase_year": "1997",
+    "location_type": "Out-of-State",
+    "buyer_count": 175,
+    "avg_purchase_price": 490291.71428571426
+  },
+  {
+    "purchase_year": "1998",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 167,
+    "avg_purchase_price": 858747.9041916168
+  },
+  {
+    "purchase_year": "1998",
+    "location_type": "Local (In-County)",
+    "buyer_count": 214,
+    "avg_purchase_price": 1679300.018691589
+  },
+  {
+    "purchase_year": "1998",
+    "location_type": "Out-of-State",
+    "buyer_count": 148,
+    "avg_purchase_price": 1468488.5135135136
+  },
+  {
+    "purchase_year": "1999",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 201,
+    "avg_purchase_price": 778534.0049751244
+  },
+  {
+    "purchase_year": "1999",
+    "location_type": "Local (In-County)",
+    "buyer_count": 243,
+    "avg_purchase_price": 2126511.238683128
+  },
+  {
+    "purchase_year": "1999",
+    "location_type": "Out-of-State",
+    "buyer_count": 156,
+    "avg_purchase_price": 345695.5128205128
+  },
+  {
+    "purchase_year": "2000",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 210,
+    "avg_purchase_price": 644084.2857142857
+  },
+  {
+    "purchase_year": "2000",
+    "location_type": "Local (In-County)",
+    "buyer_count": 241,
+    "avg_purchase_price": 565550.9502074689
+  },
+  {
+    "purchase_year": "2000",
+    "location_type": "Out-of-State",
+    "buyer_count": 156,
+    "avg_purchase_price": 666396.1538461539
+  },
+  {
+    "purchase_year": "2001",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 174,
+    "avg_purchase_price": 809590.2068965518
+  },
+  {
+    "purchase_year": "2001",
+    "location_type": "Local (In-County)",
+    "buyer_count": 172,
+    "avg_purchase_price": 924631.3139534884
+  },
+  {
+    "purchase_year": "2001",
+    "location_type": "Out-of-State",
+    "buyer_count": 106,
+    "avg_purchase_price": 419403.8301886792
+  },
+  {
+    "purchase_year": "2002",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 190,
+    "avg_purchase_price": 1351127.3684210526
+  },
+  {
+    "purchase_year": "2002",
+    "location_type": "Local (In-County)",
+    "buyer_count": 221,
+    "avg_purchase_price": 1122541.5565610859
+  },
+  {
+    "purchase_year": "2002",
+    "location_type": "Out-of-State",
+    "buyer_count": 138,
+    "avg_purchase_price": 464550.3623188406
+  },
+  {
+    "purchase_year": "2003",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 268,
+    "avg_purchase_price": 641463.8059701492
+  },
+  {
+    "purchase_year": "2003",
+    "location_type": "Local (In-County)",
+    "buyer_count": 244,
+    "avg_purchase_price": 1371295.799180328
+  },
+  {
+    "purchase_year": "2003",
+    "location_type": "Out-of-State",
+    "buyer_count": 152,
+    "avg_purchase_price": 352998.6842105263
+  },
+  {
+    "purchase_year": "2004",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 260,
+    "avg_purchase_price": 316608.3076923077
+  },
+  {
+    "purchase_year": "2004",
+    "location_type": "Local (In-County)",
+    "buyer_count": 316,
+    "avg_purchase_price": 1056334.6582278481
+  },
+  {
+    "purchase_year": "2004",
+    "location_type": "Out-of-State",
+    "buyer_count": 189,
+    "avg_purchase_price": 397748.28042328043
+  },
+  {
+    "purchase_year": "2005",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 268,
+    "avg_purchase_price": 791443.0074626865
+  },
+  {
+    "purchase_year": "2005",
+    "location_type": "Local (In-County)",
+    "buyer_count": 320,
+    "avg_purchase_price": 636746.80625
+  },
+  {
+    "purchase_year": "2005",
+    "location_type": "Out-of-State",
+    "buyer_count": 262,
+    "avg_purchase_price": 1769506.6603053436
+  },
+  {
+    "purchase_year": "2006",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 315,
+    "avg_purchase_price": 419625.2571428571
+  },
+  {
+    "purchase_year": "2006",
+    "location_type": "Local (In-County)",
+    "buyer_count": 356,
+    "avg_purchase_price": 718381.8426966292
+  },
+  {
+    "purchase_year": "2006",
+    "location_type": "Out-of-State",
+    "buyer_count": 229,
+    "avg_purchase_price": 556621.8340611354
+  },
+  {
+    "purchase_year": "2007",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 267,
+    "avg_purchase_price": 557293.8689138577
+  },
+  {
+    "purchase_year": "2007",
+    "location_type": "Local (In-County)",
+    "buyer_count": 313,
+    "avg_purchase_price": 562282.4153354632
+  },
+  {
+    "purchase_year": "2007",
+    "location_type": "Out-of-State",
+    "buyer_count": 342,
+    "avg_purchase_price": 2160843.8684210526
+  },
+  {
+    "purchase_year": "2008",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 205,
+    "avg_purchase_price": 850922.0
+  },
+  {
+    "purchase_year": "2008",
+    "location_type": "Local (In-County)",
+    "buyer_count": 181,
+    "avg_purchase_price": 497441.32596685085
+  },
+  {
+    "purchase_year": "2008",
+    "location_type": "Out-of-State",
+    "buyer_count": 164,
+    "avg_purchase_price": 1335827.1829268292
+  },
+  {
+    "purchase_year": "2009",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 204,
+    "avg_purchase_price": 492518.5049019608
+  },
+  {
+    "purchase_year": "2009",
+    "location_type": "Local (In-County)",
+    "buyer_count": 170,
+    "avg_purchase_price": 17382070.95882353
+  },
+  {
+    "purchase_year": "2009",
+    "location_type": "Out-of-State",
+    "buyer_count": 144,
+    "avg_purchase_price": 1074378.4444444445
+  },
+  {
+    "purchase_year": "2010",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 250,
+    "avg_purchase_price": 466217.608
+  },
+  {
+    "purchase_year": "2010",
+    "location_type": "Local (In-County)",
+    "buyer_count": 186,
+    "avg_purchase_price": 1325942.247311828
+  },
+  {
+    "purchase_year": "2010",
+    "location_type": "Out-of-State",
+    "buyer_count": 181,
+    "avg_purchase_price": 614572.138121547
+  },
+  {
+    "purchase_year": "2011",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 268,
+    "avg_purchase_price": 418741.62313432834
+  },
+  {
+    "purchase_year": "2011",
+    "location_type": "Local (In-County)",
+    "buyer_count": 248,
+    "avg_purchase_price": 458651.9556451613
+  },
+  {
+    "purchase_year": "2011",
+    "location_type": "Out-of-State",
+    "buyer_count": 219,
+    "avg_purchase_price": 640120.1735159818
+  },
+  {
+    "purchase_year": "2012",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 340,
+    "avg_purchase_price": 657603.5235294118
+  },
+  {
+    "purchase_year": "2012",
+    "location_type": "Local (In-County)",
+    "buyer_count": 301,
+    "avg_purchase_price": 876346.5083056479
+  },
+  {
+    "purchase_year": "2012",
+    "location_type": "Out-of-State",
+    "buyer_count": 273,
+    "avg_purchase_price": 613586.4468864469
+  },
+  {
+    "purchase_year": "2013",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 377,
+    "avg_purchase_price": 833822.9442970823
+  },
+  {
+    "purchase_year": "2013",
+    "location_type": "Local (In-County)",
+    "buyer_count": 340,
+    "avg_purchase_price": 385681.43529411766
+  },
+  {
+    "purchase_year": "2013",
+    "location_type": "Out-of-State",
+    "buyer_count": 279,
+    "avg_purchase_price": 789013.1612903225
+  },
+  {
+    "purchase_year": "2014",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 447,
+    "avg_purchase_price": 438773.5436241611
+  },
+  {
+    "purchase_year": "2014",
+    "location_type": "Local (In-County)",
+    "buyer_count": 397,
+    "avg_purchase_price": 1565864.8891687656
+  },
+  {
+    "purchase_year": "2014",
+    "location_type": "Out-of-State",
+    "buyer_count": 329,
+    "avg_purchase_price": 556214.9179331308
+  },
+  {
+    "purchase_year": "2015",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 495,
+    "avg_purchase_price": 490028.69696969696
+  },
+  {
+    "purchase_year": "2015",
+    "location_type": "Local (In-County)",
+    "buyer_count": 525,
+    "avg_purchase_price": 392985.49904761906
+  },
+  {
+    "purchase_year": "2015",
+    "location_type": "Out-of-State",
+    "buyer_count": 362,
+    "avg_purchase_price": 697360.6436464088
+  },
+  {
+    "purchase_year": "2016",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 536,
+    "avg_purchase_price": 581598.421641791
+  },
+  {
+    "purchase_year": "2016",
+    "location_type": "Local (In-County)",
+    "buyer_count": 589,
+    "avg_purchase_price": 514890.48387096776
+  },
+  {
+    "purchase_year": "2016",
+    "location_type": "Out-of-State",
+    "buyer_count": 414,
+    "avg_purchase_price": 821035.7149758454
+  },
+  {
+    "purchase_year": "2017",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 612,
+    "avg_purchase_price": 951455.6323529412
+  },
+  {
+    "purchase_year": "2017",
+    "location_type": "Local (In-County)",
+    "buyer_count": 743,
+    "avg_purchase_price": 1184836.7200538358
+  },
+  {
+    "purchase_year": "2017",
+    "location_type": "Out-of-State",
+    "buyer_count": 451,
+    "avg_purchase_price": 773891.5388026608
+  },
+  {
+    "purchase_year": "2018",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 662,
+    "avg_purchase_price": 1155513.8534743201
+  },
+  {
+    "purchase_year": "2018",
+    "location_type": "Local (In-County)",
+    "buyer_count": 639,
+    "avg_purchase_price": 672569.5117370893
+  },
+  {
+    "purchase_year": "2018",
+    "location_type": "Out-of-State",
+    "buyer_count": 419,
+    "avg_purchase_price": 866357.61575179
+  },
+  {
+    "purchase_year": "2019",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 675,
+    "avg_purchase_price": 697991.3437037037
+  },
+  {
+    "purchase_year": "2019",
+    "location_type": "Local (In-County)",
+    "buyer_count": 758,
+    "avg_purchase_price": 678708.2124010554
+  },
+  {
+    "purchase_year": "2019",
+    "location_type": "Out-of-State",
+    "buyer_count": 468,
+    "avg_purchase_price": 946030.7115384615
+  },
+  {
+    "purchase_year": "2020",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 944,
+    "avg_purchase_price": 764466.8093220339
+  },
+  {
+    "purchase_year": "2020",
+    "location_type": "Local (In-County)",
+    "buyer_count": 1337,
+    "avg_purchase_price": 340007.78758414363
+  },
+  {
+    "purchase_year": "2020",
+    "location_type": "Out-of-State",
+    "buyer_count": 728,
+    "avg_purchase_price": 915612.853021978
+  },
+  {
+    "purchase_year": "2021",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 1041,
+    "avg_purchase_price": 1012010.902017291
+  },
+  {
+    "purchase_year": "2021",
+    "location_type": "Local (In-County)",
+    "buyer_count": 778,
+    "avg_purchase_price": 760969.6606683804
+  },
+  {
+    "purchase_year": "2021",
+    "location_type": "Out-of-State",
+    "buyer_count": 790,
+    "avg_purchase_price": 1836717.9936708861
+  },
+  {
+    "purchase_year": "2022",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 647,
+    "avg_purchase_price": 1117659.7928902628
+  },
+  {
+    "purchase_year": "2022",
+    "location_type": "Local (In-County)",
+    "buyer_count": 654,
+    "avg_purchase_price": 1055689.519877676
+  },
+  {
+    "purchase_year": "2022",
+    "location_type": "Out-of-State",
+    "buyer_count": 511,
+    "avg_purchase_price": 3786790.5322896284
+  },
+  {
+    "purchase_year": "2023",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 636,
+    "avg_purchase_price": 1036313.9449685535
+  },
+  {
+    "purchase_year": "2023",
+    "location_type": "Local (In-County)",
+    "buyer_count": 565,
+    "avg_purchase_price": 807179.6584070796
+  },
+  {
+    "purchase_year": "2023",
+    "location_type": "Out-of-State",
+    "buyer_count": 537,
+    "avg_purchase_price": 1322487.2197392923
+  },
+  {
+    "purchase_year": "2024",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 671,
+    "avg_purchase_price": 1378858.833084948
+  },
+  {
+    "purchase_year": "2024",
+    "location_type": "Local (In-County)",
+    "buyer_count": 632,
+    "avg_purchase_price": 808788.6772151899
+  },
+  {
+    "purchase_year": "2024",
+    "location_type": "Out-of-State",
+    "buyer_count": 583,
+    "avg_purchase_price": 1573266.617495712
+  },
+  {
+    "purchase_year": "2025",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 635,
+    "avg_purchase_price": 1108671.874015748
+  },
+  {
+    "purchase_year": "2025",
+    "location_type": "Local (In-County)",
+    "buyer_count": 661,
+    "avg_purchase_price": 1175366.049924357
+  },
+  {
+    "purchase_year": "2025",
+    "location_type": "Out-of-State",
+    "buyer_count": 562,
+    "avg_purchase_price": 1613473.7829181494
+  },
+  {
+    "purchase_year": "2026",
+    "location_type": "In-State (Non-Local)",
+    "buyer_count": 11,
+    "avg_purchase_price": 1050909.0909090908
+  },
+  {
+    "purchase_year": "2026",
+    "location_type": "Local (In-County)",
+    "buyer_count": 9,
+    "avg_purchase_price": 1118181.7777777778
+  },
+  {
+    "purchase_year": "2026",
+    "location_type": "Out-of-State",
+    "buyer_count": 8,
+    "avg_purchase_price": 885650.0
+  }
+]

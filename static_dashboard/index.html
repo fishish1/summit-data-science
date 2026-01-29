@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Enforce trailing slash for correct relative path resolution
+        if (window.location.pathname.endsWith('/summit')) {
+            window.location.pathname += '/';
+        }
+    </script>
+    <title>Summit Housing Dashboard | Static ML</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- ONNX Runtime Web -->
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <div id="dashboard-container">
+        <!-- Sidebar Navigation & Inputs -->
+        <aside id="sidebar">
+            <header>
+                <h1>🏔️ Summit Housing</h1>
+                <p>Data Science Project</p>
+            </header>
+
+            <nav id="app-nav">
+                <button class="nav-item active" data-page="intro">🏠 Introduction</button>
+                <button class="nav-item" data-page="story">� Data Story</button>
+                <button class="nav-item" data-page="experiments">🧬 ML Experiments</button>
+                <button class="nav-item" data-page="predictor">🔮 Price Predictor</button>
+            </nav>
+
+        </aside>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+
+            <section id="intro-page" class="page-section">
+                <div class="card full-width hero-card">
+                    <h1>🏔️ Summit County Housing Analysis</h1>
+                    <p class="subtitle">A Personal Data Science Project</p>
+                    <div class="story-text">
+                        <h3>Why I built this</h3>
+                        <p>I created this project for three simple reasons:</p>
+                        <ol style="font-size: 1.1rem; color: #475569; line-height: 1.8; margin-left: 1.5rem;">
+                            <li><strong>I live in Summit County</strong> and I'm genuinely curious about what drives
+                                housing prices here. The market is unique due to its ski resort economy and location.
+                            </li>
+                            <li><strong>I have the technical skills</strong> to scrape the data and explore it. I
+                                figured, why not put my SQL, Python, and web scraping skills to use on something I
+                                actually care about?</li>
+                            <li><strong>I wanted to test my ML abilities</strong> by building a real price predictor.
+                                Could I train a model that help to look into the future? This was my chance to find out.
+                            </li>
+                        </ol>
+                        <p style="margin-top: 1.5rem;">What started as curiosity turned into a full-stack data science
+                            project: web scraping, SQL analytics, machine learning, model explainability, and a static
+                            dashboard you can explore right in your browser.</p>
+                    </div>
+                </div>
+
+                <div class="grid-3 module-guide">
+                    <div class="card">
+                        <h3>📊 1. Data Story</h3>
+                        <p>Explore the data through interactive visualizations:</p>
+                        <ul
+                            style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin-left: 1.2rem; margin-top: 0.5rem;">
+                            <li>Distance to ski lifts and resort proximity analysis</li>
+                            <li>20+ years of price trends vs. interest rates</li>
+                            <li>Buyer origin patterns (local vs. out-of-state)</li>
+                            <li>Seasonal purchase patterns and market cycles</li>
+                            <li>Raw property data samples with 20+ attributes</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>🧬 2. ML Experiments</h3>
+                        <p>Dive into the model development process:</p>
+                        <ul
+                            style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin-left: 1.2rem; margin-top: 0.5rem;">
+                            <li>Tournament leaderboard comparing 10+ model runs</li>
+                            <li>Gradient Boosting vs. Neural Network performance</li>
+                            <li>SHAP values showing feature importance</li>
+                            <li>Partial Dependence Plots for all numeric features</li>
+                            <li>Model selection and version comparison tools</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>🔮 3. Price Predictor</h3>
+                        <p>Test the model with your own scenarios:</p>
+                        <ul
+                            style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin-left: 1.2rem; margin-top: 0.5rem;">
+                            <li>Interactive "What-If" simulator with real-time predictions</li>
+                            <li>Adjust property features (size, beds, location, etc.)</li>
+                            <li>Runs entirely in your browser using ONNX Runtime</li>
+                            <li>Compare predictions across different model versions</li>
+                            <li>No backend required—pure client-side ML inference</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card full-width tech-guide">
+                    <h3>🛠️ How to use the Product</h3>
+                    <p>This platform is built for continuous iteration. You can trigger the core workflows from the
+                        terminal:</p>
+                    <div class="grid-3">
+                        <div class="code-box">
+                            <strong>1. Data Collection</strong>
+                            <code>make scrape</code>
+                            <p class="caption">Runs the asynchronous scraper to pull the latest property records.</p>
+                        </div>
+                        <div class="code-box">
+                            <strong>2. ETL Pipeline</strong>
+                            <code>make ingest</code>
+                            <p class="caption">Resets the local SQLite warehouse and performs complex SQL feature
+                                engineering.</p>
+                        </div>
+                        <div class="code-box">
+                            <strong>3. Model Training</strong>
+                            <code>make tournament</code>
+                            <p class="caption">Triggers a parameter sweep tournament. The best model is promoted.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="predictor-page" class="page-section hidden">
+                <header id="metrics-banner">
+                    <div class="metric-card">
+                        <span class="label">ACTIVE MODEL</span>
+                        <span id="active-model-name" class="value">Gradient Boosting</span>
+                    </div>
+                    <div id="prediction-metric" class="metric-card highlight">
+                        <span class="label">ESTIMATED VALUE</span>
+                        <span id="estimated-price" class="value">$0</span>
+                        <span id="last-updated" class="metric-timestamp"></span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="label">MODEL MAE</span>
+                        <span id="model-mae" class="value">$458,184</span>
+                    </div>
+                </header>
+
+                <div class="predictor-layout">
+                    <aside id="predictor-controls" class="card">
+                        <!-- Row 1: Current Model -->
+                        <div class="controls-section">
+                            <h4>🧠 Current Model</h4>
+                            <div class="controls-grid">
+                                <div class="control-group">
+                                    <label>Model Architecture</label>
+                                    <div class="radio-group">
+                                        <label><input type="radio" name="model-choice" value="gbm" checked> GBM</label>
+                                        <label><input type="radio" name="model-choice" value="nn"> NN</label>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label>Model Version</label>
+                                    <select id="input-model-version">
+                                        <option>Loading...</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 2: House Properties -->
+                        <div class="controls-section">
+                            <h4>🏠 House Properties</h4>
+                            <div class="controls-grid">
+
+                                <div class="control-group">
+                                    <label>SqFt</label>
+                                    <input type="number" id="val-sfla" value="1500">
+                                    <input type="range" id="input-sfla" min="400" max="10000" value="1500" step="50">
+                                </div>
+
+                                <div class="control-group">
+                                    <label>Beds / Baths</label>
+                                    <div class="grid-2" style="gap: 10px;">
+                                        <input type="number" id="input-beds" value="2" min="0" max="10">
+                                        <input type="number" id="input-baths" value="2" min="1" max="10" step="0.5">
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label>Built</label>
+                                    <input type="number" id="input-year" value="1995" min="1900" max="2025">
+                                </div>
+
+                                <div class="control-group">
+                                    <label>Property Type</label>
+                                    <select id="input-type">
+                                        <option value="Single Family">Single Family</option>
+                                        <option value="Condo">Condo</option>
+                                        <option value="Townhouse">Townhouse</option>
+                                        <option value="Duplex-Triplex">Duplex / Triplex</option>
+                                        <option value="Vacant Land">Vacant Land</option>
+                                    </select>
+                                </div>
+
+                                <div class="control-group">
+                                    <label>Location</label>
+                                    <select id="input-city">
+                                        <option value="BRECKENRIDGE">Breckenridge</option>
+                                        <option value="FRISCO">Frisco</option>
+                                        <option value="SILVERTHORNE">Silverthorne</option>
+                                        <option value="DILLON">Dillon</option>
+                                        <option value="KEYSTONE">Keystone</option>
+                                        <option value="COPPER MOUNTAIN">Copper Mountain</option>
+                                    </select>
+                                </div>
+
+                                <div class="control-group">
+                                    <label>Grade</label>
+                                    <select id="input-grade">
+                                        <option value="6">Luxury</option>
+                                        <option value="5">Custom</option>
+                                        <option value="4" selected>Average</option>
+                                        <option value="3">Economy</option>
+                                    </select>
+                                </div>
+
+                                <div class="control-group">
+                                    <label>View (0-5)</label>
+                                    <input type="number" id="input-view" min="0" max="5" value="0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 3: Macro-Economic Conditions -->
+                        <div class="controls-section">
+                            <h4>📈 Macro-Economic Conditions</h4>
+                            <div class="controls-grid">
+                                <div class="control-group">
+                                    <label>Rate (%)</label>
+                                    <input type="number" id="val-rate" value="6.5" step="0.1">
+                                    <input type="range" id="input-rate" min="2.0" max="10.0" value="6.5" step="0.1">
+                                </div>
+
+                                <div class="control-group">
+                                    <label>CPI (Inflation)</label>
+                                    <input type="number" id="val-cpi" value="310">
+                                    <input type="range" id="input-cpi" min="150" max="400" value="310" step="1">
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="predictor-content">
+                        <div class="card full-width">
+                            <div id="main-chart" style="height: 450px;"></div>
+                        </div>
+
+                        <div class="grid-2">
+                            <div class="card">
+                                <h3>Sensitivity: Square Footage</h3>
+                                <div id="chart-sqft" style="height: 300px;"></div>
+                            </div>
+                            <div class="card">
+                                <h3>Sensitivity: Mortgage Rate</h3>
+                                <div id="chart-rates" style="height: 300px;"></div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="story-page" class="page-section hidden">
+                <div class="card full-width">
+                    <h2>Summit County Housing Data Story</h2>
+                    <p class="story-text">Exploring the market forces and trends defined by high-altitude geography.</p>
+                </div>
+
+                <!-- Property Distribution & Resort Proximity -->
+                <div class="card full-width">
+                    <h3>📍 Property Distribution & Resort Proximity</h3>
+                    <div id="map-hotspots" style="height: 450px; border-radius: 8px;"></div>
+                </div>
+
+                <div id="market-overview-metrics" class="metrics-banner" style="margin-top: 2rem;">
+                    <!-- Populated by JS -->
+                </div>
+
+                <!-- Distance Analysis -->
+                <div class="card full-width">
+                    <h3>❄️ The "Ski Lift Effect" (Distance Analysis)</h3>
+                    <div class="row">
+                        <div class="col-chart" style="flex: 2;">
+                            <div id="distance-map" style="height: 400px; width: 100%;"></div>
+                        </div>
+                        <div class="col-text" style="flex: 1; padding: 1rem;">
+                            <p>Our analysis confirms that <strong>distance to a ski lift</strong> is the single most
+                                powerful predictor of value.</p>
+                            <p>The map highlights the "Gold Zones" (Red) near the resorts versus the more affordable
+                                residential pockets (Blue).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Raw Data Sample -->
+                <div class="card full-width">
+                    <div class="row header-row"
+                        style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3>📝 Raw Data Sample (records.csv)</h3>
+                        <div class="toggle-group">
+                            <label><input type="checkbox" id="toggle-all-cols"> Show All Columns</label>
+                        </div>
+                    </div>
+                    <div id="raw-sample-container" class="table-container">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Price Trends vs Interest Rates -->
+                <div class="card full-width">
+                    <h3>📈 Price Trends vs. Interest Rates</h3>
+                    <div id="chart-market-trends" style="height: 400px;"></div>
+                </div>
+
+                <!-- Buyer Origins & Seasonality -->
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="row header-row"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3>🏠 Buyer Origins: Market Share Evolution</h3>
+                            <div class="toggle-group">
+                                <label><input type="checkbox" id="toggle-buyer-percentage"> Show as %</label>
+                            </div>
+                        </div>
+                        <div id="chart-buyer-origins" style="height: 400px;"></div>
+                    </div>
+                    <div class="card">
+                        <h3>🌡️ Seasonal Heatmap: Volume</h3>
+                        <div id="chart-seasonality" style="height: 400px;"></div>
+                    </div>
+                </div>
+
+                <!-- Supply Growth -->
+                <div class="card full-width">
+                    <h3>🏗️ Supply Growth vs. Population Density</h3>
+                    <div id="chart-supply" style="height: 400px;"></div>
+                </div>
+
+                <!-- Model Feature Selection & Training Safeguards -->
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>🛠️ Model Feature Selection</h3>
+                        <div class="meta-grid">
+                            <div class="meta-item safe">
+                                <strong>✅ INCLUDED</strong>
+                                Structure, Quality, Location, Macro
+                            </div>
+                            <div class="meta-item alert">
+                                <strong>❌ EXCLUDED</strong>
+                                Tax Values, Trans. Date, Address
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>🧠 Training Safeguards</h3>
+                        <ul>
+                            <li>Time-Based Split (No leakage)</li>
+                            <li>Log-Space Target Transformation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Correlation Matrix -->
+                <div class="card full-width">
+                    <h3>📊 Correlation Matrix</h3>
+                    <div id="chart-correlations" style="height: 500px;"></div>
+                </div>
+            </section>
+
+            <section id="experiments-page" class="page-section hidden">
+                <div class="card full-width">
+                    <h2>🧬 ML Experiment Registry</h2>
+                    <p>Training history and model convergence metrics.</p>
+                    <div id="leaderboard-container">
+                        <table id="leaderboard">
+                            <thead>
+                                <tr>
+                                    <th>Run ID</th>
+                                    <th>Model</th>
+                                    <th>MAE</th>
+                                    <th>R2</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Model Detail View (shown when a model is clicked) -->
+                <div id="model-detail-view" class="hidden">
+                    <div class="card full-width">
+                        <h3 id="model-detail-title">Model Interpretability</h3>
+                        <p class="story-text">Understanding what drives predictions for this model.</p>
+                    </div>
+
+                    <!-- SHAP Feature Importance -->
+                    <div class="card full-width">
+                        <h4>SHAP Feature Importance</h4>
+                        <div id="chart-shap-experiments" style="height: 400px;"></div>
+                        <p class="caption">The top features driving price decisions across the entire model.</p>
+                    </div>
+
+                    <!-- Partial Dependence Plot -->
+                    <div class="card full-width">
+                        <div class="row header-row" style="justify-content: space-between; margin-bottom: 1rem;">
+                            <h4>Partial Dependence (Marginal Effect)</h4>
+                            <div class="control-group" style="max-width: 200px;">
+                                <select id="pdp-feature-select-experiments" class="metric-select">
+                                    <option value="">Loading features...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="chart-pdp-experiments" style="height: 400px;"></div>
+                        <p class="caption">How specific features impact price, holding others constant.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

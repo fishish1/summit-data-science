@@ -1,0 +1,754 @@
+[
+  {
+    "month_num": "01",
+    "month_name": "Jan",
+    "city": "BRECKENRIDGE",
+    "sales_count": 468,
+    "avg_ppsf": 632.9878527788085,
+    "avg_price": 1138830.094017094
+  },
+  {
+    "month_num": "01",
+    "month_name": "Jan",
+    "city": "COPPER/COUNTY",
+    "sales_count": 770,
+    "avg_ppsf": 382.0290231456325,
+    "avg_price": 622013.8571428572
+  },
+  {
+    "month_num": "01",
+    "month_name": "Jan",
+    "city": "DILLON",
+    "sales_count": 57,
+    "avg_ppsf": 449.94258457408813,
+    "avg_price": 635094.3859649122
+  },
+  {
+    "month_num": "01",
+    "month_name": "Jan",
+    "city": "FRISCO",
+    "sales_count": 217,
+    "avg_ppsf": 481.8161417597943,
+    "avg_price": 752552.1474654378
+  },
+  {
+    "month_num": "01",
+    "month_name": "Jan",
+    "city": "KEYSTONE",
+    "sales_count": 261,
+    "avg_ppsf": 540.6515903480146,
+    "avg_price": 797447.275862069
+  },
+  {
+    "month_num": "01",
+    "month_name": "Jan",
+    "city": "MONTEZUMA",
+    "sales_count": 2,
+    "avg_ppsf": 318.45801767676767,
+    "avg_price": 778750.0
+  },
+  {
+    "month_num": "01",
+    "month_name": "Jan",
+    "city": "RURAL",
+    "sales_count": 59,
+    "avg_ppsf": 417.79789530646553,
+    "avg_price": 1020739.8305084746
+  },
+  {
+    "month_num": "01",
+    "month_name": "Jan",
+    "city": "SILVERTHORNE",
+    "sales_count": 251,
+    "avg_ppsf": 494.3495133906616,
+    "avg_price": 1015194.1195219123
+  },
+  {
+    "month_num": "02",
+    "month_name": "Feb",
+    "city": "BRECKENRIDGE",
+    "sales_count": 497,
+    "avg_ppsf": 1143.322848973574,
+    "avg_price": 1233623.2696177063
+  },
+  {
+    "month_num": "02",
+    "month_name": "Feb",
+    "city": "COPPER/COUNTY",
+    "sales_count": 770,
+    "avg_ppsf": 464.88675552380687,
+    "avg_price": 741919.3662337662
+  },
+  {
+    "month_num": "02",
+    "month_name": "Feb",
+    "city": "DILLON",
+    "sales_count": 55,
+    "avg_ppsf": 439.3042043821408,
+    "avg_price": 776632.7272727273
+  },
+  {
+    "month_num": "02",
+    "month_name": "Feb",
+    "city": "FRISCO",
+    "sales_count": 202,
+    "avg_ppsf": 532.8577784116334,
+    "avg_price": 939363.0445544554
+  },
+  {
+    "month_num": "02",
+    "month_name": "Feb",
+    "city": "KEYSTONE",
+    "sales_count": 310,
+    "avg_ppsf": 527.3548350246843,
+    "avg_price": 705998.9129032259
+  },
+  {
+    "month_num": "02",
+    "month_name": "Feb",
+    "city": "RURAL",
+    "sales_count": 55,
+    "avg_ppsf": 362.31747675296555,
+    "avg_price": 828703.6363636364
+  },
+  {
+    "month_num": "02",
+    "month_name": "Feb",
+    "city": "SILVERTHORNE",
+    "sales_count": 225,
+    "avg_ppsf": 492.4121978674913,
+    "avg_price": 923823.8888888889
+  },
+  {
+    "month_num": "03",
+    "month_name": "Mar",
+    "city": "BRECKENRIDGE",
+    "sales_count": 603,
+    "avg_ppsf": 614.4925138835956,
+    "avg_price": 1034590.4776119404
+  },
+  {
+    "month_num": "03",
+    "month_name": "Mar",
+    "city": "COPPER/COUNTY",
+    "sales_count": 954,
+    "avg_ppsf": 529.4826882048537,
+    "avg_price": 911680.8343815514
+  },
+  {
+    "month_num": "03",
+    "month_name": "Mar",
+    "city": "DILLON",
+    "sales_count": 80,
+    "avg_ppsf": 486.54096540484,
+    "avg_price": 644679.375
+  },
+  {
+    "month_num": "03",
+    "month_name": "Mar",
+    "city": "FRISCO",
+    "sales_count": 205,
+    "avg_ppsf": 481.01874777841414,
+    "avg_price": 865217.487804878
+  },
+  {
+    "month_num": "03",
+    "month_name": "Mar",
+    "city": "KEYSTONE",
+    "sales_count": 329,
+    "avg_ppsf": 514.9406905573695,
+    "avg_price": 704637.2613981763
+  },
+  {
+    "month_num": "03",
+    "month_name": "Mar",
+    "city": "MONTEZUMA",
+    "sales_count": 2,
+    "avg_ppsf": 620.7232109422732,
+    "avg_price": 745000.0
+  },
+  {
+    "month_num": "03",
+    "month_name": "Mar",
+    "city": "RURAL",
+    "sales_count": 71,
+    "avg_ppsf": 418.8269024715404,
+    "avg_price": 1145836.61971831
+  },
+  {
+    "month_num": "03",
+    "month_name": "Mar",
+    "city": "SILVERTHORNE",
+    "sales_count": 219,
+    "avg_ppsf": 477.72066548177713,
+    "avg_price": 1063988.4429223745
+  },
+  {
+    "month_num": "04",
+    "month_name": "Apr",
+    "city": "BRECKENRIDGE",
+    "sales_count": 703,
+    "avg_ppsf": 638.6977215183789,
+    "avg_price": 1538603.560455192
+  },
+  {
+    "month_num": "04",
+    "month_name": "Apr",
+    "city": "COPPER/COUNTY",
+    "sales_count": 1051,
+    "avg_ppsf": 418.81978802123353,
+    "avg_price": 1994905.6079923883
+  },
+  {
+    "month_num": "04",
+    "month_name": "Apr",
+    "city": "DILLON",
+    "sales_count": 115,
+    "avg_ppsf": 464.8532128715178,
+    "avg_price": 712882.052173913
+  },
+  {
+    "month_num": "04",
+    "month_name": "Apr",
+    "city": "FRISCO",
+    "sales_count": 233,
+    "avg_ppsf": 500.75857745595073,
+    "avg_price": 851203.3519313305
+  },
+  {
+    "month_num": "04",
+    "month_name": "Apr",
+    "city": "KEYSTONE",
+    "sales_count": 378,
+    "avg_ppsf": 569.6034972286961,
+    "avg_price": 763253.3544973545
+  },
+  {
+    "month_num": "04",
+    "month_name": "Apr",
+    "city": "MONTEZUMA",
+    "sales_count": 5,
+    "avg_ppsf": 299.4585483931907,
+    "avg_price": 476000.0
+  },
+  {
+    "month_num": "04",
+    "month_name": "Apr",
+    "city": "RURAL",
+    "sales_count": 85,
+    "avg_ppsf": 372.55193380067305,
+    "avg_price": 914620.5882352941
+  },
+  {
+    "month_num": "04",
+    "month_name": "Apr",
+    "city": "SILVERTHORNE",
+    "sales_count": 313,
+    "avg_ppsf": 2778.4853419391525,
+    "avg_price": 1964496.9776357827
+  },
+  {
+    "month_num": "05",
+    "month_name": "May",
+    "city": "BRECKENRIDGE",
+    "sales_count": 700,
+    "avg_ppsf": 633.5772726373636,
+    "avg_price": 1221276.347142857
+  },
+  {
+    "month_num": "05",
+    "month_name": "May",
+    "city": "COPPER/COUNTY",
+    "sales_count": 1171,
+    "avg_ppsf": 480.149889499616,
+    "avg_price": 820238.6968403074
+  },
+  {
+    "month_num": "05",
+    "month_name": "May",
+    "city": "DILLON",
+    "sales_count": 113,
+    "avg_ppsf": 469.7616562017828,
+    "avg_price": 558681.7256637168
+  },
+  {
+    "month_num": "05",
+    "month_name": "May",
+    "city": "FRISCO",
+    "sales_count": 296,
+    "avg_ppsf": 487.1057828164668,
+    "avg_price": 727136.7195945946
+  },
+  {
+    "month_num": "05",
+    "month_name": "May",
+    "city": "KEYSTONE",
+    "sales_count": 385,
+    "avg_ppsf": 540.2209706663351,
+    "avg_price": 1194915.2701298702
+  },
+  {
+    "month_num": "05",
+    "month_name": "May",
+    "city": "RURAL",
+    "sales_count": 79,
+    "avg_ppsf": 374.9544724944659,
+    "avg_price": 731879.5316455696
+  },
+  {
+    "month_num": "05",
+    "month_name": "May",
+    "city": "SILVERTHORNE",
+    "sales_count": 289,
+    "avg_ppsf": 445.7828553158203,
+    "avg_price": 1036555.0519031142
+  },
+  {
+    "month_num": "06",
+    "month_name": "Jun",
+    "city": "BRECKENRIDGE",
+    "sales_count": 656,
+    "avg_ppsf": 620.8278862470681,
+    "avg_price": 1063090.650914634
+  },
+  {
+    "month_num": "06",
+    "month_name": "Jun",
+    "city": "COPPER/COUNTY",
+    "sales_count": 1278,
+    "avg_ppsf": 439.63396124488327,
+    "avg_price": 837207.4522691705
+  },
+  {
+    "month_num": "06",
+    "month_name": "Jun",
+    "city": "DILLON",
+    "sales_count": 119,
+    "avg_ppsf": 487.53957078679645,
+    "avg_price": 1201595.5714285714
+  },
+  {
+    "month_num": "06",
+    "month_name": "Jun",
+    "city": "FRISCO",
+    "sales_count": 389,
+    "avg_ppsf": 499.4100137101508,
+    "avg_price": 911291.9280205655
+  },
+  {
+    "month_num": "06",
+    "month_name": "Jun",
+    "city": "KEYSTONE",
+    "sales_count": 361,
+    "avg_ppsf": 527.1981144211001,
+    "avg_price": 664642.2936288088
+  },
+  {
+    "month_num": "06",
+    "month_name": "Jun",
+    "city": "MONTEZUMA",
+    "sales_count": 7,
+    "avg_ppsf": 317.9563027168794,
+    "avg_price": 828285.7142857143
+  },
+  {
+    "month_num": "06",
+    "month_name": "Jun",
+    "city": "RURAL",
+    "sales_count": 71,
+    "avg_ppsf": 402.52331863683696,
+    "avg_price": 958912.676056338
+  },
+  {
+    "month_num": "06",
+    "month_name": "Jun",
+    "city": "SILVERTHORNE",
+    "sales_count": 352,
+    "avg_ppsf": 521.2979350688394,
+    "avg_price": 1069440.1676136365
+  },
+  {
+    "month_num": "07",
+    "month_name": "Jul",
+    "city": "BRECKENRIDGE",
+    "sales_count": 642,
+    "avg_ppsf": 631.8772484383301,
+    "avg_price": 1211264.8691588785
+  },
+  {
+    "month_num": "07",
+    "month_name": "Jul",
+    "city": "COPPER/COUNTY",
+    "sales_count": 1416,
+    "avg_ppsf": 512.9503124726297,
+    "avg_price": 768893.1843220339
+  },
+  {
+    "month_num": "07",
+    "month_name": "Jul",
+    "city": "DILLON",
+    "sales_count": 111,
+    "avg_ppsf": 525.8050337465211,
+    "avg_price": 730921.8018018018
+  },
+  {
+    "month_num": "07",
+    "month_name": "Jul",
+    "city": "FRISCO",
+    "sales_count": 384,
+    "avg_ppsf": 522.6231819276717,
+    "avg_price": 835833.9140625
+  },
+  {
+    "month_num": "07",
+    "month_name": "Jul",
+    "city": "KEYSTONE",
+    "sales_count": 420,
+    "avg_ppsf": 518.8177669969948,
+    "avg_price": 673422.3404761904
+  },
+  {
+    "month_num": "07",
+    "month_name": "Jul",
+    "city": "MONTEZUMA",
+    "sales_count": 2,
+    "avg_ppsf": 243.4738955823293,
+    "avg_price": 310000.0
+  },
+  {
+    "month_num": "07",
+    "month_name": "Jul",
+    "city": "RURAL",
+    "sales_count": 78,
+    "avg_ppsf": 376.7421097660099,
+    "avg_price": 882365.5128205129
+  },
+  {
+    "month_num": "07",
+    "month_name": "Jul",
+    "city": "SILVERTHORNE",
+    "sales_count": 389,
+    "avg_ppsf": 512.3557641081171,
+    "avg_price": 981816.9871465296
+  },
+  {
+    "month_num": "08",
+    "month_name": "Aug",
+    "city": "BRECKENRIDGE",
+    "sales_count": 875,
+    "avg_ppsf": 627.3884170904139,
+    "avg_price": 1227643.6285714286
+  },
+  {
+    "month_num": "08",
+    "month_name": "Aug",
+    "city": "COPPER/COUNTY",
+    "sales_count": 1637,
+    "avg_ppsf": 481.33122993380846,
+    "avg_price": 685514.2645082468
+  },
+  {
+    "month_num": "08",
+    "month_name": "Aug",
+    "city": "DILLON",
+    "sales_count": 173,
+    "avg_ppsf": 490.39760297765736,
+    "avg_price": 599818.7976878613
+  },
+  {
+    "month_num": "08",
+    "month_name": "Aug",
+    "city": "FRISCO",
+    "sales_count": 475,
+    "avg_ppsf": 535.1515427028463,
+    "avg_price": 876062.8863157894
+  },
+  {
+    "month_num": "08",
+    "month_name": "Aug",
+    "city": "KEYSTONE",
+    "sales_count": 569,
+    "avg_ppsf": 489.248009760093,
+    "avg_price": 665136.8945518454
+  },
+  {
+    "month_num": "08",
+    "month_name": "Aug",
+    "city": "MONTEZUMA",
+    "sales_count": 6,
+    "avg_ppsf": 312.4777660582946,
+    "avg_price": 652333.3333333334
+  },
+  {
+    "month_num": "08",
+    "month_name": "Aug",
+    "city": "RURAL",
+    "sales_count": 85,
+    "avg_ppsf": 427.7171909274236,
+    "avg_price": 1167018.8588235294
+  },
+  {
+    "month_num": "08",
+    "month_name": "Aug",
+    "city": "SILVERTHORNE",
+    "sales_count": 382,
+    "avg_ppsf": 423.15592690937416,
+    "avg_price": 1057266.6439790577
+  },
+  {
+    "month_num": "09",
+    "month_name": "Sep",
+    "city": "BRECKENRIDGE",
+    "sales_count": 960,
+    "avg_ppsf": 634.1843056250564,
+    "avg_price": 1234556.296875
+  },
+  {
+    "month_num": "09",
+    "month_name": "Sep",
+    "city": "COPPER/COUNTY",
+    "sales_count": 1630,
+    "avg_ppsf": 407.8163319519685,
+    "avg_price": 866082.8601226994
+  },
+  {
+    "month_num": "09",
+    "month_name": "Sep",
+    "city": "DILLON",
+    "sales_count": 161,
+    "avg_ppsf": 462.56890769788225,
+    "avg_price": 588175.7267080746
+  },
+  {
+    "month_num": "09",
+    "month_name": "Sep",
+    "city": "FRISCO",
+    "sales_count": 502,
+    "avg_ppsf": 502.5367956848254,
+    "avg_price": 808900.5258964143
+  },
+  {
+    "month_num": "09",
+    "month_name": "Sep",
+    "city": "KEYSTONE",
+    "sales_count": 525,
+    "avg_ppsf": 531.4396189684198,
+    "avg_price": 782206.8361904762
+  },
+  {
+    "month_num": "09",
+    "month_name": "Sep",
+    "city": "MONTEZUMA",
+    "sales_count": 4,
+    "avg_ppsf": 338.55173481662814,
+    "avg_price": 549750.0
+  },
+  {
+    "month_num": "09",
+    "month_name": "Sep",
+    "city": "RURAL",
+    "sales_count": 93,
+    "avg_ppsf": 401.04804777054153,
+    "avg_price": 851743.8279569893
+  },
+  {
+    "month_num": "09",
+    "month_name": "Sep",
+    "city": "SILVERTHORNE",
+    "sales_count": 392,
+    "avg_ppsf": 413.5872677287712,
+    "avg_price": 964336.4795918367
+  },
+  {
+    "month_num": "10",
+    "month_name": "Oct",
+    "city": "BRECKENRIDGE",
+    "sales_count": 1061,
+    "avg_ppsf": 619.8015641855814,
+    "avg_price": 1469634.7021677662
+  },
+  {
+    "month_num": "10",
+    "month_name": "Oct",
+    "city": "COPPER/COUNTY",
+    "sales_count": 1626,
+    "avg_ppsf": 468.9033714648129,
+    "avg_price": 1220172.49200492
+  },
+  {
+    "month_num": "10",
+    "month_name": "Oct",
+    "city": "DILLON",
+    "sales_count": 175,
+    "avg_ppsf": 509.9093800544889,
+    "avg_price": 643327.68
+  },
+  {
+    "month_num": "10",
+    "month_name": "Oct",
+    "city": "FRISCO",
+    "sales_count": 450,
+    "avg_ppsf": 489.4855003939905,
+    "avg_price": 756664.1555555556
+  },
+  {
+    "month_num": "10",
+    "month_name": "Oct",
+    "city": "KEYSTONE",
+    "sales_count": 600,
+    "avg_ppsf": 525.3153453127678,
+    "avg_price": 690639.5
+  },
+  {
+    "month_num": "10",
+    "month_name": "Oct",
+    "city": "MONTEZUMA",
+    "sales_count": 8,
+    "avg_ppsf": 275.42173585852254,
+    "avg_price": 301375.0
+  },
+  {
+    "month_num": "10",
+    "month_name": "Oct",
+    "city": "RURAL",
+    "sales_count": 108,
+    "avg_ppsf": 329.230751030306,
+    "avg_price": 922553.925925926
+  },
+  {
+    "month_num": "10",
+    "month_name": "Oct",
+    "city": "SILVERTHORNE",
+    "sales_count": 469,
+    "avg_ppsf": 445.6131702037634,
+    "avg_price": 1092008.2324093818
+  },
+  {
+    "month_num": "11",
+    "month_name": "Nov",
+    "city": "BRECKENRIDGE",
+    "sales_count": 760,
+    "avg_ppsf": 611.0673391379089,
+    "avg_price": 1020779.7460526315
+  },
+  {
+    "month_num": "11",
+    "month_name": "Nov",
+    "city": "COPPER/COUNTY",
+    "sales_count": 1323,
+    "avg_ppsf": 429.6661377351545,
+    "avg_price": 829174.2736205594
+  },
+  {
+    "month_num": "11",
+    "month_name": "Nov",
+    "city": "DILLON",
+    "sales_count": 150,
+    "avg_ppsf": 537.5440412872733,
+    "avg_price": 1098278.7
+  },
+  {
+    "month_num": "11",
+    "month_name": "Nov",
+    "city": "FRISCO",
+    "sales_count": 315,
+    "avg_ppsf": 451.0948648786154,
+    "avg_price": 824635.126984127
+  },
+  {
+    "month_num": "11",
+    "month_name": "Nov",
+    "city": "KEYSTONE",
+    "sales_count": 466,
+    "avg_ppsf": 537.3982403567109,
+    "avg_price": 647463.7832618026
+  },
+  {
+    "month_num": "11",
+    "month_name": "Nov",
+    "city": "MONTEZUMA",
+    "sales_count": 1,
+    "avg_ppsf": null,
+    "avg_price": 173000.0
+  },
+  {
+    "month_num": "11",
+    "month_name": "Nov",
+    "city": "RURAL",
+    "sales_count": 86,
+    "avg_ppsf": 436.65424409986673,
+    "avg_price": 1154067.3604651163
+  },
+  {
+    "month_num": "11",
+    "month_name": "Nov",
+    "city": "SILVERTHORNE",
+    "sales_count": 298,
+    "avg_ppsf": 444.6994073446967,
+    "avg_price": 994346.3926174496
+  },
+  {
+    "month_num": "12",
+    "month_name": "Dec",
+    "city": "BRECKENRIDGE",
+    "sales_count": 701,
+    "avg_ppsf": 609.3440469159262,
+    "avg_price": 1067101.1654778887
+  },
+  {
+    "month_num": "12",
+    "month_name": "Dec",
+    "city": "COPPER/COUNTY",
+    "sales_count": 1176,
+    "avg_ppsf": 627.3961598145975,
+    "avg_price": 1205246.3333333333
+  },
+  {
+    "month_num": "12",
+    "month_name": "Dec",
+    "city": "DILLON",
+    "sales_count": 142,
+    "avg_ppsf": 418.5259853449438,
+    "avg_price": 1978230.281690141
+  },
+  {
+    "month_num": "12",
+    "month_name": "Dec",
+    "city": "FRISCO",
+    "sales_count": 285,
+    "avg_ppsf": 483.26876266266055,
+    "avg_price": 752641.9087719298
+  },
+  {
+    "month_num": "12",
+    "month_name": "Dec",
+    "city": "KEYSTONE",
+    "sales_count": 368,
+    "avg_ppsf": 528.5466606408825,
+    "avg_price": 749065.4048913043
+  },
+  {
+    "month_num": "12",
+    "month_name": "Dec",
+    "city": "MONTEZUMA",
+    "sales_count": 2,
+    "avg_ppsf": 774.8733833538811,
+    "avg_price": 524000.0
+  },
+  {
+    "month_num": "12",
+    "month_name": "Dec",
+    "city": "RURAL",
+    "sales_count": 78,
+    "avg_ppsf": 421.65123473417947,
+    "avg_price": 1116234.6153846155
+  },
+  {
+    "month_num": "12",
+    "month_name": "Dec",
+    "city": "SILVERTHORNE",
+    "sales_count": 359,
+    "avg_ppsf": 508.2886865359356,
+    "avg_price": 1039751.704735376
+  }
+]

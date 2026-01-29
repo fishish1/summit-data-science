@@ -13,40 +13,40 @@ from summit_housing.ml import train_macro_model, get_shap_values, get_pdp_data, 
 
 # Configure export path
 # Priority: 1) Environment variable, 2) Side-by-side repos, 3) Hardcoded fallback
-def get_export_path():
+def get_export_paths():
     """
     Determine where to export data files.
     
-    Returns the export directory path. Tries in order:
-    1. SUMMIT_EXPORT_PATH environment variable
-    2. ../brian.fishman.info/public/projects/summit/data (if repos are side-by-side)
-    3. Hardcoded path as fallback
+    Returns a list of export directory paths.
+    1. Always includes local 'static_dashboard/data'
+    2. Includes sibling repo path if it exists
     """
-    # Check environment variable first
-    env_path = os.getenv('SUMMIT_EXPORT_PATH')
-    if env_path:
-        return Path(env_path)
+    paths = []
     
-    # Try side-by-side repos (most common setup)
     script_dir = Path(__file__).resolve().parent
     project_root = script_dir.parent  # /path/to/summit
+    
+    # 1. Internal Static Dashboard (Guaranteed)
+    internal_path = project_root / "static_dashboard/data"
+    internal_path.mkdir(parents=True, exist_ok=True)
+    paths.append(internal_path)
+    
+    # 2. Sibling Repo (website)
     sibling_path = project_root.parent / "brian.fishman.info/public/projects/summit/data"
-    
     if sibling_path.exists():
-        return sibling_path
+        paths.append(sibling_path)
     
-    # Fallback to hardcoded path
-    return Path("/Users/brian/Documents/brian.fishman.info/public/projects/summit/data")
+    return paths
 
-EXPORT_BASE_PATH = get_export_path()
+EXPORT_PATHS = get_export_paths()
 
 def export_to_json(df, filename):
-    output_path = EXPORT_BASE_PATH / filename
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+    # Prepare data once
     # Convert to list of dicts and handle NaN -> null accurately
     data = df.to_dict(orient='records')
     
     import math
+    import numpy as np
     def clean(obj):
         if isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)): return None
         if isinstance(obj, np.int64): return int(obj)
@@ -56,14 +56,22 @@ def export_to_json(df, filename):
         return obj
     
     data = clean(data)
-    with open(output_path, 'w') as f:
-        json.dump(data, f, indent=2)
-    print(f"Exported {len(data)} rows to {output_path}")
+
+    # Write to all paths
+    for base_path in EXPORT_PATHS:
+        output_path = base_path / filename
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        with open(output_path, 'w') as f:
+            json.dump(data, f, indent=2)
+        print(f"Exported {len(data)} rows to {output_path}")
 
 def main():
     print(f"📊 Summit Housing Data Export")
     print(f"=" * 60)
-    print(f"Export destination: {EXPORT_BASE_PATH}")
+    print(f"Export destinations:")
+    for p in EXPORT_PATHS:
+        print(f" - {p}")
     print(f"=" * 60)
     print()
     
