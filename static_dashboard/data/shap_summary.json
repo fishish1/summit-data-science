@@ -1,0 +1,82 @@
+[
+  {
+    "feature": "cpi",
+    "importance": 0.3911078733175223
+  },
+  {
+    "feature": "sfla",
+    "importance": 0.2589664835982884
+  },
+  {
+    "feature": "sp500",
+    "importance": 0.11449129072353953
+  },
+  {
+    "feature": "year_blt",
+    "importance": 0.11223842730481888
+  },
+  {
+    "feature": "baths",
+    "importance": 0.07722657901419841
+  },
+  {
+    "feature": "dist_breck",
+    "importance": 0.07534957630091312
+  },
+  {
+    "feature": "summit_pop",
+    "importance": 0.06015696057536545
+  },
+  {
+    "feature": "city_COPPERMOUNTAIN",
+    "importance": 0.04084749969548742
+  },
+  {
+    "feature": "dist_copper",
+    "importance": 0.035475712268403424
+  },
+  {
+    "feature": "prop_type_Other",
+    "importance": 0.03512816464784709
+  },
+  {
+    "feature": "garage_size",
+    "importance": 0.03489743638698708
+  },
+  {
+    "feature": "acres",
+    "importance": 0.026131153584929144
+  },
+  {
+    "feature": "dist_dillon",
+    "importance": 0.025503161723863774
+  },
+  {
+    "feature": "city_BRECKENRIDGE",
+    "importance": 0.02444252912422168
+  },
+  {
+    "feature": "beds",
+    "importance": 0.022198628641420536
+  },
+  {
+    "feature": "dist_abasin",
+    "importance": 0.019335377266790573
+  },
+  {
+    "feature": "mortgage_rate",
+    "importance": 0.01652435843395834
+  },
+  {
+    "feature": "dist_keystone",
+    "importance": 0.014441387471518841
+  },
+  {
+    "feature": "prop_type_Single Family",
+    "importance": 0.010780863766493223
+  },
+  {
+    "feature": "prop_type_Condo",
+    "importance": 0.007321093288081711
+  }
+]

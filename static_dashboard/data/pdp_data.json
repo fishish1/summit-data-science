@@ -1,0 +1,4167 @@
+[
+  {
+    "value": 1.0,
+    "average_prediction": 671351.6326101124,
+    "feature": "beds"
+  },
+  {
+    "value": 2.0,
+    "average_prediction": 676244.440272966,
+    "feature": "beds"
+  },
+  {
+    "value": 3.0,
+    "average_prediction": 795431.1381906369,
+    "feature": "beds"
+  },
+  {
+    "value": 4.0,
+    "average_prediction": 804149.0896379566,
+    "feature": "beds"
+  },
+  {
+    "value": 1.0,
+    "average_prediction": 783256.7728015637,
+    "feature": "baths"
+  },
+  {
+    "value": 2.0,
+    "average_prediction": 639295.1120311619,
+    "feature": "baths"
+  },
+  {
+    "value": 3.0,
+    "average_prediction": 641413.2272552149,
+    "feature": "baths"
+  },
+  {
+    "value": 4.0,
+    "average_prediction": 651575.8531018422,
+    "feature": "baths"
+  },
+  {
+    "value": 498.0,
+    "average_prediction": 3773296.7000821973,
+    "feature": "sfla"
+  },
+  {
+    "value": 562.4285714285714,
+    "average_prediction": 3237152.751034587,
+    "feature": "sfla"
+  },
+  {
+    "value": 626.8571428571429,
+    "average_prediction": 3250121.1839869,
+    "feature": "sfla"
+  },
+  {
+    "value": 691.2857142857142,
+    "average_prediction": 3146025.5120232785,
+    "feature": "sfla"
+  },
+  {
+    "value": 755.7142857142858,
+    "average_prediction": 729171.8907643593,
+    "feature": "sfla"
+  },
+  {
+    "value": 820.1428571428571,
+    "average_prediction": 613081.8266504981,
+    "feature": "sfla"
+  },
+  {
+    "value": 884.5714285714286,
+    "average_prediction": 563539.6450261485,
+    "feature": "sfla"
+  },
+  {
+    "value": 949.0,
+    "average_prediction": 511174.1047514257,
+    "feature": "sfla"
+  },
+  {
+    "value": 1013.4285714285714,
+    "average_prediction": 535788.3176833657,
+    "feature": "sfla"
+  },
+  {
+    "value": 1077.857142857143,
+    "average_prediction": 549558.8587757952,
+    "feature": "sfla"
+  },
+  {
+    "value": 1142.2857142857142,
+    "average_prediction": 553952.3965401994,
+    "feature": "sfla"
+  },
+  {
+    "value": 1206.7142857142858,
+    "average_prediction": 556812.910162924,
+    "feature": "sfla"
+  },
+  {
+    "value": 1271.142857142857,
+    "average_prediction": 566309.4648063985,
+    "feature": "sfla"
+  },
+  {
+    "value": 1335.5714285714284,
+    "average_prediction": 573478.9246103786,
+    "feature": "sfla"
+  },
+  {
+    "value": 1400.0,
+    "average_prediction": 582186.4626994622,
+    "feature": "sfla"
+  },
+  {
+    "value": 1464.4285714285716,
+    "average_prediction": 591386.2993387711,
+    "feature": "sfla"
+  },
+  {
+    "value": 1528.857142857143,
+    "average_prediction": 624347.1917842876,
+    "feature": "sfla"
+  },
+  {
+    "value": 1593.2857142857142,
+    "average_prediction": 664507.4251455271,
+    "feature": "sfla"
+  },
+  {
+    "value": 1657.7142857142858,
+    "average_prediction": 686314.6490723197,
+    "feature": "sfla"
+  },
+  {
+    "value": 1722.142857142857,
+    "average_prediction": 686747.9090027252,
+    "feature": "sfla"
+  },
+  {
+    "value": 1786.5714285714287,
+    "average_prediction": 703120.3828225821,
+    "feature": "sfla"
+  },
+  {
+    "value": 1851.0,
+    "average_prediction": 708212.716462304,
+    "feature": "sfla"
+  },
+  {
+    "value": 1915.4285714285716,
+    "average_prediction": 719212.3986684522,
+    "feature": "sfla"
+  },
+  {
+    "value": 1979.857142857143,
+    "average_prediction": 737810.8677959547,
+    "feature": "sfla"
+  },
+  {
+    "value": 2044.2857142857142,
+    "average_prediction": 765342.9921671667,
+    "feature": "sfla"
+  },
+  {
+    "value": 2108.714285714286,
+    "average_prediction": 907953.831272595,
+    "feature": "sfla"
+  },
+  {
+    "value": 2173.142857142857,
+    "average_prediction": 902168.2998254288,
+    "feature": "sfla"
+  },
+  {
+    "value": 2237.5714285714284,
+    "average_prediction": 905310.30317697,
+    "feature": "sfla"
+  },
+  {
+    "value": 2302.0,
+    "average_prediction": 918083.6868698173,
+    "feature": "sfla"
+  },
+  {
+    "value": 2366.4285714285716,
+    "average_prediction": 924321.116754581,
+    "feature": "sfla"
+  },
+  {
+    "value": 2430.857142857143,
+    "average_prediction": 923917.1556868271,
+    "feature": "sfla"
+  },
+  {
+    "value": 2495.2857142857147,
+    "average_prediction": 941894.9330614022,
+    "feature": "sfla"
+  },
+  {
+    "value": 2559.714285714286,
+    "average_prediction": 951376.159076912,
+    "feature": "sfla"
+  },
+  {
+    "value": 2624.1428571428573,
+    "average_prediction": 956069.3487068809,
+    "feature": "sfla"
+  },
+  {
+    "value": 2688.5714285714284,
+    "average_prediction": 958981.1723531353,
+    "feature": "sfla"
+  },
+  {
+    "value": 2753.0,
+    "average_prediction": 959341.5835225531,
+    "feature": "sfla"
+  },
+  {
+    "value": 2817.4285714285716,
+    "average_prediction": 961263.623126342,
+    "feature": "sfla"
+  },
+  {
+    "value": 2881.857142857143,
+    "average_prediction": 964640.2214899615,
+    "feature": "sfla"
+  },
+  {
+    "value": 2946.285714285714,
+    "average_prediction": 967007.7879966773,
+    "feature": "sfla"
+  },
+  {
+    "value": 3010.714285714286,
+    "average_prediction": 973867.8414016189,
+    "feature": "sfla"
+  },
+  {
+    "value": 3075.1428571428573,
+    "average_prediction": 994588.316664715,
+    "feature": "sfla"
+  },
+  {
+    "value": 3139.5714285714284,
+    "average_prediction": 1030536.1303611862,
+    "feature": "sfla"
+  },
+  {
+    "value": 3204.0,
+    "average_prediction": 1051429.2896786612,
+    "feature": "sfla"
+  },
+  {
+    "value": 3268.4285714285716,
+    "average_prediction": 1071071.7348962666,
+    "feature": "sfla"
+  },
+  {
+    "value": 3332.857142857143,
+    "average_prediction": 1093663.9307199675,
+    "feature": "sfla"
+  },
+  {
+    "value": 3397.285714285714,
+    "average_prediction": 1118377.5132819004,
+    "feature": "sfla"
+  },
+  {
+    "value": 3461.714285714286,
+    "average_prediction": 1130289.938962712,
+    "feature": "sfla"
+  },
+  {
+    "value": 3526.1428571428573,
+    "average_prediction": 1140194.1598178789,
+    "feature": "sfla"
+  },
+  {
+    "value": 3590.5714285714284,
+    "average_prediction": 1147197.1968033316,
+    "feature": "sfla"
+  },
+  {
+    "value": 3655.0,
+    "average_prediction": 1152512.2247340863,
+    "feature": "sfla"
+  },
+  {
+    "value": 1971.0,
+    "average_prediction": 786641.0181215224,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1971.9591836734694,
+    "average_prediction": 770874.2491953914,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1972.9183673469388,
+    "average_prediction": 765408.5538143681,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1973.8775510204082,
+    "average_prediction": 765175.6392623323,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1974.8367346938776,
+    "average_prediction": 762688.0455431985,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1975.795918367347,
+    "average_prediction": 761734.044068864,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1976.7551020408164,
+    "average_prediction": 761292.0524569453,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1977.7142857142858,
+    "average_prediction": 761895.6469688821,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1978.6734693877552,
+    "average_prediction": 762193.9524835023,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1979.6326530612246,
+    "average_prediction": 763095.7675065229,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1980.591836734694,
+    "average_prediction": 762797.8344591205,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1981.5510204081634,
+    "average_prediction": 763080.573657062,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1982.5102040816328,
+    "average_prediction": 763605.7203524953,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1983.469387755102,
+    "average_prediction": 763756.1671335207,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1984.4285714285713,
+    "average_prediction": 764684.7214701131,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1985.3877551020407,
+    "average_prediction": 762591.6825454319,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1986.3469387755101,
+    "average_prediction": 762856.0540883994,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1987.3061224489795,
+    "average_prediction": 763372.4804239881,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1988.265306122449,
+    "average_prediction": 763780.5945641227,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1989.2244897959183,
+    "average_prediction": 765503.4625211516,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1990.1836734693877,
+    "average_prediction": 766021.2296135355,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1991.142857142857,
+    "average_prediction": 761781.9431045445,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1992.1020408163265,
+    "average_prediction": 760503.338993981,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1993.061224489796,
+    "average_prediction": 760814.1148504695,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1994.0204081632653,
+    "average_prediction": 758273.1731467422,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1994.9795918367347,
+    "average_prediction": 758725.0104394032,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1995.938775510204,
+    "average_prediction": 759248.6177423502,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1996.8979591836735,
+    "average_prediction": 760470.0339887487,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1997.857142857143,
+    "average_prediction": 761622.8298876524,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1998.8163265306123,
+    "average_prediction": 764224.6642200393,
+    "feature": "year_blt"
+  },
+  {
+    "value": 1999.7755102040817,
+    "average_prediction": 765484.5773516309,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2000.734693877551,
+    "average_prediction": 765794.1091886311,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2001.6938775510205,
+    "average_prediction": 765858.0215374012,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2002.6530612244899,
+    "average_prediction": 765965.6059603208,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2003.6122448979593,
+    "average_prediction": 770149.9627219982,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2004.5714285714287,
+    "average_prediction": 770558.2694353147,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2005.530612244898,
+    "average_prediction": 774267.65402367,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2006.4897959183672,
+    "average_prediction": 775564.9048826348,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2007.4489795918366,
+    "average_prediction": 778374.6606080697,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2008.408163265306,
+    "average_prediction": 775513.7970901226,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2009.3673469387754,
+    "average_prediction": 774295.4611956116,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2010.3265306122448,
+    "average_prediction": 825561.3429838073,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2011.2857142857142,
+    "average_prediction": 778011.9350534144,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2012.2448979591836,
+    "average_prediction": 776211.5443411143,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2013.204081632653,
+    "average_prediction": 776169.1725088934,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2014.1632653061224,
+    "average_prediction": 775678.2761961838,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2015.1224489795918,
+    "average_prediction": 772787.8077413646,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2016.0816326530612,
+    "average_prediction": 773040.6011786133,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2017.0408163265306,
+    "average_prediction": 772419.6923908917,
+    "feature": "year_blt"
+  },
+  {
+    "value": 2018.0,
+    "average_prediction": 760694.3078332247,
+    "feature": "year_blt"
+  },
+  {
+    "value": 0.0,
+    "average_prediction": 741181.5231343455,
+    "feature": "garage_size"
+  },
+  {
+    "value": 17.53061224489796,
+    "average_prediction": 741181.5231343455,
+    "feature": "garage_size"
+  },
+  {
+    "value": 35.06122448979592,
+    "average_prediction": 741181.5231343455,
+    "feature": "garage_size"
+  },
+  {
+    "value": 52.59183673469388,
+    "average_prediction": 741181.5231343455,
+    "feature": "garage_size"
+  },
+  {
+    "value": 70.12244897959184,
+    "average_prediction": 741181.5231343455,
+    "feature": "garage_size"
+  },
+  {
+    "value": 87.65306122448979,
+    "average_prediction": 741270.9465947361,
+    "feature": "garage_size"
+  },
+  {
+    "value": 105.18367346938776,
+    "average_prediction": 740942.5881907678,
+    "feature": "garage_size"
+  },
+  {
+    "value": 122.71428571428572,
+    "average_prediction": 740718.6599590379,
+    "feature": "garage_size"
+  },
+  {
+    "value": 140.24489795918367,
+    "average_prediction": 742022.8601748197,
+    "feature": "garage_size"
+  },
+  {
+    "value": 157.77551020408163,
+    "average_prediction": 742023.3368618402,
+    "feature": "garage_size"
+  },
+  {
+    "value": 175.30612244897958,
+    "average_prediction": 742387.3759246442,
+    "feature": "garage_size"
+  },
+  {
+    "value": 192.83673469387756,
+    "average_prediction": 740636.4000523182,
+    "feature": "garage_size"
+  },
+  {
+    "value": 210.3673469387755,
+    "average_prediction": 740620.2621995576,
+    "feature": "garage_size"
+  },
+  {
+    "value": 227.89795918367346,
+    "average_prediction": 740644.4558276614,
+    "feature": "garage_size"
+  },
+  {
+    "value": 245.42857142857144,
+    "average_prediction": 741854.2085236001,
+    "feature": "garage_size"
+  },
+  {
+    "value": 262.9591836734694,
+    "average_prediction": 763359.1216968526,
+    "feature": "garage_size"
+  },
+  {
+    "value": 280.48979591836735,
+    "average_prediction": 764356.3548040035,
+    "feature": "garage_size"
+  },
+  {
+    "value": 298.0204081632653,
+    "average_prediction": 764274.7169818281,
+    "feature": "garage_size"
+  },
+  {
+    "value": 315.55102040816325,
+    "average_prediction": 764250.5499084825,
+    "feature": "garage_size"
+  },
+  {
+    "value": 333.0816326530612,
+    "average_prediction": 764323.9472062379,
+    "feature": "garage_size"
+  },
+  {
+    "value": 350.61224489795916,
+    "average_prediction": 765263.1274068264,
+    "feature": "garage_size"
+  },
+  {
+    "value": 368.14285714285717,
+    "average_prediction": 775996.7255280267,
+    "feature": "garage_size"
+  },
+  {
+    "value": 385.6734693877551,
+    "average_prediction": 778211.2530482557,
+    "feature": "garage_size"
+  },
+  {
+    "value": 403.2040816326531,
+    "average_prediction": 778428.1518754936,
+    "feature": "garage_size"
+  },
+  {
+    "value": 420.734693877551,
+    "average_prediction": 778821.3482571632,
+    "feature": "garage_size"
+  },
+  {
+    "value": 438.265306122449,
+    "average_prediction": 776186.3542138211,
+    "feature": "garage_size"
+  },
+  {
+    "value": 455.7959183673469,
+    "average_prediction": 776632.3612312069,
+    "feature": "garage_size"
+  },
+  {
+    "value": 473.3265306122449,
+    "average_prediction": 776670.9973111257,
+    "feature": "garage_size"
+  },
+  {
+    "value": 490.8571428571429,
+    "average_prediction": 776758.178753516,
+    "feature": "garage_size"
+  },
+  {
+    "value": 508.38775510204084,
+    "average_prediction": 777272.8251905978,
+    "feature": "garage_size"
+  },
+  {
+    "value": 525.9183673469388,
+    "average_prediction": 779694.111573876,
+    "feature": "garage_size"
+  },
+  {
+    "value": 543.4489795918367,
+    "average_prediction": 779463.3889587142,
+    "feature": "garage_size"
+  },
+  {
+    "value": 560.9795918367347,
+    "average_prediction": 779886.6661995375,
+    "feature": "garage_size"
+  },
+  {
+    "value": 578.5102040816327,
+    "average_prediction": 780754.3802121216,
+    "feature": "garage_size"
+  },
+  {
+    "value": 596.0408163265306,
+    "average_prediction": 781308.6575148414,
+    "feature": "garage_size"
+  },
+  {
+    "value": 613.5714285714286,
+    "average_prediction": 781397.2436874516,
+    "feature": "garage_size"
+  },
+  {
+    "value": 631.1020408163265,
+    "average_prediction": 781554.7955922916,
+    "feature": "garage_size"
+  },
+  {
+    "value": 648.6326530612245,
+    "average_prediction": 781830.7030815685,
+    "feature": "garage_size"
+  },
+  {
+    "value": 666.1632653061224,
+    "average_prediction": 781890.3181434412,
+    "feature": "garage_size"
+  },
+  {
+    "value": 683.6938775510204,
+    "average_prediction": 781981.0756920342,
+    "feature": "garage_size"
+  },
+  {
+    "value": 701.2244897959183,
+    "average_prediction": 781994.2727415054,
+    "feature": "garage_size"
+  },
+  {
+    "value": 718.7551020408164,
+    "average_prediction": 782198.6852868091,
+    "feature": "garage_size"
+  },
+  {
+    "value": 736.2857142857143,
+    "average_prediction": 782259.4380524787,
+    "feature": "garage_size"
+  },
+  {
+    "value": 753.8163265306123,
+    "average_prediction": 782329.7515633722,
+    "feature": "garage_size"
+  },
+  {
+    "value": 771.3469387755102,
+    "average_prediction": 782476.691402698,
+    "feature": "garage_size"
+  },
+  {
+    "value": 788.8775510204082,
+    "average_prediction": 782457.2867360015,
+    "feature": "garage_size"
+  },
+  {
+    "value": 806.4081632653061,
+    "average_prediction": 782803.829597966,
+    "feature": "garage_size"
+  },
+  {
+    "value": 823.9387755102041,
+    "average_prediction": 783423.631817196,
+    "feature": "garage_size"
+  },
+  {
+    "value": 841.469387755102,
+    "average_prediction": 783655.5760321678,
+    "feature": "garage_size"
+  },
+  {
+    "value": 859.0,
+    "average_prediction": 784031.6389485168,
+    "feature": "garage_size"
+  },
+  {
+    "value": 0.0,
+    "average_prediction": 702772.0689347843,
+    "feature": "acres"
+  },
+  {
+    "value": 0.010408163265306122,
+    "average_prediction": 701076.2310393004,
+    "feature": "acres"
+  },
+  {
+    "value": 0.020816326530612245,
+    "average_prediction": 696323.439251294,
+    "feature": "acres"
+  },
+  {
+    "value": 0.031224489795918367,
+    "average_prediction": 695925.5115791777,
+    "feature": "acres"
+  },
+  {
+    "value": 0.04163265306122449,
+    "average_prediction": 695370.8298193521,
+    "feature": "acres"
+  },
+  {
+    "value": 0.05204081632653061,
+    "average_prediction": 709280.3100738783,
+    "feature": "acres"
+  },
+  {
+    "value": 0.062448979591836734,
+    "average_prediction": 694894.8889556561,
+    "feature": "acres"
+  },
+  {
+    "value": 0.07285714285714286,
+    "average_prediction": 694882.8606603951,
+    "feature": "acres"
+  },
+  {
+    "value": 0.08326530612244898,
+    "average_prediction": 695018.9863711362,
+    "feature": "acres"
+  },
+  {
+    "value": 0.0936734693877551,
+    "average_prediction": 694963.6897448367,
+    "feature": "acres"
+  },
+  {
+    "value": 0.10408163265306122,
+    "average_prediction": 694990.4940000623,
+    "feature": "acres"
+  },
+  {
+    "value": 0.11448979591836735,
+    "average_prediction": 694880.6376251328,
+    "feature": "acres"
+  },
+  {
+    "value": 0.12489795918367347,
+    "average_prediction": 694787.5770247657,
+    "feature": "acres"
+  },
+  {
+    "value": 0.1353061224489796,
+    "average_prediction": 694421.2744532318,
+    "feature": "acres"
+  },
+  {
+    "value": 0.1457142857142857,
+    "average_prediction": 694277.0517015961,
+    "feature": "acres"
+  },
+  {
+    "value": 0.15612244897959182,
+    "average_prediction": 694127.8036134552,
+    "feature": "acres"
+  },
+  {
+    "value": 0.16653061224489796,
+    "average_prediction": 694002.3650758294,
+    "feature": "acres"
+  },
+  {
+    "value": 0.1769387755102041,
+    "average_prediction": 693945.1528429822,
+    "feature": "acres"
+  },
+  {
+    "value": 0.1873469387755102,
+    "average_prediction": 693984.306848772,
+    "feature": "acres"
+  },
+  {
+    "value": 0.1977551020408163,
+    "average_prediction": 693800.1146125784,
+    "feature": "acres"
+  },
+  {
+    "value": 0.20816326530612245,
+    "average_prediction": 693833.1326881014,
+    "feature": "acres"
+  },
+  {
+    "value": 0.21857142857142858,
+    "average_prediction": 693633.1225458566,
+    "feature": "acres"
+  },
+  {
+    "value": 0.2289795918367347,
+    "average_prediction": 693490.5706728229,
+    "feature": "acres"
+  },
+  {
+    "value": 0.2393877551020408,
+    "average_prediction": 693514.1074013312,
+    "feature": "acres"
+  },
+  {
+    "value": 0.24979591836734694,
+    "average_prediction": 693376.2796187269,
+    "feature": "acres"
+  },
+  {
+    "value": 0.2602040816326531,
+    "average_prediction": 693725.6135654009,
+    "feature": "acres"
+  },
+  {
+    "value": 0.2706122448979592,
+    "average_prediction": 693734.5415932823,
+    "feature": "acres"
+  },
+  {
+    "value": 0.2810204081632653,
+    "average_prediction": 693779.5455155123,
+    "feature": "acres"
+  },
+  {
+    "value": 0.2914285714285714,
+    "average_prediction": 693728.5059796098,
+    "feature": "acres"
+  },
+  {
+    "value": 0.30183673469387756,
+    "average_prediction": 693752.3385689177,
+    "feature": "acres"
+  },
+  {
+    "value": 0.31224489795918364,
+    "average_prediction": 693801.1714261759,
+    "feature": "acres"
+  },
+  {
+    "value": 0.3226530612244898,
+    "average_prediction": 693817.6357865313,
+    "feature": "acres"
+  },
+  {
+    "value": 0.3330612244897959,
+    "average_prediction": 693886.996204364,
+    "feature": "acres"
+  },
+  {
+    "value": 0.34346938775510205,
+    "average_prediction": 694841.1143923184,
+    "feature": "acres"
+  },
+  {
+    "value": 0.3538775510204082,
+    "average_prediction": 694990.8780390952,
+    "feature": "acres"
+  },
+  {
+    "value": 0.36428571428571427,
+    "average_prediction": 695079.2095718964,
+    "feature": "acres"
+  },
+  {
+    "value": 0.3746938775510204,
+    "average_prediction": 697265.536008118,
+    "feature": "acres"
+  },
+  {
+    "value": 0.38510204081632654,
+    "average_prediction": 697960.3876285711,
+    "feature": "acres"
+  },
+  {
+    "value": 0.3955102040816326,
+    "average_prediction": 697954.2177186866,
+    "feature": "acres"
+  },
+  {
+    "value": 0.40591836734693876,
+    "average_prediction": 696873.0447812426,
+    "feature": "acres"
+  },
+  {
+    "value": 0.4163265306122449,
+    "average_prediction": 696870.8669499719,
+    "feature": "acres"
+  },
+  {
+    "value": 0.42673469387755103,
+    "average_prediction": 696960.4760099569,
+    "feature": "acres"
+  },
+  {
+    "value": 0.43714285714285717,
+    "average_prediction": 697273.3188966408,
+    "feature": "acres"
+  },
+  {
+    "value": 0.44755102040816325,
+    "average_prediction": 697407.2908291322,
+    "feature": "acres"
+  },
+  {
+    "value": 0.4579591836734694,
+    "average_prediction": 697359.0900062202,
+    "feature": "acres"
+  },
+  {
+    "value": 0.4683673469387755,
+    "average_prediction": 697398.5329076316,
+    "feature": "acres"
+  },
+  {
+    "value": 0.4787755102040816,
+    "average_prediction": 697384.01626194,
+    "feature": "acres"
+  },
+  {
+    "value": 0.48918367346938774,
+    "average_prediction": 697386.4131210084,
+    "feature": "acres"
+  },
+  {
+    "value": 0.4995918367346939,
+    "average_prediction": 697375.5383707504,
+    "feature": "acres"
+  },
+  {
+    "value": 0.51,
+    "average_prediction": 697522.5152988344,
+    "feature": "acres"
+  },
+  {
+    "value": 0.0,
+    "average_prediction": 756101.0558649574,
+    "feature": "scenic_view"
+  },
+  {
+    "value": 39.46532197,
+    "average_prediction": 778897.9378536943,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.469185185,
+    "average_prediction": 779005.6601069723,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.473048399999996,
+    "average_prediction": 779233.7091532056,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.476911615,
+    "average_prediction": 779621.672949832,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.48077483,
+    "average_prediction": 779291.8169500311,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.484638045,
+    "average_prediction": 779143.5835272868,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.48850126,
+    "average_prediction": 781114.9645646119,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.492364474999995,
+    "average_prediction": 782044.4117007257,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.49622769,
+    "average_prediction": 781552.1282207106,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.500090905,
+    "average_prediction": 762297.7571818319,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.503954119999996,
+    "average_prediction": 789233.5398544376,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.507817335,
+    "average_prediction": 789204.9629296153,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.51168055,
+    "average_prediction": 789441.5043414265,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.515543765,
+    "average_prediction": 789447.8417740357,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.51940698,
+    "average_prediction": 789390.6729234129,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.523270194999995,
+    "average_prediction": 789214.6861948167,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.52713341,
+    "average_prediction": 788975.2252732796,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.530996625,
+    "average_prediction": 788526.0581880617,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.534859839999996,
+    "average_prediction": 788458.1757543347,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.538723055,
+    "average_prediction": 788406.7574941606,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.54258627,
+    "average_prediction": 792883.1118864352,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.546449485,
+    "average_prediction": 792907.3382652896,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.5503127,
+    "average_prediction": 793436.9870560162,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.554175915,
+    "average_prediction": 793382.2888711118,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.55803913,
+    "average_prediction": 793161.4753418448,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.561902345,
+    "average_prediction": 793069.0937312645,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.565765559999996,
+    "average_prediction": 915846.1043321427,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.569628775,
+    "average_prediction": 914738.3699036513,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.57349199,
+    "average_prediction": 914709.2242801476,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.577355204999996,
+    "average_prediction": 914767.0300189647,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.58121842,
+    "average_prediction": 914060.0717728578,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.585081635,
+    "average_prediction": 913946.984674766,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.58894485,
+    "average_prediction": 913517.8963654628,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.592808065,
+    "average_prediction": 913361.9674932855,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.59667128,
+    "average_prediction": 986640.8833679777,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.600534495,
+    "average_prediction": 986213.7661282138,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.60439771,
+    "average_prediction": 986263.3594476752,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.608260924999996,
+    "average_prediction": 986034.3464865742,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.61212414,
+    "average_prediction": 985822.8911664886,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.615987355,
+    "average_prediction": 985833.8510483955,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.61985057,
+    "average_prediction": 985834.6764750849,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.623713785,
+    "average_prediction": 986050.8771689454,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.627577,
+    "average_prediction": 987508.0370054385,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.631440215,
+    "average_prediction": 987490.4219144648,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.63530343,
+    "average_prediction": 994066.3967997151,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.639166644999996,
+    "average_prediction": 1012201.5320489435,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.64302986,
+    "average_prediction": 1011696.2111221354,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.646893075,
+    "average_prediction": 1011663.297160393,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.65075629,
+    "average_prediction": 1011663.297160393,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": 39.654619505,
+    "average_prediction": 1011808.1679679359,
+    "feature": "LATITUDE"
+  },
+  {
+    "value": -106.14409728,
+    "average_prediction": 850086.1862462318,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.14059305857143,
+    "average_prediction": 945072.3646804758,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.13708883714285,
+    "average_prediction": 928365.4085523448,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.13358461571428,
+    "average_prediction": 928365.4085523448,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.13008039428571,
+    "average_prediction": 928344.1787153784,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.12657617285714,
+    "average_prediction": 928344.1787153784,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.12307195142857,
+    "average_prediction": 928341.5632751195,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.11956773,
+    "average_prediction": 928383.2860656886,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.11606350857143,
+    "average_prediction": 928395.6136848875,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.11255928714286,
+    "average_prediction": 928419.5728109101,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.10905506571429,
+    "average_prediction": 928493.9839843215,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.10555084428572,
+    "average_prediction": 928382.4406514459,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.10204662285715,
+    "average_prediction": 927985.703744493,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.09854240142857,
+    "average_prediction": 927692.6940851633,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.09503818,
+    "average_prediction": 923850.8601527874,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.09153395857143,
+    "average_prediction": 922192.051288248,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.08802973714286,
+    "average_prediction": 921785.3453731227,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.08452551571429,
+    "average_prediction": 921846.7359664537,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.08102129428572,
+    "average_prediction": 921847.3428306171,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.07751707285715,
+    "average_prediction": 921828.3623785359,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.07401285142858,
+    "average_prediction": 921963.0145118822,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.07050863,
+    "average_prediction": 921936.2295265204,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.06700440857144,
+    "average_prediction": 921958.5378885812,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.06350018714286,
+    "average_prediction": 917544.3282593286,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.0599959657143,
+    "average_prediction": 915048.5468281717,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.05649174428571,
+    "average_prediction": 915099.9249467355,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.05298752285714,
+    "average_prediction": 903845.2917153547,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.04948330142857,
+    "average_prediction": 903786.823890015,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.04597908,
+    "average_prediction": 939092.4267338339,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.04247485857142,
+    "average_prediction": 939021.3188796338,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.03897063714285,
+    "average_prediction": 942450.1454088301,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.03546641571428,
+    "average_prediction": 942993.5138195392,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.03196219428571,
+    "average_prediction": 943258.6996648125,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.02845797285714,
+    "average_prediction": 943411.8021272357,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.02495375142857,
+    "average_prediction": 943504.6667192659,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.02144953,
+    "average_prediction": 943531.4106349573,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.01794530857143,
+    "average_prediction": 950576.3676411834,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.01444108714286,
+    "average_prediction": 950398.5678796901,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.01093686571429,
+    "average_prediction": 944890.6644537008,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.00743264428571,
+    "average_prediction": 944860.0625421098,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.00392842285714,
+    "average_prediction": 945030.2848064913,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -106.00042420142857,
+    "average_prediction": 945053.7557517518,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -105.99691998,
+    "average_prediction": 945052.9127088441,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -105.99341575857143,
+    "average_prediction": 945369.3662609154,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -105.98991153714286,
+    "average_prediction": 945552.7842403629,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -105.98640731571429,
+    "average_prediction": 945766.6197601527,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -105.98290309428572,
+    "average_prediction": 945813.0642774734,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -105.97939887285715,
+    "average_prediction": 945942.760979346,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -105.97589465142858,
+    "average_prediction": 946459.6159231387,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": -105.97239043,
+    "average_prediction": 946504.6758159841,
+    "feature": "LONGITUDE"
+  },
+  {
+    "value": 0.18706579610846896,
+    "average_prediction": 925327.1201711515,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 0.4238985267703841,
+    "average_prediction": 915612.4783646232,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 0.6607312574322992,
+    "average_prediction": 877419.3561535487,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 0.8975639880942143,
+    "average_prediction": 848777.2149949392,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 1.1343967187561295,
+    "average_prediction": 803631.9664798699,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 1.3712294494180446,
+    "average_prediction": 793555.6805345401,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 1.6080621800799597,
+    "average_prediction": 792996.6399520363,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 1.8448949107418748,
+    "average_prediction": 790631.906705552,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 2.08172764140379,
+    "average_prediction": 789770.9375581725,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 2.318560372065705,
+    "average_prediction": 789843.5018255259,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 2.55539310272762,
+    "average_prediction": 789782.8653469916,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 2.7922258333895353,
+    "average_prediction": 789705.2960895624,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 3.0290585640514505,
+    "average_prediction": 782066.9224480346,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 3.2658912947133656,
+    "average_prediction": 775726.1018716809,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 3.5027240253752807,
+    "average_prediction": 774209.525951632,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 3.739556756037196,
+    "average_prediction": 772842.8350247124,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 3.976389486699111,
+    "average_prediction": 772627.5451087962,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 4.213222217361025,
+    "average_prediction": 760569.1917311039,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 4.450054948022942,
+    "average_prediction": 755089.3965759905,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 4.686887678684856,
+    "average_prediction": 753402.8785987367,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 4.923720409346771,
+    "average_prediction": 752411.3072993697,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 5.160553140008686,
+    "average_prediction": 752351.0475203986,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 5.397385870670602,
+    "average_prediction": 752251.3151172426,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 5.634218601332517,
+    "average_prediction": 747782.0031360649,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 5.8710513319944315,
+    "average_prediction": 740886.1567438426,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 6.107884062656346,
+    "average_prediction": 739502.4664911426,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 6.344716793318263,
+    "average_prediction": 740209.6883197614,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 6.581549523980177,
+    "average_prediction": 739895.1841318627,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 6.818382254642092,
+    "average_prediction": 738785.6065728735,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 7.055214985304007,
+    "average_prediction": 738718.3188586737,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 7.292047715965923,
+    "average_prediction": 738553.0142275973,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 7.528880446627838,
+    "average_prediction": 738479.3512558182,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 7.7657131772897525,
+    "average_prediction": 738352.7961422683,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 8.002545907951667,
+    "average_prediction": 736668.8714705945,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 8.239378638613582,
+    "average_prediction": 731275.4823163055,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 8.476211369275498,
+    "average_prediction": 731270.2495043505,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 8.713044099937413,
+    "average_prediction": 731252.2851599342,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 8.949876830599328,
+    "average_prediction": 731524.1749721187,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 9.186709561261244,
+    "average_prediction": 731442.981730991,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 9.423542291923159,
+    "average_prediction": 731633.4204040131,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 9.660375022585074,
+    "average_prediction": 731808.8390346528,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 9.897207753246988,
+    "average_prediction": 732031.4583887033,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 10.134040483908903,
+    "average_prediction": 732033.245440181,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 10.37087321457082,
+    "average_prediction": 732907.4258836898,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 10.607705945232734,
+    "average_prediction": 721221.2406213081,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 10.844538675894649,
+    "average_prediction": 720783.5150841776,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 11.081371406556565,
+    "average_prediction": 720677.0478696415,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 11.31820413721848,
+    "average_prediction": 720602.8673036598,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 11.555036867880395,
+    "average_prediction": 720793.5140296702,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 11.79186959854231,
+    "average_prediction": 720817.7652132518,
+    "feature": "dist_breck"
+  },
+  {
+    "value": 2.9195102917654556,
+    "average_prediction": 869257.5857993527,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 3.0433754426131547,
+    "average_prediction": 950627.0854669624,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 3.167240593460854,
+    "average_prediction": 950848.2747838229,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 3.2911057443085534,
+    "average_prediction": 950848.2747838229,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 3.4149708951562525,
+    "average_prediction": 935069.7903022624,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 3.5388360460039516,
+    "average_prediction": 850610.0686712734,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 3.6627011968516507,
+    "average_prediction": 850618.584837925,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 3.78656634769935,
+    "average_prediction": 850195.8680134581,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 3.910431498547049,
+    "average_prediction": 848654.795913028,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 4.034296649394748,
+    "average_prediction": 848658.0529382217,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 4.158161800242447,
+    "average_prediction": 846565.5684166438,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 4.282026951090146,
+    "average_prediction": 846001.2497217002,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 4.405892101937846,
+    "average_prediction": 844841.914790693,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 4.529757252785545,
+    "average_prediction": 844833.5169296638,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 4.6536224036332445,
+    "average_prediction": 844828.8322685084,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 4.777487554480944,
+    "average_prediction": 844725.4924542701,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 4.901352705328643,
+    "average_prediction": 840334.0851350524,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 5.025217856176342,
+    "average_prediction": 832554.2477423324,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 5.149083007024041,
+    "average_prediction": 827286.1244530985,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 5.27294815787174,
+    "average_prediction": 827132.9296343847,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 5.396813308719439,
+    "average_prediction": 822537.7024172352,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 5.520678459567138,
+    "average_prediction": 820968.4304914617,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 5.644543610414837,
+    "average_prediction": 820921.7132233141,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 5.7684087612625365,
+    "average_prediction": 820297.8020623793,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 5.892273912110236,
+    "average_prediction": 819967.7641046006,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 6.016139062957935,
+    "average_prediction": 818908.6772152142,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 6.140004213805634,
+    "average_prediction": 818912.6461163281,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 6.263869364653333,
+    "average_prediction": 818989.4261976993,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 6.387734515501032,
+    "average_prediction": 818924.335957862,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 6.511599666348732,
+    "average_prediction": 819036.814616766,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 6.635464817196431,
+    "average_prediction": 819761.6036106636,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 6.75932996804413,
+    "average_prediction": 821516.8952308929,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 6.8831951188918294,
+    "average_prediction": 770462.4266909643,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 7.0070602697395294,
+    "average_prediction": 767616.3111792237,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 7.130925420587229,
+    "average_prediction": 767754.8127072763,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 7.254790571434928,
+    "average_prediction": 767106.1352979498,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 7.378655722282627,
+    "average_prediction": 767182.0060822648,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 7.502520873130326,
+    "average_prediction": 767056.9193842118,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 7.626386023978025,
+    "average_prediction": 767029.9598761324,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 7.750251174825724,
+    "average_prediction": 766703.3431959474,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 7.874116325673423,
+    "average_prediction": 766564.2699808879,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 7.997981476521122,
+    "average_prediction": 766605.2211280743,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 8.121846627368821,
+    "average_prediction": 767507.7108868994,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 8.24571177821652,
+    "average_prediction": 769983.2194307498,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 8.36957692906422,
+    "average_prediction": 770211.6269190614,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 8.493442079911919,
+    "average_prediction": 770219.6790954007,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 8.617307230759618,
+    "average_prediction": 770246.8295388333,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 8.741172381607317,
+    "average_prediction": 770230.1562911799,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 8.865037532455016,
+    "average_prediction": 770230.4628863834,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 8.988902683302715,
+    "average_prediction": 770165.7053815051,
+    "feature": "dist_keystone"
+  },
+  {
+    "value": 1.9629785136767515,
+    "average_prediction": 798174.2821160959,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 2.105372262157496,
+    "average_prediction": 792554.7726500466,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 2.247766010638241,
+    "average_prediction": 792146.6234410082,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 2.3901597591189856,
+    "average_prediction": 791975.2106316903,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 2.5325535075997303,
+    "average_prediction": 791875.9417412195,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 2.674947256080475,
+    "average_prediction": 791357.4006493941,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 2.8173410045612197,
+    "average_prediction": 791274.9545965425,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 2.9597347530419644,
+    "average_prediction": 791277.1749078931,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 3.102128501522709,
+    "average_prediction": 791280.0284427446,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 3.244522250003454,
+    "average_prediction": 791218.529325873,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 3.3869159984841986,
+    "average_prediction": 791140.3502451428,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 3.5293097469649433,
+    "average_prediction": 791108.6305271242,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 3.671703495445688,
+    "average_prediction": 791577.7966238448,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 3.8140972439264327,
+    "average_prediction": 791574.5333906801,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 3.9564909924071774,
+    "average_prediction": 794577.6337766749,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 4.098884740887922,
+    "average_prediction": 761703.1071119931,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 4.241278489368667,
+    "average_prediction": 748754.2764041245,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 4.383672237849412,
+    "average_prediction": 743917.8660248149,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 4.526065986330156,
+    "average_prediction": 740994.7029088656,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 4.6684597348109005,
+    "average_prediction": 740209.9662504335,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 4.810853483291646,
+    "average_prediction": 739804.9441827268,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 4.953247231772391,
+    "average_prediction": 740465.3570596247,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 5.095640980253135,
+    "average_prediction": 941519.8076536502,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 5.238034728733879,
+    "average_prediction": 748888.7333357095,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 5.3804284772146245,
+    "average_prediction": 731971.0471449147,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 5.52282222569537,
+    "average_prediction": 728367.3018349187,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 5.665215974176114,
+    "average_prediction": 727272.559994649,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 5.807609722656858,
+    "average_prediction": 726716.495086424,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 5.950003471137603,
+    "average_prediction": 728049.826109355,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 6.092397219618348,
+    "average_prediction": 741105.4719952476,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 6.234790968099093,
+    "average_prediction": 727043.7471641697,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 6.377184716579838,
+    "average_prediction": 718340.1833683618,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 6.519578465060582,
+    "average_prediction": 716793.7061478319,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 6.661972213541326,
+    "average_prediction": 714174.2093261109,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 6.804365962022072,
+    "average_prediction": 714229.0117215894,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 6.946759710502817,
+    "average_prediction": 714097.1377374169,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 7.089153458983561,
+    "average_prediction": 714127.5148090222,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 7.231547207464305,
+    "average_prediction": 712892.2572404097,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 7.37394095594505,
+    "average_prediction": 712879.4547670386,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 7.5163347044257955,
+    "average_prediction": 712854.231312114,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 7.65872845290654,
+    "average_prediction": 712748.5399029979,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 7.801122201387284,
+    "average_prediction": 712744.1921999786,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 7.943515949868029,
+    "average_prediction": 713409.9559602353,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 8.085909698348775,
+    "average_prediction": 714456.2228472084,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 8.228303446829518,
+    "average_prediction": 714475.6040469642,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 8.370697195310264,
+    "average_prediction": 715091.0777972025,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 8.513090943791008,
+    "average_prediction": 715761.2362497443,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 8.655484692271752,
+    "average_prediction": 719627.1399392596,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 8.797878440752498,
+    "average_prediction": 719361.8481708419,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 8.940272189233243,
+    "average_prediction": 719349.0127685947,
+    "feature": "dist_copper"
+  },
+  {
+    "value": 2.823511890087827,
+    "average_prediction": 810052.8364627619,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 3.0164288630969613,
+    "average_prediction": 810102.9256418926,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 3.2093458361060963,
+    "average_prediction": 810093.6891031854,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 3.4022628091152307,
+    "average_prediction": 810177.1680880826,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 3.595179782124365,
+    "average_prediction": 810170.5445504097,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 3.7880967551335,
+    "average_prediction": 810145.9791373484,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 3.9810137281426345,
+    "average_prediction": 804302.414781801,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 4.173930701151769,
+    "average_prediction": 803595.3474346302,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 4.366847674160904,
+    "average_prediction": 803595.8954298551,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 4.559764647170039,
+    "average_prediction": 803608.6686605639,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 4.752681620179173,
+    "average_prediction": 803614.1939848288,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 4.945598593188308,
+    "average_prediction": 803358.9321870687,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 5.138515566197443,
+    "average_prediction": 802740.545589314,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 5.331432539206578,
+    "average_prediction": 802150.5340496493,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 5.524349512215712,
+    "average_prediction": 801803.767361806,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 5.7172664852248465,
+    "average_prediction": 801675.9115760459,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 5.9101834582339805,
+    "average_prediction": 800208.0273003036,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 6.103100431243115,
+    "average_prediction": 1215904.217266305,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 6.29601740425225,
+    "average_prediction": 779912.4640017275,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 6.488934377261385,
+    "average_prediction": 777652.6112863338,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 6.68185135027052,
+    "average_prediction": 777807.2096514356,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 6.874768323279653,
+    "average_prediction": 774438.7627904747,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 7.067685296288788,
+    "average_prediction": 774417.7055013435,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 7.260602269297923,
+    "average_prediction": 774489.4512023234,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 7.453519242307058,
+    "average_prediction": 772905.2184914227,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 7.646436215316193,
+    "average_prediction": 770784.5475559128,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 7.839353188325328,
+    "average_prediction": 769897.3153993404,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 8.032270161334463,
+    "average_prediction": 769893.1861855739,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 8.225187134343596,
+    "average_prediction": 770027.8356577358,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 8.41810410735273,
+    "average_prediction": 770337.6813184364,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 8.611021080361866,
+    "average_prediction": 770933.9063186418,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 8.803938053371,
+    "average_prediction": 771197.8860995754,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 8.996855026380135,
+    "average_prediction": 772698.379560837,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 9.18977199938927,
+    "average_prediction": 772889.8265587853,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 9.382688972398403,
+    "average_prediction": 772792.6799867268,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 9.575605945407538,
+    "average_prediction": 773157.2779948222,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 9.768522918416673,
+    "average_prediction": 773480.299882329,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 9.961439891425808,
+    "average_prediction": 773266.8848352596,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 10.154356864434943,
+    "average_prediction": 773313.623771651,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 10.347273837444078,
+    "average_prediction": 773283.6477138527,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 10.540190810453213,
+    "average_prediction": 773284.234805321,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 10.733107783462346,
+    "average_prediction": 773253.1738004759,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 10.926024756471481,
+    "average_prediction": 773267.1009328923,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 11.118941729480616,
+    "average_prediction": 773250.6666759868,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 11.31185870248975,
+    "average_prediction": 773253.5816165508,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 11.504775675498886,
+    "average_prediction": 773253.5816165508,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 11.69769264850802,
+    "average_prediction": 773814.788884189,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 11.890609621517156,
+    "average_prediction": 773798.8648577478,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 12.083526594526289,
+    "average_prediction": 773798.8648577478,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 12.276443567535424,
+    "average_prediction": 770917.4973693268,
+    "feature": "dist_abasin"
+  },
+  {
+    "value": 1.6264685349936092,
+    "average_prediction": 1072915.3290893445,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 1.8036040392530812,
+    "average_prediction": 1072979.3050469067,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 1.980739543512553,
+    "average_prediction": 1073834.3399850016,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 2.157875047772025,
+    "average_prediction": 1073498.452645033,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 2.335010552031497,
+    "average_prediction": 1073744.3181671237,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 2.5121460562909688,
+    "average_prediction": 1071029.1807713623,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 2.689281560550441,
+    "average_prediction": 1068679.5151013848,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 2.8664170648099123,
+    "average_prediction": 1057982.5606116431,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 3.0435525690693845,
+    "average_prediction": 780125.8646469208,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 3.2206880733288568,
+    "average_prediction": 779427.0962275721,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 3.397823577588328,
+    "average_prediction": 779575.5757007673,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 3.5749590818478003,
+    "average_prediction": 779869.0833829434,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 3.7520945861072725,
+    "average_prediction": 780375.9560447284,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 3.929230090366744,
+    "average_prediction": 781193.1720057693,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 4.106365594626216,
+    "average_prediction": 781503.9169470236,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 4.283501098885688,
+    "average_prediction": 781637.6849128125,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 4.46063660314516,
+    "average_prediction": 781798.7318744544,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 4.637772107404632,
+    "average_prediction": 782317.6028188212,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 4.814907611664104,
+    "average_prediction": 781019.4092809263,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 4.992043115923575,
+    "average_prediction": 781189.4855099507,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 5.169178620183048,
+    "average_prediction": 781208.4082589038,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 5.34631412444252,
+    "average_prediction": 781352.687595037,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 5.523449628701991,
+    "average_prediction": 781542.5918599147,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 5.700585132961463,
+    "average_prediction": 781692.5905348796,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 5.877720637220936,
+    "average_prediction": 781813.2048838494,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 6.054856141480407,
+    "average_prediction": 782012.5957400564,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 6.231991645739879,
+    "average_prediction": 782253.258875065,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 6.409127149999351,
+    "average_prediction": 784546.3141588257,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 6.586262654258823,
+    "average_prediction": 787262.3313233809,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 6.763398158518295,
+    "average_prediction": 787164.5167059441,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 6.940533662777767,
+    "average_prediction": 787156.3044065556,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 7.1176691670372385,
+    "average_prediction": 787227.2683006983,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 7.294804671296711,
+    "average_prediction": 787287.1588856386,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 7.471940175556183,
+    "average_prediction": 787238.6271774472,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 7.649075679815654,
+    "average_prediction": 787355.32753858,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 7.8262111840751265,
+    "average_prediction": 787679.1706069635,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 8.003346688334599,
+    "average_prediction": 787646.8784920429,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 8.18048219259407,
+    "average_prediction": 785197.5114965166,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 8.357617696853541,
+    "average_prediction": 782280.929659611,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 8.534753201113014,
+    "average_prediction": 782089.9670652659,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 8.711888705372486,
+    "average_prediction": 758966.7953848497,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 8.889024209631957,
+    "average_prediction": 759572.3322255384,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 9.06615971389143,
+    "average_prediction": 758836.7046367825,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 9.243295218150902,
+    "average_prediction": 758411.0958245534,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 9.420430722410373,
+    "average_prediction": 758152.3087750308,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 9.597566226669846,
+    "average_prediction": 757809.0867893804,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 9.774701730929317,
+    "average_prediction": 757424.420000974,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 9.951837235188789,
+    "average_prediction": 757220.2702614419,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 10.128972739448262,
+    "average_prediction": 757150.3743942046,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 10.306108243707733,
+    "average_prediction": 757148.2566369406,
+    "feature": "dist_dillon"
+  },
+  {
+    "value": 1996.0,
+    "average_prediction": 808703.9517834559,
+    "feature": "year"
+  },
+  {
+    "value": 1997.0,
+    "average_prediction": 808704.523520442,
+    "feature": "year"
+  },
+  {
+    "value": 1998.0,
+    "average_prediction": 808720.4947785825,
+    "feature": "year"
+  },
+  {
+    "value": 1999.0,
+    "average_prediction": 809737.6793987132,
+    "feature": "year"
+  },
+  {
+    "value": 2000.0,
+    "average_prediction": 765023.7456484087,
+    "feature": "year"
+  },
+  {
+    "value": 2001.0,
+    "average_prediction": 762995.1800381902,
+    "feature": "year"
+  },
+  {
+    "value": 2002.0,
+    "average_prediction": 762294.4995699578,
+    "feature": "year"
+  },
+  {
+    "value": 2003.0,
+    "average_prediction": 762303.3598567132,
+    "feature": "year"
+  },
+  {
+    "value": 2004.0,
+    "average_prediction": 761547.2182126986,
+    "feature": "year"
+  },
+  {
+    "value": 2005.0,
+    "average_prediction": 761713.7770711837,
+    "feature": "year"
+  },
+  {
+    "value": 2006.0,
+    "average_prediction": 762189.2104853604,
+    "feature": "year"
+  },
+  {
+    "value": 2007.0,
+    "average_prediction": 761934.8454821869,
+    "feature": "year"
+  },
+  {
+    "value": 2008.0,
+    "average_prediction": 763439.2940178361,
+    "feature": "year"
+  },
+  {
+    "value": 2009.0,
+    "average_prediction": 767884.8875601048,
+    "feature": "year"
+  },
+  {
+    "value": 2010.0,
+    "average_prediction": 763242.4116212841,
+    "feature": "year"
+  },
+  {
+    "value": 2011.0,
+    "average_prediction": 757650.4000961776,
+    "feature": "year"
+  },
+  {
+    "value": 2012.0,
+    "average_prediction": 757204.3760078822,
+    "feature": "year"
+  },
+  {
+    "value": 2013.0,
+    "average_prediction": 756797.7336403972,
+    "feature": "year"
+  },
+  {
+    "value": 2014.0,
+    "average_prediction": 756003.0819726092,
+    "feature": "year"
+  },
+  {
+    "value": 2015.0,
+    "average_prediction": 752763.1406967413,
+    "feature": "year"
+  },
+  {
+    "value": 2016.0,
+    "average_prediction": 752163.107783441,
+    "feature": "year"
+  },
+  {
+    "value": 2017.0,
+    "average_prediction": 753004.298919327,
+    "feature": "year"
+  },
+  {
+    "value": 2018.0,
+    "average_prediction": 759599.8297091183,
+    "feature": "year"
+  },
+  {
+    "value": 2019.0,
+    "average_prediction": 760712.8590329591,
+    "feature": "year"
+  },
+  {
+    "value": 2020.0,
+    "average_prediction": 760848.0664294303,
+    "feature": "year"
+  },
+  {
+    "value": 2021.0,
+    "average_prediction": 760971.3721904274,
+    "feature": "year"
+  },
+  {
+    "value": 2022.0,
+    "average_prediction": 761564.7410092526,
+    "feature": "year"
+  },
+  {
+    "value": 2023.0,
+    "average_prediction": 761617.7348247651,
+    "feature": "year"
+  },
+  {
+    "value": 2024.0,
+    "average_prediction": 762060.3694750245,
+    "feature": "year"
+  },
+  {
+    "value": 2025.0,
+    "average_prediction": 762530.0313272198,
+    "feature": "year"
+  },
+  {
+    "value": 2026.0,
+    "average_prediction": 762530.0313272198,
+    "feature": "year"
+  },
+  {
+    "value": 1.0,
+    "average_prediction": 745549.7116863886,
+    "feature": "month"
+  },
+  {
+    "value": 2.0,
+    "average_prediction": 734959.3290401973,
+    "feature": "month"
+  },
+  {
+    "value": 3.0,
+    "average_prediction": 733966.1505501613,
+    "feature": "month"
+  },
+  {
+    "value": 4.0,
+    "average_prediction": 733479.1655316288,
+    "feature": "month"
+  },
+  {
+    "value": 5.0,
+    "average_prediction": 731866.3792270923,
+    "feature": "month"
+  },
+  {
+    "value": 6.0,
+    "average_prediction": 731882.0008646228,
+    "feature": "month"
+  },
+  {
+    "value": 7.0,
+    "average_prediction": 731973.1980299086,
+    "feature": "month"
+  },
+  {
+    "value": 8.0,
+    "average_prediction": 734325.2979352378,
+    "feature": "month"
+  },
+  {
+    "value": 9.0,
+    "average_prediction": 732783.143627306,
+    "feature": "month"
+  },
+  {
+    "value": 10.0,
+    "average_prediction": 732821.853686059,
+    "feature": "month"
+  },
+  {
+    "value": 11.0,
+    "average_prediction": 733604.5639595431,
+    "feature": "month"
+  },
+  {
+    "value": 12.0,
+    "average_prediction": 929275.0468092059,
+    "feature": "month"
+  },
+  {
+    "value": 2.88,
+    "average_prediction": 1067118.4344464303,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 2.9777551020408164,
+    "average_prediction": 1067760.6443435447,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.0755102040816324,
+    "average_prediction": 1068423.4918712662,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.173265306122449,
+    "average_prediction": 1070281.9637380678,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.271020408163265,
+    "average_prediction": 1071242.5587244937,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.3687755102040815,
+    "average_prediction": 791620.671305924,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.466530612244898,
+    "average_prediction": 760358.7774682929,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.564285714285714,
+    "average_prediction": 761172.4466902416,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.6620408163265306,
+    "average_prediction": 761565.5763010746,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.759795918367347,
+    "average_prediction": 761977.7875571799,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.857551020408163,
+    "average_prediction": 762081.0637029441,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 3.9553061224489796,
+    "average_prediction": 762024.6957437694,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.053061224489796,
+    "average_prediction": 762101.2598564373,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.150816326530612,
+    "average_prediction": 762704.5514623442,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.248571428571429,
+    "average_prediction": 762882.4111689713,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.346326530612245,
+    "average_prediction": 762859.6330697682,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.444081632653061,
+    "average_prediction": 763293.0150636312,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.541836734693877,
+    "average_prediction": 763452.3122812535,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.639591836734693,
+    "average_prediction": 764069.4726600231,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.73734693877551,
+    "average_prediction": 764107.525325667,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.835102040816326,
+    "average_prediction": 764688.5651101889,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 4.932857142857143,
+    "average_prediction": 764748.1282896772,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.030612244897959,
+    "average_prediction": 761326.3344354616,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.128367346938775,
+    "average_prediction": 761787.2098963624,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.226122448979591,
+    "average_prediction": 764839.2499414064,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.323877551020408,
+    "average_prediction": 761890.1091573957,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.421632653061224,
+    "average_prediction": 759788.8212731457,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.519387755102041,
+    "average_prediction": 759107.1640770641,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.617142857142857,
+    "average_prediction": 757197.5619975921,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.7148979591836735,
+    "average_prediction": 757086.189167963,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.8126530612244895,
+    "average_prediction": 756791.1366238348,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 5.910408163265306,
+    "average_prediction": 754540.8386000787,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.0081632653061225,
+    "average_prediction": 754636.5403867948,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.1059183673469395,
+    "average_prediction": 754478.2437627598,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.2036734693877555,
+    "average_prediction": 755070.5242631618,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.301428571428572,
+    "average_prediction": 756103.1464423164,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.399183673469388,
+    "average_prediction": 756417.0393302833,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.496938775510204,
+    "average_prediction": 757385.8867113175,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.594693877551021,
+    "average_prediction": 757671.9142511454,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.692448979591837,
+    "average_prediction": 759090.370903378,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.790204081632654,
+    "average_prediction": 760264.0871892424,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.88795918367347,
+    "average_prediction": 758732.0881819993,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 6.985714285714286,
+    "average_prediction": 757719.3304139809,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 7.083469387755102,
+    "average_prediction": 759252.6034925252,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 7.181224489795919,
+    "average_prediction": 759512.3911756806,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 7.278979591836735,
+    "average_prediction": 763106.5301105075,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 7.376734693877551,
+    "average_prediction": 764700.1111170951,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 7.474489795918368,
+    "average_prediction": 764521.2812609599,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 7.572244897959184,
+    "average_prediction": 764516.9311580715,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 7.67,
+    "average_prediction": 764557.2332392831,
+    "feature": "mortgage_rate"
+  },
+  {
+    "value": 164.7,
+    "average_prediction": 627585.8469359993,
+    "feature": "cpi"
+  },
+  {
+    "value": 167.73808163265306,
+    "average_prediction": 539049.5005462008,
+    "feature": "cpi"
+  },
+  {
+    "value": 170.7761632653061,
+    "average_prediction": 514177.5709063334,
+    "feature": "cpi"
+  },
+  {
+    "value": 173.81424489795918,
+    "average_prediction": 509656.9642542526,
+    "feature": "cpi"
+  },
+  {
+    "value": 176.85232653061223,
+    "average_prediction": 523326.88913671335,
+    "feature": "cpi"
+  },
+  {
+    "value": 179.8904081632653,
+    "average_prediction": 525283.6981795125,
+    "feature": "cpi"
+  },
+  {
+    "value": 182.92848979591835,
+    "average_prediction": 531890.9630184278,
+    "feature": "cpi"
+  },
+  {
+    "value": 185.96657142857143,
+    "average_prediction": 538526.6866646404,
+    "feature": "cpi"
+  },
+  {
+    "value": 189.00465306122447,
+    "average_prediction": 542324.9625552678,
+    "feature": "cpi"
+  },
+  {
+    "value": 192.04273469387755,
+    "average_prediction": 544997.490527701,
+    "feature": "cpi"
+  },
+  {
+    "value": 195.0808163265306,
+    "average_prediction": 556230.5011669191,
+    "feature": "cpi"
+  },
+  {
+    "value": 198.11889795918367,
+    "average_prediction": 613689.8154016987,
+    "feature": "cpi"
+  },
+  {
+    "value": 201.15697959183672,
+    "average_prediction": 597219.2233157736,
+    "feature": "cpi"
+  },
+  {
+    "value": 204.1950612244898,
+    "average_prediction": 620505.4435016253,
+    "feature": "cpi"
+  },
+  {
+    "value": 207.23314285714284,
+    "average_prediction": 625895.3722575579,
+    "feature": "cpi"
+  },
+  {
+    "value": 210.2712244897959,
+    "average_prediction": 654664.3963233121,
+    "feature": "cpi"
+  },
+  {
+    "value": 213.30930612244896,
+    "average_prediction": 654454.1692966208,
+    "feature": "cpi"
+  },
+  {
+    "value": 216.34738775510203,
+    "average_prediction": 670014.6672516299,
+    "feature": "cpi"
+  },
+  {
+    "value": 219.38546938775508,
+    "average_prediction": 651184.4522639281,
+    "feature": "cpi"
+  },
+  {
+    "value": 222.42355102040815,
+    "average_prediction": 650961.6637147376,
+    "feature": "cpi"
+  },
+  {
+    "value": 225.4616326530612,
+    "average_prediction": 645536.9929930196,
+    "feature": "cpi"
+  },
+  {
+    "value": 228.49971428571428,
+    "average_prediction": 644223.2982314368,
+    "feature": "cpi"
+  },
+  {
+    "value": 231.53779591836735,
+    "average_prediction": 665690.0350629572,
+    "feature": "cpi"
+  },
+  {
+    "value": 234.5758775510204,
+    "average_prediction": 650610.042405156,
+    "feature": "cpi"
+  },
+  {
+    "value": 237.61395918367344,
+    "average_prediction": 675188.9594809257,
+    "feature": "cpi"
+  },
+  {
+    "value": 240.65204081632652,
+    "average_prediction": 683952.4650854425,
+    "feature": "cpi"
+  },
+  {
+    "value": 243.6901224489796,
+    "average_prediction": 691872.5386305249,
+    "feature": "cpi"
+  },
+  {
+    "value": 246.72820408163264,
+    "average_prediction": 698280.2379018024,
+    "feature": "cpi"
+  },
+  {
+    "value": 249.7662857142857,
+    "average_prediction": 729426.402975911,
+    "feature": "cpi"
+  },
+  {
+    "value": 252.80436734693876,
+    "average_prediction": 734380.8119902003,
+    "feature": "cpi"
+  },
+  {
+    "value": 255.84244897959184,
+    "average_prediction": 738670.9842748223,
+    "feature": "cpi"
+  },
+  {
+    "value": 258.8805306122449,
+    "average_prediction": 741144.9845200941,
+    "feature": "cpi"
+  },
+  {
+    "value": 261.91861224489793,
+    "average_prediction": 741541.4288084524,
+    "feature": "cpi"
+  },
+  {
+    "value": 264.956693877551,
+    "average_prediction": 775395.8073191461,
+    "feature": "cpi"
+  },
+  {
+    "value": 267.9947755102041,
+    "average_prediction": 1129825.100217995,
+    "feature": "cpi"
+  },
+  {
+    "value": 271.0328571428571,
+    "average_prediction": 1162348.5995606664,
+    "feature": "cpi"
+  },
+  {
+    "value": 274.0709387755102,
+    "average_prediction": 1179941.9931461802,
+    "feature": "cpi"
+  },
+  {
+    "value": 277.10902040816325,
+    "average_prediction": 1182292.8944787863,
+    "feature": "cpi"
+  },
+  {
+    "value": 280.1471020408163,
+    "average_prediction": 1189887.289403687,
+    "feature": "cpi"
+  },
+  {
+    "value": 283.1851836734694,
+    "average_prediction": 1191028.3581883106,
+    "feature": "cpi"
+  },
+  {
+    "value": 286.2232653061224,
+    "average_prediction": 1198675.3520900658,
+    "feature": "cpi"
+  },
+  {
+    "value": 289.2613469387755,
+    "average_prediction": 1200760.7553968022,
+    "feature": "cpi"
+  },
+  {
+    "value": 292.29942857142856,
+    "average_prediction": 1201759.528043349,
+    "feature": "cpi"
+  },
+  {
+    "value": 295.3375102040816,
+    "average_prediction": 1204233.8958689615,
+    "feature": "cpi"
+  },
+  {
+    "value": 298.37559183673466,
+    "average_prediction": 1206979.7659350624,
+    "feature": "cpi"
+  },
+  {
+    "value": 301.41367346938773,
+    "average_prediction": 1206660.1819771535,
+    "feature": "cpi"
+  },
+  {
+    "value": 304.4517551020408,
+    "average_prediction": 1214410.8154467538,
+    "feature": "cpi"
+  },
+  {
+    "value": 307.4898367346939,
+    "average_prediction": 1222912.7087926005,
+    "feature": "cpi"
+  },
+  {
+    "value": 310.52791836734696,
+    "average_prediction": 1228416.643014199,
+    "feature": "cpi"
+  },
+  {
+    "value": 313.566,
+    "average_prediction": 1231404.2926331772,
+    "feature": "cpi"
+  },
+  {
+    "value": 1877.08,
+    "average_prediction": 663592.6807448232,
+    "feature": "sp500"
+  },
+  {
+    "value": 1930.7130612244898,
+    "average_prediction": 663633.0584623418,
+    "feature": "sp500"
+  },
+  {
+    "value": 1984.3461224489795,
+    "average_prediction": 663827.7501415494,
+    "feature": "sp500"
+  },
+  {
+    "value": 2037.9791836734694,
+    "average_prediction": 663366.7863440661,
+    "feature": "sp500"
+  },
+  {
+    "value": 2091.612244897959,
+    "average_prediction": 665721.265040488,
+    "feature": "sp500"
+  },
+  {
+    "value": 2145.2453061224487,
+    "average_prediction": 667147.9689616999,
+    "feature": "sp500"
+  },
+  {
+    "value": 2198.878367346939,
+    "average_prediction": 683121.18869355,
+    "feature": "sp500"
+  },
+  {
+    "value": 2252.5114285714285,
+    "average_prediction": 682990.1820630969,
+    "feature": "sp500"
+  },
+  {
+    "value": 2306.144489795918,
+    "average_prediction": 687896.6528179176,
+    "feature": "sp500"
+  },
+  {
+    "value": 2359.7775510204083,
+    "average_prediction": 689428.3698833602,
+    "feature": "sp500"
+  },
+  {
+    "value": 2413.410612244898,
+    "average_prediction": 716532.2374776946,
+    "feature": "sp500"
+  },
+  {
+    "value": 2467.0436734693876,
+    "average_prediction": 718226.7028775066,
+    "feature": "sp500"
+  },
+  {
+    "value": 2520.6767346938777,
+    "average_prediction": 728909.7786348424,
+    "feature": "sp500"
+  },
+  {
+    "value": 2574.3097959183674,
+    "average_prediction": 731232.7443737538,
+    "feature": "sp500"
+  },
+  {
+    "value": 2627.942857142857,
+    "average_prediction": 731420.4001768226,
+    "feature": "sp500"
+  },
+  {
+    "value": 2681.575918367347,
+    "average_prediction": 782182.5289805472,
+    "feature": "sp500"
+  },
+  {
+    "value": 2735.208979591837,
+    "average_prediction": 779890.3213171631,
+    "feature": "sp500"
+  },
+  {
+    "value": 2788.8420408163265,
+    "average_prediction": 779882.2314612516,
+    "feature": "sp500"
+  },
+  {
+    "value": 2842.4751020408166,
+    "average_prediction": 781811.4263992656,
+    "feature": "sp500"
+  },
+  {
+    "value": 2896.1081632653063,
+    "average_prediction": 782390.3418772897,
+    "feature": "sp500"
+  },
+  {
+    "value": 2949.741224489796,
+    "average_prediction": 783218.8605743215,
+    "feature": "sp500"
+  },
+  {
+    "value": 3003.374285714286,
+    "average_prediction": 783837.9607323307,
+    "feature": "sp500"
+  },
+  {
+    "value": 3057.0073469387758,
+    "average_prediction": 784107.5906695632,
+    "feature": "sp500"
+  },
+  {
+    "value": 3110.6404081632654,
+    "average_prediction": 784286.7864049583,
+    "feature": "sp500"
+  },
+  {
+    "value": 3164.2734693877555,
+    "average_prediction": 784282.085412026,
+    "feature": "sp500"
+  },
+  {
+    "value": 3217.906530612245,
+    "average_prediction": 784901.5370758575,
+    "feature": "sp500"
+  },
+  {
+    "value": 3271.539591836735,
+    "average_prediction": 792104.6597036824,
+    "feature": "sp500"
+  },
+  {
+    "value": 3325.172653061225,
+    "average_prediction": 792155.7561266995,
+    "feature": "sp500"
+  },
+  {
+    "value": 3378.8057142857147,
+    "average_prediction": 806679.5134576634,
+    "feature": "sp500"
+  },
+  {
+    "value": 3432.4387755102043,
+    "average_prediction": 816154.0479303761,
+    "feature": "sp500"
+  },
+  {
+    "value": 3486.0718367346944,
+    "average_prediction": 827928.8244633223,
+    "feature": "sp500"
+  },
+  {
+    "value": 3539.7048979591837,
+    "average_prediction": 850069.709968569,
+    "feature": "sp500"
+  },
+  {
+    "value": 3593.337959183674,
+    "average_prediction": 852848.2161737344,
+    "feature": "sp500"
+  },
+  {
+    "value": 3646.971020408164,
+    "average_prediction": 852710.7819508058,
+    "feature": "sp500"
+  },
+  {
+    "value": 3700.604081632653,
+    "average_prediction": 853530.4183119305,
+    "feature": "sp500"
+  },
+  {
+    "value": 3754.237142857143,
+    "average_prediction": 853722.4857484564,
+    "feature": "sp500"
+  },
+  {
+    "value": 3807.870204081633,
+    "average_prediction": 854333.47681869,
+    "feature": "sp500"
+  },
+  {
+    "value": 3861.5032653061226,
+    "average_prediction": 855116.0237825192,
+    "feature": "sp500"
+  },
+  {
+    "value": 3915.1363265306127,
+    "average_prediction": 856108.0006541024,
+    "feature": "sp500"
+  },
+  {
+    "value": 3968.7693877551023,
+    "average_prediction": 856223.5365627769,
+    "feature": "sp500"
+  },
+  {
+    "value": 4022.402448979592,
+    "average_prediction": 855469.5424924744,
+    "feature": "sp500"
+  },
+  {
+    "value": 4076.035510204082,
+    "average_prediction": 855444.6847435893,
+    "feature": "sp500"
+  },
+  {
+    "value": 4129.668571428572,
+    "average_prediction": 855590.6762677543,
+    "feature": "sp500"
+  },
+  {
+    "value": 4183.3016326530615,
+    "average_prediction": 855454.8100222776,
+    "feature": "sp500"
+  },
+  {
+    "value": 4236.934693877552,
+    "average_prediction": 855613.067575471,
+    "feature": "sp500"
+  },
+  {
+    "value": 4290.567755102042,
+    "average_prediction": 855995.2593770638,
+    "feature": "sp500"
+  },
+  {
+    "value": 4344.200816326531,
+    "average_prediction": 856114.6068844636,
+    "feature": "sp500"
+  },
+  {
+    "value": 4397.833877551021,
+    "average_prediction": 856138.8134359285,
+    "feature": "sp500"
+  },
+  {
+    "value": 4451.466938775511,
+    "average_prediction": 856314.3152281247,
+    "feature": "sp500"
+  },
+  {
+    "value": 4505.1,
+    "average_prediction": 856779.514580653,
+    "feature": "sp500"
+  },
+  {
+    "value": 19.9,
+    "average_prediction": 800338.5143269423,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 20.976,
+    "average_prediction": 800522.0634289505,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 21.702,
+    "average_prediction": 801368.0581286938,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 23.069,
+    "average_prediction": 801419.1124446747,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 23.709,
+    "average_prediction": 766951.3650043369,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 24.722,
+    "average_prediction": 765858.7468257659,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 24.995,
+    "average_prediction": 765982.2918065749,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 25.219,
+    "average_prediction": 765812.7944080248,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 25.336,
+    "average_prediction": 765916.1853557861,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 25.358,
+    "average_prediction": 780322.8508814621,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 25.791,
+    "average_prediction": 780355.5825718272,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 26.31,
+    "average_prediction": 781675.6672610221,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 26.771,
+    "average_prediction": 782949.8455031577,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 27.217,
+    "average_prediction": 787166.9751055388,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 28.048,
+    "average_prediction": 778945.0134126996,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 28.075,
+    "average_prediction": 782751.4096450962,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 28.307,
+    "average_prediction": 782748.810019625,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 28.741,
+    "average_prediction": 780962.1025181906,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 29.333,
+    "average_prediction": 780248.610287493,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 30.064,
+    "average_prediction": 764177.1055399555,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 30.573,
+    "average_prediction": 764313.7965271516,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 30.771,
+    "average_prediction": 764464.6042174251,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 30.824,
+    "average_prediction": 764352.9828900654,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 30.848,
+    "average_prediction": 764352.9828900654,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 30.851,
+    "average_prediction": 764907.1926109452,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 30.882,
+    "average_prediction": 764399.3580585473,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 30.905,
+    "average_prediction": 764252.2288011031,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 31.235,
+    "average_prediction": 763916.2176847254,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 31.239,
+    "average_prediction": 763942.7145261426,
+    "feature": "summit_pop"
+  },
+  {
+    "value": 3.0,
+    "average_prediction": 756101.0558649574,
+    "feature": "grade_numeric"
+  },
+  {
+    "value": 3.0,
+    "average_prediction": 756101.0558649574,
+    "feature": "cond_numeric"
+  },
+  {
+    "value": 0.0995074121400477,
+    "average_prediction": 812007.7292927839,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 0.2611286962578845,
+    "average_prediction": 794928.641134961,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 0.42274998037572126,
+    "average_prediction": 789811.963961969,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 0.584371264493558,
+    "average_prediction": 795475.7882924147,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 0.7459925486113947,
+    "average_prediction": 785575.0850014851,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 0.9076138327292316,
+    "average_prediction": 779840.7013511206,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 1.0692351168470684,
+    "average_prediction": 772380.6998983701,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 1.230856400964905,
+    "average_prediction": 797133.4604494305,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 1.3924776850827418,
+    "average_prediction": 796852.7113509817,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 1.5540989692005787,
+    "average_prediction": 796056.3034048064,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 1.7157202533184155,
+    "average_prediction": 795810.7385275806,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 1.877341537436252,
+    "average_prediction": 795835.3912311286,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 2.038962821554089,
+    "average_prediction": 795569.1964010202,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 2.200584105671926,
+    "average_prediction": 795428.3281122689,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 2.3622053897897626,
+    "average_prediction": 795835.6959277259,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 2.5238266739075996,
+    "average_prediction": 795754.500824098,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 2.6854479580254362,
+    "average_prediction": 795477.1034229455,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 2.847069242143273,
+    "average_prediction": 795330.9121356909,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 3.00869052626111,
+    "average_prediction": 795242.5724766285,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 3.1703118103789465,
+    "average_prediction": 793851.9615216501,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 3.3319330944967835,
+    "average_prediction": 794968.4285268864,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 3.49355437861462,
+    "average_prediction": 794960.1927369584,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 3.6551756627324568,
+    "average_prediction": 794976.0680242075,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 3.816796946850294,
+    "average_prediction": 795020.1573372004,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 3.9784182309681304,
+    "average_prediction": 794957.8650701983,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 4.140039515085967,
+    "average_prediction": 794924.8034256464,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 4.301660799203804,
+    "average_prediction": 795419.673719525,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 4.463282083321641,
+    "average_prediction": 795374.1582594668,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 4.624903367439477,
+    "average_prediction": 795381.3583882165,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 4.786524651557314,
+    "average_prediction": 804974.384634237,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 4.948145935675151,
+    "average_prediction": 804919.4593141802,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 5.109767219792987,
+    "average_prediction": 804919.7829899737,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 5.271388503910824,
+    "average_prediction": 804911.5373855138,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 5.433009788028661,
+    "average_prediction": 827387.5917431709,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 5.594631072146497,
+    "average_prediction": 827743.1804794638,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 5.756252356264334,
+    "average_prediction": 827986.017580282,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 5.9178736403821715,
+    "average_prediction": 827981.0963210096,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 6.079494924500008,
+    "average_prediction": 827966.9299709402,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 6.241116208617845,
+    "average_prediction": 827984.5531840943,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 6.402737492735682,
+    "average_prediction": 827921.2353778507,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 6.564358776853519,
+    "average_prediction": 827921.0734242469,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 6.725980060971355,
+    "average_prediction": 828356.5688329862,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 6.887601345089192,
+    "average_prediction": 828359.4287566218,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 7.049222629207029,
+    "average_prediction": 828326.7499013974,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 7.210843913324865,
+    "average_prediction": 828208.4949683312,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 7.372465197442702,
+    "average_prediction": 828217.1367431862,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 7.534086481560539,
+    "average_prediction": 822303.1267311857,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 7.6957077656783754,
+    "average_prediction": 825090.1146168942,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 7.8573290497962125,
+    "average_prediction": 825092.69145301,
+    "feature": "dist_to_lift"
+  },
+  {
+    "value": 8.018950333914049,
+    "average_prediction": 825091.8321865414,
+    "feature": "dist_to_lift"
+  }
+]
