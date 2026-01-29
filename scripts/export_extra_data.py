@@ -89,10 +89,11 @@ def main():
     # 2. Raw Data (Cleaned)
     print("Exporting Raw Sample (Summit Only)...")
     try:
-        # Load filtered list to ensure we don't get junk from Fort Collins etc.
-        df_raw = pd.read_csv("data/records.csv", low_memory=False)
-        target_cities = ['BRECKENRIDGE', 'FRISCO', 'SILVERTHORNE', 'DILLON', 'KEYSTONE', 'COPPER MOUNTAIN', 'BLUE RIVER']
-        df_clean = df_raw[df_raw['city'].isin(target_cities)].copy()
+        # Use the ML pipeline's data loader to get enriched data (Macro + Geo + Cleaned)
+        from summit_housing.ml.data import load_and_prep_data
+        
+        print("   Loading enriched training data...")
+        df_clean = load_and_prep_data()
         
         # Take a robust sample
         if len(df_clean) > 200:
