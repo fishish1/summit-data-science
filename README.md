@@ -54,7 +54,27 @@ Real-world data is messy. The pipeline (`src/summit_housing/ingestion.py`) imple
 
 ## 🛠️ Quick Start
 
-### Option A: Docker (Recommended)
+### Prerequisites
+- **Python 3.9+** (check with `python3 --version`)
+- **Git** (to clone the repository)
+- **Docker** (optional, for containerized deployment)
+
+### Option A: One-Command Start (Easiest) ⭐
+Perfect for first-time users. This script handles everything automatically.
+
+```bash
+git clone <your-repo-url>
+cd summit-housing
+./quickstart.sh
+```
+
+The script will:
+1. Create a virtual environment
+2. Install all dependencies
+3. Build the database (if needed)
+4. Launch the dashboard at http://localhost:8501
+
+### Option B: Docker (Zero Python Setup)
 You don't need Python installed. Just Docker.
 
 ```bash
@@ -62,24 +82,95 @@ docker-compose up --build
 ```
 *App will be available at http://localhost:8501*
 
-### Option B: Local Development
-Requires Python 3.9+
+### Option C: Manual Setup (For Developers)
+For those who want more control over the process.
 
 ```bash
-# 1. Setup Virtual Environment & Dependencies
+# 1. Clone the repository
+git clone <your-repo-url>
+cd summit-housing
+
+# 2. Setup Virtual Environment & Dependencies
 make setup
 
-# 2. Run ETL Pipeline (Builds/Resets DB)
+# 3. Build the Database (First time only)
 make ingest
 
-# 3. Trigger Training (Optional - Current Champions are provided)
-make tournament # Purge and sweep for best parameters (Recommended)
-make train-gbm
-make train-nn
+# 4. (Optional) Train Models - Pre-trained models are included
+make tournament  # Full parameter sweep
+# OR
+make train-gbm   # Train just GBM
+make train-nn    # Train just Neural Network
 
-# 4. Launch Dashboard
+# 5. Launch Dashboard
 make run
 ```
+
+**Dashboard will be available at:** http://localhost:8501
+
+---
+
+## 🌐 Static Site Export
+
+This project exports data to a **static web dashboard** for public viewing.
+
+**Live Dashboard:** [brian.fishman.info/projects/summit](https://brian.fishman.info/projects/summit/)  
+**Frontend Repo:** [github.com/fishish1/brian.fishman.info](https://github.com/fishish1/brian.fishman.info)
+
+### Exporting Data
+
+The backend generates JSON files that power the static dashboard:
+
+```bash
+# Export all data (analytics, ML metrics, PDP, SHAP, etc.)
+make export
+```
+
+**Export Destination:**
+1. Checks `SUMMIT_EXPORT_PATH` environment variable
+2. Tries `../brian.fishman.info/public/projects/summit/data/` (side-by-side repos)
+3. Falls back to hardcoded path
+
+### Custom Export Path
+
+```bash
+export SUMMIT_EXPORT_PATH="/custom/path/to/data"
+make export
+```
+
+### Viewing the Static Site Locally
+
+```bash
+# Serve the static dashboard
+make serve-static
+# Opens at http://localhost:8000
+```
+
+### Architecture & Deployment
+The system is designed to be self-contained while supporting external portfolio integration.
+
+**1. Internal Viewer (Self-Contained)**
+The `static_dashboard/` directory contains a full copy of the frontend.
+```bash
+make export        # Populates static_dashboard/data
+make serve-static  # Launches local viewer
+```
+
+**2. External Portfolio Integration**
+If the [brian.fishman.info](https://github.com/fishish1/brian.fishman.info) repo is cloned side-by-side, `make export` **automatically syncs** the data there as well.
+
+```
+summit-data-science/          ← Backend Repo
+├── static_dashboard/         ← Internal Viewer (Auto-updated)
+└── scripts/export...         ← Syncs to sibling repo if present
+```
+
+**Benefits:**
+- **Zero Dependencies:** Reviewers can run the full dashboard without cloning the portfolio.
+- **Portfolio Sync:** updates the live site automatically when present.
+
+
+---
 
 ## 📂 Project Structure
 

@@ -23,9 +23,6 @@ ingest:
 run:
 	$(VENV)/streamlit run src/summit_housing/dashboard/Introduction.py
 
-view-static:
-	@echo "Serving static dashboard at http://localhost:8000"
-	@cd static_dashboard && python3 -m http.server 8000
 
 scrape:
 	$(VENV)/python src/summit_housing/scraper_v2.py --workers 10
@@ -48,17 +45,11 @@ export:
 	@echo "  make serve-static"
 
 serve-static:
-	@echo "🌐 Starting static site server..."
-	@echo "Finding portfolio directory..."
-	@if [ -d "../brian.fishman.info/public/projects/summit" ]; then \
-		cd ../brian.fishman.info/public/projects/summit && \
-		echo "📍 Serving from: $$(pwd)" && \
-		echo "🚀 Open http://localhost:8000 in your browser" && \
-		echo "" && \
-		$(PYTHON) -m http.server 8000; \
+	@echo "Serving static dashboard at http://localhost:8000"
+	@if [ -d "static_dashboard" ]; then \
+		cd static_dashboard && python3 -m http.server 8000; \
 	else \
-		echo "❌ Portfolio directory not found at ../brian.fishman.info/public/projects/summit"; \
-		echo "   Make sure repos are cloned side-by-side, or set SUMMIT_EXPORT_PATH"; \
+		echo "❌ 'static_dashboard' directory not found. Run 'make export' first."; \
 	fi
 
 clean:
