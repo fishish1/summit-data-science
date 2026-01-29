@@ -1,0 +1,90 @@
+[
+  {
+    "index": "Price",
+    "Price": 1.0,
+    "SqFt": 0.64,
+    "Beds": 0.479,
+    "Baths": 0.267,
+    "Year Built": 0.357,
+    "Acres": -0.01,
+    "Garage": 0.557,
+    "Dist Breck": -0.014
+  },
+  {
+    "index": "SqFt",
+    "Price": 0.64,
+    "SqFt": 1.0,
+    "Beds": 0.886,
+    "Baths": 0.674,
+    "Year Built": 0.432,
+    "Acres": -0.011,
+    "Garage": 0.717,
+    "Dist Breck": 0.105
+  },
+  {
+    "index": "Beds",
+    "Price": 0.479,
+    "SqFt": 0.886,
+    "Beds": 1.0,
+    "Baths": 0.803,
+    "Year Built": 0.481,
+    "Acres": -0.012,
+    "Garage": 0.573,
+    "Dist Breck": 0.122
+  },
+  {
+    "index": "Baths",
+    "Price": 0.267,
+    "SqFt": 0.674,
+    "Beds": 0.803,
+    "Baths": 1.0,
+    "Year Built": 0.406,
+    "Acres": -0.011,
+    "Garage": 0.314,
+    "Dist Breck": 0.052
+  },
+  {
+    "index": "Year Built",
+    "Price": 0.357,
+    "SqFt": 0.432,
+    "Beds": 0.481,
+    "Baths": 0.406,
+    "Year Built": 1.0,
+    "Acres": -0.026,
+    "Garage": 0.339,
+    "Dist Breck": 0.022
+  },
+  {
+    "index": "Acres",
+    "Price": -0.01,
+    "SqFt": -0.011,
+    "Beds": -0.012,
+    "Baths": -0.011,
+    "Year Built": -0.026,
+    "Acres": 1.0,
+    "Garage": -0.009,
+    "Dist Breck": 0.093
+  },
+  {
+    "index": "Garage",
+    "Price": 0.557,
+    "SqFt": 0.717,
+    "Beds": 0.573,
+    "Baths": 0.314,
+    "Year Built": 0.339,
+    "Acres": -0.009,
+    "Garage": 1.0,
+    "Dist Breck": 0.167
+  },
+  {
+    "index": "Dist Breck",
+    "Price": -0.014,
+    "SqFt": 0.105,
+    "Beds": 0.122,
+    "Baths": 0.052,
+    "Year Built": 0.022,
+    "Acres": 0.093,
+    "Garage": 0.167,
+    "Dist Breck": 1.0
+  }
+]
