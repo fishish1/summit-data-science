@@ -1,11 +1,11 @@
 [
   {
     "run_id": 1,
-    "timestamp": "2026-01-28T08:20:49.614236",
+    "timestamp": "2026-01-29T13:20:53.209306",
     "model_name": "gbm",
     "metrics": {
-      "mae": 502375.78204933525,
-      "r2": 0.2605421623460902
+      "mae": 500675.6521904515,
+      "r2": 0.2654872169416932
     },
     "parameters": {
       "learning_rate": 0.01,
@@ -34,15 +34,77 @@
         "prop_type"
       ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "num__cpi",
+        "importance": 0.39972596840639596
+      },
+      {
+        "feature": "num__sfla",
+        "importance": 0.2465386528775527
+      },
+      {
+        "feature": "num__year_blt",
+        "importance": 0.09203407583515039
+      },
+      {
+        "feature": "num__sp500",
+        "importance": 0.08730002185068045
+      },
+      {
+        "feature": "num__baths",
+        "importance": 0.07825599122234846
+      },
+      {
+        "feature": "num__dist_breck",
+        "importance": 0.06851350103356996
+      },
+      {
+        "feature": "num__summit_pop",
+        "importance": 0.05887517013768852
+      },
+      {
+        "feature": "num__mortgage_rate",
+        "importance": 0.05301858559802896
+      },
+      {
+        "feature": "num__dist_copper",
+        "importance": 0.04214040413359196
+      },
+      {
+        "feature": "cat__city_COPPERMOUNTAIN",
+        "importance": 0.03850007997452754
+      },
+      {
+        "feature": "cat__prop_type_Other",
+        "importance": 0.03630007541150972
+      },
+      {
+        "feature": "num__garage_size",
+        "importance": 0.02886262037487876
+      },
+      {
+        "feature": "num__dist_dillon",
+        "importance": 0.02706587192688247
+      },
+      {
+        "feature": "num__acres",
+        "importance": 0.023319980342832843
+      },
+      {
+        "feature": "num__dist_abasin",
+        "importance": 0.017766711618089317
+      }
+    ]
   },
   {
     "run_id": 2,
-    "timestamp": "2026-01-28T08:21:09.786388",
+    "timestamp": "2026-01-29T13:21:21.083716",
     "model_name": "gbm",
     "metrics": {
-      "mae": 477174.82033823716,
-      "r2": 0.2913106713000122
+      "mae": 475443.8441723684,
+      "r2": 0.29053464991946854
     },
     "parameters": {
       "learning_rate": 0.01,
@@ -71,15 +133,77 @@
         "prop_type"
       ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "num__cpi",
+        "importance": 0.40458495433656233
+      },
+      {
+        "feature": "num__sfla",
+        "importance": 0.22940754626192067
+      },
+      {
+        "feature": "num__sp500",
+        "importance": 0.10260260633935238
+      },
+      {
+        "feature": "num__year_blt",
+        "importance": 0.09304833104595063
+      },
+      {
+        "feature": "num__baths",
+        "importance": 0.07806259081723416
+      },
+      {
+        "feature": "num__dist_breck",
+        "importance": 0.07262839279119221
+      },
+      {
+        "feature": "num__summit_pop",
+        "importance": 0.06742993868223297
+      },
+      {
+        "feature": "num__mortgage_rate",
+        "importance": 0.05873424339567374
+      },
+      {
+        "feature": "num__dist_copper",
+        "importance": 0.042458527744168716
+      },
+      {
+        "feature": "cat__prop_type_Other",
+        "importance": 0.038009924328400085
+      },
+      {
+        "feature": "cat__city_COPPERMOUNTAIN",
+        "importance": 0.03782686483111659
+      },
+      {
+        "feature": "num__garage_size",
+        "importance": 0.03444652271600906
+      },
+      {
+        "feature": "num__dist_dillon",
+        "importance": 0.0324287701987002
+      },
+      {
+        "feature": "num__acres",
+        "importance": 0.031167145884304345
+      },
+      {
+        "feature": "num__dist_abasin",
+        "importance": 0.020819302410383288
+      }
+    ]
   },
   {
     "run_id": 3,
-    "timestamp": "2026-01-28T08:21:19.648704",
+    "timestamp": "2026-01-29T13:21:34.476515",
     "model_name": "gbm",
     "metrics": {
-      "mae": 459394.51243400585,
-      "r2": 0.30234987350982967
+      "mae": 467132.21057573735,
+      "r2": 0.2961852672232992
     },
     "parameters": {
       "learning_rate": 0.05,
@@ -108,15 +232,77 @@
         "prop_type"
       ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "num__cpi",
+        "importance": 0.3864987145524978
+      },
+      {
+        "feature": "num__sfla",
+        "importance": 0.2381434340066596
+      },
+      {
+        "feature": "num__sp500",
+        "importance": 0.12546900341827638
+      },
+      {
+        "feature": "num__year_blt",
+        "importance": 0.09195697594143853
+      },
+      {
+        "feature": "num__dist_breck",
+        "importance": 0.07968722434901382
+      },
+      {
+        "feature": "num__summit_pop",
+        "importance": 0.07862546106478942
+      },
+      {
+        "feature": "num__baths",
+        "importance": 0.07404915942209639
+      },
+      {
+        "feature": "num__mortgage_rate",
+        "importance": 0.03920323775423478
+      },
+      {
+        "feature": "cat__prop_type_Other",
+        "importance": 0.03597723545341097
+      },
+      {
+        "feature": "num__garage_size",
+        "importance": 0.035841167190372926
+      },
+      {
+        "feature": "cat__city_COPPERMOUNTAIN",
+        "importance": 0.034458909033252896
+      },
+      {
+        "feature": "num__dist_copper",
+        "importance": 0.03432833402601179
+      },
+      {
+        "feature": "num__acres",
+        "importance": 0.03118037296814554
+      },
+      {
+        "feature": "num__dist_dillon",
+        "importance": 0.029906790145235986
+      },
+      {
+        "feature": "cat__city_BRECKENRIDGE",
+        "importance": 0.02370738521655091
+      }
+    ]
   },
   {
     "run_id": 4,
-    "timestamp": "2026-01-28T08:21:40.621304",
+    "timestamp": "2026-01-29T13:21:56.017035",
     "model_name": "gbm",
     "metrics": {
-      "mae": 458184.01236366614,
-      "r2": 0.31448865704036266
+      "mae": 460810.1685837376,
+      "r2": 0.30070378578878143
     },
     "parameters": {
       "learning_rate": 0.02,
@@ -145,15 +331,77 @@
         "prop_type"
       ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "num__cpi",
+        "importance": 0.3938833900510663
+      },
+      {
+        "feature": "num__sfla",
+        "importance": 0.2325135813307661
+      },
+      {
+        "feature": "num__sp500",
+        "importance": 0.1279153193302647
+      },
+      {
+        "feature": "num__year_blt",
+        "importance": 0.09351315188512337
+      },
+      {
+        "feature": "num__baths",
+        "importance": 0.07846780686902657
+      },
+      {
+        "feature": "num__dist_breck",
+        "importance": 0.07716925919714022
+      },
+      {
+        "feature": "num__summit_pop",
+        "importance": 0.07335374878615815
+      },
+      {
+        "feature": "num__mortgage_rate",
+        "importance": 0.04837463276342377
+      },
+      {
+        "feature": "cat__city_COPPERMOUNTAIN",
+        "importance": 0.03865116896811889
+      },
+      {
+        "feature": "num__dist_copper",
+        "importance": 0.03799789809891187
+      },
+      {
+        "feature": "cat__prop_type_Other",
+        "importance": 0.03649223336656646
+      },
+      {
+        "feature": "num__garage_size",
+        "importance": 0.03561938528278017
+      },
+      {
+        "feature": "num__dist_dillon",
+        "importance": 0.034548318459621606
+      },
+      {
+        "feature": "num__acres",
+        "importance": 0.03061576496165958
+      },
+      {
+        "feature": "cat__city_BRECKENRIDGE",
+        "importance": 0.020611566326058952
+      }
+    ]
   },
   {
     "run_id": 5,
-    "timestamp": "2026-01-28T08:21:50.036952",
+    "timestamp": "2026-01-29T13:22:06.202737",
     "model_name": "gbm",
     "metrics": {
-      "mae": 476084.8810465999,
-      "r2": 0.29085022522808945
+      "mae": 473934.1828741092,
+      "r2": 0.2953154876252916
     },
     "parameters": {
       "learning_rate": 0.1,
@@ -182,35 +430,77 @@
         "prop_type"
       ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "num__cpi",
+        "importance": 0.4147612535260226
+      },
+      {
+        "feature": "num__sfla",
+        "importance": 0.23569249473401116
+      },
+      {
+        "feature": "num__sp500",
+        "importance": 0.10807382709391496
+      },
+      {
+        "feature": "num__year_blt",
+        "importance": 0.09826231453612413
+      },
+      {
+        "feature": "num__dist_breck",
+        "importance": 0.08657146311978212
+      },
+      {
+        "feature": "num__baths",
+        "importance": 0.0649668136280053
+      },
+      {
+        "feature": "num__summit_pop",
+        "importance": 0.06328142957034533
+      },
+      {
+        "feature": "num__mortgage_rate",
+        "importance": 0.05795248090383102
+      },
+      {
+        "feature": "num__dist_copper",
+        "importance": 0.047458829597977134
+      },
+      {
+        "feature": "cat__city_COPPERMOUNTAIN",
+        "importance": 0.04231301240685994
+      },
+      {
+        "feature": "cat__prop_type_Other",
+        "importance": 0.041730722795390335
+      },
+      {
+        "feature": "num__dist_dillon",
+        "importance": 0.03885091107634886
+      },
+      {
+        "feature": "num__acres",
+        "importance": 0.03278306081575764
+      },
+      {
+        "feature": "num__garage_size",
+        "importance": 0.03270524886574589
+      },
+      {
+        "feature": "num__dist_abasin",
+        "importance": 0.02673547207476756
+      }
+    ]
   },
   {
     "run_id": 6,
-    "timestamp": "2026-01-28T08:23:33.874731",
+    "timestamp": "2026-01-29T13:22:56.994314",
     "model_name": "price_net_macro",
     "metrics": {
-      "mae": 210983.23219276668,
-      "r2": 0.06319435689175867
-    },
-    "parameters": {
-      "lr": 0.001,
-      "epochs": 200,
-      "batch_size": 128,
-      "hidden_dims": [
-        128,
-        64,
-        32
-      ]
-    },
-    "tags": {}
-  },
-  {
-    "run_id": 7,
-    "timestamp": "2026-01-28T08:29:15.711966",
-    "model_name": "price_net_macro",
-    "metrics": {
-      "mae": 211031.95542992317,
-      "r2": -0.3908101064660763
+      "mae": 312664.6727180251,
+      "r2": -18.932550136333738
     },
     "parameters": {
       "lr": 0.0005,
@@ -222,15 +512,159 @@
         64
       ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "sfla",
+        "importance": 0.2904423642189124
+      },
+      {
+        "feature": "cpi",
+        "importance": 0.26716822088011927
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.061963855501008774
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.06038614242566935
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.05573762210196533
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.05099007703159834
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.046553131445684084
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.046089848321740255
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.045126546800900266
+      },
+      {
+        "feature": "dist_dillon",
+        "importance": 0.04376132048063859
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.0419008666880074
+      },
+      {
+        "feature": "acres",
+        "importance": 0.0343807256518501
+      },
+      {
+        "feature": "garage_size",
+        "importance": 0.03327347259923414
+      },
+      {
+        "feature": "baths",
+        "importance": 0.03287594125795151
+      },
+      {
+        "feature": "beds",
+        "importance": 0.03091123232056038
+      }
+    ]
+  },
+  {
+    "run_id": 7,
+    "timestamp": "2026-01-29T13:23:16.381777",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 426983.0092268581,
+      "r2": -66.90736478455237
+    },
+    "parameters": {
+      "lr": 0.001,
+      "epochs": 200,
+      "batch_size": 128,
+      "hidden_dims": [
+        128,
+        64,
+        32
+      ]
+    },
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "sfla",
+        "importance": 0.31190129031075775
+      },
+      {
+        "feature": "cpi",
+        "importance": 0.23134369318965575
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.1457252910102468
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.1453022568890739
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.10313585804152892
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.08045919641167376
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.07710210557220135
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.07075195829475804
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.06480066459131205
+      },
+      {
+        "feature": "dist_dillon",
+        "importance": 0.05563855620800182
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.05562528684079128
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.0521195129125215
+      },
+      {
+        "feature": "acres",
+        "importance": 0.05146841064589355
+      },
+      {
+        "feature": "baths",
+        "importance": 0.03918897050610519
+      },
+      {
+        "feature": "city_SILVERTHORNE",
+        "importance": 0.02680886653959929
+      }
+    ]
   },
   {
     "run_id": 8,
-    "timestamp": "2026-01-28T08:31:20.358981",
+    "timestamp": "2026-01-29T13:24:34.822169",
     "model_name": "price_net_macro",
     "metrics": {
-      "mae": 234587.60881691086,
-      "r2": 0.05448835834514498
+      "mae": 35646782.72238069,
+      "r2": -1820888.1668990944
     },
     "parameters": {
       "lr": 0.001,
@@ -241,15 +675,240 @@
         32
       ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "sfla",
+        "importance": 0.2661499039373934
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.2189406590473544
+      },
+      {
+        "feature": "cpi",
+        "importance": 0.19845979028835548
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.1887090567236626
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.12086462550470438
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.08765853498106224
+      },
+      {
+        "feature": "city_SILVERTHORNE",
+        "importance": 0.08266836737076506
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.07935232797494518
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.06886949638233875
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.06663137005209861
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.06333011278814474
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.05705060664632364
+      },
+      {
+        "feature": "dist_keystone",
+        "importance": 0.05159369467047139
+      },
+      {
+        "feature": "dist_dillon",
+        "importance": 0.05121022155235882
+      },
+      {
+        "feature": "acres",
+        "importance": 0.0374015250391699
+      }
+    ]
   },
   {
     "run_id": 9,
-    "timestamp": "2026-01-28T08:32:24.273846",
+    "timestamp": "2026-01-29T13:26:41.293755",
     "model_name": "price_net_macro",
     "metrics": {
-      "mae": 224644.72343839772,
-      "r2": 0.057529139149912756
+      "mae": 199922.85983733123,
+      "r2": 0.13128953242750008
+    },
+    "parameters": {
+      "lr": 0.0005,
+      "epochs": 400,
+      "batch_size": 64,
+      "hidden_dims": [
+        256,
+        128,
+        64
+      ]
+    },
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "cpi",
+        "importance": 0.2612277665610823
+      },
+      {
+        "feature": "sfla",
+        "importance": 0.24114284653243598
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.12496270320718274
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.10947040343135313
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.08115331896334889
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.0786519540127417
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.07235417309654711
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.056146045361713165
+      },
+      {
+        "feature": "baths",
+        "importance": 0.05148577872990066
+      },
+      {
+        "feature": "acres",
+        "importance": 0.04994455648417461
+      },
+      {
+        "feature": "beds",
+        "importance": 0.04628274121441336
+      },
+      {
+        "feature": "dist_dillon",
+        "importance": 0.0407951173664014
+      },
+      {
+        "feature": "city_SILVERTHORNE",
+        "importance": 0.03842538962399937
+      },
+      {
+        "feature": "city_BRECKENRIDGE",
+        "importance": 0.035730522514954774
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.03527315626801611
+      }
+    ]
+  },
+  {
+    "run_id": 10,
+    "timestamp": "2026-01-29T13:27:55.581021",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 226802.91634759828,
+      "r2": 0.05634234684461836
+    },
+    "parameters": {
+      "lr": 0.001,
+      "epochs": 300,
+      "batch_size": 128,
+      "hidden_dims": [
+        64,
+        32
+      ]
+    },
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "cpi",
+        "importance": 0.37490060503457584
+      },
+      {
+        "feature": "sfla",
+        "importance": 0.2977675703273214
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.0988182834821101
+      },
+      {
+        "feature": "city_BRECKENRIDGE",
+        "importance": 0.0987391598093461
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.07756920635255288
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.0739927868456153
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.0694630797770071
+      },
+      {
+        "feature": "acres",
+        "importance": 0.061576759584310595
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.05649010767045476
+      },
+      {
+        "feature": "city_KEYSTONE",
+        "importance": 0.05259249456028412
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.051782457479947926
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.050682645919692036
+      },
+      {
+        "feature": "city_SILVERTHORNE",
+        "importance": 0.04577818594410809
+      },
+      {
+        "feature": "dist_keystone",
+        "importance": 0.045493106235053114
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.0420098577986379
+      }
+    ]
+  },
+  {
+    "run_id": 11,
+    "timestamp": "2026-01-29T13:28:40.842887",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 238817.68106715285,
+      "r2": 0.05487765960824009
     },
     "parameters": {
       "lr": 0.002,
@@ -260,15 +919,77 @@
         128
       ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "sfla",
+        "importance": 0.29593871183714565
+      },
+      {
+        "feature": "cpi",
+        "importance": 0.20355943820841735
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.09196526743657696
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.08144095776261909
+      },
+      {
+        "feature": "dist_keystone",
+        "importance": 0.066513970498629
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.06599942546202345
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.0580831219170505
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.05599904861365115
+      },
+      {
+        "feature": "city_BRECKENRIDGE",
+        "importance": 0.0423207168417649
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.03942359483209493
+      },
+      {
+        "feature": "city_KEYSTONE",
+        "importance": 0.03718720192361743
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.031684613625717756
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.03078481373764187
+      },
+      {
+        "feature": "mortgage_rate",
+        "importance": 0.028217704262626157
+      },
+      {
+        "feature": "acres",
+        "importance": 0.026394430244212036
+      }
+    ]
   },
   {
-    "run_id": 10,
-    "timestamp": "2026-01-28T08:36:23.086645",
+    "run_id": 12,
+    "timestamp": "2026-01-29T13:31:02.918247",
     "model_name": "price_net_macro",
     "metrics": {
-      "mae": 214107.7951446244,
-      "r2": 0.05963388729112107
+      "mae": 217084.75181191947,
+      "r2": 0.058958686276391115
     },
     "parameters": {
       "lr": 0.0001,
@@ -280,210 +1001,68 @@
         32
       ]
     },
-    "tags": {}
-  },
-  {
-    "run_id": 11,
-    "timestamp": "2026-01-28T08:52:17.209316",
-    "model_name": "price_net_macro",
-    "metrics": {
-      "mae": 193460.8112970411,
-      "r2": 0.12837117481160176
-    },
-    "parameters": {
-      "epochs": 750,
-      "lr": 0.0008,
-      "batch_size": 128,
-      "hidden_dims": [
-        256,
-        64,
-        32
-      ]
-    },
-    "tags": {}
-  },
-  {
-    "run_id": 12,
-    "timestamp": "2026-01-28T09:10:06.559885",
-    "model_name": "price_net_macro",
-    "metrics": {
-      "mae": 226043.0484968999,
-      "r2": -1.0468247475628663
-    },
-    "parameters": {
-      "epochs": 750,
-      "lr": 0.0008,
-      "batch_size": 128,
-      "hidden_dims": [
-        256,
-        64,
-        32
-      ],
-      "monotonicity": {
-        "enabled": true,
-        "penalty_weight": 0.01
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "cpi",
+        "importance": 0.30559902032789243
+      },
+      {
+        "feature": "sfla",
+        "importance": 0.3046252477860871
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.10256013528834775
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.07539597064874107
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.0726128705040455
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.06253136874295125
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.06163251556698264
+      },
+      {
+        "feature": "city_BRECKENRIDGE",
+        "importance": 0.055986081360949944
+      },
+      {
+        "feature": "mortgage_rate",
+        "importance": 0.049466423270612264
+      },
+      {
+        "feature": "acres",
+        "importance": 0.04840043325743246
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.046567839279263945
+      },
+      {
+        "feature": "city_KEYSTONE",
+        "importance": 0.03194631650082681
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.03152235136038322
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.02964155240815523
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.029245299222197953
       }
-    },
-    "tags": {}
-  },
-  {
-    "run_id": 13,
-    "timestamp": "2026-01-28T09:21:39.159617",
-    "model_name": "price_net_macro",
-    "metrics": {
-      "mae": 196389.82356378075,
-      "r2": 0.06954221008387695
-    },
-    "parameters": {
-      "epochs": 750,
-      "lr": 0.0008,
-      "batch_size": 128,
-      "hidden_dims": [
-        256,
-        64,
-        32
-      ],
-      "monotonicity": {
-        "enabled": true,
-        "penalty_weight": 0.01,
-        "constraints": {
-          "sfla": 1,
-          "beds": 1,
-          "baths": 1,
-          "year_blt": 1,
-          "garage_size": 1,
-          "acres": 1,
-          "grade_numeric": 1,
-          "cond_numeric": 1,
-          "scenic_view": 1,
-          "mortgage_rate": -1,
-          "dist_to_lift": -1,
-          "dist_breck": -1,
-          "dist_keystone": -1,
-          "dist_copper": -1
-        }
-      }
-    },
-    "tags": {}
-  },
-  {
-    "run_id": 14,
-    "timestamp": "2026-01-28T09:36:02.711425",
-    "model_name": "price_net_macro",
-    "metrics": {
-      "mae": 237423.18811943408,
-      "r2": -2.6565145460126143
-    },
-    "parameters": {
-      "epochs": 750,
-      "lr": 0.0008,
-      "batch_size": 128,
-      "hidden_dims": [
-        256,
-        64,
-        32
-      ],
-      "monotonicity": {
-        "enabled": true,
-        "penalty_weight": 0.05,
-        "constraints": {
-          "sfla": 1,
-          "beds": 1,
-          "baths": 0,
-          "year_blt": 1,
-          "garage_size": 0,
-          "acres": 1,
-          "grade_numeric": 1,
-          "cond_numeric": 1,
-          "scenic_view": 0,
-          "mortgage_rate": 0,
-          "dist_to_lift": -1,
-          "dist_breck": 0,
-          "dist_keystone": 0,
-          "dist_copper": 0
-        }
-      }
-    },
-    "tags": {}
-  },
-  {
-    "run_id": 15,
-    "timestamp": "2026-01-28T09:47:38.667981",
-    "model_name": "price_net_macro",
-    "metrics": {
-      "mae": 203967.87678498754,
-      "r2": 0.07199175405830849
-    },
-    "parameters": {
-      "epochs": 750,
-      "lr": 0.0008,
-      "batch_size": 128,
-      "hidden_dims": [
-        256,
-        64,
-        32
-      ],
-      "monotonicity": {
-        "enabled": true,
-        "penalty_weight": 0.005,
-        "constraints": {
-          "sfla": 1,
-          "beds": 1,
-          "baths": 0,
-          "year_blt": 1,
-          "garage_size": 0,
-          "acres": 1,
-          "grade_numeric": 1,
-          "cond_numeric": 1,
-          "scenic_view": 0,
-          "mortgage_rate": 0,
-          "dist_to_lift": -1,
-          "dist_breck": 0,
-          "dist_keystone": 0,
-          "dist_copper": 0
-        }
-      }
-    },
-    "tags": {}
-  },
-  {
-    "run_id": 16,
-    "timestamp": "2026-01-28T10:01:59.406354",
-    "model_name": "price_net_macro",
-    "metrics": {
-      "mae": 199965.1017109996,
-      "r2": 0.06841758510024687
-    },
-    "parameters": {
-      "epochs": 750,
-      "lr": 0.0008,
-      "batch_size": 128,
-      "hidden_dims": [
-        256,
-        64,
-        32
-      ],
-      "monotonicity": {
-        "enabled": true,
-        "penalty_weight": 0.005,
-        "constraints": {
-          "sfla": 2,
-          "beds": 1,
-          "baths": 0,
-          "year_blt": 1,
-          "garage_size": 0,
-          "acres": 1,
-          "grade_numeric": 1,
-          "cond_numeric": 1,
-          "scenic_view": 0,
-          "mortgage_rate": 0,
-          "dist_to_lift": -1,
-          "dist_breck": 0,
-          "dist_keystone": 0,
-          "dist_copper": 0
-        }
-      }
-    },
-    "tags": {}
+    ]
   }
 ]

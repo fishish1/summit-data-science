@@ -1,11 +1,11 @@
 {
   "gbm": {
     "run_id": 4,
-    "timestamp": "2026-01-28T08:21:40.621304",
+    "timestamp": "2026-01-29T13:21:56.017035",
     "model_name": "gbm",
     "metrics": {
-      "mae": 458184.01236366614,
-      "r2": 0.31448865704036266
+      "mae": 460810.1685837376,
+      "r2": 0.30070378578878143
     },
     "parameters": {
       "learning_rate": 0.02,
@@ -34,46 +34,150 @@
         "prop_type"
       ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "num__cpi",
+        "importance": 0.3938833900510663
+      },
+      {
+        "feature": "num__sfla",
+        "importance": 0.2325135813307661
+      },
+      {
+        "feature": "num__sp500",
+        "importance": 0.1279153193302647
+      },
+      {
+        "feature": "num__year_blt",
+        "importance": 0.09351315188512337
+      },
+      {
+        "feature": "num__baths",
+        "importance": 0.07846780686902657
+      },
+      {
+        "feature": "num__dist_breck",
+        "importance": 0.07716925919714022
+      },
+      {
+        "feature": "num__summit_pop",
+        "importance": 0.07335374878615815
+      },
+      {
+        "feature": "num__mortgage_rate",
+        "importance": 0.04837463276342377
+      },
+      {
+        "feature": "cat__city_COPPERMOUNTAIN",
+        "importance": 0.03865116896811889
+      },
+      {
+        "feature": "num__dist_copper",
+        "importance": 0.03799789809891187
+      },
+      {
+        "feature": "cat__prop_type_Other",
+        "importance": 0.03649223336656646
+      },
+      {
+        "feature": "num__garage_size",
+        "importance": 0.03561938528278017
+      },
+      {
+        "feature": "num__dist_dillon",
+        "importance": 0.034548318459621606
+      },
+      {
+        "feature": "num__acres",
+        "importance": 0.03061576496165958
+      },
+      {
+        "feature": "cat__city_BRECKENRIDGE",
+        "importance": 0.020611566326058952
+      }
+    ]
   },
   "price_net_macro": {
-    "run_id": 16,
-    "timestamp": "2026-01-28T10:01:59.406354",
+    "run_id": 12,
+    "timestamp": "2026-01-29T13:31:02.918247",
     "model_name": "price_net_macro",
     "metrics": {
-      "mae": 199965.1017109996,
-      "r2": 0.06841758510024687
+      "mae": 217084.75181191947,
+      "r2": 0.058958686276391115
     },
     "parameters": {
-      "epochs": 750,
-      "lr": 0.0008,
+      "lr": 0.0001,
+      "epochs": 500,
       "batch_size": 128,
       "hidden_dims": [
-        256,
+        128,
         64,
         32
-      ],
-      "monotonicity": {
-        "enabled": true,
-        "penalty_weight": 0.005,
-        "constraints": {
-          "sfla": 2,
-          "beds": 1,
-          "baths": 0,
-          "year_blt": 1,
-          "garage_size": 0,
-          "acres": 1,
-          "grade_numeric": 1,
-          "cond_numeric": 1,
-          "scenic_view": 0,
-          "mortgage_rate": 0,
-          "dist_to_lift": -1,
-          "dist_breck": 0,
-          "dist_keystone": 0,
-          "dist_copper": 0
-        }
-      }
+      ]
     },
-    "tags": {}
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "cpi",
+        "importance": 0.30559902032789243
+      },
+      {
+        "feature": "sfla",
+        "importance": 0.3046252477860871
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.10256013528834775
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.07539597064874107
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.0726128705040455
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.06253136874295125
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.06163251556698264
+      },
+      {
+        "feature": "city_BRECKENRIDGE",
+        "importance": 0.055986081360949944
+      },
+      {
+        "feature": "mortgage_rate",
+        "importance": 0.049466423270612264
+      },
+      {
+        "feature": "acres",
+        "importance": 0.04840043325743246
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.046567839279263945
+      },
+      {
+        "feature": "city_KEYSTONE",
+        "importance": 0.03194631650082681
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.03152235136038322
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.02964155240815523
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.029245299222197953
+      }
+    ]
   }
 }
