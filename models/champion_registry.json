@@ -99,84 +99,106 @@
     ]
   },
   "price_net_macro": {
-    "run_id": 12,
-    "timestamp": "2026-01-29T13:31:02.918247",
+    "run_id": 16,
+    "timestamp": "2026-01-30T13:04:41.960780",
     "model_name": "price_net_macro",
     "metrics": {
-      "mae": 217084.75181191947,
-      "r2": 0.058958686276391115
+      "mae": 258088.96418260888,
+      "r2": -6.854514514823331
     },
     "parameters": {
-      "lr": 0.0001,
-      "epochs": 500,
+      "epochs": 1000,
+      "lr": 0.0004,
       "batch_size": 128,
       "hidden_dims": [
+        256,
         128,
-        64,
-        32
-      ]
+        64
+      ],
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.1,
+        "constraints": {
+          "sfla": 1,
+          "beds": 0,
+          "baths": 0,
+          "year_blt": 0,
+          "garage_size": 0,
+          "acres": 0,
+          "grade_numeric": 0,
+          "cond_numeric": 0,
+          "scenic_view": 0,
+          "mortgage_rate": -1,
+          "dist_to_lift": -1,
+          "dist_breck": 0,
+          "dist_keystone": 0,
+          "dist_copper": 0,
+          "cpi": 1,
+          "sp500": 1
+        }
+      }
     },
     "tags": {},
     "shap_summary": [
       {
         "feature": "cpi",
-        "importance": 0.30559902032789243
+        "importance": 0.3753394570720641
+      },
+      {
+        "feature": "dist_to_lift",
+        "importance": 0.32051197309224366
       },
       {
         "feature": "sfla",
-        "importance": 0.3046252477860871
-      },
-      {
-        "feature": "summit_pop",
-        "importance": 0.10256013528834775
-      },
-      {
-        "feature": "year_blt",
-        "importance": 0.07539597064874107
-      },
-      {
-        "feature": "dist_breck",
-        "importance": 0.0726128705040455
-      },
-      {
-        "feature": "prop_type_Condo",
-        "importance": 0.06253136874295125
-      },
-      {
-        "feature": "sp500",
-        "importance": 0.06163251556698264
-      },
-      {
-        "feature": "city_BRECKENRIDGE",
-        "importance": 0.055986081360949944
-      },
-      {
-        "feature": "mortgage_rate",
-        "importance": 0.049466423270612264
-      },
-      {
-        "feature": "acres",
-        "importance": 0.04840043325743246
-      },
-      {
-        "feature": "prop_type_Single Family",
-        "importance": 0.046567839279263945
-      },
-      {
-        "feature": "city_KEYSTONE",
-        "importance": 0.03194631650082681
+        "importance": 0.29711394380449385
       },
       {
         "feature": "city_FRISCO",
-        "importance": 0.03152235136038322
-      },
-      {
-        "feature": "dist_abasin",
-        "importance": 0.02964155240815523
+        "importance": 0.11401122008588033
       },
       {
         "feature": "dist_copper",
-        "importance": 0.029245299222197953
+        "importance": 0.1002556702948916
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.06394731219613421
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.057772595768049634
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.05767597466848581
+      },
+      {
+        "feature": "acres",
+        "importance": 0.05293377713545129
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.05255420904769758
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.05077819370604155
+      },
+      {
+        "feature": "dist_keystone",
+        "importance": 0.04963338338591547
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.04775221165824926
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.04184098201311902
+      },
+      {
+        "feature": "dist_dillon",
+        "importance": 0.03721173078732685
       }
     ]
   }

@@ -24,6 +24,87 @@ const POP_DATA = {
     2000: 23500, 2010: 28000, 2020: 31000, 2024: 31500
 };
 
+const PRESETS = {
+    // Property Styles
+    'condo': {
+        sfla: 900, beds: 2, baths: 1.5, year_blt: 1985, garage_size: 0, acres: 0,
+        city: 'DILLON', prop_type: 'Condo', grade_numeric: 4, cond_numeric: 4, scenic_view: 0,
+        dist_to_lift: 5 // Dillon default is roughly this
+    },
+    'family': {
+        sfla: 2400, beds: 3, baths: 2.5, year_blt: 1998, garage_size: 400, acres: 0.25,
+        city: 'FRISCO', prop_type: 'Single Family', grade_numeric: 4, cond_numeric: 5, scenic_view: 2,
+        dist_to_lift: 6
+    },
+    'luxury': {
+        sfla: 4500, beds: 5, baths: 5, year_blt: 2015, garage_size: 800, acres: 1.5,
+        city: 'BRECKENRIDGE', prop_type: 'Single Family', grade_numeric: 6, cond_numeric: 6, scenic_view: 5,
+        dist_to_lift: 0.2
+    },
+
+    // Market Scenarios
+    '2021': { mortgage_rate: 2.9, sp500: 4700, cpi: 270, summit_pop: 31 },
+    'curr': { mortgage_rate: 6.9, sp500: 6950, cpi: 320, summit_pop: 31.5 },
+    'high_rate': { mortgage_rate: 9.5, sp500: 5500, cpi: 300, summit_pop: 30.5 },
+    'ai_deflation': { mortgage_rate: 3.5, sp500: 8000, cpi: 140, summit_pop: 27.0 }
+};
+
+window.applyPreset = function (presetName) {
+    const preset = PRESETS[presetName];
+    if (!preset) return;
+
+    // Map bindings to finding DOM elements
+    // We reuse the logic from bindings array manually or ensure we trigger events
+
+    // The bindings map in initUI uses specific IDs.
+    // e.g. 'sfla' -> 'input-sfla' / 'val-sfla'
+    // But 'city' -> 'input-city' (no val-city)
+    // We need to robustly update state AND UI.
+
+    Object.entries(preset).forEach(([key, value]) => {
+        state.inputs[key] = value;
+
+        // Find UI elements
+        // 1. Inputs with binding map (sfla, beds, etc)
+        // We can inspect the DOM IDs based on known conventions
+        const numInput = document.getElementById(`input-${key}`); // slider or main input
+        const valInput = document.getElementById(`val-${key}`); // text box
+
+        // Special mapping for input IDs that don't match key exactly?
+        // In initUI: 'year_blt' -> 'input-year', 'prop_type' -> 'input-type', 'mortgage_rate' -> 'input-rate'
+        // 'garage_size' -> 'input-garage', 'summit_pop' -> 'input-pop', 'dist_to_lift' -> 'input-dist-lift'
+        // 'grade_numeric' -> 'input-grade', 'cond_numeric' -> 'input-cond', 'scenic_view' -> 'input-view'
+
+        const keyMap = {
+            'year_blt': 'year',
+            'prop_type': 'type',
+            'mortgage_rate': 'rate',
+            'garage_size': 'garage',
+            'summit_pop': 'pop',
+            'dist_to_lift': 'dist-lift',
+            'grade_numeric': 'grade',
+            'cond_numeric': 'cond',
+            'scenic_view': 'view'
+        };
+
+        const suffix = keyMap[key] || key;
+        const el1 = document.getElementById(`input-${suffix}`);
+        const el2 = document.getElementById(`val-${suffix}`);
+
+        if (el1) el1.value = value;
+        if (el2) el2.value = value;
+    });
+
+    // Trigger update
+    updateDashboard();
+
+    // Visual feedback (optional flash)
+    const btn = event.target;
+    const origColor = btn.style.backgroundColor;
+    btn.style.backgroundColor = '#10b981'; // Green flash
+    setTimeout(() => { btn.style.backgroundColor = origColor; }, 300);
+}
+
 function getThemeLayout() {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     const isMobile = window.innerWidth < 1024;
@@ -111,9 +192,9 @@ let state = {
     metadata: {},
     inputs: {
         sfla: 1500, beds: 2, baths: 2, year_blt: 1995, garage_size: 500,
-        acres: 0.1, mortgage_rate: 6.5, sp500: 5000, cpi: 310,
+        acres: 0.1, mortgage_rate: 6.9, sp500: 6950, cpi: 320,
         summit_pop: 31, grade_numeric: 4, cond_numeric: 4, scenic_view: 0,
-        city: 'BRECKENRIDGE', prop_type: 'Single Family'
+        city: 'BRECKENRIDGE', prop_type: 'Single Family', dist_to_lift: 0.5
     },
     records: []
 };
@@ -273,6 +354,7 @@ function initScrolly() {
                         chartEl.classList.remove('hidden');
                         if (chartId.startsWith('chart-') || chartId === 'distance-map') Plotly.Plots.resize(chartEl);
                         if (chartId === 'map-hotspots' && map) map.invalidateSize();
+                        if (stepId === 'deep-dive') renderScrollyExplorer();
                     }
                 } else {
                     if (chartEl.parentElement !== sharedTarget) {
@@ -319,8 +401,11 @@ function initScrolly() {
         const tableHead = document.querySelector('#scrolly-property-table thead');
         if (!tableBody || tableBody.children.length > 0) return; // Only render once
 
-        const resp = await fetch('data/records_sample_curated.json');
-        const data = await resp.json();
+        let data = state.records;
+        if (!data || data.length === 0) {
+            const resp = await fetch('data/records_sample_curated.json');
+            data = await resp.json();
+        }
         const cols = ['address', 'city', 'year_blt', 'sfla', 'totactval'];
 
         tableHead.innerHTML = `<tr>${cols.map(c => `<th>${c.toUpperCase()}</th>`).join('')}</tr>`;
@@ -418,8 +503,41 @@ function initUI() {
         { id: 'acres', key: 'acres', type: 'num' },
         { id: 'cond', key: 'cond_numeric', type: 'num' },
         { id: 'sp500', key: 'sp500', type: 'num' },
-        { id: 'pop', key: 'summit_pop', type: 'num' }
+        { id: 'pop', key: 'summit_pop', type: 'num' },
+        { id: 'dist-lift', key: 'dist_to_lift', type: 'num' }
     ];
+
+    // City Change Listener to update Default Distance
+    const citySelect = document.getElementById('input-city');
+    if (citySelect) {
+        citySelect.addEventListener('change', (e) => {
+            const city = e.target.value;
+            // We use the same map from calculateDistances (duplicated nicely or accessed? It's inside a function scope).
+            // Let's copy the map here or better, expose it. For now, simple copy is safer than refactoring scope.
+            const distMap = {
+                "BRECKENRIDGE": { dist_breck: 0.5, dist_keystone: 12, dist_copper: 16, dist_abasin: 18, dist_dillon: 10 },
+                "FRISCO": { dist_breck: 9, dist_keystone: 9, dist_copper: 6, dist_abasin: 13, dist_dillon: 4 },
+                "SILVERTHORNE": { dist_breck: 12, dist_keystone: 7, dist_copper: 11, dist_abasin: 10, dist_dillon: 1 },
+                "DILLON": { dist_breck: 11, dist_keystone: 5, dist_copper: 12, dist_abasin: 9, dist_dillon: 0.5 },
+                "KEYSTONE": { dist_breck: 14, dist_keystone: 0.5, dist_copper: 15, dist_abasin: 6, dist_dillon: 6 },
+                "COPPER MOUNTAIN": { dist_breck: 17, dist_keystone: 18, dist_copper: 0.5, dist_abasin: 21, dist_dillon: 12 }
+            };
+            const dists = distMap[city] || distMap["BRECKENRIDGE"];
+            const defaultDist = Math.min(dists.dist_breck, dists.dist_keystone, dists.dist_copper, dists.dist_abasin);
+
+            // Update State
+            state.inputs.dist_to_lift = defaultDist;
+
+            // Update UI
+            const el = document.getElementById('input-dist-lift');
+            const valEl = document.getElementById('val-dist-lift');
+            if (el) el.value = defaultDist;
+            if (valEl) valEl.value = defaultDist;
+
+            // Trigger inference update (the binding for city will trigger it too, but we updated 2 things).
+            // The existing binding will fire for city change. 
+        });
+    }
 
     let debounceTimer;
     bindings.forEach(b => {
@@ -535,7 +653,7 @@ async function selectModelVersion(run) {
     if (selector) {
         // If the selector is currently for a different architecture, refresh it
         const currentModelName = run.model_name === 'price_net_macro' ? 'nn' : 'gbm';
-        // We checking if we need to swap the options
+        // We checking if we need to swap the options, or if the run is missing
         if (selector.options.length === 0 || !Array.from(selector.options).some(o => o.value == run.run_id)) {
             await populateVersionSelector(currentModelName, run.run_id);
         } else {
@@ -543,12 +661,51 @@ async function selectModelVersion(run) {
         }
     }
 
+    // Load Specific ONNX Model and Metadata
+    const modelType = state.activeModel;
+    const runId = run.run_id;
+
+    // Construct paths assuming standard export convention (updated by patch script)
+    // Legacy/Champion files are just gbm.onnx, but we now have gbm_v{id}.onnx for all
+    // So we can prefer the versioned file.
+    const onnxPath = `models/${modelType}_v${runId}.onnx`;
+    const metaPath = `models/${modelType}_metadata_v${runId}.json`;
+
+    try {
+        document.body.style.cursor = 'wait';
+
+        // Parallel load
+        const [metaResp, session] = await Promise.all([
+            fetch(metaPath),
+            ort.InferenceSession.create(onnxPath)
+        ]);
+
+        if (metaResp.ok) {
+            state.metadata[modelType] = await metaResp.json();
+            console.log(`✅ Loaded metadata for ${modelType} v${runId}`);
+        } else {
+            console.warn(`⚠️ Metadata for v${runId} not found, using cached/default.`);
+        }
+
+        if (session) {
+            state.models[modelType] = session;
+            console.log(`✅ Loaded ONNX session for ${modelType} v${runId}`);
+        }
+
+    } catch (e) {
+        console.error(`❌ Failed to load specific model resources for v${runId}`, e);
+        // Fallback or alert user
+        // We might want to try falling back to the generic 'models/gbm.onnx' if the specific one fails
+        // But for now, let's assume the patch script worked.
+    } finally {
+        document.body.style.cursor = 'default';
+    }
+
     // Highlight the row in the leaderboard
     document.querySelectorAll('#leaderboard tr').forEach(tr => tr.classList.remove('selected-run'));
     const row = document.querySelector(`#leaderboard tr[data-run-id="${run.run_id}"]`);
     if (row) row.classList.add('selected-run');
 
-    console.log(`Model switched to: ${run.model_name} (Run #${run.run_id})`);
     if (state.activePage === 'predictor') updateDashboard();
 }
 
@@ -920,7 +1077,7 @@ async function renderSeasonalityHeatmap() {
             const d = seasonal.find(x => x.month_name === m && x.city === c);
             return d ? d.sales_count : 0;
         }));
-        Plotly.newPlot('chart-seasonality', [{ z: zData, x: uniqueCities, y: months, type: 'heatmap', colorscale: 'RdBu', reversescale: true }], {
+        Plotly.newPlot('chart-seasonality', [{ z: zData, x: uniqueCities, y: months, type: 'heatmap', colorscale: 'RdBu' }], {
             ...getThemeLayout(),
             title: 'Monthly Sales Volume by City',
             height: 500
@@ -1439,33 +1596,49 @@ function renderComps(predictedPrice) {
     const container = document.getElementById('comps-container');
     if (!container || state.records.length === 0) return;
 
-    // Filter by Hard Constraints (City & Type)
-    // We relax strict constraint if not enough data, but start strict
+    // Constraint: City
     let candidates = state.records.filter(r =>
         r.town === getTownCode(state.inputs.city) && (r.est_price || r.docfee1) > 10000
     );
 
-    // If we have fewer than 10 candidates, try to find broadly similar ones
+    // Fallback: Relax City if needed
     if (candidates.length < 5) {
-        candidates = state.records.filter(r => (r.est_price || r.docfee1) > 10000); // Fallback to all valid records
+        candidates = state.records.filter(r => (r.est_price || r.docfee1) > 10000);
     }
 
-    // Calculate Similarity Score
-    // Euclidean distance on normalized key features: SFLA, Year Built, Beds, Baths
-    // We normalize roughly by standard deviation to give equal weight
     const user = state.inputs;
 
+    // Similarity Weights
+    // Single Family vs Condo is a huge difference. We penalize heavily but don't hard filter (unless strict).
+
     const similar = candidates.map(r => {
-        const d_sqft = Math.abs(r.sfla - user.sfla) / 500; // 500 sqft diff is 1 unit
-        const d_year = Math.abs(r.year_blt - user.year_blt) / 10; // 10 years is 1 unit
+        // 1. Property Type Mismatch
+        const rType = inferPropertyType(r);
+        const typePenalty = (rType !== user.prop_type) ? 50 : 0; // Massive penalty for wrong type
+
+        // 2. Square Footage (500sqft = 1 unit)
+        const d_sqft = Math.abs(r.sfla - user.sfla) / 500;
+
+        // 3. Year Built (10 years = 1 unit)
+        const d_year = Math.abs(r.year_blt - user.year_blt) / 10;
+
+        // 4. Bedrooms (1 bed = 1 unit)
         const bedroomCount = r.bedroom_count || r.beds || 3;
         const d_beds = Math.abs(bedroomCount - user.beds) / 1;
 
+        // 5. Bathrooms (1 bath = 1 unit)
+        const bathCount = r.bath_tot || r.baths || 2;
+        const d_baths = Math.abs(bathCount - user.baths) / 1;
+
+        // 6. Distance to Lift (1 mile = 1 unit)
+        const rDist = calculateDistances(r).dist_to_lift;
+        const d_lift = Math.abs(rDist - user.dist_to_lift) * 1.0;
+
         // Total Distance
-        const distance = d_sqft + d_year + d_beds;
+        const distance = d_sqft + d_year + d_beds + d_baths + d_lift + typePenalty;
 
         // Similarity % (heuristic)
-        const similarity = Math.max(10, 100 - (distance * 10));
+        const similarity = Math.max(0, 100 - (distance * 10));
 
         return { ...r, similarity, distance };
     });
@@ -1483,14 +1656,27 @@ function renderComps(predictedPrice) {
             <div class="comp-price">${formatCurrency(r.est_price || r.docfee1)}</div>
             <div class="comp-detail">
                 <span>Sold: ${r.recdate1 ? r.recdate1.split(' ')[0] : 'N/A'}</span>
-                <span>${r.styledesc || 'Ref'} • ${r.sfla} SqFt</span>
+                <span>${r.styledesc || inferPropertyType(r)} • ${r.sfla} SqFt</span>
             </div>
             <div class="comp-detail">
-                <span>${r.bedroom_count || r.beds || 0} Bed / ${r.bath_count || r.baths || r.bath_tot || 0} Bath</span>
+                <span>${r.bedroom_count || r.beds || 0} Bed / ${r.bath_tot || r.baths || 0} Bath</span>
                 <span>${r.year_blt} Built</span>
+            </div>
+            <div class="comp-detail">
+                 <span>⛷️ ${calculateDistances(r).dist_to_lift.toFixed(1)} mi to Lift</span>
             </div>
         </div>
     `).join('');
+}
+
+function inferPropertyType(r) {
+    const desc = (r.subdesc || '') + ' ' + (r.styledesc || '');
+    if (r.abst1 === 1233 || desc.includes('CONDO')) return 'Condo';
+    if (r.abst1 === 1230 || desc.includes('TOWNHOME') || desc.includes('Townhome')) return 'Townhouse';
+    if (r.abst1 === 1112 || desc.includes('SINGLE FAM') || desc.includes('1 Story') || desc.includes('2 Story')) return 'Single Family';
+    if (r.abst1 === 1135 || r.abst1 === 100) return 'Vacant Land';
+    if (r.abst1 === 1113 || desc.includes('DUPLEX') || desc.includes('TRIPLEX')) return 'Duplex-Triplex';
+    return 'Single Family'; // Default fallback
 }
 
 function getTownCode(city) {
@@ -1521,6 +1707,7 @@ async function renderSHAPExplainer(currentPrice) {
         { key: 'year_blt', label: 'Year Built' },
         { key: 'garage_size', label: 'Garage' },
         { key: 'acres', label: 'Lot Size' },
+        { key: 'dist_to_lift', label: 'Dist. to Lift' },
         { key: 'mortgage_rate', label: 'Mortgage Rate' },
         { key: 'cpi', label: 'CPI (Inflation)' },
         { key: 'sp500', label: 'S&P 500' },
@@ -1559,7 +1746,7 @@ async function renderSHAPExplainer(currentPrice) {
         const altPrice = await runInference(altInputs);
         const delta = currentPrice - altPrice;
 
-        if (Math.abs(delta) > 100) {
+        if (Math.abs(delta) > 1) {
             contributions.push({ label: feat.label, delta: delta });
         }
     }
@@ -1639,10 +1826,13 @@ async function runInference(customInputs = null) {
 
         if (activeModel === 'nn') {
             const logPrice = rawOutput * meta.y_scale[0] + meta.y_mean[0];
-            return Math.exp(logPrice) - 1; // Corresponds to Math.expm1 in python or JS
+            return Math.exp(logPrice) - 1;
         } else {
             return Math.exp(rawOutput) - 1;
         }
+    } catch (e) {
+        console.error("Inference Error:", e);
+        return 0;
     } finally {
         inferenceMutex = false;
     }
@@ -1657,14 +1847,30 @@ function calculateDistances(inputs) {
         "KEYSTONE": { dist_breck: 14, dist_keystone: 0.5, dist_copper: 15, dist_abasin: 6, dist_dillon: 6 },
         "COPPER MOUNTAIN": { dist_breck: 17, dist_keystone: 18, dist_copper: 0.5, dist_abasin: 21, dist_dillon: 12 }
     };
-    const dists = distMap[inputs.city] || distMap["BRECKENRIDGE"];
-    const dist_to_lift = Math.min(dists.dist_breck, dists.dist_keystone, dists.dist_copper, dists.dist_abasin);
+
+    // Default distances based on City Center
+    const defaults = distMap[inputs.city] || distMap["BRECKENRIDGE"];
+
+    // 1. If 'dist_to_lift' is explicitly provided (e.g. from user input slider), use it.
+    let dist_to_lift = inputs.dist_to_lift;
+
+    // 2. If no explicit 'dist_to_lift', try to calculate it from the object's OWN specific distances (e.g. comp record)
+    if (dist_to_lift === undefined || dist_to_lift === null) {
+        if (inputs.dist_breck !== undefined) {
+            // Record has specific coordinates
+            dist_to_lift = Math.min(inputs.dist_breck, inputs.dist_keystone, inputs.dist_copper, inputs.dist_abasin);
+        } else {
+            // Fallback to City Center defaults
+            dist_to_lift = Math.min(defaults.dist_breck, defaults.dist_keystone, defaults.dist_copper, defaults.dist_abasin);
+        }
+    }
 
     // Normalize city names for model compatibility (e.g., matching metadata categories)
     let modelCity = inputs.city;
     if (modelCity === "COPPER MOUNTAIN") modelCity = "COPPERMOUNTAIN";
 
-    return { ...inputs, ...dists, dist_to_lift, city: modelCity };
+    // Merge: Defaults -> Inputs (Specifics overwrite defaults) -> Calculated Fields
+    return { ...defaults, ...inputs, dist_to_lift, city: modelCity };
 }
 
 function transformInputs(inputs, meta) {
@@ -1680,23 +1886,45 @@ function transformInputs(inputs, meta) {
     return vector;
 }
 
+function deleteModelLocally(runId) {
+    if (!confirm(`Are you sure you want to remove Run #${runId} from the list? (This is local only)`)) return;
+
+    let hidden = JSON.parse(localStorage.getItem('hiddenRuns') || '[]');
+    if (!hidden.includes(runId)) {
+        hidden.push(runId);
+        localStorage.setItem('hiddenRuns', JSON.stringify(hidden));
+    }
+
+    // Refresh Leaderboard
+    loadLeaderboard();
+}
+
 async function loadLeaderboard() {
     try {
         // Cache bust the history file to ensure we get new runs
         const resp = await fetch(`data/experiment_history.json?t=${new Date().getTime()}`);
-        const history = await resp.json();
+        let history = await resp.json();
+
+        // Filter out hidden runs
+        const hidden = JSON.parse(localStorage.getItem('hiddenRuns') || '[]');
+        history = history.filter(h => !hidden.includes(h.run_id));
+
         const tbody = document.querySelector('#leaderboard tbody');
         if (!tbody) return;
         tbody.innerHTML = '';
+
+        if (history.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color: #94a3b8; padding: 20px;">No active experiments found.</td></tr>';
+            return;
+        }
 
         const bestRun = history.reduce((prev, curr) => (prev.metrics.mae < curr.metrics.mae) ? prev : curr);
         const bestRunId = bestRun.run_id;
 
         // Set initial active run if not set
-        if (!state.activeRun) {
+        if (!state.activeRun || hidden.includes(state.activeRun.run_id)) {
             state.activeRun = bestRun;
-            document.getElementById('model-mae').textContent = `$${Math.round(bestRun.metrics.mae).toLocaleString()}`;
-            populateVersionSelector(state.activeModel, bestRun.run_id);
+            await selectModelVersion(bestRun); // Ensure we load it
         }
 
         history.sort((a, b) => b.run_id - a.run_id).forEach(run => {
@@ -1706,9 +1934,21 @@ async function loadLeaderboard() {
             if (run.run_id === bestRunId) tr.classList.add('best-run');
             if (state.activeRun && run.run_id === state.activeRun.run_id) tr.classList.add('selected-run');
 
-            tr.innerHTML = `<td>#${run.run_id}</td><td>${run.model_name}</td><td>$${Math.round(run.metrics.mae).toLocaleString()}</td><td>${run.metrics.r2?.toFixed(3) || '-'}</td><td>${run.run_id === bestRunId ? '🏆 Champion' : '✅ Verified'}</td>`;
+            tr.innerHTML = `
+                <td>#${run.run_id}</td>
+                <td>${run.model_name}</td>
+                <td>$${Math.round(run.metrics.mae).toLocaleString()}</td>
+                <td>${run.metrics.r2?.toFixed(3) || '-'}</td>
+                <td>${run.run_id === bestRunId ? '🏆 Champion' : '✅ Verified'}</td>
+                <td style="text-align: center;">
+                    <button class="delete-btn" title="Remove from list" style="background:none; border:none; color:#ef4444; font-size:1.2em; cursor:pointer;" onclick="event.stopPropagation(); deleteModelLocally(${run.run_id});">&times;</button>
+                </td>
+            `;
 
-            tr.addEventListener('click', async () => {
+            tr.addEventListener('click', async (e) => {
+                // If clicked delete button, do nothing (event propagation stopped inline)
+                if (e.target.closest('.delete-btn')) return;
+
                 await selectModelVersion(run);
                 // Render model detail view with SHAP/PDP
                 if (state.activePage === 'experiments') {

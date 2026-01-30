@@ -43,25 +43,27 @@ training:
     max_depth: 10
     
   nn:
-    epochs: 750
-    lr: 0.0008
+    epochs: 1000
+    lr: 0.0004
     batch_size: 128
-    hidden_dims: [256, 64, 32]
+    hidden_dims: [256, 128, 64]
     monotonicity:
       enabled: true
-      penalty_weight: 0.005
+      penalty_weight: 0.1
       constraints:
-        sfla: 2
-        beds: 1
+        sfla: 1
+        beds: 0
         baths: 0
-        year_blt: 1
+        year_blt: 0
         garage_size: 0
-        acres: 1
-        grade_numeric: 1
-        cond_numeric: 1
+        acres: 0
+        grade_numeric: 0
+        cond_numeric: 0
         scenic_view: 0
-        mortgage_rate: 0
+        mortgage_rate: -1
         dist_to_lift: -1
         dist_breck: 0
         dist_keystone: 0
         dist_copper: 0
+        cpi: 1
+        sp500: 1

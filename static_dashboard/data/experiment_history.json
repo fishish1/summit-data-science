@@ -1064,5 +1064,417 @@
         "importance": 0.029245299222197953
       }
     ]
+  },
+  {
+    "run_id": 13,
+    "timestamp": "2026-01-30T12:05:22.985474",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 251091.97777368812,
+      "r2": -6.252706289510385
+    },
+    "parameters": {
+      "epochs": 1200,
+      "lr": 0.0008,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        64,
+        32
+      ],
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.005,
+        "constraints": {
+          "sfla": 1,
+          "beds": 0,
+          "baths": 0,
+          "year_blt": 0,
+          "garage_size": 0,
+          "acres": 0,
+          "grade_numeric": 0,
+          "cond_numeric": 0,
+          "scenic_view": 0,
+          "mortgage_rate": 0,
+          "dist_to_lift": -1,
+          "dist_breck": 0,
+          "dist_keystone": 0,
+          "dist_copper": 0
+        }
+      }
+    },
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "cpi",
+        "importance": 0.3419556604052879
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.28037198894897836
+      },
+      {
+        "feature": "sfla",
+        "importance": 0.25093643275828365
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.13538615948541666
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.10620862709738858
+      },
+      {
+        "feature": "city_SILVERTHORNE",
+        "importance": 0.09243985186704336
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.07669407019515999
+      },
+      {
+        "feature": "dist_keystone",
+        "importance": 0.07289660709843285
+      },
+      {
+        "feature": "acres",
+        "importance": 0.04704491452218949
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.04474077667028891
+      },
+      {
+        "feature": "city_BRECKENRIDGE",
+        "importance": 0.04166425625219913
+      },
+      {
+        "feature": "dist_dillon",
+        "importance": 0.037783994895658556
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.0365626622390336
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.03149647380523718
+      },
+      {
+        "feature": "garage_size",
+        "importance": 0.03039048089395459
+      }
+    ]
+  },
+  {
+    "run_id": 14,
+    "timestamp": "2026-01-30T12:25:02.844753",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 203367.42610499408,
+      "r2": -0.18329077361096147
+    },
+    "parameters": {
+      "epochs": 800,
+      "lr": 0.0008,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        64,
+        32
+      ],
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.005,
+        "constraints": {
+          "sfla": 1,
+          "beds": 0,
+          "baths": 0,
+          "year_blt": 0,
+          "garage_size": 0,
+          "acres": 0,
+          "grade_numeric": 0,
+          "cond_numeric": 0,
+          "scenic_view": 0,
+          "mortgage_rate": -1,
+          "dist_to_lift": -1,
+          "dist_breck": 0,
+          "dist_keystone": 0,
+          "dist_copper": 0,
+          "cpi": 1
+        }
+      }
+    },
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "cpi",
+        "importance": 0.363770785916998
+      },
+      {
+        "feature": "dist_to_lift",
+        "importance": 0.3003572313376316
+      },
+      {
+        "feature": "sfla",
+        "importance": 0.2613737664618106
+      },
+      {
+        "feature": "dist_keystone",
+        "importance": 0.11659653290067105
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.10287872252598385
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.10265679251847755
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.0961761125841822
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.055991285615058485
+      },
+      {
+        "feature": "acres",
+        "importance": 0.04888280648800743
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.04825568568040595
+      },
+      {
+        "feature": "city_BRECKENRIDGE",
+        "importance": 0.04635721359655421
+      },
+      {
+        "feature": "city_SILVERTHORNE",
+        "importance": 0.04584880852916759
+      },
+      {
+        "feature": "dist_dillon",
+        "importance": 0.042547109133132255
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.042401275701037966
+      },
+      {
+        "feature": "garage_size",
+        "importance": 0.033648012048654787
+      }
+    ]
+  },
+  {
+    "run_id": 15,
+    "timestamp": "2026-01-30T12:43:29.684279",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 192677.3857607967,
+      "r2": 0.07272885359001102
+    },
+    "parameters": {
+      "epochs": 1000,
+      "lr": 0.0004,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128,
+        64
+      ],
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.1,
+        "constraints": {
+          "sfla": 1,
+          "beds": 0,
+          "baths": 0,
+          "year_blt": 0,
+          "garage_size": 0,
+          "acres": 0,
+          "grade_numeric": 0,
+          "cond_numeric": 0,
+          "scenic_view": 0,
+          "mortgage_rate": -1,
+          "dist_to_lift": -1,
+          "dist_breck": 0,
+          "dist_keystone": 0,
+          "dist_copper": 0,
+          "cpi": 1
+        }
+      }
+    },
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "cpi",
+        "importance": 0.38519539023219523
+      },
+      {
+        "feature": "dist_to_lift",
+        "importance": 0.3555711746327126
+      },
+      {
+        "feature": "sfla",
+        "importance": 0.3075053652498743
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.08881493616971337
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.08741508347279954
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.08557825836825009
+      },
+      {
+        "feature": "dist_dillon",
+        "importance": 0.05519991632675356
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.053574735461153995
+      },
+      {
+        "feature": "city_KEYSTONE",
+        "importance": 0.052464522339868765
+      },
+      {
+        "feature": "city_SILVERTHORNE",
+        "importance": 0.04849819007819686
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.04673634342409208
+      },
+      {
+        "feature": "acres",
+        "importance": 0.04378744163261764
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.03970858564314008
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.03941218163492656
+      },
+      {
+        "feature": "mortgage_rate",
+        "importance": 0.03154645592391466
+      }
+    ]
+  },
+  {
+    "run_id": 16,
+    "timestamp": "2026-01-30T13:04:41.960780",
+    "model_name": "price_net_macro",
+    "metrics": {
+      "mae": 258088.96418260888,
+      "r2": -6.854514514823331
+    },
+    "parameters": {
+      "epochs": 1000,
+      "lr": 0.0004,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128,
+        64
+      ],
+      "monotonicity": {
+        "enabled": true,
+        "penalty_weight": 0.1,
+        "constraints": {
+          "sfla": 1,
+          "beds": 0,
+          "baths": 0,
+          "year_blt": 0,
+          "garage_size": 0,
+          "acres": 0,
+          "grade_numeric": 0,
+          "cond_numeric": 0,
+          "scenic_view": 0,
+          "mortgage_rate": -1,
+          "dist_to_lift": -1,
+          "dist_breck": 0,
+          "dist_keystone": 0,
+          "dist_copper": 0,
+          "cpi": 1,
+          "sp500": 1
+        }
+      }
+    },
+    "tags": {},
+    "shap_summary": [
+      {
+        "feature": "cpi",
+        "importance": 0.3753394570720641
+      },
+      {
+        "feature": "dist_to_lift",
+        "importance": 0.32051197309224366
+      },
+      {
+        "feature": "sfla",
+        "importance": 0.29711394380449385
+      },
+      {
+        "feature": "city_FRISCO",
+        "importance": 0.11401122008588033
+      },
+      {
+        "feature": "dist_copper",
+        "importance": 0.1002556702948916
+      },
+      {
+        "feature": "summit_pop",
+        "importance": 0.06394731219613421
+      },
+      {
+        "feature": "year_blt",
+        "importance": 0.057772595768049634
+      },
+      {
+        "feature": "sp500",
+        "importance": 0.05767597466848581
+      },
+      {
+        "feature": "acres",
+        "importance": 0.05293377713545129
+      },
+      {
+        "feature": "prop_type_Single Family",
+        "importance": 0.05255420904769758
+      },
+      {
+        "feature": "prop_type_Condo",
+        "importance": 0.05077819370604155
+      },
+      {
+        "feature": "dist_keystone",
+        "importance": 0.04963338338591547
+      },
+      {
+        "feature": "dist_abasin",
+        "importance": 0.04775221165824926
+      },
+      {
+        "feature": "dist_breck",
+        "importance": 0.04184098201311902
+      },
+      {
+        "feature": "dist_dillon",
+        "importance": 0.03721173078732685
+      }
+    ]
   }
 ]

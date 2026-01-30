@@ -675,6 +675,43 @@ select:focus {
     display: block;
 }
 
+/* Presets */
+.preset-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.preset-label {
+    font-size: 0.8rem;
+    color: var(--ink-light);
+    font-weight: 500;
+    min-width: 60px;
+}
+
+.preset-buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.preset-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--ink);
+}
+
+.preset-btn:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
 /* Story Tab Styles */
 .story-tabs {
     display: flex;
@@ -1328,6 +1365,7 @@ input:checked+.slider:before {
         padding: 0;
     }
 }
+
 .comps-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

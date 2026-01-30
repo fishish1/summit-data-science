@@ -44,10 +44,21 @@ def train_macro_nn(df=None, params_override=None):
     if df is None: df = load_and_prep_data()
     numeric_features = CONFIG['features']['numeric']
     categorical_features = CONFIG['features']['categorical']
-    # Filter to existing columns
-    numeric_features = [f for f in numeric_features if f in df.columns]
-    df = df.replace([np.inf, -np.inf], np.nan).dropna(subset=numeric_features + categorical_features + ['price'])
+    # Initial dropna with currently available columns
+    existing_numeric = [f for f in numeric_features if f in df.columns]
+    df = df.replace([np.inf, -np.inf], np.nan).dropna(subset=existing_numeric + categorical_features + ['price'])
     df = df[df['price'] > 100000]
+    
+    # Calculate derived feature: dist_to_lift
+    lift_cols = ['dist_breck', 'dist_keystone', 'dist_copper', 'dist_abasin']
+    valid_lifts = [c for c in lift_cols if c in df.columns]
+    if valid_lifts:
+        df['dist_to_lift'] = df[valid_lifts].min(axis=1)
+        df['dist_to_lift'] = df['dist_to_lift'].replace([np.inf, -np.inf], np.nan)
+    
+    # Filter to existing columns (now including derived ones)
+    numeric_features = [f for f in numeric_features if f in df.columns]
+
     X, y = df[numeric_features + categorical_features], df['price'].values
     preprocessor = ColumnTransformer([('num', StandardScaler(), numeric_features), ('cat', OneHotEncoder(handle_unknown='ignore', sparse_output=False), categorical_features)])
     X_processed = preprocessor.fit_transform(X)
