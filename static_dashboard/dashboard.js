@@ -24,6 +24,48 @@ const POP_DATA = {
     2000: 23500, 2010: 28000, 2020: 31000, 2024: 31500
 };
 
+function getThemeLayout() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const isMobile = window.innerWidth < 1024;
+
+    return {
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        font: {
+            family: 'Space Grotesk, sans-serif',
+            color: isDark ? '#f8fafc' : '#1e293b',
+            size: isMobile ? 10 : 12
+        },
+        legend: {
+            orientation: 'h',
+            yanchor: 'top',
+            y: isMobile ? -0.4 : -0.2, // Move legend further down on mobile
+            xanchor: 'center',
+            x: 0.5,
+            itemwidth: 30, // More compact legend items
+            font: { size: isMobile ? 9 : 11 }
+        },
+        xaxis: {
+            gridcolor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
+            zerolinecolor: isDark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)',
+            tickfont: { size: isMobile ? 9 : 11 }
+        },
+        yaxis: {
+            gridcolor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
+            zerolinecolor: isDark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)',
+            tickfont: { size: isMobile ? 9 : 11 },
+            automargin: true
+        },
+        margin: {
+            t: isMobile ? 60 : 80,
+            b: isMobile ? 120 : 100, // Extra bottom margin for legend
+            l: isMobile ? 40 : 80,
+            r: isMobile ? 20 : 80
+        },
+        autosize: true
+    };
+}
+
 function getPop(year) {
     const years = Object.keys(POP_DATA).map(Number).sort((a, b) => a - b);
     if (year <= years[0]) return POP_DATA[years[0]];
@@ -38,6 +80,28 @@ function getPop(year) {
         }
     }
     return 31000;
+}
+
+function calculateRegression(x, y) {
+    const n = x.length;
+    let sumX = 0, sumY = 0, sumXY = 0, sumX2 = 0;
+    for (let i = 0; i < n; i++) {
+        sumX += x[i];
+        sumY += y[i];
+        sumXY += x[i] * y[i];
+        sumX2 += x[i] * x[i];
+    }
+    const slope = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+    const intercept = (sumY - slope * sumX) / n;
+
+    const xMin = Math.min(...x);
+    const xMax = Math.max(...x);
+    return {
+        x: [xMin, xMax],
+        y: [slope * xMin + intercept, slope * xMax + intercept],
+        slope: slope,
+        intercept: intercept
+    };
 }
 
 let state = {
@@ -56,9 +120,232 @@ let state = {
 // --- Initialization ---
 document.addEventListener('DOMContentLoaded', async () => {
     initUI();
+    initTheme();
+    initScrolly(); // Initialize scrollytelling observer
+    showSkeletons();
     await loadModels();
+    hideSkeletons();
     updateDashboard();
 });
+
+function showSkeletons() {
+    const charts = ['main-chart', 'chart-sqft', 'chart-rates', 'chart-market-trends', 'chart-buyer-origins', 'chart-seasonality', 'chart-supply', 'chart-correlations'];
+    charts.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.classList.add('skeleton-loading');
+            el.innerHTML = '<div class="skeleton" style="height: 100%; width: 100%;"></div>';
+        }
+    });
+}
+
+function hideSkeletons() {
+    const charts = ['main-chart', 'chart-sqft', 'chart-rates', 'chart-market-trends', 'chart-buyer-origins', 'chart-seasonality', 'chart-supply', 'chart-correlations'];
+    charts.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.classList.remove('skeleton-loading');
+            el.innerHTML = ''; // Clear skeleton before Plotly takes over
+        }
+    });
+}
+
+function initTheme() {
+    const toggles = document.querySelectorAll('.theme-toggle');
+    if (toggles.length === 0) return;
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            updateThemeIcon(next);
+
+            // Refresh charts for new theme
+            updateDashboard();
+        });
+    });
+}
+
+function updateThemeIcon(theme) {
+    const icons = document.querySelectorAll('.theme-icon');
+    icons.forEach(icon => {
+        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    });
+}
+
+// --- Scrollytelling ---
+function initScrolly() {
+    const steps = document.querySelectorAll('.scrolly-step');
+    const overlay = document.getElementById('scrolly-viz-overlay');
+    const progressBar = document.getElementById('scrolly-progress-bar');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -40% 0px',
+        threshold: 0.1
+    };
+
+    const handleIntersect = (entries) => {
+        if (window.innerWidth < 1024) return;
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const step = entry.target.dataset.step;
+                activateStep(step);
+                updateProgress();
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+    steps.forEach(step => observer.observe(step));
+
+    const updateProgress = () => {
+        if (progressBar) {
+            const container = document.querySelector('.scrolly-narrative');
+            if (container) {
+                const scrollPos = window.scrollY - container.offsetTop;
+                const totalScroll = container.scrollHeight - window.innerHeight;
+                const progress = Math.max(0, Math.min(100, (scrollPos / totalScroll) * 100));
+                progressBar.style.width = `${progress}%`;
+            }
+        }
+    };
+
+    window.addEventListener('scroll', updateProgress);
+
+    // Integrated Toggles
+    const storyBuyerToggle = document.getElementById('story-toggle-buyer-percentage');
+    if (storyBuyerToggle) {
+        storyBuyerToggle.onchange = (e) => {
+            if (typeof window.renderBuyerOrigins === 'function') {
+                window.renderBuyerOrigins(e.target.checked);
+            }
+        };
+    }
+
+    const storyMarketToggle = document.getElementById('story-toggle-market-aggregate');
+    if (storyMarketToggle) {
+        storyMarketToggle.onchange = (e) => {
+            console.log("Market toggle clicked:", e.target.checked);
+            if (typeof window.renderMarketTrends === 'function') {
+                window.renderMarketTrends(e.target.checked);
+            }
+        };
+    }
+
+    // Responsive Layout Management
+    const syncLayout = () => {
+        const isMobile = window.innerWidth < 1024;
+        const vizTargets = ['landscape', 'ski-lift', 'market-cycles', 'buyer-origins', 'seasonality', 'supply', 'deep-dive'];
+        const sharedTarget = document.getElementById('scrolly-viz-target');
+
+        vizTargets.forEach(stepId => {
+            const chartId = getTargetIdForStep(stepId);
+            const chartEl = document.getElementById(chartId);
+            const mobilePlaceholder = document.getElementById(`mobile-viz-${stepId}`);
+
+            if (chartEl && mobilePlaceholder && sharedTarget) {
+                if (isMobile) {
+                    if (chartEl.parentElement !== mobilePlaceholder) {
+                        mobilePlaceholder.appendChild(chartEl);
+                        chartEl.classList.remove('hidden');
+                        if (chartId.startsWith('chart-') || chartId === 'distance-map') Plotly.Plots.resize(chartEl);
+                        if (chartId === 'map-hotspots' && map) map.invalidateSize();
+                    }
+                } else {
+                    if (chartEl.parentElement !== sharedTarget) {
+                        sharedTarget.appendChild(chartEl);
+                    }
+                }
+            }
+        });
+
+        if (!isMobile) activateStep(steps[0].dataset.step);
+    };
+
+    window.addEventListener('resize', syncLayout);
+    syncLayout();
+
+    function activateStep(stepId) {
+        if (window.innerWidth < 1024) return;
+
+        steps.forEach(s => s.classList.remove('active'));
+        const activeStepEl = document.querySelector(`.scrolly-step[data-step="${stepId}"]`);
+        if (activeStepEl) activeStepEl.classList.add('active');
+
+        const vizIds = ['map-hotspots', 'distance-map', 'chart-market-trends', 'chart-buyer-origins', 'chart-seasonality', 'chart-supply', 'scrolly-data-explorer'];
+        vizIds.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.classList.add('hidden');
+        });
+
+        const targetId = getTargetIdForStep(stepId);
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+            targetEl.classList.remove('hidden');
+            if (targetId.startsWith('chart-') || targetId === 'distance-map') Plotly.Plots.resize(targetEl);
+            if (targetId === 'map-hotspots' && map) map.invalidateSize();
+            if (targetId === 'scrolly-data-explorer') renderScrollyExplorer();
+        }
+
+        if (overlay) overlay.textContent = getOverlayTextForStep(stepId);
+        if (stepId === 'landscape' && map) map.flyTo([39.55, -106.05], 11);
+    }
+
+    async function renderScrollyExplorer() {
+        const tableBody = document.querySelector('#scrolly-property-table tbody');
+        const tableHead = document.querySelector('#scrolly-property-table thead');
+        if (!tableBody || tableBody.children.length > 0) return; // Only render once
+
+        const resp = await fetch('data/records_sample_curated.json');
+        const data = await resp.json();
+        const cols = ['address', 'city', 'year_blt', 'sfla', 'totactval'];
+
+        tableHead.innerHTML = `<tr>${cols.map(c => `<th>${c.toUpperCase()}</th>`).join('')}</tr>`;
+        data.slice(0, 50).forEach(r => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = cols.map(c => {
+                let val = r[c];
+                if (c === 'totactval') val = `$${val.toLocaleString()}`;
+                return `<td>${val}</td>`;
+            }).join('');
+            tableBody.appendChild(tr);
+        });
+    }
+
+    function getTargetIdForStep(stepId) {
+        const stepMap = {
+            'landscape': 'map-hotspots',
+            'ski-lift': 'distance-map',
+            'market-cycles': 'chart-market-trends',
+            'buyer-origins': 'chart-buyer-origins',
+            'seasonality': 'chart-seasonality',
+            'supply': 'chart-supply',
+            'deep-dive': 'scrolly-data-explorer'
+        };
+        return stepMap[stepId] || 'map-hotspots';
+    }
+
+    function getOverlayTextForStep(stepId) {
+        const labelMap = {
+            'landscape': '📍 Points of Interest',
+            'ski-lift': '❄️ Ski Lift Proximity',
+            'market-cycles': '📈 Market Cycles',
+            'buyer-origins': '🏠 Buyer Demographics',
+            'seasonality': '🌡️ Sales Seasonality',
+            'supply': '🏗️ Housing Growth',
+            'deep-dive': '🔍 Raw Data Explorer'
+        };
+        return labelMap[stepId] || '';
+    }
+}
 
 function initUI() {
     // Mobile Menu Toggle
@@ -148,6 +435,7 @@ function initUI() {
         radio.addEventListener('change', (e) => handleModelToggle(e.target.value));
     });
 
+    // Theme Toggle is handled in initTheme()
     loadLeaderboard();
 }
 
@@ -372,31 +660,30 @@ async function renderOverviewData() {
         const container = document.getElementById('raw-sample-container');
         const toggle = document.getElementById('toggle-all-cols');
 
-        const renderTable = (showAll) => {
-            // Basic columns vs All
-            const displayCols = showAll ? Object.keys(data[0]) : ['address', 'city', 'year_blt', 'sfla', 'totactval'];
+        if (container) {
+            const renderTable = (showAll) => {
+                const displayCols = showAll ? Object.keys(data[0]) : ['address', 'city', 'year_blt', 'sfla', 'totactval'];
+                let html = '<table class="data-table"><thead><tr>';
+                displayCols.forEach(c => html += `<th>${c}</th>`);
+                html += '</tr></thead><tbody>';
 
-            // Wrap in scroll container for sticky headers (handled by outer container now)
-            let html = '<table class="data-table"><thead><tr>';
-            displayCols.forEach(c => html += `<th>${c}</th>`);
-            html += '</tr></thead><tbody>';
-
-            data.slice(0, 50).forEach(r => { // Show more rows now that it scrolls
-                html += '<tr>';
-                displayCols.forEach(c => {
-                    let val = r[c];
-                    if (typeof val === 'number' && (c.includes('val') || c.includes('price'))) val = `$${val.toLocaleString()}`;
-                    html += `<td>${val}</td>`;
+                data.slice(0, 50).forEach(r => {
+                    html += '<tr>';
+                    displayCols.forEach(c => {
+                        let val = r[c];
+                        if (typeof val === 'number' && (c.includes('val') || c.includes('price'))) val = `$${val.toLocaleString()}`;
+                        html += `<td>${val}</td>`;
+                    });
+                    html += '</tr>';
                 });
-                html += '</tr>';
-            });
-            html += '</tbody></table>';
-            container.innerHTML = html;
-        };
+                html += '</tbody></table>';
+                container.innerHTML = html;
+            };
 
-        renderTable(false);
-        if (toggle) {
-            toggle.onchange = (e) => renderTable(e.target.checked);
+            renderTable(false);
+            if (toggle) {
+                toggle.onchange = (e) => renderTable(e.target.checked);
+            }
         }
 
     } catch (e) { console.error('Overview Error:', e); }
@@ -431,46 +718,123 @@ async function renderDistanceAnalysis() {
             hoverinfo: 'text'
         };
 
-        const layout = {
+        const isMobile = window.innerWidth < 1024;
+        const designLayout = {
             mapbox: {
                 style: "carto-positron",
                 center: { lat: 39.55, lon: -106.05 },
-                zoom: 9.5,
-                layers: [
-                    {
-                        source: liftGeoJSON,
-                        type: "line",
-                        color: "red",
-                        line: { width: 2 }
-                    }
-                ]
+                zoom: isMobile ? 10 : 11
             },
             margin: { t: 0, b: 0, l: 0, r: 0 },
-            showlegend: false
+            showlegend: false,
+            height: isMobile ? 400 : 700
         };
+        Plotly.newPlot('distance-map', [trace], designLayout, { responsive: true });
 
-        Plotly.newPlot('distance-map', [trace], layout);
     } catch (e) { console.error("Distance Map Error", e); }
 }
 
+let trendsCache = null;
+let ratesCache = null;
+
+window.renderMarketTrends = async (showAggregate = false) => {
+    try {
+        if (!trendsCache) trendsCache = await (await fetch('data/market_trends.json')).json();
+        if (!ratesCache) ratesCache = await (await fetch('data/mortgage_history.json')).json();
+
+        const trends = trendsCache;
+        const rates = ratesCache;
+        const cities = ["BRECKENRIDGE", "FRISCO", "SILVERTHORNE", "DILLON", "KEYSTONE"];
+
+        let traces = [];
+
+        if (showAggregate) {
+            // Group by year and average the 3yr MA across cities
+            const years = [...new Set(trends.map(d => d.tx_year))].sort();
+            const aggData = years.map(y => {
+                const yearCityData = trends.filter(d => d.tx_year === y && cities.includes(d.city));
+                const avg = yearCityData.reduce((sum, d) => sum + d.avg_price_3yr_ma, 0) / (yearCityData.length || 1);
+                return { tx_year: y, avg_price_3yr_ma: avg };
+            }).filter(d => d.avg_price_3yr_ma > 0);
+
+            traces.push({
+                x: aggData.map(d => d.tx_year),
+                y: aggData.map(d => d.avg_price_3yr_ma),
+                name: 'County Average (3yr MA)',
+                type: 'scatter',
+                line: { color: CONFIG.colors.accent, width: 4 } // Use accent color for visibility
+            });
+        } else {
+            traces = cities.map((city, idx) => {
+                const cityData = trends.filter(d => d.city === city);
+                return {
+                    x: cityData.map(d => d.tx_year),
+                    y: cityData.map(d => d.avg_price_3yr_ma),
+                    name: city,
+                    type: 'scatter',
+                    line: { width: 2 }
+                };
+            });
+        }
+
+        // Add Mortgage Rate Trace (Secondary Axis)
+        traces.push({
+            x: rates.map(d => d.year.toString()),
+            y: rates.map(d => d.value),
+            name: '30Y Mortgage Rate',
+            type: 'scatter',
+            yaxis: 'y2',
+            line: { color: '#ef4444', width: 3, dash: 'dot' },
+            hovertemplate: '%{y:.2f}%<extra></extra>'
+        });
+
+        const layout = {
+            ...getThemeLayout(),
+            title: showAggregate ? 'County-Wide Trends vs Rates' : 'Town-Level Trends vs Rates',
+            height: 500,
+            yaxis: {
+                ...getThemeLayout().yaxis,
+                title: 'Avg Price (3yr MA)',
+                tickformat: '$,.0f'
+            },
+            yaxis2: {
+                title: 'Mortgage Rate (%)',
+                overlaying: 'y',
+                side: 'right',
+                range: [0, 20],
+                showgrid: false,
+                titlefont: { color: '#ef4444' },
+                tickfont: { color: '#ef4444' },
+                ticksuffix: '%'
+            },
+            legend: {
+                ...getThemeLayout().legend,
+                y: -0.3 // Push legend down a bit more for double scale
+            }
+        };
+
+        Plotly.newPlot('chart-market-trends', traces, layout, { responsive: true });
+
+    } catch (e) { console.error("Market Trends Error", e); }
+};
+
 async function renderMarketHistory() {
     try {
-        // 1. Price vs Rates
-        const trends = await (await fetch('data/market_trends.json')).json();
-        const cities = ["BRECKENRIDGE", "FRISCO", "SILVERTHORNE", "DILLON", "KEYSTONE"];
-        const traces = cities.map(city => {
-            const cityData = trends.filter(d => d.city === city);
-            return { x: cityData.map(d => d.tx_year), y: cityData.map(d => d.avg_price_3yr_ma), name: city, type: 'scatter' };
-        });
-        Plotly.newPlot('chart-market-trends', traces, { height: 400, margin: { t: 20 }, font: { family: 'Space Grotesk' } }, { responsive: true });
+        // Initial call for each module
+        await window.renderMarketTrends(true);
+        await renderBuyerOriginsModule();
+        await renderSeasonalityHeatmap();
+        await renderSupplyGrowth();
+    } catch (e) { console.error("Market History Wrapper Error", e); }
+}
 
-        // 2. Buyer Origins (Market share) with percentage toggle
+async function renderBuyerOriginsModule() {
+    try {
         const owners = await (await fetch('data/owner_trends.json')).json();
         const types = ['Local (In-County)', 'In-State (Non-Local)', 'Out-of-State'];
 
-        const renderBuyerOrigins = (showPercentage) => {
+        window.renderBuyerOrigins = (showPercentage) => {
             if (showPercentage) {
-                // Calculate percentages per year
                 const yearTotals = {};
                 owners.forEach(d => {
                     if (!yearTotals[d.purchase_year]) yearTotals[d.purchase_year] = 0;
@@ -490,13 +854,12 @@ async function renderMarketHistory() {
                 });
 
                 Plotly.newPlot('chart-buyer-origins', ownerTraces, {
-                    height: 400,
-                    margin: { t: 20 },
-                    yaxis: { title: 'Percentage (%)', ticksuffix: '%' },
-                    font: { family: 'Space Grotesk' }
+                    ...getThemeLayout(),
+                    title: 'Buyer Origin Percentage',
+                    height: 500,
+                    yaxis: { ...getThemeLayout().yaxis, title: 'Percentage (%)', ticksuffix: '%' }
                 }, { responsive: true });
             } else {
-                // Show absolute counts
                 const ownerTraces = types.map(t => {
                     const tData = owners.filter(d => d.location_type === t);
                     return {
@@ -509,24 +872,27 @@ async function renderMarketHistory() {
                 });
 
                 Plotly.newPlot('chart-buyer-origins', ownerTraces, {
-                    height: 400,
-                    margin: { t: 20 },
-                    yaxis: { title: 'Number of Buyers' },
-                    font: { family: 'Space Grotesk' }
+                    ...getThemeLayout(),
+                    title: 'Buyer Count by Origin',
+                    height: 500,
+                    yaxis: { ...getThemeLayout().yaxis, title: 'Number of Buyers' }
                 }, { responsive: true });
             }
         };
 
         // Initial render
-        renderBuyerOrigins(false);
+        window.renderBuyerOrigins(false);
 
         // Set up toggle
         const buyerToggle = document.getElementById('toggle-buyer-percentage');
         if (buyerToggle) {
-            buyerToggle.onchange = (e) => renderBuyerOrigins(e.target.checked);
+            buyerToggle.onchange = (e) => window.renderBuyerOrigins(e.target.checked);
         }
+    } catch (e) { console.error("Buyer Origins Error", e); }
+}
 
-        // 3. Seasonality Heatmap
+async function renderSeasonalityHeatmap() {
+    try {
         const seasonal = await (await fetch('data/seasonality.json')).json();
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         const uniqueCities = [...new Set(seasonal.map(d => d.city))];
@@ -534,13 +900,17 @@ async function renderMarketHistory() {
             const d = seasonal.find(x => x.month_name === m && x.city === c);
             return d ? d.sales_count : 0;
         }));
-        Plotly.newPlot('chart-seasonality', [{ z: zData, x: uniqueCities, y: months, type: 'heatmap', colorscale: 'YlOrRd' }], { height: 400, margin: { t: 20 }, font: { family: 'Space Grotesk' } }, { responsive: true });
+        Plotly.newPlot('chart-seasonality', [{ z: zData, x: uniqueCities, y: months, type: 'heatmap', colorscale: 'RdBu', reversescale: true }], {
+            ...getThemeLayout(),
+            title: 'Monthly Sales Volume by City',
+            height: 500
+        }, { responsive: true });
+    } catch (e) { console.error("Seasonality Error", e); }
+}
 
-        // 4. Supply Growth
-        // 4. Supply Growth vs Density
+async function renderSupplyGrowth() {
+    try {
         const supply = await (await fetch('data/supply_growth.json')).json();
-
-        // Calculate SqFt per Person
         const densityData = supply.map(d => {
             const pop = getPop(d.year_blt);
             return {
@@ -549,7 +919,9 @@ async function renderMarketHistory() {
                 pop: pop,
                 per_capita: d.cumulative_sqft / pop
             };
-        }).filter(d => d.year >= 1960); // Focus on relevant history
+        }).filter(d => d.year >= 1960);
+
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
 
         Plotly.newPlot('chart-supply', [
             {
@@ -558,7 +930,8 @@ async function renderMarketHistory() {
                 name: 'Total SqFt Supply',
                 type: 'scatter',
                 fill: 'tozeroy',
-                line: { color: CONFIG.colors.primary }
+                line: { color: isDark ? '#94a3b8' : CONFIG.colors.primary },
+                fillcolor: isDark ? 'rgba(148, 163, 184, 0.2)' : 'rgba(15, 27, 44, 0.1)'
             },
             {
                 x: densityData.map(d => d.year),
@@ -579,28 +952,21 @@ async function renderMarketHistory() {
                 yaxis: 'y3'
             }
         ], {
-            height: 400,
-            margin: { t: 40, r: 50, l: 60 },
-            yaxis: { title: 'Total Residential SqFt' },
+            ...getThemeLayout(),
+            title: 'Housing Supply Growth vs Population',
+            height: 500,
+            yaxis: { ...getThemeLayout().yaxis, title: 'Total Residential SqFt' },
             yaxis2: {
+                ...getThemeLayout().yaxis,
                 title: 'SqFt / Capita',
                 overlaying: 'y',
                 side: 'right',
                 showgrid: false,
                 titlefont: { color: CONFIG.colors.teal },
                 tickfont: { color: CONFIG.colors.teal }
-            },
-            yaxis3: {
-                overlaying: 'y',
-                side: 'right',
-                showgrid: false,
-                visible: false
-            },
-            legend: { x: 0, y: 1.1, orientation: 'h' },
-            font: { family: 'Space Grotesk' }
+            }
         }, { responsive: true });
-
-    } catch (e) { console.error(e); }
+    } catch (e) { console.error("Supply Growth Error", e); }
 }
 
 
@@ -613,12 +979,98 @@ async function renderCorrelationMatrix() {
         const labels = data.map(d => d.index);
         const zData = labels.map(rowLabel => labels.map(colLabel => data.find(d => d.index === rowLabel)[colLabel] || 0));
 
-        Plotly.newPlot('chart-correlations', [{
+        const chartId = 'chart-correlations';
+        Plotly.newPlot(chartId, [{
             z: zData, x: labels, y: labels,
             type: 'heatmap', colorscale: 'RdBu', zmin: -1, zmax: 1
-        }], { height: 500, margin: { t: 20 }, font: { family: 'Space Grotesk' } }, { responsive: true });
+        }], {
+            ...getThemeLayout(),
+            title: 'Feature Correlation Matrix',
+            height: 500
+        }, { responsive: true });
+
+        // Click Handler for Drill-down
+        document.getElementById(chartId).on('plotly_click', (data) => {
+            if (data.points && data.points.length > 0) {
+                const varX = data.points[0].x;
+                const varY = data.points[0].y;
+                renderDrillDown(varX, varY);
+            }
+        });
+
     } catch (e) {
         console.error('Failed to load correlation matrix:', e);
+    }
+}
+
+async function renderDrillDown(varX, varY) {
+    const drilldownEl = document.getElementById('correlation-drilldown');
+    if (!drilldownEl) return;
+
+    drilldownEl.classList.remove('hidden');
+    document.getElementById('drilldown-var-x').textContent = varX;
+    document.getElementById('drilldown-var-y').textContent = varY;
+
+    // Scroll to view
+    drilldownEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    try {
+        const resp = await fetch('data/records_sample_curated.json');
+        const records = await resp.json();
+
+        // Map display labels to JSON keys
+        const labelToKey = {
+            'Price': 'totactval',
+            'SqFt': 'sfla',
+            'Beds': 'beds',
+            'Baths': 'f_baths',
+            'Year Built': 'year_blt',
+            'Acres': 'acres',
+            'Garage': 'garage_size',
+            'Dist Breck': 'dist_breck'
+        };
+
+        const keyX = labelToKey[varX] || varX;
+        const keyY = labelToKey[varY] || varY;
+
+        const trace = {
+            x: records.map(r => r[keyX]),
+            y: records.map(r => r[keyY]),
+            mode: 'markers',
+            type: 'scatter',
+            marker: {
+                color: CONFIG.colors.accent,
+                opacity: 0.6,
+                size: 8,
+                line: { width: 1, color: 'white' }
+            },
+            text: records.map(r => `${r.address || 'N/A'}<br>${varX}: ${r[keyX]}<br>${varY}: ${r[keyY]}`),
+            hoverinfo: 'text'
+        };
+
+        const reg = calculateRegression(trace.x, trace.y);
+        const regTrace = {
+            x: reg.x,
+            y: reg.y,
+            mode: 'lines',
+            type: 'scatter',
+            name: `Trend (β=${reg.slope.toFixed(2)})`,
+            line: { color: '#ef4444', width: 2, dash: 'dot' }
+        };
+
+        const layout = {
+            ...getThemeLayout(),
+            title: `Correlation Detail: ${varX} vs ${varY}`,
+            xaxis: { ...getThemeLayout().xaxis, title: varX },
+            yaxis: { ...getThemeLayout().yaxis, title: varY },
+            height: 500,
+            showlegend: true
+        };
+
+        Plotly.newPlot('chart-correlation-drilldown', [trace, regTrace], layout);
+
+    } catch (e) {
+        console.error('Failed to render drilldown:', e);
     }
 }
 
@@ -652,20 +1104,22 @@ async function renderModelDetail(run) {
             shapData = await shapResp.json();
         }
 
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
         const shapTrace = {
             y: shapData.map(d => d.feature),
             x: shapData.map(d => d.importance),
             type: 'bar',
             orientation: 'h',
-            marker: { color: CONFIG.colors.primary }
+            marker: { color: isDark ? CONFIG.colors.accent : CONFIG.colors.primary }
         };
 
         Plotly.newPlot('chart-shap-experiments', [shapTrace], {
-            title: `Feature Importance (SHAP): ${run.model_name} (Run #${run.run_id})`,
-            xaxis: { title: 'Mean |SHAP value|' },
-            yaxis: { automargin: true },
-            margin: { l: 150 },
-            font: { family: 'Space Grotesk' }
+            ...getThemeLayout(),
+            title: `Feature Importance (SHAP):<br>${run.model_name} (Run #${run.run_id})`,
+            xaxis: { ...getThemeLayout().xaxis, title: 'Mean |SHAP value|' },
+            yaxis: { ...getThemeLayout().yaxis, automargin: true },
+            height: 500
         }, { responsive: true });
 
         // 2. PDP Lines
@@ -712,10 +1166,11 @@ async function renderModelDetail(run) {
             };
 
             Plotly.newPlot('chart-pdp-experiments', [pdpTrace], {
+                ...getThemeLayout(),
                 title: `Marginal Effect: ${formatFeatureName(feature)}`,
-                yaxis: { title: 'Predicted Log Price' },
-                xaxis: { title: formatFeatureName(feature) },
-                font: { family: 'Space Grotesk' }
+                yaxis: { ...getThemeLayout().yaxis, title: 'Predicted Log Price' },
+                xaxis: { ...getThemeLayout().xaxis, title: formatFeatureName(feature) },
+                height: 500
             }, { responsive: true });
         };
 
@@ -753,16 +1208,20 @@ async function renderPredictor() {
             }).format(price);
 
             // Trigger pulse animation
-            priceEl.classList.remove('pulse-update');
-            void priceEl.offsetWidth; // Force reflow
-            priceEl.classList.add('pulse-update');
+            const card = priceEl.closest('.metric-card');
+            if (card) {
+                card.classList.remove('pulse-update');
+                void card.offsetWidth; // Force reflow
+                card.classList.add('pulse-update');
+            }
         }
 
         if (lastUpdatedEl) {
             lastUpdatedEl.textContent = `Updated: ${new Date().toLocaleTimeString()}`;
         }
 
-        updatePredictorCharts(price);
+        await updatePredictorCharts(price);
+        await renderSHAPExplainer(price);
     } catch (e) {
         console.error('Inference failed:', e);
     }
@@ -780,7 +1239,13 @@ async function updatePredictorCharts(currentPrice) {
         x: sqftRange, y: sqftPrices, type: 'scatter', mode: 'lines+markers', line: { color: CONFIG.colors.accent, width: 3 }
     }, {
         x: [state.inputs.sfla], y: [currentPrice], mode: 'markers', marker: { color: 'red', size: 12 }
-    }], { margin: { t: 10, r: 10, l: 50, b: 40 }, xaxis: { title: 'SqFt' }, yaxis: { title: 'Price ($)' }, paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)', font: { family: 'Space Grotesk' }, showlegend: false }, { responsive: true });
+    }], {
+        ...getThemeLayout(),
+        margin: { t: 10, r: 10, l: 50, b: 40 },
+        xaxis: { ...getThemeLayout().xaxis, title: 'SqFt' },
+        yaxis: { ...getThemeLayout().yaxis, title: 'Price ($)' },
+        showlegend: false
+    }, { responsive: true });
 
     // 2. Sensitivity: Mortgage Rate
     // Covering 0% to 20% as requested for "wild times"
@@ -794,7 +1259,13 @@ async function updatePredictorCharts(currentPrice) {
         x: rateRange, y: ratePrices, type: 'scatter', mode: 'lines+markers', line: { color: CONFIG.colors.teal, width: 3 }
     }, {
         x: [state.inputs.mortgage_rate], y: [currentPrice], mode: 'markers', marker: { color: 'red', size: 12 }
-    }], { margin: { t: 10, r: 10, l: 50, b: 40 }, xaxis: { title: 'Interest Rate (%)' }, yaxis: { title: 'Price ($)' }, paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)', font: { family: 'Space Grotesk' }, showlegend: false }, { responsive: true });
+    }], {
+        ...getThemeLayout(),
+        margin: { t: 10, r: 10, l: 50, b: 40 },
+        xaxis: { ...getThemeLayout().xaxis, title: 'Interest Rate (%)' },
+        yaxis: { ...getThemeLayout().yaxis, title: 'Price ($)' },
+        showlegend: false
+    }, { responsive: true });
 
     // 3. Main Chart: Valuation Confidence Distribution (Bell Curve)
     // Calculate proportional error based on model MAE relative to a baseline market price
@@ -823,9 +1294,14 @@ async function updatePredictorCharts(currentPrice) {
         yValues.push(y);
     }
 
-    // Likely range (1 sigma)
-    const RangeX = xValues.filter(x => x >= mu - sigma && x <= mu + sigma);
-    const RangeY = yValues.filter((_, i) => xValues[i] >= mu - sigma && xValues[i] <= mu + sigma);
+    // Likely ranges
+    const Range2X = xValues.filter(x => x >= mu - 2 * sigma && x <= mu + 2 * sigma);
+    const Range2Y = yValues.filter((_, i) => xValues[i] >= mu - 2 * sigma && xValues[i] <= mu + 2 * sigma);
+
+    const Range1X = xValues.filter(x => x >= mu - sigma && x <= mu + sigma);
+    const Range1Y = yValues.filter((_, i) => xValues[i] >= mu - sigma && xValues[i] <= mu + sigma);
+
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
 
     Plotly.newPlot('main-chart', [
         {
@@ -834,19 +1310,32 @@ async function updatePredictorCharts(currentPrice) {
             type: 'scatter',
             mode: 'lines',
             name: 'Probability',
-            line: { color: CONFIG.colors.ink_light, width: 2, dash: 'solid' },
+            line: { color: isDark ? '#94a3b8' : '#64748b', width: 2, dash: 'solid' },
             fill: 'tozeroy',
-            fillcolor: 'rgba(241, 245, 249, 0.5)', // lightly filled
+            fillcolor: isDark ? 'rgba(148, 163, 184, 0.1)' : 'rgba(241, 245, 249, 0.5)',
             hoverinfo: 'none'
         },
+        // 2 Sigma Range (95%)
         {
-            x: RangeX,
-            y: RangeY,
+            x: Range2X,
+            y: Range2Y,
             type: 'scatter',
-            mode: 'lines', // Hidden line, just for fill
+            mode: 'lines',
             line: { width: 0 },
             fill: 'tozeroy',
-            fillcolor: 'rgba(37, 99, 235, 0.1)', // Accent fill for likely range
+            fillcolor: isDark ? 'rgba(59, 130, 246, 0.1)' : 'rgba(37, 99, 235, 0.05)',
+            hoverinfo: 'none',
+            showlegend: false
+        },
+        // 1 Sigma Range (68%)
+        {
+            x: Range1X,
+            y: Range1Y,
+            type: 'scatter',
+            mode: 'lines',
+            line: { width: 0 },
+            fill: 'tozeroy',
+            fillcolor: isDark ? 'rgba(59, 130, 246, 0.2)' : 'rgba(37, 99, 235, 0.15)',
             hoverinfo: 'none',
             showlegend: false
         },
@@ -860,21 +1349,23 @@ async function updatePredictorCharts(currentPrice) {
             hoverinfo: 'x'
         }
     ], {
+        ...getThemeLayout(),
         height: 450,
         margin: { t: 40, b: 40, l: 40, r: 40 },
         showlegend: false,
         xaxis: {
+            ...getThemeLayout().xaxis,
             title: 'Estimated Market Value',
             showgrid: false,
             zeroline: false,
             tickformat: '$,.0f'
         },
         yaxis: {
+            ...getThemeLayout().yaxis,
             showgrid: false,
             zeroline: false,
             showticklabels: false
         },
-        font: { family: 'Inter' }, // Matches new premium font
         annotations: [
             {
                 x: mu,
@@ -890,9 +1381,25 @@ async function updatePredictorCharts(currentPrice) {
                 y: Math.max(...yValues) * 0.4,
                 xref: 'x',
                 yref: 'y',
-                text: `-$${Math.round(displayMae / 1000)}k`,
+                font: { color: isDark ? '#94a3b8' : '#64748b', size: 12 }
+            },
+            {
+                x: mu + sigma / 2,
+                y: Math.max(...yValues) * 0.2,
+                xref: 'x',
+                yref: 'y',
+                text: '68%',
                 showarrow: false,
-                font: { color: CONFIG.colors.ink_light, size: 12 }
+                font: { color: CONFIG.colors.accent, size: 12, weight: 'bold' }
+            },
+            {
+                x: mu + 1.5 * sigma,
+                y: Math.max(...yValues) * 0.1,
+                xref: 'x',
+                yref: 'y',
+                text: '95%',
+                showarrow: false,
+                font: { color: CONFIG.colors.accent, size: 11 }
             },
             {
                 x: mu + sigma,
@@ -901,30 +1408,147 @@ async function updatePredictorCharts(currentPrice) {
                 yref: 'y',
                 text: `+$${Math.round(displayMae / 1000)}k confidence`,
                 showarrow: false,
-                font: { color: CONFIG.colors.ink_light, size: 12 }
+                font: { color: isDark ? '#94a3b8' : '#64748b', size: 12 }
             }
         ]
     }, { responsive: true, displayModeBar: false });
 }
 
-async function runInference(customInputs = null) {
+async function renderSHAPExplainer(currentPrice) {
     const activeModel = state.activeModel;
-    const session = state.models[activeModel];
     const meta = state.metadata[activeModel];
-    if (!session || !meta) return 0;
+    if (!meta) return;
 
-    const inputs = customInputs || state.inputs;
-    const processed = calculateDistances(inputs);
-    const vector = transformInputs(processed, meta);
-    const tensor = new ort.Tensor('float32', Float32Array.from(vector), [1, vector.length]);
-    const results = await session.run({ input: tensor });
-    const rawOutput = results[Object.keys(results)[0]].data[0];
+    // Features to explain
+    const numericFeatures = [
+        { key: 'sfla', label: 'SqFt' },
+        { key: 'year_blt', label: 'Year Built' },
+        { key: 'garage_size', label: 'Garage' },
+        { key: 'acres', label: 'Lot Size' },
+        { key: 'mortgage_rate', label: 'Mortgage Rate' },
+        { key: 'cpi', label: 'CPI (Inflation)' },
+        { key: 'sp500', label: 'S&P 500' },
+        { key: 'summit_pop', label: 'County Pop.' },
+        { key: 'grade_numeric', label: 'Grade' },
+        { key: 'cond_numeric', label: 'Condition' },
+        { key: 'scenic_view', label: 'View Score' },
+        { key: 'beds', label: 'Beds' },
+        { key: 'baths', label: 'Baths' }
+    ];
 
-    if (activeModel === 'nn') {
-        const logPrice = rawOutput * meta.y_scale[0] + meta.y_mean[0];
-        return Math.exp(logPrice) - 1; // Corresponds to Math.expm1 in python or JS
-    } else {
-        return Math.exp(rawOutput) - 1;
+    const categoricalFeatures = [
+        { key: 'city', label: 'Location' },
+        { key: 'prop_type', label: 'Property Type' }
+    ];
+
+    // Baseline: Use num_means for numeric, and reasonable defaults for categorical
+    const baselineInputs = { ...state.inputs };
+
+    // Set numeric baselines from metadata indices
+    meta.input_features.numeric.forEach((feat, idx) => {
+        baselineInputs[feat] = meta.num_means[idx];
+    });
+
+    // Static baselines for categorical (most common)
+    baselineInputs.city = "BRECKENRIDGE";
+    baselineInputs.prop_type = "Single Family";
+
+    const contributions = [];
+
+    // Calculate numeric contributions using perturbation
+    for (const feat of numericFeatures) {
+        if (state.inputs[feat.key] === undefined) continue;
+
+        const altInputs = { ...state.inputs, [feat.key]: baselineInputs[feat.key] };
+        const altPrice = await runInference(altInputs);
+        const delta = currentPrice - altPrice;
+
+        if (Math.abs(delta) > 100) {
+            contributions.push({ label: feat.label, delta: delta });
+        }
+    }
+
+    // Calculate categorical contributions
+    for (const feat of categoricalFeatures) {
+        if (state.inputs[feat.key] === undefined) continue;
+
+        const altInputs = { ...state.inputs, [feat.key]: baselineInputs[feat.key] };
+        const altPrice = await runInference(altInputs);
+        const delta = currentPrice - altPrice;
+
+        if (Math.abs(delta) > 100) {
+            contributions.push({ label: feat.label, delta: delta });
+        }
+    }
+
+    // Sort by absolute impact
+    contributions.sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta));
+
+    // Limit to top results
+    const plotData = contributions.slice(0, 10);
+
+    const labels = plotData.map(c => c.label);
+    const deltas = plotData.map(c => c.delta);
+    const colors = deltas.map(d => d >= 0 ? '#10b981' : '#ef4444');
+
+    const chartId = 'chart-shap';
+    const el = document.getElementById(chartId);
+    if (!el) return;
+
+    Plotly.newPlot(chartId, [{
+        type: 'bar',
+        x: deltas,
+        y: labels,
+        orientation: 'h',
+        marker: { color: colors },
+        text: deltas.map(d => (d >= 0 ? '+' : '') + new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(d)),
+        textposition: 'auto',
+        hovertemplate: '%{y}: %{x:$,.0f}<extra></extra>'
+    }], {
+        ...getThemeLayout(),
+        margin: { t: 20, r: 50, l: 120, b: 40 },
+        xaxis: {
+            title: 'Value Impact ($)',
+            zeroline: true,
+            zerolinecolor: '#94a3b8',
+            tickformat: '$,.0s'
+        },
+        yaxis: {
+            autorange: 'reversed'
+        }
+    }, { responsive: true });
+}
+
+let inferenceMutex = false;
+
+async function runInference(customInputs = null) {
+    // Prevent concurrent inference calls (causes Session mismatch in ORT)
+    while (inferenceMutex) {
+        await new Promise(resolve => setTimeout(resolve, 30));
+    }
+    inferenceMutex = true;
+
+    try {
+        const activeModel = state.activeModel;
+        const session = state.models[activeModel];
+        const meta = state.metadata[activeModel];
+        if (!session || !meta) return 0;
+
+        const inputs = customInputs || state.inputs;
+        const processed = calculateDistances(inputs);
+        const vector = transformInputs(processed, meta);
+        const tensor = new ort.Tensor('float32', Float32Array.from(vector), [1, vector.length]);
+        const results = await session.run({ input: tensor });
+        const rawOutput = results[Object.keys(results)[0]].data[0];
+
+        if (activeModel === 'nn') {
+            const logPrice = rawOutput * meta.y_scale[0] + meta.y_mean[0];
+            return Math.exp(logPrice) - 1; // Corresponds to Math.expm1 in python or JS
+        } else {
+            return Math.exp(rawOutput) - 1;
+        }
+    } finally {
+        inferenceMutex = false;
     }
 }
 

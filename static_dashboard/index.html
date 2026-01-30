@@ -31,20 +31,31 @@
             <header>
                 <div class="sidebar-top">
                     <h1>🏔️ Summit Housing</h1>
-                    <button id="menu-toggle" class="mobile-only" aria-label="Toggle Menu">
-                        <span class="hamburger-icon"></span>
-                    </button>
+                    <div class="header-actions">
+                        <button class="icon-btn theme-toggle mobile-only" aria-label="Toggle Theme">
+                            <span class="theme-icon">🌙</span>
+                        </button>
+                        <button id="menu-toggle" class="mobile-only" aria-label="Toggle Menu">
+                            <span class="hamburger-icon"></span>
+                        </button>
+                    </div>
                 </div>
                 <p>Data Science Project</p>
             </header>
 
             <nav id="app-nav">
                 <button class="nav-item active" data-page="intro">🏠 Introduction</button>
-                <button class="nav-item" data-page="story">� Data Story</button>
+                <button class="nav-item" data-page="story">📊 Data Story</button>
                 <button class="nav-item" data-page="experiments">🧬 ML Experiments</button>
                 <button class="nav-item" data-page="predictor">🔮 Price Predictor</button>
             </nav>
 
+            <div class="sidebar-footer desktop-only">
+                <button class="icon-btn theme-toggle" style="width: 100%; justify-content: flex-start; gap: 0.75rem;">
+                    <span class="theme-icon">🌙</span>
+                    <span class="theme-label">Switch Theme</span>
+                </button>
+            </div>
         </aside>
 
         <!-- Main Content Area -->
@@ -81,7 +92,7 @@
                         <h3>📊 1. Data Story</h3>
                         <p>Explore the data through interactive visualizations:</p>
                         <ul
-                            style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin-left: 1.2rem; margin-top: 0.5rem;">
+                            style="font-size: 0.9rem; color: var(--ink-light); line-height: 1.6; margin-left: 1.2rem; margin-top: 0.5rem;">
                             <li>Distance to ski lifts and resort proximity analysis</li>
                             <li>20+ years of price trends vs. interest rates</li>
                             <li>Buyer origin patterns (local vs. out-of-state)</li>
@@ -93,7 +104,7 @@
                         <h3>🧬 2. ML Experiments</h3>
                         <p>Dive into the model development process:</p>
                         <ul
-                            style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin-left: 1.2rem; margin-top: 0.5rem;">
+                            style="font-size: 0.9rem; color: var(--ink-light); line-height: 1.6; margin-left: 1.2rem; margin-top: 0.5rem;">
                             <li>Tournament leaderboard comparing 10+ model runs</li>
                             <li>Gradient Boosting vs. Neural Network performance</li>
                             <li>SHAP values showing feature importance</li>
@@ -105,7 +116,7 @@
                         <h3>🔮 3. Price Predictor</h3>
                         <p>Test the model with your own scenarios:</p>
                         <ul
-                            style="font-size: 0.9rem; color: #64748b; line-height: 1.6; margin-left: 1.2rem; margin-top: 0.5rem;">
+                            style="font-size: 0.9rem; color: var(--ink-light); line-height: 1.6; margin-left: 1.2rem; margin-top: 0.5rem;">
                             <li>Interactive "What-If" simulator with real-time predictions</li>
                             <li>Adjust property features (size, beds, location, etc.)</li>
                             <li>Runs entirely in your browser using ONNX Runtime</li>
@@ -264,7 +275,14 @@
 
                     <div class="predictor-content">
                         <div class="card full-width">
-                            <div id="main-chart" style="height: 450px;"></div>
+                            <div id="main-chart" style="height: 400px;"></div>
+                        </div>
+
+                        <div class="card full-width">
+                            <h4>🧠 AI Explainer (Local Feature Contributions)</h4>
+                            <p class="caption">This chart shows how each feature pulls the predicted price away from the
+                                county average.</p>
+                            <div id="chart-shap" style="height: 400px;"></div>
                         </div>
 
                         <div class="grid-2">
@@ -286,111 +304,186 @@
 
             <section id="story-page" class="page-section hidden">
                 <div class="card full-width">
-                    <h2>Summit County Housing Data Story</h2>
-                    <p class="story-text">Exploring publicly available data to understand the housing market in Summit
-                        County, Colorado.</p>
-                </div>
-
-                <!-- Property Distribution & Resort Proximity -->
-                <div class="card full-width">
-                    <h3>📍 Points of Interest</h3>
-                    <div id="map-hotspots" style="height: 450px; border-radius: 8px;"></div>
-                </div>
-
-                <div id="market-overview-metrics" class="metrics-banner" style="margin-top: 2rem;">
-                    <!-- Populated by JS -->
-                </div>
-
-                <!-- Distance Analysis -->
-                <div class="card full-width">
-                    <h3>❄️ The "Ski Lift Effect" (Distance Analysis)</h3>
-                    <div class="row">
-                        <div class="col-chart" style="flex: 2;">
-                            <div id="distance-map" style="height: 400px; width: 100%;"></div>
+                    <div class="story-header">
+                        <div class="scrolly-progress-container">
+                            <div id="scrolly-progress-bar" class="scrolly-progress-bar"></div>
                         </div>
-                        <div class="col-text" style="flex: 1; padding: 1rem;">
-                            <p>Summit County is defined by its world-class skiing. To understand the premium of
-                                "ski-in/ski-out" living, I analyzed the precise <strong>Distance to Ski Lifts</strong>
-                                for every property.</p>
-                            <p>The map visualizes this value gradient—from the areas closest to the base of the resorts
-                                to the residential pockets further away.</p>
+                        <h2>Summit County Housing Data Story</h2>
+                        <p class="story-text">Exploring publicly available data to understand the housing market in
+                            Summit
+                            County, Colorado.</p>
+                    </div>
+
+                    <div class="scrolly-container">
+                        <!-- Narrative Side -->
+                        <div class="scrolly-narrative">
+                            <div class="scrolly-step active" data-step="landscape">
+                                <div class="card">
+                                    <h3>📍 The Landscape</h3>
+                                    <p>Summit County, Colorado is a high-altitude destination, where skiing and
+                                        mountain
+                                        living are primary drivers of the economy. Click the map to identify the
+                                        county
+                                        hotspots and landmarks.</p>
+                                </div>
+                                <div id="mobile-viz-landscape" class="mobile-viz-placeholder"></div>
+                            </div>
+
+                            <div class="scrolly-step" data-step="ski-lift">
+                                <div class="card">
+                                    <h3>❄️ The "Ski Lift Effect"</h3>
+                                    <p>Ski-in/ski-out properties are marketed to tourists and second-home owners.
+                                        It feels intuitive that these properties command a premium, but is worth
+                                        quantifying.
+                                        This map shows every residential parcel's distance to its nearest chairlift.</p>
+                                </div>
+                                <div id="mobile-viz-ski-lift" class="mobile-viz-placeholder"></div>
+                            </div>
+
+                            <div class="scrolly-step" data-step="market-cycles">
+                                <div class="card">
+                                    <h3>📈 Market Cycles</h3>
+                                    <p>Mortgage rates impact the cost of borrowing to purchase a home. We compared 20
+                                        years of price action against the Fed
+                                        Funds rate.</p>
+                                    <div class="card-action-bar">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="story-toggle-market-aggregate" checked>
+                                            <span class="slider"></span>
+                                            <span class="toggle-label">County Aggregate</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div id="mobile-viz-market-cycles" class="mobile-viz-placeholder"></div>
+                            </div>
+
+                            <div class="scrolly-step" data-step="buyer-origins">
+                                <div class="card">
+                                    <h3>🏠 Who is Buying?</h3>
+                                    <p>Ownership records provide a mailing address, which I use as a proxy for the
+                                        buyer's home base. We track the shift between locals, in-state buyers, and
+                                        out-of-state investors.</p>
+                                    <div class="card-action-bar">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="story-toggle-buyer-percentage">
+                                            <span class="slider"></span>
+                                            <span class="toggle-label">Show as %</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div id="mobile-viz-buyer-origins" class="mobile-viz-placeholder"></div>
+                            </div>
+
+                            <div class="scrolly-step" data-step="seasonality">
+                                <div class="card">
+                                    <h3>🌡️ Seasonal Pulse</h3>
+                                    <p>Housing oftens sells seasonally and Summit County is no exception. This heatmap
+                                        shows the number of sales by month and town.</p>
+                                </div>
+                                <div id="mobile-viz-seasonality" class="mobile-viz-placeholder"></div>
+                            </div>
+
+                            <div class="scrolly-step" data-step="supply">
+                                <div class="card">
+                                    <h3>🏗️ Supply & Density</h3>
+                                    <p>There's a narrative right now that home prices are high due to supply
+                                        constraints.
+                                        Let's dig into that.</p>
+                                </div>
+                                <div id="mobile-viz-supply" class="mobile-viz-placeholder"></div>
+                            </div>
+
+                            <div class="scrolly-step" data-step="deep-dive">
+                                <div class="card">
+                                    <h3>🔍 Deep Dive: The Data Explorer</h3>
+                                    <p>This is a sample of the raw data that powers this analysis. You have the option
+                                        to view a subset of columns, or all of them.</p>
+                                </div>
+                                <div id="mobile-viz-deep-dive" class="mobile-viz-placeholder"></div>
+                            </div>
+                        </div>
+
+                        <!-- Sticky Visualization Side -->
+                        <div class="scrolly-viz-panel">
+                            <div class="scrolly-viz-container">
+                                <div id="scrolly-viz-target" style="height: 100%; width: 100%;">
+                                    <!-- Charts/Maps will be moved here by JS -->
+                                    <div id="map-hotspots" style="height: 100%; width: 100%;"></div>
+                                    <div id="distance-map" class="hidden" style="height: 100%; width: 100%;"></div>
+                                    <div id="chart-market-trends" class="hidden" style="height: 100%; width: 100%;">
+                                    </div>
+                                    <div id="chart-buyer-origins" class="hidden" style="height: 100%; width: 100%;">
+                                    </div>
+                                    <div id="chart-seasonality" class="hidden" style="height: 100%; width: 100%;"></div>
+                                    <div id="chart-supply" class="hidden" style="height: 100%; width: 100%;"></div>
+                                    <div id="scrolly-data-explorer" class="hidden" style="height: 100%; width: 100%;">
+                                        <div class="table-container" style="height: 100%; overflow-y: auto;">
+                                            <table id="scrolly-property-table" class="data-table">
+                                                <thead>
+                                                    <!-- Table headers will be injected -->
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Data will be injected -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scrolly-viz-overlay" class="scrolly-viz-overlay">📍 Points of Interest</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Raw Data Sample -->
-                <div class="card full-width">
-                    <div class="row header-row"
-                        style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3>📝 Raw Data Sample (records.csv)</h3>
-                        <div class="toggle-group">
-                            <label><input type="checkbox" id="toggle-all-cols"> Show All Columns</label>
-                        </div>
-                    </div>
-                    <div id="raw-sample-container" class="table-container">
+                    <!-- Utilities (kept full width below the story) -->
+                    <div id="market-overview-metrics" class="metrics-banner" style="margin-top: 4rem;">
                         <!-- Populated by JS -->
                     </div>
-                </div>
 
-                <!-- Price Trends vs Interest Rates -->
-                <div class="card full-width">
-                    <h3>📈 Price Trends vs. Interest Rates</h3>
-                    <div id="chart-market-trends" style="height: 400px;"></div>
-                </div>
+                    <div class="card full-width" style="margin-top: 2rem;">
 
-                <!-- Buyer Origins & Seasonality -->
-                <div class="grid-2">
-                    <div class="card">
-                        <div class="row header-row"
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                            <h3>🏠 Buyer Origins: Market Share Evolution</h3>
-                            <div class="toggle-group">
-                                <label><input type="checkbox" id="toggle-buyer-percentage"> Show as %</label>
+                        <!-- Model Feature Selection & Training Safeguards -->
+                        <div class="grid-2">
+                            <div class="card">
+                                <h3>🛠️ Model Feature Selection</h3>
+                                <div class="meta-grid">
+                                    <div class="meta-item safe">
+                                        <strong>✅ INCLUDED</strong>
+                                        Structure, Quality, Location, Macro
+                                    </div>
+                                    <div class="meta-item alert">
+                                        <strong>❌ EXCLUDED</strong>
+                                        Tax Values, Trans. Date, Address
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>🧠 Training Safeguards</h3>
+                                <ul>
+                                    <li>Time-Based Split (No leakage)</li>
+                                    <li>Log-Space Target Transformation</li>
+                                </ul>
                             </div>
                         </div>
-                        <div id="chart-buyer-origins" style="height: 400px;"></div>
-                    </div>
-                    <div class="card">
-                        <h3>🌡️ Seasonal Heatmap: Volume</h3>
-                        <div id="chart-seasonality" style="height: 400px;"></div>
-                    </div>
-                </div>
 
-                <!-- Supply Growth -->
-                <div class="card full-width">
-                    <h3>🏗️ Supply Growth vs. Population Density</h3>
-                    <div id="chart-supply" style="height: 400px;"></div>
-                </div>
-
-                <!-- Model Feature Selection & Training Safeguards -->
-                <div class="grid-2">
-                    <div class="card">
-                        <h3>🛠️ Model Feature Selection</h3>
-                        <div class="meta-grid">
-                            <div class="meta-item safe">
-                                <strong>✅ INCLUDED</strong>
-                                Structure, Quality, Location, Macro
-                            </div>
-                            <div class="meta-item alert">
-                                <strong>❌ EXCLUDED</strong>
-                                Tax Values, Trans. Date, Address
-                            </div>
+                        <!-- Correlation Matrix -->
+                        <div class="card full-width">
+                            <h3>📊 Correlation Matrix</h3>
+                            <p class="caption">Click any cell to drill down into the underlying relationship.</p>
+                            <div id="chart-correlations" style="height: 500px;"></div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <h3>🧠 Training Safeguards</h3>
-                        <ul>
-                            <li>Time-Based Split (No leakage)</li>
-                            <li>Log-Space Target Transformation</li>
-                        </ul>
-                    </div>
-                </div>
 
-                <!-- Correlation Matrix -->
-                <div class="card full-width">
-                    <h3>📊 Correlation Matrix</h3>
-                    <div id="chart-correlations" style="height: 500px;"></div>
-                </div>
+                        <!-- Correlation Drill-down -->
+                        <div id="correlation-drilldown" class="card full-width hidden">
+                            <div class="row header-row" style="justify-content: space-between; align-items: center;">
+                                <h3 id="drilldown-title">Correlation Drill-down</h3>
+                                <button class="icon-btn"
+                                    onclick="document.getElementById('correlation-drilldown').classList.add('hidden')">✕</button>
+                            </div>
+                            <div id="chart-correlation-drilldown" style="height: 400px;"></div>
+                            <p class="caption">Analyzing the relationship between <span id="drilldown-var-x"></span> and
+                                <span id="drilldown-var-y"></span>.
+                            </p>
+                        </div>
             </section>
 
             <section id="experiments-page" class="page-section hidden">
