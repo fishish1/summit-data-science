@@ -66,6 +66,32 @@ def export_to_json(df, filename):
             json.dump(data, f, indent=2)
         print(f"Exported {len(data)} rows to {output_path}")
 
+def sync_frontend_assets():
+    """
+    Sync index.html, style.css, and dashboard.js to the portfolio.
+    """
+    import shutil
+    project_root = Path(__file__).resolve().parent.parent
+    src_dir = project_root / "static_dashboard"
+    
+    # We only need to sync to the portfolio (sibling_path)
+    # The internal static_dashboard is already the source of truth.
+    portfolio_path = project_root.parent / "brian.fishman.info/public/projects/summit"
+    
+    if not portfolio_path.exists():
+        print("   ⚠️ Sibling portfolio not found, skipping frontend sync.")
+        return
+
+    files_to_sync = ["index.html", "style.css", "dashboard.js"]
+    print(f"Syncing frontend assets to {portfolio_path}...")
+    
+    for f in files_to_sync:
+        src = src_dir / f
+        dst = portfolio_path / f
+        if src.exists():
+            shutil.copy2(src, dst)
+            print(f"   - Synced {f}")
+
 def main():
     print(f"📊 Summit Housing Data Export")
     print(f"=" * 60)
@@ -76,6 +102,9 @@ def main():
     print()
     
     analytics = MarketAnalytics()
+    
+    # 0. Sync Frontend Assets
+    sync_frontend_assets()
     
     # 1. Standard Analytics
     print("Exporting Market Trends...")

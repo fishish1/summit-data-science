@@ -9,6 +9,30 @@ import json
 import io
 from summit_housing.ml.nn import PriceNet
 
+from summit_housing.ml.nn import PriceNet
+from pathlib import Path
+
+def get_export_paths():
+    """
+    Determine where to export ONNX model files.
+    """
+    paths = []
+    project_root = Path(__file__).resolve().parent.parent
+    
+    # 1. Internal Static Dashboard (Guaranteed)
+    internal_path = project_root / "static_dashboard/models"
+    internal_path.mkdir(parents=True, exist_ok=True)
+    paths.append(internal_path)
+    
+    # 2. Sibling Repo (website)
+    sibling_path = project_root.parent / "brian.fishman.info/public/projects/summit/models"
+    if sibling_path.exists():
+        paths.append(sibling_path)
+    
+    return paths
+
+EXPORT_PATHS = get_export_paths()
+
 def get_champion_run_id(model_type, default_id):
     """
     Retrieves the run_id for the current champion model from the registry.
@@ -57,26 +81,27 @@ def export_gbm(target_dir):
     initial_type = [('input', FloatTensorType([None, input_dim]))]
     onx = convert_sklearn(actual_model, initial_types=initial_type, target_opset=12)
     
-    os.makedirs(target_dir, exist_ok=True)
-    with open(os.path.join(target_dir, "gbm.onnx"), "wb") as f:
-        f.write(onx.SerializeToString())
+    for target_dir in EXPORT_PATHS:
+        os.makedirs(target_dir, exist_ok=True)
+        with open(os.path.join(target_dir, "gbm.onnx"), "wb") as f:
+            f.write(onx.SerializeToString())
+            
+        scaler = preprocessor.named_transformers_['num']
+        ohe = preprocessor.named_transformers_['cat']
         
-    scaler = preprocessor.named_transformers_['num']
-    ohe = preprocessor.named_transformers_['cat']
-    
-    metadata = {
-        "num_means": scaler.mean_.tolist(),
-        "num_scales": scaler.scale_.tolist(),
-        "cat_categories": [cat.tolist() for cat in ohe.categories_],
-        "input_features": {
-            "numeric": scaler.feature_names_in_.tolist(),
-            "categorical": ohe.feature_names_in_.tolist()
-        },
-        "run_id": run_id
-    }
-    with open(os.path.join(target_dir, "gbm_metadata.json"), "w") as f:
-        json.dump(metadata, f)
-    print("✅ GBM exported successfully.")
+        metadata = {
+            "num_means": scaler.mean_.tolist(),
+            "num_scales": scaler.scale_.tolist(),
+            "cat_categories": [cat.tolist() for cat in ohe.categories_],
+            "input_features": {
+                "numeric": scaler.feature_names_in_.tolist(),
+                "categorical": ohe.feature_names_in_.tolist()
+            },
+            "run_id": run_id
+        }
+        with open(os.path.join(target_dir, "gbm_metadata.json"), "w") as f:
+            json.dump(metadata, f)
+        print(f"✅ GBM exported successfully to {target_dir}")
 
 def export_nn(target_dir):
     run_id = get_champion_run_id('nn', 12)
@@ -121,37 +146,38 @@ def export_nn(target_dir):
     f_buf.seek(0)
     onnx_model = onnx.load(f_buf)
     
-    os.makedirs(target_dir, exist_ok=True)
-    onx_path = os.path.join(target_dir, "nn.onnx")
-    onnx.save_model(onnx_model, onx_path, save_as_external_data=False)
-    
-    # Verify no .data file exists in target_dir
-    data_file = onx_path + ".data"
-    if os.path.exists(data_file):
-        print(f"Warning: external data file created, deleting: {data_file}")
-        os.remove(data_file)
-    
-    scaler = preprocessor.named_transformers_['num']
-    ohe = preprocessor.named_transformers_['cat']
-    y_scaler = joblib.load(f"models/nn_y_scaler_v{run_id}.pkl")
-    
-    metadata = {
-        "num_means": scaler.mean_.tolist(),
-        "num_scales": scaler.scale_.tolist(),
-        "cat_categories": [cat.tolist() for cat in ohe.categories_],
-        "y_mean": y_scaler.mean_.tolist(),
-        "y_scale": y_scaler.scale_.tolist(),
-        "input_features": {
-            "numeric": scaler.feature_names_in_.tolist(),
-            "categorical": ohe.feature_names_in_.tolist()
-        },
-        "run_id": run_id
-    }
-    with open(os.path.join(target_dir, "nn_metadata.json"), "w") as f:
-        json.dump(metadata, f)
-    print("✅ NN exported successfully.")
+    for target_dir in EXPORT_PATHS:
+        os.makedirs(target_dir, exist_ok=True)
+        onx_path = os.path.join(target_dir, "nn.onnx")
+        onnx.save_model(onnx_model, onx_path, save_as_external_data=False)
+        
+        # Verify no .data file exists in target_dir
+        data_file = onx_path + ".data"
+        if os.path.exists(data_file):
+            print(f"Warning: external data file created, deleting: {data_file}")
+            os.remove(data_file)
+        
+        scaler = preprocessor.named_transformers_['num']
+        ohe = preprocessor.named_transformers_['cat']
+        y_scaler = joblib.load(f"models/nn_y_scaler_v{run_id}.pkl")
+        
+        metadata = {
+            "num_means": scaler.mean_.tolist(),
+            "num_scales": scaler.scale_.tolist(),
+            "cat_categories": [cat.tolist() for cat in ohe.categories_],
+            "y_mean": y_scaler.mean_.tolist(),
+            "y_scale": y_scaler.scale_.tolist(),
+            "input_features": {
+                "numeric": scaler.feature_names_in_.tolist(),
+                "categorical": ohe.feature_names_in_.tolist()
+            },
+            "run_id": run_id
+        }
+        with open(os.path.join(target_dir, "nn_metadata.json"), "w") as f:
+            json.dump(metadata, f)
+        print(f"✅ NN exported successfully to {target_dir}")
 
 if __name__ == "__main__":
-    target = "models/export_output"
-    export_gbm(target)
-    export_nn(target)
+    print(f"📊 Running ONNX Export to {len(EXPORT_PATHS)} destinations...")
+    export_gbm(None) # target_dir is now handled internally via EXPORT_PATHS
+    export_nn(None)

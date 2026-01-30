@@ -1,4167 +1,4167 @@
 [
   {
     "value": 1.0,
-    "average_prediction": 671351.6326101124,
+    "average_prediction": 670852.0843838349,
     "feature": "beds"
   },
   {
     "value": 2.0,
-    "average_prediction": 676244.440272966,
+    "average_prediction": 676080.7668542799,
     "feature": "beds"
   },
   {
     "value": 3.0,
-    "average_prediction": 795431.1381906369,
+    "average_prediction": 792993.3262106349,
     "feature": "beds"
   },
   {
     "value": 4.0,
-    "average_prediction": 804149.0896379566,
+    "average_prediction": 801423.7991301417,
     "feature": "beds"
   },
   {
     "value": 1.0,
-    "average_prediction": 783256.7728015637,
+    "average_prediction": 823012.5196541317,
     "feature": "baths"
   },
   {
     "value": 2.0,
-    "average_prediction": 639295.1120311619,
+    "average_prediction": 639825.4531636428,
     "feature": "baths"
   },
   {
     "value": 3.0,
-    "average_prediction": 641413.2272552149,
+    "average_prediction": 641854.7592150442,
     "feature": "baths"
   },
   {
     "value": 4.0,
-    "average_prediction": 651575.8531018422,
+    "average_prediction": 652210.7491848259,
     "feature": "baths"
   },
   {
     "value": 498.0,
-    "average_prediction": 3773296.7000821973,
+    "average_prediction": 3761455.6122305417,
     "feature": "sfla"
   },
   {
     "value": 562.4285714285714,
-    "average_prediction": 3237152.751034587,
+    "average_prediction": 3226735.6183732534,
     "feature": "sfla"
   },
   {
     "value": 626.8571428571429,
-    "average_prediction": 3250121.1839869,
+    "average_prediction": 3250189.848599449,
     "feature": "sfla"
   },
   {
     "value": 691.2857142857142,
-    "average_prediction": 3146025.5120232785,
+    "average_prediction": 3154384.4403966437,
     "feature": "sfla"
   },
   {
     "value": 755.7142857142858,
-    "average_prediction": 729171.8907643593,
+    "average_prediction": 733288.13943369,
     "feature": "sfla"
   },
   {
     "value": 820.1428571428571,
-    "average_prediction": 613081.8266504981,
+    "average_prediction": 615922.7254008236,
     "feature": "sfla"
   },
   {
     "value": 884.5714285714286,
-    "average_prediction": 563539.6450261485,
+    "average_prediction": 565976.8467455861,
     "feature": "sfla"
   },
   {
     "value": 949.0,
-    "average_prediction": 511174.1047514257,
+    "average_prediction": 513223.23291549215,
     "feature": "sfla"
   },
   {
     "value": 1013.4285714285714,
-    "average_prediction": 535788.3176833657,
+    "average_prediction": 537406.7133019171,
     "feature": "sfla"
   },
   {
     "value": 1077.857142857143,
-    "average_prediction": 549558.8587757952,
+    "average_prediction": 551715.2133200134,
     "feature": "sfla"
   },
   {
     "value": 1142.2857142857142,
-    "average_prediction": 553952.3965401994,
+    "average_prediction": 554190.0897018187,
     "feature": "sfla"
   },
   {
     "value": 1206.7142857142858,
-    "average_prediction": 556812.910162924,
+    "average_prediction": 558315.833452086,
     "feature": "sfla"
   },
   {
     "value": 1271.142857142857,
-    "average_prediction": 566309.4648063985,
+    "average_prediction": 567818.4467719219,
     "feature": "sfla"
   },
   {
     "value": 1335.5714285714284,
-    "average_prediction": 573478.9246103786,
+    "average_prediction": 574562.1600593113,
     "feature": "sfla"
   },
   {
     "value": 1400.0,
-    "average_prediction": 582186.4626994622,
+    "average_prediction": 583513.3551758928,
     "feature": "sfla"
   },
   {
     "value": 1464.4285714285716,
-    "average_prediction": 591386.2993387711,
+    "average_prediction": 592407.8151856897,
     "feature": "sfla"
   },
   {
     "value": 1528.857142857143,
-    "average_prediction": 624347.1917842876,
+    "average_prediction": 625376.4309477642,
     "feature": "sfla"
   },
   {
     "value": 1593.2857142857142,
-    "average_prediction": 664507.4251455271,
+    "average_prediction": 665853.1499396983,
     "feature": "sfla"
   },
   {
     "value": 1657.7142857142858,
-    "average_prediction": 686314.6490723197,
+    "average_prediction": 687116.0299145435,
     "feature": "sfla"
   },
   {
     "value": 1722.142857142857,
-    "average_prediction": 686747.9090027252,
+    "average_prediction": 687187.4448285043,
     "feature": "sfla"
   },
   {
     "value": 1786.5714285714287,
-    "average_prediction": 703120.3828225821,
+    "average_prediction": 703643.0499200528,
     "feature": "sfla"
   },
   {
     "value": 1851.0,
-    "average_prediction": 708212.716462304,
+    "average_prediction": 708814.127787181,
     "feature": "sfla"
   },
   {
     "value": 1915.4285714285716,
-    "average_prediction": 719212.3986684522,
+    "average_prediction": 719863.0139882494,
     "feature": "sfla"
   },
   {
     "value": 1979.857142857143,
-    "average_prediction": 737810.8677959547,
+    "average_prediction": 738551.0232936547,
     "feature": "sfla"
   },
   {
     "value": 2044.2857142857142,
-    "average_prediction": 765342.9921671667,
+    "average_prediction": 764342.7614323751,
     "feature": "sfla"
   },
   {
     "value": 2108.714285714286,
-    "average_prediction": 907953.831272595,
+    "average_prediction": 909594.1547084912,
     "feature": "sfla"
   },
   {
     "value": 2173.142857142857,
-    "average_prediction": 902168.2998254288,
+    "average_prediction": 906694.6140193162,
     "feature": "sfla"
   },
   {
     "value": 2237.5714285714284,
-    "average_prediction": 905310.30317697,
+    "average_prediction": 907589.4873686552,
     "feature": "sfla"
   },
   {
     "value": 2302.0,
-    "average_prediction": 918083.6868698173,
+    "average_prediction": 920516.0527157804,
     "feature": "sfla"
   },
   {
     "value": 2366.4285714285716,
-    "average_prediction": 924321.116754581,
+    "average_prediction": 926815.0377402775,
     "feature": "sfla"
   },
   {
     "value": 2430.857142857143,
-    "average_prediction": 923917.1556868271,
+    "average_prediction": 925182.1799484687,
     "feature": "sfla"
   },
   {
     "value": 2495.2857142857147,
-    "average_prediction": 941894.9330614022,
+    "average_prediction": 943120.1421365802,
     "feature": "sfla"
   },
   {
     "value": 2559.714285714286,
-    "average_prediction": 951376.159076912,
+    "average_prediction": 952447.161731405,
     "feature": "sfla"
   },
   {
     "value": 2624.1428571428573,
-    "average_prediction": 956069.3487068809,
+    "average_prediction": 957115.4821778476,
     "feature": "sfla"
   },
   {
     "value": 2688.5714285714284,
-    "average_prediction": 958981.1723531353,
+    "average_prediction": 960211.1040581879,
     "feature": "sfla"
   },
   {
     "value": 2753.0,
-    "average_prediction": 959341.5835225531,
+    "average_prediction": 960561.7225050532,
     "feature": "sfla"
   },
   {
     "value": 2817.4285714285716,
-    "average_prediction": 961263.623126342,
+    "average_prediction": 962381.2753366175,
     "feature": "sfla"
   },
   {
     "value": 2881.857142857143,
-    "average_prediction": 964640.2214899615,
+    "average_prediction": 965843.4006282504,
     "feature": "sfla"
   },
   {
     "value": 2946.285714285714,
-    "average_prediction": 967007.7879966773,
+    "average_prediction": 968273.6992922341,
     "feature": "sfla"
   },
   {
     "value": 3010.714285714286,
-    "average_prediction": 973867.8414016189,
+    "average_prediction": 975398.9750435682,
     "feature": "sfla"
   },
   {
     "value": 3075.1428571428573,
-    "average_prediction": 994588.316664715,
+    "average_prediction": 995915.9552720526,
     "feature": "sfla"
   },
   {
     "value": 3139.5714285714284,
-    "average_prediction": 1030536.1303611862,
+    "average_prediction": 1031571.1164767274,
     "feature": "sfla"
   },
   {
     "value": 3204.0,
-    "average_prediction": 1051429.2896786612,
+    "average_prediction": 1052517.0622309716,
     "feature": "sfla"
   },
   {
     "value": 3268.4285714285716,
-    "average_prediction": 1071071.7348962666,
+    "average_prediction": 1072065.698011255,
     "feature": "sfla"
   },
   {
     "value": 3332.857142857143,
-    "average_prediction": 1093663.9307199675,
+    "average_prediction": 1094541.171992219,
     "feature": "sfla"
   },
   {
     "value": 3397.285714285714,
-    "average_prediction": 1118377.5132819004,
+    "average_prediction": 1119331.0946341166,
     "feature": "sfla"
   },
   {
     "value": 3461.714285714286,
-    "average_prediction": 1130289.938962712,
+    "average_prediction": 1131036.9268754392,
     "feature": "sfla"
   },
   {
     "value": 3526.1428571428573,
-    "average_prediction": 1140194.1598178789,
+    "average_prediction": 1141093.1767460408,
     "feature": "sfla"
   },
   {
     "value": 3590.5714285714284,
-    "average_prediction": 1147197.1968033316,
+    "average_prediction": 1147986.0966834726,
     "feature": "sfla"
   },
   {
     "value": 3655.0,
-    "average_prediction": 1152512.2247340863,
+    "average_prediction": 1153250.8450687563,
     "feature": "sfla"
   },
   {
     "value": 1971.0,
-    "average_prediction": 786641.0181215224,
+    "average_prediction": 786836.0561108938,
     "feature": "year_blt"
   },
   {
     "value": 1971.9591836734694,
-    "average_prediction": 770874.2491953914,
+    "average_prediction": 770857.3236035592,
     "feature": "year_blt"
   },
   {
     "value": 1972.9183673469388,
-    "average_prediction": 765408.5538143681,
+    "average_prediction": 765419.3026042696,
     "feature": "year_blt"
   },
   {
     "value": 1973.8775510204082,
-    "average_prediction": 765175.6392623323,
+    "average_prediction": 765219.6475850354,
     "feature": "year_blt"
   },
   {
     "value": 1974.8367346938776,
-    "average_prediction": 762688.0455431985,
+    "average_prediction": 763343.2745210008,
     "feature": "year_blt"
   },
   {
     "value": 1975.795918367347,
-    "average_prediction": 761734.044068864,
+    "average_prediction": 762395.519092213,
     "feature": "year_blt"
   },
   {
     "value": 1976.7551020408164,
-    "average_prediction": 761292.0524569453,
+    "average_prediction": 762568.3450638507,
     "feature": "year_blt"
   },
   {
     "value": 1977.7142857142858,
-    "average_prediction": 761895.6469688821,
+    "average_prediction": 763056.6326095626,
     "feature": "year_blt"
   },
   {
     "value": 1978.6734693877552,
-    "average_prediction": 762193.9524835023,
+    "average_prediction": 763337.7430317276,
     "feature": "year_blt"
   },
   {
     "value": 1979.6326530612246,
-    "average_prediction": 763095.7675065229,
+    "average_prediction": 764259.9529760735,
     "feature": "year_blt"
   },
   {
     "value": 1980.591836734694,
-    "average_prediction": 762797.8344591205,
+    "average_prediction": 763961.5545804667,
     "feature": "year_blt"
   },
   {
     "value": 1981.5510204081634,
-    "average_prediction": 763080.573657062,
+    "average_prediction": 764150.7252374255,
     "feature": "year_blt"
   },
   {
     "value": 1982.5102040816328,
-    "average_prediction": 763605.7203524953,
+    "average_prediction": 763990.4850660136,
     "feature": "year_blt"
   },
   {
     "value": 1983.469387755102,
-    "average_prediction": 763756.1671335207,
+    "average_prediction": 764145.0527690523,
     "feature": "year_blt"
   },
   {
     "value": 1984.4285714285713,
-    "average_prediction": 764684.7214701131,
+    "average_prediction": 764985.8806820973,
     "feature": "year_blt"
   },
   {
     "value": 1985.3877551020407,
-    "average_prediction": 762591.6825454319,
+    "average_prediction": 762885.7337043396,
     "feature": "year_blt"
   },
   {
     "value": 1986.3469387755101,
-    "average_prediction": 762856.0540883994,
+    "average_prediction": 763177.4684793596,
     "feature": "year_blt"
   },
   {
     "value": 1987.3061224489795,
-    "average_prediction": 763372.4804239881,
+    "average_prediction": 763569.8121069021,
     "feature": "year_blt"
   },
   {
     "value": 1988.265306122449,
-    "average_prediction": 763780.5945641227,
+    "average_prediction": 763985.1595457897,
     "feature": "year_blt"
   },
   {
     "value": 1989.2244897959183,
-    "average_prediction": 765503.4625211516,
+    "average_prediction": 765933.3804816721,
     "feature": "year_blt"
   },
   {
     "value": 1990.1836734693877,
-    "average_prediction": 766021.2296135355,
+    "average_prediction": 766486.615166036,
     "feature": "year_blt"
   },
   {
     "value": 1991.142857142857,
-    "average_prediction": 761781.9431045445,
+    "average_prediction": 761548.1832327768,
     "feature": "year_blt"
   },
   {
     "value": 1992.1020408163265,
-    "average_prediction": 760503.338993981,
+    "average_prediction": 759549.4359817351,
     "feature": "year_blt"
   },
   {
     "value": 1993.061224489796,
-    "average_prediction": 760814.1148504695,
+    "average_prediction": 759885.3593250555,
     "feature": "year_blt"
   },
   {
     "value": 1994.0204081632653,
-    "average_prediction": 758273.1731467422,
+    "average_prediction": 757379.8814510633,
     "feature": "year_blt"
   },
   {
     "value": 1994.9795918367347,
-    "average_prediction": 758725.0104394032,
+    "average_prediction": 757847.5898076963,
     "feature": "year_blt"
   },
   {
     "value": 1995.938775510204,
-    "average_prediction": 759248.6177423502,
+    "average_prediction": 758278.5750748905,
     "feature": "year_blt"
   },
   {
     "value": 1996.8979591836735,
-    "average_prediction": 760470.0339887487,
+    "average_prediction": 759482.3690738725,
     "feature": "year_blt"
   },
   {
     "value": 1997.857142857143,
-    "average_prediction": 761622.8298876524,
+    "average_prediction": 760629.8790594703,
     "feature": "year_blt"
   },
   {
     "value": 1998.8163265306123,
-    "average_prediction": 764224.6642200393,
+    "average_prediction": 763202.7015238227,
     "feature": "year_blt"
   },
   {
     "value": 1999.7755102040817,
-    "average_prediction": 765484.5773516309,
+    "average_prediction": 764501.6284775372,
     "feature": "year_blt"
   },
   {
     "value": 2000.734693877551,
-    "average_prediction": 765794.1091886311,
+    "average_prediction": 764920.2243236528,
     "feature": "year_blt"
   },
   {
     "value": 2001.6938775510205,
-    "average_prediction": 765858.0215374012,
+    "average_prediction": 764661.6516695172,
     "feature": "year_blt"
   },
   {
     "value": 2002.6530612244899,
-    "average_prediction": 765965.6059603208,
+    "average_prediction": 764775.385910642,
     "feature": "year_blt"
   },
   {
     "value": 2003.6122448979593,
-    "average_prediction": 770149.9627219982,
+    "average_prediction": 768921.4970975344,
     "feature": "year_blt"
   },
   {
     "value": 2004.5714285714287,
-    "average_prediction": 770558.2694353147,
+    "average_prediction": 769288.4265633262,
     "feature": "year_blt"
   },
   {
     "value": 2005.530612244898,
-    "average_prediction": 774267.65402367,
+    "average_prediction": 773014.2482336509,
     "feature": "year_blt"
   },
   {
     "value": 2006.4897959183672,
-    "average_prediction": 775564.9048826348,
+    "average_prediction": 774312.4266178851,
     "feature": "year_blt"
   },
   {
     "value": 2007.4489795918366,
-    "average_prediction": 778374.6606080697,
+    "average_prediction": 777191.1067059372,
     "feature": "year_blt"
   },
   {
     "value": 2008.408163265306,
-    "average_prediction": 775513.7970901226,
+    "average_prediction": 774274.2507901986,
     "feature": "year_blt"
   },
   {
     "value": 2009.3673469387754,
-    "average_prediction": 774295.4611956116,
+    "average_prediction": 773079.0656189776,
     "feature": "year_blt"
   },
   {
     "value": 2010.3265306122448,
-    "average_prediction": 825561.3429838073,
+    "average_prediction": 778846.9171292371,
     "feature": "year_blt"
   },
   {
     "value": 2011.2857142857142,
-    "average_prediction": 778011.9350534144,
+    "average_prediction": 778592.2406725292,
     "feature": "year_blt"
   },
   {
     "value": 2012.2448979591836,
-    "average_prediction": 776211.5443411143,
+    "average_prediction": 776960.6949228488,
     "feature": "year_blt"
   },
   {
     "value": 2013.204081632653,
-    "average_prediction": 776169.1725088934,
+    "average_prediction": 777688.6469572406,
     "feature": "year_blt"
   },
   {
     "value": 2014.1632653061224,
-    "average_prediction": 775678.2761961838,
+    "average_prediction": 777172.7284670611,
     "feature": "year_blt"
   },
   {
     "value": 2015.1224489795918,
-    "average_prediction": 772787.8077413646,
+    "average_prediction": 774306.1127170799,
     "feature": "year_blt"
   },
   {
     "value": 2016.0816326530612,
-    "average_prediction": 773040.6011786133,
+    "average_prediction": 774643.2051591125,
     "feature": "year_blt"
   },
   {
     "value": 2017.0408163265306,
-    "average_prediction": 772419.6923908917,
+    "average_prediction": 773632.0872492807,
     "feature": "year_blt"
   },
   {
     "value": 2018.0,
-    "average_prediction": 760694.3078332247,
+    "average_prediction": 762040.4754881458,
     "feature": "year_blt"
   },
   {
     "value": 0.0,
-    "average_prediction": 741181.5231343455,
+    "average_prediction": 741241.9645767373,
     "feature": "garage_size"
   },
   {
     "value": 17.53061224489796,
-    "average_prediction": 741181.5231343455,
+    "average_prediction": 741241.9645767373,
     "feature": "garage_size"
   },
   {
     "value": 35.06122448979592,
-    "average_prediction": 741181.5231343455,
+    "average_prediction": 741241.9645767373,
     "feature": "garage_size"
   },
   {
     "value": 52.59183673469388,
-    "average_prediction": 741181.5231343455,
+    "average_prediction": 741241.9645767373,
     "feature": "garage_size"
   },
   {
     "value": 70.12244897959184,
-    "average_prediction": 741181.5231343455,
+    "average_prediction": 741241.9645767373,
     "feature": "garage_size"
   },
   {
     "value": 87.65306122448979,
-    "average_prediction": 741270.9465947361,
+    "average_prediction": 741331.3880371277,
     "feature": "garage_size"
   },
   {
     "value": 105.18367346938776,
-    "average_prediction": 740942.5881907678,
+    "average_prediction": 741003.0296331593,
     "feature": "garage_size"
   },
   {
     "value": 122.71428571428572,
-    "average_prediction": 740718.6599590379,
+    "average_prediction": 740868.7612076504,
     "feature": "garage_size"
   },
   {
     "value": 140.24489795918367,
-    "average_prediction": 742022.8601748197,
+    "average_prediction": 742558.9124184444,
     "feature": "garage_size"
   },
   {
     "value": 157.77551020408163,
-    "average_prediction": 742023.3368618402,
+    "average_prediction": 742558.6677489595,
     "feature": "garage_size"
   },
   {
     "value": 175.30612244897958,
-    "average_prediction": 742387.3759246442,
+    "average_prediction": 742901.6321279169,
     "feature": "garage_size"
   },
   {
     "value": 192.83673469387756,
-    "average_prediction": 740636.4000523182,
+    "average_prediction": 748307.4857449889,
     "feature": "garage_size"
   },
   {
     "value": 210.3673469387755,
-    "average_prediction": 740620.2621995576,
+    "average_prediction": 748301.146370387,
     "feature": "garage_size"
   },
   {
     "value": 227.89795918367346,
-    "average_prediction": 740644.4558276614,
+    "average_prediction": 747271.9075542747,
     "feature": "garage_size"
   },
   {
     "value": 245.42857142857144,
-    "average_prediction": 741854.2085236001,
+    "average_prediction": 748381.4086067784,
     "feature": "garage_size"
   },
   {
     "value": 262.9591836734694,
-    "average_prediction": 763359.1216968526,
+    "average_prediction": 769735.1529045972,
     "feature": "garage_size"
   },
   {
     "value": 280.48979591836735,
-    "average_prediction": 764356.3548040035,
+    "average_prediction": 770818.0626659121,
     "feature": "garage_size"
   },
   {
     "value": 298.0204081632653,
-    "average_prediction": 764274.7169818281,
+    "average_prediction": 770600.0013496733,
     "feature": "garage_size"
   },
   {
     "value": 315.55102040816325,
-    "average_prediction": 764250.5499084825,
+    "average_prediction": 770574.5741712847,
     "feature": "garage_size"
   },
   {
     "value": 333.0816326530612,
-    "average_prediction": 764323.9472062379,
+    "average_prediction": 770695.1475073636,
     "feature": "garage_size"
   },
   {
     "value": 350.61224489795916,
-    "average_prediction": 765263.1274068264,
+    "average_prediction": 771703.4241225442,
     "feature": "garage_size"
   },
   {
     "value": 368.14285714285717,
-    "average_prediction": 775996.7255280267,
+    "average_prediction": 784751.2332978263,
     "feature": "garage_size"
   },
   {
     "value": 385.6734693877551,
-    "average_prediction": 778211.2530482557,
+    "average_prediction": 786803.3849796355,
     "feature": "garage_size"
   },
   {
     "value": 403.2040816326531,
-    "average_prediction": 778428.1518754936,
+    "average_prediction": 787043.1439393853,
     "feature": "garage_size"
   },
   {
     "value": 420.734693877551,
-    "average_prediction": 778821.3482571632,
+    "average_prediction": 787348.4226056073,
     "feature": "garage_size"
   },
   {
     "value": 438.265306122449,
-    "average_prediction": 776186.3542138211,
+    "average_prediction": 781765.4144706911,
     "feature": "garage_size"
   },
   {
     "value": 455.7959183673469,
-    "average_prediction": 776632.3612312069,
+    "average_prediction": 782185.6443081633,
     "feature": "garage_size"
   },
   {
     "value": 473.3265306122449,
-    "average_prediction": 776670.9973111257,
+    "average_prediction": 782401.4997776375,
     "feature": "garage_size"
   },
   {
     "value": 490.8571428571429,
-    "average_prediction": 776758.178753516,
+    "average_prediction": 782425.4004426664,
     "feature": "garage_size"
   },
   {
     "value": 508.38775510204084,
-    "average_prediction": 777272.8251905978,
+    "average_prediction": 782937.4488826497,
     "feature": "garage_size"
   },
   {
     "value": 525.9183673469388,
-    "average_prediction": 779694.111573876,
+    "average_prediction": 785342.982068381,
     "feature": "garage_size"
   },
   {
     "value": 543.4489795918367,
-    "average_prediction": 779463.3889587142,
+    "average_prediction": 785125.5836807339,
     "feature": "garage_size"
   },
   {
     "value": 560.9795918367347,
-    "average_prediction": 779886.6661995375,
+    "average_prediction": 785583.0233767038,
     "feature": "garage_size"
   },
   {
     "value": 578.5102040816327,
-    "average_prediction": 780754.3802121216,
+    "average_prediction": 786436.9142288999,
     "feature": "garage_size"
   },
   {
     "value": 596.0408163265306,
-    "average_prediction": 781308.6575148414,
+    "average_prediction": 786969.3754120431,
     "feature": "garage_size"
   },
   {
     "value": 613.5714285714286,
-    "average_prediction": 781397.2436874516,
+    "average_prediction": 787092.2750923941,
     "feature": "garage_size"
   },
   {
     "value": 631.1020408163265,
-    "average_prediction": 781554.7955922916,
+    "average_prediction": 787302.0368746028,
     "feature": "garage_size"
   },
   {
     "value": 648.6326530612245,
-    "average_prediction": 781830.7030815685,
+    "average_prediction": 787587.631947679,
     "feature": "garage_size"
   },
   {
     "value": 666.1632653061224,
-    "average_prediction": 781890.3181434412,
+    "average_prediction": 787587.7803200673,
     "feature": "garage_size"
   },
   {
     "value": 683.6938775510204,
-    "average_prediction": 781981.0756920342,
+    "average_prediction": 787642.1040656705,
     "feature": "garage_size"
   },
   {
     "value": 701.2244897959183,
-    "average_prediction": 781994.2727415054,
+    "average_prediction": 787645.102843558,
     "feature": "garage_size"
   },
   {
     "value": 718.7551020408164,
-    "average_prediction": 782198.6852868091,
+    "average_prediction": 787728.6813145933,
     "feature": "garage_size"
   },
   {
     "value": 736.2857142857143,
-    "average_prediction": 782259.4380524787,
+    "average_prediction": 787793.1850785128,
     "feature": "garage_size"
   },
   {
     "value": 753.8163265306123,
-    "average_prediction": 782329.7515633722,
+    "average_prediction": 787846.7101997125,
     "feature": "garage_size"
   },
   {
     "value": 771.3469387755102,
-    "average_prediction": 782476.691402698,
+    "average_prediction": 787998.7179622515,
     "feature": "garage_size"
   },
   {
     "value": 788.8775510204082,
-    "average_prediction": 782457.2867360015,
+    "average_prediction": 787988.1238321625,
     "feature": "garage_size"
   },
   {
     "value": 806.4081632653061,
-    "average_prediction": 782803.829597966,
+    "average_prediction": 788246.6933616681,
     "feature": "garage_size"
   },
   {
     "value": 823.9387755102041,
-    "average_prediction": 783423.631817196,
+    "average_prediction": 788882.4387797515,
     "feature": "garage_size"
   },
   {
     "value": 841.469387755102,
-    "average_prediction": 783655.5760321678,
+    "average_prediction": 789063.007857311,
     "feature": "garage_size"
   },
   {
     "value": 859.0,
-    "average_prediction": 784031.6389485168,
+    "average_prediction": 789456.2194428797,
     "feature": "garage_size"
   },
   {
     "value": 0.0,
-    "average_prediction": 702772.0689347843,
+    "average_prediction": 702245.4702169462,
     "feature": "acres"
   },
   {
     "value": 0.010408163265306122,
-    "average_prediction": 701076.2310393004,
+    "average_prediction": 698111.4691206146,
     "feature": "acres"
   },
   {
     "value": 0.020816326530612245,
-    "average_prediction": 696323.439251294,
+    "average_prediction": 693380.3526337413,
     "feature": "acres"
   },
   {
     "value": 0.031224489795918367,
-    "average_prediction": 695925.5115791777,
+    "average_prediction": 692987.8429931044,
     "feature": "acres"
   },
   {
     "value": 0.04163265306122449,
-    "average_prediction": 695370.8298193521,
+    "average_prediction": 692970.9309407483,
     "feature": "acres"
   },
   {
     "value": 0.05204081632653061,
-    "average_prediction": 709280.3100738783,
+    "average_prediction": 707651.420103543,
     "feature": "acres"
   },
   {
     "value": 0.062448979591836734,
-    "average_prediction": 694894.8889556561,
+    "average_prediction": 692858.575810903,
     "feature": "acres"
   },
   {
     "value": 0.07285714285714286,
-    "average_prediction": 694882.8606603951,
+    "average_prediction": 692821.3443627529,
     "feature": "acres"
   },
   {
     "value": 0.08326530612244898,
-    "average_prediction": 695018.9863711362,
+    "average_prediction": 692391.6536297323,
     "feature": "acres"
   },
   {
     "value": 0.0936734693877551,
-    "average_prediction": 694963.6897448367,
+    "average_prediction": 692255.8841088963,
     "feature": "acres"
   },
   {
     "value": 0.10408163265306122,
-    "average_prediction": 694990.4940000623,
+    "average_prediction": 692244.1492616558,
     "feature": "acres"
   },
   {
     "value": 0.11448979591836735,
-    "average_prediction": 694880.6376251328,
+    "average_prediction": 692160.2124277265,
     "feature": "acres"
   },
   {
     "value": 0.12489795918367347,
-    "average_prediction": 694787.5770247657,
+    "average_prediction": 692071.885801576,
     "feature": "acres"
   },
   {
     "value": 0.1353061224489796,
-    "average_prediction": 694421.2744532318,
+    "average_prediction": 691702.0924460274,
     "feature": "acres"
   },
   {
     "value": 0.1457142857142857,
-    "average_prediction": 694277.0517015961,
+    "average_prediction": 691750.6614532901,
     "feature": "acres"
   },
   {
     "value": 0.15612244897959182,
-    "average_prediction": 694127.8036134552,
+    "average_prediction": 691631.606266053,
     "feature": "acres"
   },
   {
     "value": 0.16653061224489796,
-    "average_prediction": 694002.3650758294,
+    "average_prediction": 691522.6193717202,
     "feature": "acres"
   },
   {
     "value": 0.1769387755102041,
-    "average_prediction": 693945.1528429822,
+    "average_prediction": 691454.8503149472,
     "feature": "acres"
   },
   {
     "value": 0.1873469387755102,
-    "average_prediction": 693984.306848772,
+    "average_prediction": 691432.9514867652,
     "feature": "acres"
   },
   {
     "value": 0.1977551020408163,
-    "average_prediction": 693800.1146125784,
+    "average_prediction": 691265.6931800734,
     "feature": "acres"
   },
   {
     "value": 0.20816326530612245,
-    "average_prediction": 693833.1326881014,
+    "average_prediction": 691298.7009440202,
     "feature": "acres"
   },
   {
     "value": 0.21857142857142858,
-    "average_prediction": 693633.1225458566,
+    "average_prediction": 691104.9177612019,
     "feature": "acres"
   },
   {
     "value": 0.2289795918367347,
-    "average_prediction": 693490.5706728229,
+    "average_prediction": 690962.3479508053,
     "feature": "acres"
   },
   {
     "value": 0.2393877551020408,
-    "average_prediction": 693514.1074013312,
+    "average_prediction": 691000.8817376936,
     "feature": "acres"
   },
   {
     "value": 0.24979591836734694,
-    "average_prediction": 693376.2796187269,
+    "average_prediction": 690860.0354020228,
     "feature": "acres"
   },
   {
     "value": 0.2602040816326531,
-    "average_prediction": 693725.6135654009,
+    "average_prediction": 691194.4882378991,
     "feature": "acres"
   },
   {
     "value": 0.2706122448979592,
-    "average_prediction": 693734.5415932823,
+    "average_prediction": 691195.5088814163,
     "feature": "acres"
   },
   {
     "value": 0.2810204081632653,
-    "average_prediction": 693779.5455155123,
+    "average_prediction": 691226.0822814042,
     "feature": "acres"
   },
   {
     "value": 0.2914285714285714,
-    "average_prediction": 693728.5059796098,
+    "average_prediction": 691160.1199883346,
     "feature": "acres"
   },
   {
     "value": 0.30183673469387756,
-    "average_prediction": 693752.3385689177,
+    "average_prediction": 691191.8485306614,
     "feature": "acres"
   },
   {
     "value": 0.31224489795918364,
-    "average_prediction": 693801.1714261759,
+    "average_prediction": 691178.4077179747,
     "feature": "acres"
   },
   {
     "value": 0.3226530612244898,
-    "average_prediction": 693817.6357865313,
+    "average_prediction": 691208.6453913555,
     "feature": "acres"
   },
   {
     "value": 0.3330612244897959,
-    "average_prediction": 693886.996204364,
+    "average_prediction": 691296.8395506717,
     "feature": "acres"
   },
   {
     "value": 0.34346938775510205,
-    "average_prediction": 694841.1143923184,
+    "average_prediction": 692237.8686201166,
     "feature": "acres"
   },
   {
     "value": 0.3538775510204082,
-    "average_prediction": 694990.8780390952,
+    "average_prediction": 692380.2511076336,
     "feature": "acres"
   },
   {
     "value": 0.36428571428571427,
-    "average_prediction": 695079.2095718964,
+    "average_prediction": 692475.2399191404,
     "feature": "acres"
   },
   {
     "value": 0.3746938775510204,
-    "average_prediction": 697265.536008118,
+    "average_prediction": 694741.6366152898,
     "feature": "acres"
   },
   {
     "value": 0.38510204081632654,
-    "average_prediction": 697960.3876285711,
+    "average_prediction": 695763.1213391906,
     "feature": "acres"
   },
   {
     "value": 0.3955102040816326,
-    "average_prediction": 697954.2177186866,
+    "average_prediction": 695750.951084463,
     "feature": "acres"
   },
   {
     "value": 0.40591836734693876,
-    "average_prediction": 696873.0447812426,
+    "average_prediction": 694645.619046027,
     "feature": "acres"
   },
   {
     "value": 0.4163265306122449,
-    "average_prediction": 696870.8669499719,
+    "average_prediction": 694652.0485840796,
     "feature": "acres"
   },
   {
     "value": 0.42673469387755103,
-    "average_prediction": 696960.4760099569,
+    "average_prediction": 694730.5880399513,
     "feature": "acres"
   },
   {
     "value": 0.43714285714285717,
-    "average_prediction": 697273.3188966408,
+    "average_prediction": 694920.1332100736,
     "feature": "acres"
   },
   {
     "value": 0.44755102040816325,
-    "average_prediction": 697407.2908291322,
+    "average_prediction": 694011.8232946559,
     "feature": "acres"
   },
   {
     "value": 0.4579591836734694,
-    "average_prediction": 697359.0900062202,
+    "average_prediction": 693964.1689960931,
     "feature": "acres"
   },
   {
     "value": 0.4683673469387755,
-    "average_prediction": 697398.5329076316,
+    "average_prediction": 693998.1394204444,
     "feature": "acres"
   },
   {
     "value": 0.4787755102040816,
-    "average_prediction": 697384.01626194,
+    "average_prediction": 693990.7988400788,
     "feature": "acres"
   },
   {
     "value": 0.48918367346938774,
-    "average_prediction": 697386.4131210084,
+    "average_prediction": 694329.2811021982,
     "feature": "acres"
   },
   {
     "value": 0.4995918367346939,
-    "average_prediction": 697375.5383707504,
+    "average_prediction": 694331.8870623866,
     "feature": "acres"
   },
   {
     "value": 0.51,
-    "average_prediction": 697522.5152988344,
+    "average_prediction": 694469.5492689623,
     "feature": "acres"
   },
   {
     "value": 0.0,
-    "average_prediction": 756101.0558649574,
+    "average_prediction": 756101.0558649573,
     "feature": "scenic_view"
   },
   {
     "value": 39.46532197,
-    "average_prediction": 778897.9378536943,
+    "average_prediction": 776070.5300629095,
     "feature": "LATITUDE"
   },
   {
     "value": 39.469185185,
-    "average_prediction": 779005.6601069723,
+    "average_prediction": 776218.3184605301,
     "feature": "LATITUDE"
   },
   {
     "value": 39.473048399999996,
-    "average_prediction": 779233.7091532056,
+    "average_prediction": 776371.997868662,
     "feature": "LATITUDE"
   },
   {
     "value": 39.476911615,
-    "average_prediction": 779621.672949832,
+    "average_prediction": 776669.6526006958,
     "feature": "LATITUDE"
   },
   {
     "value": 39.48077483,
-    "average_prediction": 779291.8169500311,
+    "average_prediction": 776410.7414292103,
     "feature": "LATITUDE"
   },
   {
     "value": 39.484638045,
-    "average_prediction": 779143.5835272868,
+    "average_prediction": 776271.7035067687,
     "feature": "LATITUDE"
   },
   {
     "value": 39.48850126,
-    "average_prediction": 781114.9645646119,
+    "average_prediction": 777804.0648788677,
     "feature": "LATITUDE"
   },
   {
     "value": 39.492364474999995,
-    "average_prediction": 782044.4117007257,
+    "average_prediction": 778953.9277561378,
     "feature": "LATITUDE"
   },
   {
     "value": 39.49622769,
-    "average_prediction": 781552.1282207106,
+    "average_prediction": 778254.25199983,
     "feature": "LATITUDE"
   },
   {
     "value": 39.500090905,
-    "average_prediction": 762297.7571818319,
+    "average_prediction": 760669.557315638,
     "feature": "LATITUDE"
   },
   {
     "value": 39.503954119999996,
-    "average_prediction": 789233.5398544376,
+    "average_prediction": 785994.124785513,
     "feature": "LATITUDE"
   },
   {
     "value": 39.507817335,
-    "average_prediction": 789204.9629296153,
+    "average_prediction": 785990.4360457533,
     "feature": "LATITUDE"
   },
   {
     "value": 39.51168055,
-    "average_prediction": 789441.5043414265,
+    "average_prediction": 786204.2354658752,
     "feature": "LATITUDE"
   },
   {
     "value": 39.515543765,
-    "average_prediction": 789447.8417740357,
+    "average_prediction": 786203.734217051,
     "feature": "LATITUDE"
   },
   {
     "value": 39.51940698,
-    "average_prediction": 789390.6729234129,
+    "average_prediction": 786165.4282946783,
     "feature": "LATITUDE"
   },
   {
     "value": 39.523270194999995,
-    "average_prediction": 789214.6861948167,
+    "average_prediction": 786031.1970291267,
     "feature": "LATITUDE"
   },
   {
     "value": 39.52713341,
-    "average_prediction": 788975.2252732796,
+    "average_prediction": 785934.975048705,
     "feature": "LATITUDE"
   },
   {
     "value": 39.530996625,
-    "average_prediction": 788526.0581880617,
+    "average_prediction": 785489.5371093565,
     "feature": "LATITUDE"
   },
   {
     "value": 39.534859839999996,
-    "average_prediction": 788458.1757543347,
+    "average_prediction": 785392.4972120535,
     "feature": "LATITUDE"
   },
   {
     "value": 39.538723055,
-    "average_prediction": 788406.7574941606,
+    "average_prediction": 785342.5935820257,
     "feature": "LATITUDE"
   },
   {
     "value": 39.54258627,
-    "average_prediction": 792883.1118864352,
+    "average_prediction": 789772.2497034502,
     "feature": "LATITUDE"
   },
   {
     "value": 39.546449485,
-    "average_prediction": 792907.3382652896,
+    "average_prediction": 790000.5954836166,
     "feature": "LATITUDE"
   },
   {
     "value": 39.5503127,
-    "average_prediction": 793436.9870560162,
+    "average_prediction": 789926.1120631093,
     "feature": "LATITUDE"
   },
   {
     "value": 39.554175915,
-    "average_prediction": 793382.2888711118,
+    "average_prediction": 789919.9154977335,
     "feature": "LATITUDE"
   },
   {
     "value": 39.55803913,
-    "average_prediction": 793161.4753418448,
+    "average_prediction": 789688.5618842043,
     "feature": "LATITUDE"
   },
   {
     "value": 39.561902345,
-    "average_prediction": 793069.0937312645,
+    "average_prediction": 789691.875269248,
     "feature": "LATITUDE"
   },
   {
     "value": 39.565765559999996,
-    "average_prediction": 915846.1043321427,
+    "average_prediction": 832728.0535962121,
     "feature": "LATITUDE"
   },
   {
     "value": 39.569628775,
-    "average_prediction": 914738.3699036513,
+    "average_prediction": 831741.6127444117,
     "feature": "LATITUDE"
   },
   {
     "value": 39.57349199,
-    "average_prediction": 914709.2242801476,
+    "average_prediction": 831704.3538909146,
     "feature": "LATITUDE"
   },
   {
     "value": 39.577355204999996,
-    "average_prediction": 914767.0300189647,
+    "average_prediction": 831656.0730190007,
     "feature": "LATITUDE"
   },
   {
     "value": 39.58121842,
-    "average_prediction": 914060.0717728578,
+    "average_prediction": 830924.7871423211,
     "feature": "LATITUDE"
   },
   {
     "value": 39.585081635,
-    "average_prediction": 913946.984674766,
+    "average_prediction": 830804.1382675587,
     "feature": "LATITUDE"
   },
   {
     "value": 39.58894485,
-    "average_prediction": 913517.8963654628,
+    "average_prediction": 830360.3258341565,
     "feature": "LATITUDE"
   },
   {
     "value": 39.592808065,
-    "average_prediction": 913361.9674932855,
+    "average_prediction": 830316.9867296228,
     "feature": "LATITUDE"
   },
   {
     "value": 39.59667128,
-    "average_prediction": 986640.8833679777,
+    "average_prediction": 828618.4687220551,
     "feature": "LATITUDE"
   },
   {
     "value": 39.600534495,
-    "average_prediction": 986213.7661282138,
+    "average_prediction": 828472.4348272422,
     "feature": "LATITUDE"
   },
   {
     "value": 39.60439771,
-    "average_prediction": 986263.3594476752,
+    "average_prediction": 828495.978052026,
     "feature": "LATITUDE"
   },
   {
     "value": 39.608260924999996,
-    "average_prediction": 986034.3464865742,
+    "average_prediction": 828236.9759070539,
     "feature": "LATITUDE"
   },
   {
     "value": 39.61212414,
-    "average_prediction": 985822.8911664886,
+    "average_prediction": 828028.6353150633,
     "feature": "LATITUDE"
   },
   {
     "value": 39.615987355,
-    "average_prediction": 985833.8510483955,
+    "average_prediction": 828119.5063878394,
     "feature": "LATITUDE"
   },
   {
     "value": 39.61985057,
-    "average_prediction": 985834.6764750849,
+    "average_prediction": 828123.4470897286,
     "feature": "LATITUDE"
   },
   {
     "value": 39.623713785,
-    "average_prediction": 986050.8771689454,
+    "average_prediction": 828230.2062316835,
     "feature": "LATITUDE"
   },
   {
     "value": 39.627577,
-    "average_prediction": 987508.0370054385,
+    "average_prediction": 829683.2759392725,
     "feature": "LATITUDE"
   },
   {
     "value": 39.631440215,
-    "average_prediction": 987490.4219144648,
+    "average_prediction": 829686.3923767561,
     "feature": "LATITUDE"
   },
   {
     "value": 39.63530343,
-    "average_prediction": 994066.3967997151,
+    "average_prediction": 836434.7604945515,
     "feature": "LATITUDE"
   },
   {
     "value": 39.639166644999996,
-    "average_prediction": 1012201.5320489435,
+    "average_prediction": 854696.5550398387,
     "feature": "LATITUDE"
   },
   {
     "value": 39.64302986,
-    "average_prediction": 1011696.2111221354,
+    "average_prediction": 854002.9799991124,
     "feature": "LATITUDE"
   },
   {
     "value": 39.646893075,
-    "average_prediction": 1011663.297160393,
+    "average_prediction": 853994.0125609952,
     "feature": "LATITUDE"
   },
   {
     "value": 39.65075629,
-    "average_prediction": 1011663.297160393,
+    "average_prediction": 854064.0481962083,
     "feature": "LATITUDE"
   },
   {
     "value": 39.654619505,
-    "average_prediction": 1011808.1679679359,
+    "average_prediction": 854216.7330352383,
     "feature": "LATITUDE"
   },
   {
     "value": -106.14409728,
-    "average_prediction": 850086.1862462318,
+    "average_prediction": 845486.5407192698,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.14059305857143,
-    "average_prediction": 945072.3646804758,
+    "average_prediction": 791609.2251346675,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.13708883714285,
-    "average_prediction": 928365.4085523448,
+    "average_prediction": 774909.7559533684,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.13358461571428,
-    "average_prediction": 928365.4085523448,
+    "average_prediction": 774909.7559533684,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.13008039428571,
-    "average_prediction": 928344.1787153784,
+    "average_prediction": 774911.656965891,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.12657617285714,
-    "average_prediction": 928344.1787153784,
+    "average_prediction": 774911.656965891,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.12307195142857,
-    "average_prediction": 928341.5632751195,
+    "average_prediction": 774908.8315602286,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.11956773,
-    "average_prediction": 928383.2860656886,
+    "average_prediction": 774909.7329268595,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.11606350857143,
-    "average_prediction": 928395.6136848875,
+    "average_prediction": 774923.7378626372,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.11255928714286,
-    "average_prediction": 928419.5728109101,
+    "average_prediction": 774927.5462442674,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.10905506571429,
-    "average_prediction": 928493.9839843215,
+    "average_prediction": 774995.0331799029,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.10555084428572,
-    "average_prediction": 928382.4406514459,
+    "average_prediction": 774898.1211373999,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.10204662285715,
-    "average_prediction": 927985.703744493,
+    "average_prediction": 774588.7227811661,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.09854240142857,
-    "average_prediction": 927692.6940851633,
+    "average_prediction": 774177.5104922311,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.09503818,
-    "average_prediction": 923850.8601527874,
+    "average_prediction": 770529.7866355496,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.09153395857143,
-    "average_prediction": 922192.051288248,
+    "average_prediction": 768904.7277858385,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.08802973714286,
-    "average_prediction": 921785.3453731227,
+    "average_prediction": 768564.7828851211,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.08452551571429,
-    "average_prediction": 921846.7359664537,
+    "average_prediction": 768632.4586194023,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.08102129428572,
-    "average_prediction": 921847.3428306171,
+    "average_prediction": 768628.1584137193,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.07751707285715,
-    "average_prediction": 921828.3623785359,
+    "average_prediction": 768619.534824678,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.07401285142858,
-    "average_prediction": 921963.0145118822,
+    "average_prediction": 768668.8320514071,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.07050863,
-    "average_prediction": 921936.2295265204,
+    "average_prediction": 768675.5834440491,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.06700440857144,
-    "average_prediction": 921958.5378885812,
+    "average_prediction": 768717.9397504046,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.06350018714286,
-    "average_prediction": 917544.3282593286,
+    "average_prediction": 766442.943604661,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.0599959657143,
-    "average_prediction": 915048.5468281717,
+    "average_prediction": 763794.2564887601,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.05649174428571,
-    "average_prediction": 915099.9249467355,
+    "average_prediction": 763935.413328037,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.05298752285714,
-    "average_prediction": 903845.2917153547,
+    "average_prediction": 752515.2859747063,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.04948330142857,
-    "average_prediction": 903786.823890015,
+    "average_prediction": 754204.4101969824,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.04597908,
-    "average_prediction": 939092.4267338339,
+    "average_prediction": 789822.0690955529,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.04247485857142,
-    "average_prediction": 939021.3188796338,
+    "average_prediction": 789796.561970305,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.03897063714285,
-    "average_prediction": 942450.1454088301,
+    "average_prediction": 794593.3916387074,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.03546641571428,
-    "average_prediction": 942993.5138195392,
+    "average_prediction": 795337.7356220325,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.03196219428571,
-    "average_prediction": 943258.6996648125,
+    "average_prediction": 795660.5855714278,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.02845797285714,
-    "average_prediction": 943411.8021272357,
+    "average_prediction": 795474.6349814554,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.02495375142857,
-    "average_prediction": 943504.6667192659,
+    "average_prediction": 795438.367864227,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.02144953,
-    "average_prediction": 943531.4106349573,
+    "average_prediction": 795467.1403417508,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.01794530857143,
-    "average_prediction": 950576.3676411834,
+    "average_prediction": 798076.8410516399,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.01444108714286,
-    "average_prediction": 950398.5678796901,
+    "average_prediction": 797896.4941745527,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.01093686571429,
-    "average_prediction": 944890.6644537008,
+    "average_prediction": 797466.2412284914,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.00743264428571,
-    "average_prediction": 944860.0625421098,
+    "average_prediction": 797419.9425560762,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.00392842285714,
-    "average_prediction": 945030.2848064913,
+    "average_prediction": 797550.0798426091,
     "feature": "LONGITUDE"
   },
   {
     "value": -106.00042420142857,
-    "average_prediction": 945053.7557517518,
+    "average_prediction": 797565.4056306311,
     "feature": "LONGITUDE"
   },
   {
     "value": -105.99691998,
-    "average_prediction": 945052.9127088441,
+    "average_prediction": 797518.123648685,
     "feature": "LONGITUDE"
   },
   {
     "value": -105.99341575857143,
-    "average_prediction": 945369.3662609154,
+    "average_prediction": 797669.8262670935,
     "feature": "LONGITUDE"
   },
   {
     "value": -105.98991153714286,
-    "average_prediction": 945552.7842403629,
+    "average_prediction": 797813.8393511589,
     "feature": "LONGITUDE"
   },
   {
     "value": -105.98640731571429,
-    "average_prediction": 945766.6197601527,
+    "average_prediction": 797869.4363848427,
     "feature": "LONGITUDE"
   },
   {
     "value": -105.98290309428572,
-    "average_prediction": 945813.0642774734,
+    "average_prediction": 797789.1303401737,
     "feature": "LONGITUDE"
   },
   {
     "value": -105.97939887285715,
-    "average_prediction": 945942.760979346,
+    "average_prediction": 797789.1303401737,
     "feature": "LONGITUDE"
   },
   {
     "value": -105.97589465142858,
-    "average_prediction": 946459.6159231387,
+    "average_prediction": 798240.9519635299,
     "feature": "LONGITUDE"
   },
   {
     "value": -105.97239043,
-    "average_prediction": 946504.6758159841,
+    "average_prediction": 798240.9519635299,
     "feature": "LONGITUDE"
   },
   {
     "value": 0.18706579610846896,
-    "average_prediction": 925327.1201711515,
+    "average_prediction": 932402.6739039563,
     "feature": "dist_breck"
   },
   {
     "value": 0.4238985267703841,
-    "average_prediction": 915612.4783646232,
+    "average_prediction": 922586.8696129561,
     "feature": "dist_breck"
   },
   {
     "value": 0.6607312574322992,
-    "average_prediction": 877419.3561535487,
+    "average_prediction": 884346.4972159154,
     "feature": "dist_breck"
   },
   {
     "value": 0.8975639880942143,
-    "average_prediction": 848777.2149949392,
+    "average_prediction": 855581.4082463979,
     "feature": "dist_breck"
   },
   {
     "value": 1.1343967187561295,
-    "average_prediction": 803631.9664798699,
+    "average_prediction": 810136.9184815905,
     "feature": "dist_breck"
   },
   {
     "value": 1.3712294494180446,
-    "average_prediction": 793555.6805345401,
+    "average_prediction": 800297.0151549303,
     "feature": "dist_breck"
   },
   {
     "value": 1.6080621800799597,
-    "average_prediction": 792996.6399520363,
+    "average_prediction": 799759.2802618353,
     "feature": "dist_breck"
   },
   {
     "value": 1.8448949107418748,
-    "average_prediction": 790631.906705552,
+    "average_prediction": 797162.9364660892,
     "feature": "dist_breck"
   },
   {
     "value": 2.08172764140379,
-    "average_prediction": 789770.9375581725,
+    "average_prediction": 796299.2263265364,
     "feature": "dist_breck"
   },
   {
     "value": 2.318560372065705,
-    "average_prediction": 789843.5018255259,
+    "average_prediction": 796799.8778305989,
     "feature": "dist_breck"
   },
   {
     "value": 2.55539310272762,
-    "average_prediction": 789782.8653469916,
+    "average_prediction": 796750.6088149023,
     "feature": "dist_breck"
   },
   {
     "value": 2.7922258333895353,
-    "average_prediction": 789705.2960895624,
+    "average_prediction": 796614.585276391,
     "feature": "dist_breck"
   },
   {
     "value": 3.0290585640514505,
-    "average_prediction": 782066.9224480346,
+    "average_prediction": 775466.7466296905,
     "feature": "dist_breck"
   },
   {
     "value": 3.2658912947133656,
-    "average_prediction": 775726.1018716809,
+    "average_prediction": 773276.5847159751,
     "feature": "dist_breck"
   },
   {
     "value": 3.5027240253752807,
-    "average_prediction": 774209.525951632,
+    "average_prediction": 764191.0277493036,
     "feature": "dist_breck"
   },
   {
     "value": 3.739556756037196,
-    "average_prediction": 772842.8350247124,
+    "average_prediction": 764906.9288338387,
     "feature": "dist_breck"
   },
   {
     "value": 3.976389486699111,
-    "average_prediction": 772627.5451087962,
+    "average_prediction": 764703.8908756796,
     "feature": "dist_breck"
   },
   {
     "value": 4.213222217361025,
-    "average_prediction": 760569.1917311039,
+    "average_prediction": 761429.3583458817,
     "feature": "dist_breck"
   },
   {
     "value": 4.450054948022942,
-    "average_prediction": 755089.3965759905,
+    "average_prediction": 756022.1716976751,
     "feature": "dist_breck"
   },
   {
     "value": 4.686887678684856,
-    "average_prediction": 753402.8785987367,
+    "average_prediction": 754362.6699039122,
     "feature": "dist_breck"
   },
   {
     "value": 4.923720409346771,
-    "average_prediction": 752411.3072993697,
+    "average_prediction": 753358.4785150562,
     "feature": "dist_breck"
   },
   {
     "value": 5.160553140008686,
-    "average_prediction": 752351.0475203986,
+    "average_prediction": 753295.7131825347,
     "feature": "dist_breck"
   },
   {
     "value": 5.397385870670602,
-    "average_prediction": 752251.3151172426,
+    "average_prediction": 752994.0394442747,
     "feature": "dist_breck"
   },
   {
     "value": 5.634218601332517,
-    "average_prediction": 747782.0031360649,
+    "average_prediction": 748746.7620085038,
     "feature": "dist_breck"
   },
   {
     "value": 5.8710513319944315,
-    "average_prediction": 740886.1567438426,
+    "average_prediction": 741270.5010763803,
     "feature": "dist_breck"
   },
   {
     "value": 6.107884062656346,
-    "average_prediction": 739502.4664911426,
+    "average_prediction": 739872.912975117,
     "feature": "dist_breck"
   },
   {
     "value": 6.344716793318263,
-    "average_prediction": 740209.6883197614,
+    "average_prediction": 740524.4730799678,
     "feature": "dist_breck"
   },
   {
     "value": 6.581549523980177,
-    "average_prediction": 739895.1841318627,
+    "average_prediction": 740236.9336762328,
     "feature": "dist_breck"
   },
   {
     "value": 6.818382254642092,
-    "average_prediction": 738785.6065728735,
+    "average_prediction": 739562.8375302557,
     "feature": "dist_breck"
   },
   {
     "value": 7.055214985304007,
-    "average_prediction": 738718.3188586737,
+    "average_prediction": 739469.6031918572,
     "feature": "dist_breck"
   },
   {
     "value": 7.292047715965923,
-    "average_prediction": 738553.0142275973,
+    "average_prediction": 739230.403066343,
     "feature": "dist_breck"
   },
   {
     "value": 7.528880446627838,
-    "average_prediction": 738479.3512558182,
+    "average_prediction": 739189.7896724435,
     "feature": "dist_breck"
   },
   {
     "value": 7.7657131772897525,
-    "average_prediction": 738352.7961422683,
+    "average_prediction": 738950.8577809439,
     "feature": "dist_breck"
   },
   {
     "value": 8.002545907951667,
-    "average_prediction": 736668.8714705945,
+    "average_prediction": 737276.8799594861,
     "feature": "dist_breck"
   },
   {
     "value": 8.239378638613582,
-    "average_prediction": 731275.4823163055,
+    "average_prediction": 731882.0747132557,
     "feature": "dist_breck"
   },
   {
     "value": 8.476211369275498,
-    "average_prediction": 731270.2495043505,
+    "average_prediction": 731911.7514626144,
     "feature": "dist_breck"
   },
   {
     "value": 8.713044099937413,
-    "average_prediction": 731252.2851599342,
+    "average_prediction": 731852.1941067773,
     "feature": "dist_breck"
   },
   {
     "value": 8.949876830599328,
-    "average_prediction": 731524.1749721187,
+    "average_prediction": 731838.9592148258,
     "feature": "dist_breck"
   },
   {
     "value": 9.186709561261244,
-    "average_prediction": 731442.981730991,
+    "average_prediction": 731322.4091672588,
     "feature": "dist_breck"
   },
   {
     "value": 9.423542291923159,
-    "average_prediction": 731633.4204040131,
+    "average_prediction": 731599.3753164039,
     "feature": "dist_breck"
   },
   {
     "value": 9.660375022585074,
-    "average_prediction": 731808.8390346528,
+    "average_prediction": 731972.3575753076,
     "feature": "dist_breck"
   },
   {
     "value": 9.897207753246988,
-    "average_prediction": 732031.4583887033,
+    "average_prediction": 732145.900940887,
     "feature": "dist_breck"
   },
   {
     "value": 10.134040483908903,
-    "average_prediction": 732033.245440181,
+    "average_prediction": 732105.3552094059,
     "feature": "dist_breck"
   },
   {
     "value": 10.37087321457082,
-    "average_prediction": 732907.4258836898,
+    "average_prediction": 733029.793803463,
     "feature": "dist_breck"
   },
   {
     "value": 10.607705945232734,
-    "average_prediction": 721221.2406213081,
+    "average_prediction": 721536.8422273621,
     "feature": "dist_breck"
   },
   {
     "value": 10.844538675894649,
-    "average_prediction": 720783.5150841776,
+    "average_prediction": 721323.4128785905,
     "feature": "dist_breck"
   },
   {
     "value": 11.081371406556565,
-    "average_prediction": 720677.0478696415,
+    "average_prediction": 721049.8979634229,
     "feature": "dist_breck"
   },
   {
     "value": 11.31820413721848,
-    "average_prediction": 720602.8673036598,
+    "average_prediction": 720973.3650987543,
     "feature": "dist_breck"
   },
   {
     "value": 11.555036867880395,
-    "average_prediction": 720793.5140296702,
+    "average_prediction": 721101.8059686722,
     "feature": "dist_breck"
   },
   {
     "value": 11.79186959854231,
-    "average_prediction": 720817.7652132518,
+    "average_prediction": 721117.3162770281,
     "feature": "dist_breck"
   },
   {
     "value": 2.9195102917654556,
-    "average_prediction": 869257.5857993527,
+    "average_prediction": 878049.5587817325,
     "feature": "dist_keystone"
   },
   {
     "value": 3.0433754426131547,
-    "average_prediction": 950627.0854669624,
+    "average_prediction": 878049.5587817325,
     "feature": "dist_keystone"
   },
   {
     "value": 3.167240593460854,
-    "average_prediction": 950848.2747838229,
+    "average_prediction": 878986.9624881282,
     "feature": "dist_keystone"
   },
   {
     "value": 3.2911057443085534,
-    "average_prediction": 950848.2747838229,
+    "average_prediction": 878986.9624881282,
     "feature": "dist_keystone"
   },
   {
     "value": 3.4149708951562525,
-    "average_prediction": 935069.7903022624,
+    "average_prediction": 865339.6895361303,
     "feature": "dist_keystone"
   },
   {
     "value": 3.5388360460039516,
-    "average_prediction": 850610.0686712734,
+    "average_prediction": 850185.1099574101,
     "feature": "dist_keystone"
   },
   {
     "value": 3.6627011968516507,
-    "average_prediction": 850618.584837925,
+    "average_prediction": 850290.905826955,
     "feature": "dist_keystone"
   },
   {
     "value": 3.78656634769935,
-    "average_prediction": 850195.8680134581,
+    "average_prediction": 850352.208730789,
     "feature": "dist_keystone"
   },
   {
     "value": 3.910431498547049,
-    "average_prediction": 848654.795913028,
+    "average_prediction": 848847.9269601374,
     "feature": "dist_keystone"
   },
   {
     "value": 4.034296649394748,
-    "average_prediction": 848658.0529382217,
+    "average_prediction": 848851.2271357673,
     "feature": "dist_keystone"
   },
   {
     "value": 4.158161800242447,
-    "average_prediction": 846565.5684166438,
+    "average_prediction": 845560.9093267118,
     "feature": "dist_keystone"
   },
   {
     "value": 4.282026951090146,
-    "average_prediction": 846001.2497217002,
+    "average_prediction": 846113.569192219,
     "feature": "dist_keystone"
   },
   {
     "value": 4.405892101937846,
-    "average_prediction": 844841.914790693,
+    "average_prediction": 844791.1374594993,
     "feature": "dist_keystone"
   },
   {
     "value": 4.529757252785545,
-    "average_prediction": 844833.5169296638,
+    "average_prediction": 844782.9095506262,
     "feature": "dist_keystone"
   },
   {
     "value": 4.6536224036332445,
-    "average_prediction": 844828.8322685084,
+    "average_prediction": 844801.8048102425,
     "feature": "dist_keystone"
   },
   {
     "value": 4.777487554480944,
-    "average_prediction": 844725.4924542701,
+    "average_prediction": 844618.6063593816,
     "feature": "dist_keystone"
   },
   {
     "value": 4.901352705328643,
-    "average_prediction": 840334.0851350524,
+    "average_prediction": 839552.3863838314,
     "feature": "dist_keystone"
   },
   {
     "value": 5.025217856176342,
-    "average_prediction": 832554.2477423324,
+    "average_prediction": 829507.1258357866,
     "feature": "dist_keystone"
   },
   {
     "value": 5.149083007024041,
-    "average_prediction": 827286.1244530985,
+    "average_prediction": 820683.8023431358,
     "feature": "dist_keystone"
   },
   {
     "value": 5.27294815787174,
-    "average_prediction": 827132.9296343847,
+    "average_prediction": 820502.3439348374,
     "feature": "dist_keystone"
   },
   {
     "value": 5.396813308719439,
-    "average_prediction": 822537.7024172352,
+    "average_prediction": 816976.9409072229,
     "feature": "dist_keystone"
   },
   {
     "value": 5.520678459567138,
-    "average_prediction": 820968.4304914617,
+    "average_prediction": 815979.31095646,
     "feature": "dist_keystone"
   },
   {
     "value": 5.644543610414837,
-    "average_prediction": 820921.7132233141,
+    "average_prediction": 815414.7459584883,
     "feature": "dist_keystone"
   },
   {
     "value": 5.7684087612625365,
-    "average_prediction": 820297.8020623793,
+    "average_prediction": 814840.25687409,
     "feature": "dist_keystone"
   },
   {
     "value": 5.892273912110236,
-    "average_prediction": 819967.7641046006,
+    "average_prediction": 814842.5337243921,
     "feature": "dist_keystone"
   },
   {
     "value": 6.016139062957935,
-    "average_prediction": 818908.6772152142,
+    "average_prediction": 812806.4807740382,
     "feature": "dist_keystone"
   },
   {
     "value": 6.140004213805634,
-    "average_prediction": 818912.6461163281,
+    "average_prediction": 812902.6273795373,
     "feature": "dist_keystone"
   },
   {
     "value": 6.263869364653333,
-    "average_prediction": 818989.4261976993,
+    "average_prediction": 812981.4589671723,
     "feature": "dist_keystone"
   },
   {
     "value": 6.387734515501032,
-    "average_prediction": 818924.335957862,
+    "average_prediction": 812771.6096131561,
     "feature": "dist_keystone"
   },
   {
     "value": 6.511599666348732,
-    "average_prediction": 819036.814616766,
+    "average_prediction": 813082.4171744712,
     "feature": "dist_keystone"
   },
   {
     "value": 6.635464817196431,
-    "average_prediction": 819761.6036106636,
+    "average_prediction": 813827.8301935367,
     "feature": "dist_keystone"
   },
   {
     "value": 6.75932996804413,
-    "average_prediction": 821516.8952308929,
+    "average_prediction": 815609.698779626,
     "feature": "dist_keystone"
   },
   {
     "value": 6.8831951188918294,
-    "average_prediction": 770462.4266909643,
+    "average_prediction": 764676.2867714464,
     "feature": "dist_keystone"
   },
   {
     "value": 7.0070602697395294,
-    "average_prediction": 767616.3111792237,
+    "average_prediction": 764560.3734235999,
     "feature": "dist_keystone"
   },
   {
     "value": 7.130925420587229,
-    "average_prediction": 767754.8127072763,
+    "average_prediction": 764645.4180036853,
     "feature": "dist_keystone"
   },
   {
     "value": 7.254790571434928,
-    "average_prediction": 767106.1352979498,
+    "average_prediction": 764878.6794607039,
     "feature": "dist_keystone"
   },
   {
     "value": 7.378655722282627,
-    "average_prediction": 767182.0060822648,
+    "average_prediction": 764911.9973081122,
     "feature": "dist_keystone"
   },
   {
     "value": 7.502520873130326,
-    "average_prediction": 767056.9193842118,
+    "average_prediction": 764762.8818413481,
     "feature": "dist_keystone"
   },
   {
     "value": 7.626386023978025,
-    "average_prediction": 767029.9598761324,
+    "average_prediction": 765043.5949631083,
     "feature": "dist_keystone"
   },
   {
     "value": 7.750251174825724,
-    "average_prediction": 766703.3431959474,
+    "average_prediction": 764728.1158902418,
     "feature": "dist_keystone"
   },
   {
     "value": 7.874116325673423,
-    "average_prediction": 766564.2699808879,
+    "average_prediction": 764637.5266027862,
     "feature": "dist_keystone"
   },
   {
     "value": 7.997981476521122,
-    "average_prediction": 766605.2211280743,
+    "average_prediction": 764619.4357456104,
     "feature": "dist_keystone"
   },
   {
     "value": 8.121846627368821,
-    "average_prediction": 767507.7108868994,
+    "average_prediction": 765149.2139595695,
     "feature": "dist_keystone"
   },
   {
     "value": 8.24571177821652,
-    "average_prediction": 769983.2194307498,
+    "average_prediction": 767771.1859062108,
     "feature": "dist_keystone"
   },
   {
     "value": 8.36957692906422,
-    "average_prediction": 770211.6269190614,
+    "average_prediction": 767975.0122414217,
     "feature": "dist_keystone"
   },
   {
     "value": 8.493442079911919,
-    "average_prediction": 770219.6790954007,
+    "average_prediction": 767975.2120960728,
     "feature": "dist_keystone"
   },
   {
     "value": 8.617307230759618,
-    "average_prediction": 770246.8295388333,
+    "average_prediction": 767993.632751631,
     "feature": "dist_keystone"
   },
   {
     "value": 8.741172381607317,
-    "average_prediction": 770230.1562911799,
+    "average_prediction": 767928.7686095143,
     "feature": "dist_keystone"
   },
   {
     "value": 8.865037532455016,
-    "average_prediction": 770230.4628863834,
+    "average_prediction": 767928.0353549116,
     "feature": "dist_keystone"
   },
   {
     "value": 8.988902683302715,
-    "average_prediction": 770165.7053815051,
+    "average_prediction": 768205.1454023366,
     "feature": "dist_keystone"
   },
   {
     "value": 1.9629785136767515,
-    "average_prediction": 798174.2821160959,
+    "average_prediction": 787676.2291401721,
     "feature": "dist_copper"
   },
   {
     "value": 2.105372262157496,
-    "average_prediction": 792554.7726500466,
+    "average_prediction": 782069.0626904715,
     "feature": "dist_copper"
   },
   {
     "value": 2.247766010638241,
-    "average_prediction": 792146.6234410082,
+    "average_prediction": 781542.9386561161,
     "feature": "dist_copper"
   },
   {
     "value": 2.3901597591189856,
-    "average_prediction": 791975.2106316903,
+    "average_prediction": 781354.8046305575,
     "feature": "dist_copper"
   },
   {
     "value": 2.5325535075997303,
-    "average_prediction": 791875.9417412195,
+    "average_prediction": 781269.1182330902,
     "feature": "dist_copper"
   },
   {
     "value": 2.674947256080475,
-    "average_prediction": 791357.4006493941,
+    "average_prediction": 780734.2898513265,
     "feature": "dist_copper"
   },
   {
     "value": 2.8173410045612197,
-    "average_prediction": 791274.9545965425,
+    "average_prediction": 780736.212441143,
     "feature": "dist_copper"
   },
   {
     "value": 2.9597347530419644,
-    "average_prediction": 791277.1749078931,
+    "average_prediction": 780714.6796655689,
     "feature": "dist_copper"
   },
   {
     "value": 3.102128501522709,
-    "average_prediction": 791280.0284427446,
+    "average_prediction": 780714.0052696625,
     "feature": "dist_copper"
   },
   {
     "value": 3.244522250003454,
-    "average_prediction": 791218.529325873,
+    "average_prediction": 780795.6308948774,
     "feature": "dist_copper"
   },
   {
     "value": 3.3869159984841986,
-    "average_prediction": 791140.3502451428,
+    "average_prediction": 780724.8223363585,
     "feature": "dist_copper"
   },
   {
     "value": 3.5293097469649433,
-    "average_prediction": 791108.6305271242,
+    "average_prediction": 780646.113732323,
     "feature": "dist_copper"
   },
   {
     "value": 3.671703495445688,
-    "average_prediction": 791577.7966238448,
+    "average_prediction": 780678.3302107886,
     "feature": "dist_copper"
   },
   {
     "value": 3.8140972439264327,
-    "average_prediction": 791574.5333906801,
+    "average_prediction": 780677.3659385657,
     "feature": "dist_copper"
   },
   {
     "value": 3.9564909924071774,
-    "average_prediction": 794577.6337766749,
+    "average_prediction": 780734.6312330853,
     "feature": "dist_copper"
   },
   {
     "value": 4.098884740887922,
-    "average_prediction": 761703.1071119931,
+    "average_prediction": 749107.1688956724,
     "feature": "dist_copper"
   },
   {
     "value": 4.241278489368667,
-    "average_prediction": 748754.2764041245,
+    "average_prediction": 743291.7311632734,
     "feature": "dist_copper"
   },
   {
     "value": 4.383672237849412,
-    "average_prediction": 743917.8660248149,
+    "average_prediction": 741495.7462200375,
     "feature": "dist_copper"
   },
   {
     "value": 4.526065986330156,
-    "average_prediction": 740994.7029088656,
+    "average_prediction": 741241.7118698666,
     "feature": "dist_copper"
   },
   {
     "value": 4.6684597348109005,
-    "average_prediction": 740209.9662504335,
+    "average_prediction": 740097.2715919786,
     "feature": "dist_copper"
   },
   {
     "value": 4.810853483291646,
-    "average_prediction": 739804.9441827268,
+    "average_prediction": 739399.4740475649,
     "feature": "dist_copper"
   },
   {
     "value": 4.953247231772391,
-    "average_prediction": 740465.3570596247,
+    "average_prediction": 739743.8850100983,
     "feature": "dist_copper"
   },
   {
     "value": 5.095640980253135,
-    "average_prediction": 941519.8076536502,
+    "average_prediction": 929227.4199541965,
     "feature": "dist_copper"
   },
   {
     "value": 5.238034728733879,
-    "average_prediction": 748888.7333357095,
+    "average_prediction": 751725.3227127364,
     "feature": "dist_copper"
   },
   {
     "value": 5.3804284772146245,
-    "average_prediction": 731971.0471449147,
+    "average_prediction": 732123.6988216597,
     "feature": "dist_copper"
   },
   {
     "value": 5.52282222569537,
-    "average_prediction": 728367.3018349187,
+    "average_prediction": 727900.6571956332,
     "feature": "dist_copper"
   },
   {
     "value": 5.665215974176114,
-    "average_prediction": 727272.559994649,
+    "average_prediction": 727166.3981541418,
     "feature": "dist_copper"
   },
   {
     "value": 5.807609722656858,
-    "average_prediction": 726716.495086424,
+    "average_prediction": 726454.9868455416,
     "feature": "dist_copper"
   },
   {
     "value": 5.950003471137603,
-    "average_prediction": 728049.826109355,
+    "average_prediction": 742244.5089886598,
     "feature": "dist_copper"
   },
   {
     "value": 6.092397219618348,
-    "average_prediction": 741105.4719952476,
+    "average_prediction": 745231.2389245795,
     "feature": "dist_copper"
   },
   {
     "value": 6.234790968099093,
-    "average_prediction": 727043.7471641697,
+    "average_prediction": 730683.5786950499,
     "feature": "dist_copper"
   },
   {
     "value": 6.377184716579838,
-    "average_prediction": 718340.1833683618,
+    "average_prediction": 720521.4835104962,
     "feature": "dist_copper"
   },
   {
     "value": 6.519578465060582,
-    "average_prediction": 716793.7061478319,
+    "average_prediction": 719054.159722672,
     "feature": "dist_copper"
   },
   {
     "value": 6.661972213541326,
-    "average_prediction": 714174.2093261109,
+    "average_prediction": 716480.7462751758,
     "feature": "dist_copper"
   },
   {
     "value": 6.804365962022072,
-    "average_prediction": 714229.0117215894,
+    "average_prediction": 716739.2048531834,
     "feature": "dist_copper"
   },
   {
     "value": 6.946759710502817,
-    "average_prediction": 714097.1377374169,
+    "average_prediction": 716500.9345988448,
     "feature": "dist_copper"
   },
   {
     "value": 7.089153458983561,
-    "average_prediction": 714127.5148090222,
+    "average_prediction": 716535.9951791987,
     "feature": "dist_copper"
   },
   {
     "value": 7.231547207464305,
-    "average_prediction": 712892.2572404097,
+    "average_prediction": 716609.2256660212,
     "feature": "dist_copper"
   },
   {
     "value": 7.37394095594505,
-    "average_prediction": 712879.4547670386,
+    "average_prediction": 716830.6327320163,
     "feature": "dist_copper"
   },
   {
     "value": 7.5163347044257955,
-    "average_prediction": 712854.231312114,
+    "average_prediction": 716808.401073914,
     "feature": "dist_copper"
   },
   {
     "value": 7.65872845290654,
-    "average_prediction": 712748.5399029979,
+    "average_prediction": 716733.3881699297,
     "feature": "dist_copper"
   },
   {
     "value": 7.801122201387284,
-    "average_prediction": 712744.1921999786,
+    "average_prediction": 716753.2849390005,
     "feature": "dist_copper"
   },
   {
     "value": 7.943515949868029,
-    "average_prediction": 713409.9559602353,
+    "average_prediction": 717330.2116414745,
     "feature": "dist_copper"
   },
   {
     "value": 8.085909698348775,
-    "average_prediction": 714456.2228472084,
+    "average_prediction": 718286.0276794374,
     "feature": "dist_copper"
   },
   {
     "value": 8.228303446829518,
-    "average_prediction": 714475.6040469642,
+    "average_prediction": 718223.1391715617,
     "feature": "dist_copper"
   },
   {
     "value": 8.370697195310264,
-    "average_prediction": 715091.0777972025,
+    "average_prediction": 718811.056364036,
     "feature": "dist_copper"
   },
   {
     "value": 8.513090943791008,
-    "average_prediction": 715761.2362497443,
+    "average_prediction": 718727.3289662179,
     "feature": "dist_copper"
   },
   {
     "value": 8.655484692271752,
-    "average_prediction": 719627.1399392596,
+    "average_prediction": 719864.6911707474,
     "feature": "dist_copper"
   },
   {
     "value": 8.797878440752498,
-    "average_prediction": 719361.8481708419,
+    "average_prediction": 719586.269911325,
     "feature": "dist_copper"
   },
   {
     "value": 8.940272189233243,
-    "average_prediction": 719349.0127685947,
+    "average_prediction": 719588.2423068787,
     "feature": "dist_copper"
   },
   {
     "value": 2.823511890087827,
-    "average_prediction": 810052.8364627619,
+    "average_prediction": 808681.965764754,
     "feature": "dist_abasin"
   },
   {
     "value": 3.0164288630969613,
-    "average_prediction": 810102.9256418926,
+    "average_prediction": 808682.5471845982,
     "feature": "dist_abasin"
   },
   {
     "value": 3.2093458361060963,
-    "average_prediction": 810093.6891031854,
+    "average_prediction": 808676.9982955069,
     "feature": "dist_abasin"
   },
   {
     "value": 3.4022628091152307,
-    "average_prediction": 810177.1680880826,
+    "average_prediction": 808695.7292999204,
     "feature": "dist_abasin"
   },
   {
     "value": 3.595179782124365,
-    "average_prediction": 810170.5445504097,
+    "average_prediction": 808614.0030902654,
     "feature": "dist_abasin"
   },
   {
     "value": 3.7880967551335,
-    "average_prediction": 810145.9791373484,
+    "average_prediction": 808647.6583707337,
     "feature": "dist_abasin"
   },
   {
     "value": 3.9810137281426345,
-    "average_prediction": 804302.414781801,
+    "average_prediction": 802806.9072566605,
     "feature": "dist_abasin"
   },
   {
     "value": 4.173930701151769,
-    "average_prediction": 803595.3474346302,
+    "average_prediction": 802137.8097994162,
     "feature": "dist_abasin"
   },
   {
     "value": 4.366847674160904,
-    "average_prediction": 803595.8954298551,
+    "average_prediction": 802139.0991105601,
     "feature": "dist_abasin"
   },
   {
     "value": 4.559764647170039,
-    "average_prediction": 803608.6686605639,
+    "average_prediction": 802153.810407416,
     "feature": "dist_abasin"
   },
   {
     "value": 4.752681620179173,
-    "average_prediction": 803614.1939848288,
+    "average_prediction": 802196.4900277857,
     "feature": "dist_abasin"
   },
   {
     "value": 4.945598593188308,
-    "average_prediction": 803358.9321870687,
+    "average_prediction": 802388.1877454472,
     "feature": "dist_abasin"
   },
   {
     "value": 5.138515566197443,
-    "average_prediction": 802740.545589314,
+    "average_prediction": 802411.9213656314,
     "feature": "dist_abasin"
   },
   {
     "value": 5.331432539206578,
-    "average_prediction": 802150.5340496493,
+    "average_prediction": 802489.3091208264,
     "feature": "dist_abasin"
   },
   {
     "value": 5.524349512215712,
-    "average_prediction": 801803.767361806,
+    "average_prediction": 802496.1492914696,
     "feature": "dist_abasin"
   },
   {
     "value": 5.7172664852248465,
-    "average_prediction": 801675.9115760459,
+    "average_prediction": 801931.436036028,
     "feature": "dist_abasin"
   },
   {
     "value": 5.9101834582339805,
-    "average_prediction": 800208.0273003036,
+    "average_prediction": 799778.1533202241,
     "feature": "dist_abasin"
   },
   {
     "value": 6.103100431243115,
-    "average_prediction": 1215904.217266305,
+    "average_prediction": 1219127.1763767109,
     "feature": "dist_abasin"
   },
   {
     "value": 6.29601740425225,
-    "average_prediction": 779912.4640017275,
+    "average_prediction": 783164.1204108957,
     "feature": "dist_abasin"
   },
   {
     "value": 6.488934377261385,
-    "average_prediction": 777652.6112863338,
+    "average_prediction": 779105.0759940824,
     "feature": "dist_abasin"
   },
   {
     "value": 6.68185135027052,
-    "average_prediction": 777807.2096514356,
+    "average_prediction": 779096.3681532093,
     "feature": "dist_abasin"
   },
   {
     "value": 6.874768323279653,
-    "average_prediction": 774438.7627904747,
+    "average_prediction": 777196.9324851267,
     "feature": "dist_abasin"
   },
   {
     "value": 7.067685296288788,
-    "average_prediction": 774417.7055013435,
+    "average_prediction": 776758.247468708,
     "feature": "dist_abasin"
   },
   {
     "value": 7.260602269297923,
-    "average_prediction": 774489.4512023234,
+    "average_prediction": 775654.2827578585,
     "feature": "dist_abasin"
   },
   {
     "value": 7.453519242307058,
-    "average_prediction": 772905.2184914227,
+    "average_prediction": 774916.6780159218,
     "feature": "dist_abasin"
   },
   {
     "value": 7.646436215316193,
-    "average_prediction": 770784.5475559128,
+    "average_prediction": 772123.0260725424,
     "feature": "dist_abasin"
   },
   {
     "value": 7.839353188325328,
-    "average_prediction": 769897.3153993404,
+    "average_prediction": 771240.010108066,
     "feature": "dist_abasin"
   },
   {
     "value": 8.032270161334463,
-    "average_prediction": 769893.1861855739,
+    "average_prediction": 771216.8827678355,
     "feature": "dist_abasin"
   },
   {
     "value": 8.225187134343596,
-    "average_prediction": 770027.8356577358,
+    "average_prediction": 771370.0306478939,
     "feature": "dist_abasin"
   },
   {
     "value": 8.41810410735273,
-    "average_prediction": 770337.6813184364,
+    "average_prediction": 771683.0460861144,
     "feature": "dist_abasin"
   },
   {
     "value": 8.611021080361866,
-    "average_prediction": 770933.9063186418,
+    "average_prediction": 771745.1143356971,
     "feature": "dist_abasin"
   },
   {
     "value": 8.803938053371,
-    "average_prediction": 771197.8860995754,
+    "average_prediction": 771974.3187665386,
     "feature": "dist_abasin"
   },
   {
     "value": 8.996855026380135,
-    "average_prediction": 772698.379560837,
+    "average_prediction": 773524.5996114154,
     "feature": "dist_abasin"
   },
   {
     "value": 9.18977199938927,
-    "average_prediction": 772889.8265587853,
+    "average_prediction": 773626.2171551887,
     "feature": "dist_abasin"
   },
   {
     "value": 9.382688972398403,
-    "average_prediction": 772792.6799867268,
+    "average_prediction": 773492.7994248796,
     "feature": "dist_abasin"
   },
   {
     "value": 9.575605945407538,
-    "average_prediction": 773157.2779948222,
+    "average_prediction": 773806.082510179,
     "feature": "dist_abasin"
   },
   {
     "value": 9.768522918416673,
-    "average_prediction": 773480.299882329,
+    "average_prediction": 774247.7753208529,
     "feature": "dist_abasin"
   },
   {
     "value": 9.961439891425808,
-    "average_prediction": 773266.8848352596,
+    "average_prediction": 774067.6671702475,
     "feature": "dist_abasin"
   },
   {
     "value": 10.154356864434943,
-    "average_prediction": 773313.623771651,
+    "average_prediction": 774210.2524846628,
     "feature": "dist_abasin"
   },
   {
     "value": 10.347273837444078,
-    "average_prediction": 773283.6477138527,
+    "average_prediction": 774221.033199097,
     "feature": "dist_abasin"
   },
   {
     "value": 10.540190810453213,
-    "average_prediction": 773284.234805321,
+    "average_prediction": 774169.1005079603,
     "feature": "dist_abasin"
   },
   {
     "value": 10.733107783462346,
-    "average_prediction": 773253.1738004759,
+    "average_prediction": 774158.9214938462,
     "feature": "dist_abasin"
   },
   {
     "value": 10.926024756471481,
-    "average_prediction": 773267.1009328923,
+    "average_prediction": 774157.2069578235,
     "feature": "dist_abasin"
   },
   {
     "value": 11.118941729480616,
-    "average_prediction": 773250.6666759868,
+    "average_prediction": 774151.2533048899,
     "feature": "dist_abasin"
   },
   {
     "value": 11.31185870248975,
-    "average_prediction": 773253.5816165508,
+    "average_prediction": 774153.4336293053,
     "feature": "dist_abasin"
   },
   {
     "value": 11.504775675498886,
-    "average_prediction": 773253.5816165508,
+    "average_prediction": 774092.8753720992,
     "feature": "dist_abasin"
   },
   {
     "value": 11.69769264850802,
-    "average_prediction": 773814.788884189,
+    "average_prediction": 774640.7654331523,
     "feature": "dist_abasin"
   },
   {
     "value": 11.890609621517156,
-    "average_prediction": 773798.8648577478,
+    "average_prediction": 774637.0791223594,
     "feature": "dist_abasin"
   },
   {
     "value": 12.083526594526289,
-    "average_prediction": 773798.8648577478,
+    "average_prediction": 774637.0791223594,
     "feature": "dist_abasin"
   },
   {
     "value": 12.276443567535424,
-    "average_prediction": 770917.4973693268,
+    "average_prediction": 770538.607642564,
     "feature": "dist_abasin"
   },
   {
     "value": 1.6264685349936092,
-    "average_prediction": 1072915.3290893445,
+    "average_prediction": 1204175.2796098907,
     "feature": "dist_dillon"
   },
   {
     "value": 1.8036040392530812,
-    "average_prediction": 1072979.3050469067,
+    "average_prediction": 1204238.6292867071,
     "feature": "dist_dillon"
   },
   {
     "value": 1.980739543512553,
-    "average_prediction": 1073834.3399850016,
+    "average_prediction": 1199313.5989351186,
     "feature": "dist_dillon"
   },
   {
     "value": 2.157875047772025,
-    "average_prediction": 1073498.452645033,
+    "average_prediction": 1199464.8296280645,
     "feature": "dist_dillon"
   },
   {
     "value": 2.335010552031497,
-    "average_prediction": 1073744.3181671237,
+    "average_prediction": 1199650.1089427462,
     "feature": "dist_dillon"
   },
   {
     "value": 2.5121460562909688,
-    "average_prediction": 1071029.1807713623,
+    "average_prediction": 1195118.1538013653,
     "feature": "dist_dillon"
   },
   {
     "value": 2.689281560550441,
-    "average_prediction": 1068679.5151013848,
+    "average_prediction": 1191704.8596518473,
     "feature": "dist_dillon"
   },
   {
     "value": 2.8664170648099123,
-    "average_prediction": 1057982.5606116431,
+    "average_prediction": 1180999.502258456,
     "feature": "dist_dillon"
   },
   {
     "value": 3.0435525690693845,
-    "average_prediction": 780125.8646469208,
+    "average_prediction": 823459.6797040849,
     "feature": "dist_dillon"
   },
   {
     "value": 3.2206880733288568,
-    "average_prediction": 779427.0962275721,
+    "average_prediction": 823335.7969802441,
     "feature": "dist_dillon"
   },
   {
     "value": 3.397823577588328,
-    "average_prediction": 779575.5757007673,
+    "average_prediction": 823367.8867020807,
     "feature": "dist_dillon"
   },
   {
     "value": 3.5749590818478003,
-    "average_prediction": 779869.0833829434,
+    "average_prediction": 823670.3722132868,
     "feature": "dist_dillon"
   },
   {
     "value": 3.7520945861072725,
-    "average_prediction": 780375.9560447284,
+    "average_prediction": 824315.4926973191,
     "feature": "dist_dillon"
   },
   {
     "value": 3.929230090366744,
-    "average_prediction": 781193.1720057693,
+    "average_prediction": 825686.1297884801,
     "feature": "dist_dillon"
   },
   {
     "value": 4.106365594626216,
-    "average_prediction": 781503.9169470236,
+    "average_prediction": 825469.4680321569,
     "feature": "dist_dillon"
   },
   {
     "value": 4.283501098885688,
-    "average_prediction": 781637.6849128125,
+    "average_prediction": 825602.4870123729,
     "feature": "dist_dillon"
   },
   {
     "value": 4.46063660314516,
-    "average_prediction": 781798.7318744544,
+    "average_prediction": 825768.2597225007,
     "feature": "dist_dillon"
   },
   {
     "value": 4.637772107404632,
-    "average_prediction": 782317.6028188212,
+    "average_prediction": 826301.2138944217,
     "feature": "dist_dillon"
   },
   {
     "value": 4.814907611664104,
-    "average_prediction": 781019.4092809263,
+    "average_prediction": 825016.9079150188,
     "feature": "dist_dillon"
   },
   {
     "value": 4.992043115923575,
-    "average_prediction": 781189.4855099507,
+    "average_prediction": 825073.922145556,
     "feature": "dist_dillon"
   },
   {
     "value": 5.169178620183048,
-    "average_prediction": 781208.4082589038,
+    "average_prediction": 825219.720262647,
     "feature": "dist_dillon"
   },
   {
     "value": 5.34631412444252,
-    "average_prediction": 781352.687595037,
+    "average_prediction": 825360.228086925,
     "feature": "dist_dillon"
   },
   {
     "value": 5.523449628701991,
-    "average_prediction": 781542.5918599147,
+    "average_prediction": 825567.3448988135,
     "feature": "dist_dillon"
   },
   {
     "value": 5.700585132961463,
-    "average_prediction": 781692.5905348796,
+    "average_prediction": 825721.2091204871,
     "feature": "dist_dillon"
   },
   {
     "value": 5.877720637220936,
-    "average_prediction": 781813.2048838494,
+    "average_prediction": 825814.5079970856,
     "feature": "dist_dillon"
   },
   {
     "value": 6.054856141480407,
-    "average_prediction": 782012.5957400564,
+    "average_prediction": 826033.7764390195,
     "feature": "dist_dillon"
   },
   {
     "value": 6.231991645739879,
-    "average_prediction": 782253.258875065,
+    "average_prediction": 826349.914150455,
     "feature": "dist_dillon"
   },
   {
     "value": 6.409127149999351,
-    "average_prediction": 784546.3141588257,
+    "average_prediction": 828701.1474112563,
     "feature": "dist_dillon"
   },
   {
     "value": 6.586262654258823,
-    "average_prediction": 787262.3313233809,
+    "average_prediction": 831424.1251960899,
     "feature": "dist_dillon"
   },
   {
     "value": 6.763398158518295,
-    "average_prediction": 787164.5167059441,
+    "average_prediction": 831158.6725752222,
     "feature": "dist_dillon"
   },
   {
     "value": 6.940533662777767,
-    "average_prediction": 787156.3044065556,
+    "average_prediction": 831132.7373535533,
     "feature": "dist_dillon"
   },
   {
     "value": 7.1176691670372385,
-    "average_prediction": 787227.2683006983,
+    "average_prediction": 831218.8717163916,
     "feature": "dist_dillon"
   },
   {
     "value": 7.294804671296711,
-    "average_prediction": 787287.1588856386,
+    "average_prediction": 831274.9290355977,
     "feature": "dist_dillon"
   },
   {
     "value": 7.471940175556183,
-    "average_prediction": 787238.6271774472,
+    "average_prediction": 831453.8226761498,
     "feature": "dist_dillon"
   },
   {
     "value": 7.649075679815654,
-    "average_prediction": 787355.32753858,
+    "average_prediction": 831559.8724354921,
     "feature": "dist_dillon"
   },
   {
     "value": 7.8262111840751265,
-    "average_prediction": 787679.1706069635,
+    "average_prediction": 831674.4868329413,
     "feature": "dist_dillon"
   },
   {
     "value": 8.003346688334599,
-    "average_prediction": 787646.8784920429,
+    "average_prediction": 831470.1112247371,
     "feature": "dist_dillon"
   },
   {
     "value": 8.18048219259407,
-    "average_prediction": 785197.5114965166,
+    "average_prediction": 828539.1662055877,
     "feature": "dist_dillon"
   },
   {
     "value": 8.357617696853541,
-    "average_prediction": 782280.929659611,
+    "average_prediction": 778295.4578890062,
     "feature": "dist_dillon"
   },
   {
     "value": 8.534753201113014,
-    "average_prediction": 782089.9670652659,
+    "average_prediction": 778541.7009795362,
     "feature": "dist_dillon"
   },
   {
     "value": 8.711888705372486,
-    "average_prediction": 758966.7953848497,
+    "average_prediction": 760668.9969275874,
     "feature": "dist_dillon"
   },
   {
     "value": 8.889024209631957,
-    "average_prediction": 759572.3322255384,
+    "average_prediction": 760998.9030196879,
     "feature": "dist_dillon"
   },
   {
     "value": 9.06615971389143,
-    "average_prediction": 758836.7046367825,
+    "average_prediction": 760181.6228561677,
     "feature": "dist_dillon"
   },
   {
     "value": 9.243295218150902,
-    "average_prediction": 758411.0958245534,
+    "average_prediction": 759840.1871858399,
     "feature": "dist_dillon"
   },
   {
     "value": 9.420430722410373,
-    "average_prediction": 758152.3087750308,
+    "average_prediction": 759710.4124274199,
     "feature": "dist_dillon"
   },
   {
     "value": 9.597566226669846,
-    "average_prediction": 757809.0867893804,
+    "average_prediction": 759391.0784483193,
     "feature": "dist_dillon"
   },
   {
     "value": 9.774701730929317,
-    "average_prediction": 757424.420000974,
+    "average_prediction": 759063.2547148434,
     "feature": "dist_dillon"
   },
   {
     "value": 9.951837235188789,
-    "average_prediction": 757220.2702614419,
+    "average_prediction": 758865.8794581606,
     "feature": "dist_dillon"
   },
   {
     "value": 10.128972739448262,
-    "average_prediction": 757150.3743942046,
+    "average_prediction": 758806.2314843556,
     "feature": "dist_dillon"
   },
   {
     "value": 10.306108243707733,
-    "average_prediction": 757148.2566369406,
+    "average_prediction": 758799.5158111646,
     "feature": "dist_dillon"
   },
   {
     "value": 1996.0,
-    "average_prediction": 808703.9517834559,
+    "average_prediction": 818991.642633473,
     "feature": "year"
   },
   {
     "value": 1997.0,
-    "average_prediction": 808704.523520442,
+    "average_prediction": 819375.1308246469,
     "feature": "year"
   },
   {
     "value": 1998.0,
-    "average_prediction": 808720.4947785825,
+    "average_prediction": 819389.5184842439,
     "feature": "year"
   },
   {
     "value": 1999.0,
-    "average_prediction": 809737.6793987132,
+    "average_prediction": 819532.6790054346,
     "feature": "year"
   },
   {
     "value": 2000.0,
-    "average_prediction": 765023.7456484087,
+    "average_prediction": 771378.6280829632,
     "feature": "year"
   },
   {
     "value": 2001.0,
-    "average_prediction": 762995.1800381902,
+    "average_prediction": 769794.0554373846,
     "feature": "year"
   },
   {
     "value": 2002.0,
-    "average_prediction": 762294.4995699578,
+    "average_prediction": 768668.8758944945,
     "feature": "year"
   },
   {
     "value": 2003.0,
-    "average_prediction": 762303.3598567132,
+    "average_prediction": 768681.4882289859,
     "feature": "year"
   },
   {
     "value": 2004.0,
-    "average_prediction": 761547.2182126986,
+    "average_prediction": 768791.504304439,
     "feature": "year"
   },
   {
     "value": 2005.0,
-    "average_prediction": 761713.7770711837,
+    "average_prediction": 768992.6010614415,
     "feature": "year"
   },
   {
     "value": 2006.0,
-    "average_prediction": 762189.2104853604,
+    "average_prediction": 769479.9574531609,
     "feature": "year"
   },
   {
     "value": 2007.0,
-    "average_prediction": 761934.8454821869,
+    "average_prediction": 769451.6951488311,
     "feature": "year"
   },
   {
     "value": 2008.0,
-    "average_prediction": 763439.2940178361,
+    "average_prediction": 772228.4404828458,
     "feature": "year"
   },
   {
     "value": 2009.0,
-    "average_prediction": 767884.8875601048,
+    "average_prediction": 792199.2271383666,
     "feature": "year"
   },
   {
     "value": 2010.0,
-    "average_prediction": 763242.4116212841,
+    "average_prediction": 778783.7903380106,
     "feature": "year"
   },
   {
     "value": 2011.0,
-    "average_prediction": 757650.4000961776,
+    "average_prediction": 773163.0632071361,
     "feature": "year"
   },
   {
     "value": 2012.0,
-    "average_prediction": 757204.3760078822,
+    "average_prediction": 772499.8614691675,
     "feature": "year"
   },
   {
     "value": 2013.0,
-    "average_prediction": 756797.7336403972,
+    "average_prediction": 766364.3256495531,
     "feature": "year"
   },
   {
     "value": 2014.0,
-    "average_prediction": 756003.0819726092,
+    "average_prediction": 766422.0403228273,
     "feature": "year"
   },
   {
     "value": 2015.0,
-    "average_prediction": 752763.1406967413,
+    "average_prediction": 756614.7426498773,
     "feature": "year"
   },
   {
     "value": 2016.0,
-    "average_prediction": 752163.107783441,
+    "average_prediction": 755649.3630252306,
     "feature": "year"
   },
   {
     "value": 2017.0,
-    "average_prediction": 753004.298919327,
+    "average_prediction": 756230.1926500307,
     "feature": "year"
   },
   {
     "value": 2018.0,
-    "average_prediction": 759599.8297091183,
+    "average_prediction": 761900.0968209574,
     "feature": "year"
   },
   {
     "value": 2019.0,
-    "average_prediction": 760712.8590329591,
+    "average_prediction": 762387.8946667124,
     "feature": "year"
   },
   {
     "value": 2020.0,
-    "average_prediction": 760848.0664294303,
+    "average_prediction": 762461.4377745509,
     "feature": "year"
   },
   {
     "value": 2021.0,
-    "average_prediction": 760971.3721904274,
+    "average_prediction": 762584.7082542818,
     "feature": "year"
   },
   {
     "value": 2022.0,
-    "average_prediction": 761564.7410092526,
+    "average_prediction": 762923.0091342761,
     "feature": "year"
   },
   {
     "value": 2023.0,
-    "average_prediction": 761617.7348247651,
+    "average_prediction": 762979.0364707238,
     "feature": "year"
   },
   {
     "value": 2024.0,
-    "average_prediction": 762060.3694750245,
+    "average_prediction": 763391.9361069084,
     "feature": "year"
   },
   {
     "value": 2025.0,
-    "average_prediction": 762530.0313272198,
+    "average_prediction": 763606.6793666123,
     "feature": "year"
   },
   {
     "value": 2026.0,
-    "average_prediction": 762530.0313272198,
+    "average_prediction": 763588.3780825925,
     "feature": "year"
   },
   {
     "value": 1.0,
-    "average_prediction": 745549.7116863886,
+    "average_prediction": 745632.94326715,
     "feature": "month"
   },
   {
     "value": 2.0,
-    "average_prediction": 734959.3290401973,
+    "average_prediction": 735013.746921498,
     "feature": "month"
   },
   {
     "value": 3.0,
-    "average_prediction": 733966.1505501613,
+    "average_prediction": 733953.4332614967,
     "feature": "month"
   },
   {
     "value": 4.0,
-    "average_prediction": 733479.1655316288,
+    "average_prediction": 733476.8274300671,
     "feature": "month"
   },
   {
     "value": 5.0,
-    "average_prediction": 731866.3792270923,
+    "average_prediction": 732231.8349516443,
     "feature": "month"
   },
   {
     "value": 6.0,
-    "average_prediction": 731882.0008646228,
+    "average_prediction": 732074.35606549,
     "feature": "month"
   },
   {
     "value": 7.0,
-    "average_prediction": 731973.1980299086,
+    "average_prediction": 732186.6856172812,
     "feature": "month"
   },
   {
     "value": 8.0,
-    "average_prediction": 734325.2979352378,
+    "average_prediction": 734192.4828075259,
     "feature": "month"
   },
   {
     "value": 9.0,
-    "average_prediction": 732783.143627306,
+    "average_prediction": 732927.585475391,
     "feature": "month"
   },
   {
     "value": 10.0,
-    "average_prediction": 732821.853686059,
+    "average_prediction": 733304.0268685144,
     "feature": "month"
   },
   {
     "value": 11.0,
-    "average_prediction": 733604.5639595431,
+    "average_prediction": 734320.336434262,
     "feature": "month"
   },
   {
     "value": 12.0,
-    "average_prediction": 929275.0468092059,
+    "average_prediction": 929928.9388995662,
     "feature": "month"
   },
   {
     "value": 2.88,
-    "average_prediction": 1067118.4344464303,
+    "average_prediction": 1064873.4288391212,
     "feature": "mortgage_rate"
   },
   {
     "value": 2.9777551020408164,
-    "average_prediction": 1067760.6443435447,
+    "average_prediction": 1065397.4000029534,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.0755102040816324,
-    "average_prediction": 1068423.4918712662,
+    "average_prediction": 1066200.4082722145,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.173265306122449,
-    "average_prediction": 1070281.9637380678,
+    "average_prediction": 1068078.5595246085,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.271020408163265,
-    "average_prediction": 1071242.5587244937,
+    "average_prediction": 1069110.6571849422,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.3687755102040815,
-    "average_prediction": 791620.671305924,
+    "average_prediction": 788741.9612733942,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.466530612244898,
-    "average_prediction": 760358.7774682929,
+    "average_prediction": 757500.2815366955,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.564285714285714,
-    "average_prediction": 761172.4466902416,
+    "average_prediction": 758284.6008074423,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.6620408163265306,
-    "average_prediction": 761565.5763010746,
+    "average_prediction": 758847.935952997,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.759795918367347,
-    "average_prediction": 761977.7875571799,
+    "average_prediction": 759284.7244090448,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.857551020408163,
-    "average_prediction": 762081.0637029441,
+    "average_prediction": 759394.4700848396,
     "feature": "mortgage_rate"
   },
   {
     "value": 3.9553061224489796,
-    "average_prediction": 762024.6957437694,
+    "average_prediction": 759366.4061261975,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.053061224489796,
-    "average_prediction": 762101.2598564373,
+    "average_prediction": 759421.1529734198,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.150816326530612,
-    "average_prediction": 762704.5514623442,
+    "average_prediction": 760053.7460940148,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.248571428571429,
-    "average_prediction": 762882.4111689713,
+    "average_prediction": 760237.7393404242,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.346326530612245,
-    "average_prediction": 762859.6330697682,
+    "average_prediction": 760389.269994665,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.444081632653061,
-    "average_prediction": 763293.0150636312,
+    "average_prediction": 761856.5279943135,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.541836734693877,
-    "average_prediction": 763452.3122812535,
+    "average_prediction": 761966.9386671478,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.639591836734693,
-    "average_prediction": 764069.4726600231,
+    "average_prediction": 762073.7334553212,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.73734693877551,
-    "average_prediction": 764107.525325667,
+    "average_prediction": 762744.984831979,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.835102040816326,
-    "average_prediction": 764688.5651101889,
+    "average_prediction": 763892.9905967299,
     "feature": "mortgage_rate"
   },
   {
     "value": 4.932857142857143,
-    "average_prediction": 764748.1282896772,
+    "average_prediction": 763928.3099462588,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.030612244897959,
-    "average_prediction": 761326.3344354616,
+    "average_prediction": 766289.0499041982,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.128367346938775,
-    "average_prediction": 761787.2098963624,
+    "average_prediction": 766716.7322238948,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.226122448979591,
-    "average_prediction": 764839.2499414064,
+    "average_prediction": 770963.0989790309,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.323877551020408,
-    "average_prediction": 761890.1091573957,
+    "average_prediction": 762856.1927204258,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.421632653061224,
-    "average_prediction": 759788.8212731457,
+    "average_prediction": 762239.7202065889,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.519387755102041,
-    "average_prediction": 759107.1640770641,
+    "average_prediction": 761837.8390874001,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.617142857142857,
-    "average_prediction": 757197.5619975921,
+    "average_prediction": 760227.7718461904,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.7148979591836735,
-    "average_prediction": 757086.189167963,
+    "average_prediction": 760112.9113172942,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.8126530612244895,
-    "average_prediction": 756791.1366238348,
+    "average_prediction": 759803.1886934675,
     "feature": "mortgage_rate"
   },
   {
     "value": 5.910408163265306,
-    "average_prediction": 754540.8386000787,
+    "average_prediction": 758001.2996898313,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.0081632653061225,
-    "average_prediction": 754636.5403867948,
+    "average_prediction": 758113.9182334762,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.1059183673469395,
-    "average_prediction": 754478.2437627598,
+    "average_prediction": 757898.4843870528,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.2036734693877555,
-    "average_prediction": 755070.5242631618,
+    "average_prediction": 758473.1613592491,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.301428571428572,
-    "average_prediction": 756103.1464423164,
+    "average_prediction": 759517.5365240339,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.399183673469388,
-    "average_prediction": 756417.0393302833,
+    "average_prediction": 760262.6908355859,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.496938775510204,
-    "average_prediction": 757385.8867113175,
+    "average_prediction": 761139.511294819,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.594693877551021,
-    "average_prediction": 757671.9142511454,
+    "average_prediction": 761442.9394236287,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.692448979591837,
-    "average_prediction": 759090.370903378,
+    "average_prediction": 761604.7971566715,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.790204081632654,
-    "average_prediction": 760264.0871892424,
+    "average_prediction": 764392.8094901872,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.88795918367347,
-    "average_prediction": 758732.0881819993,
+    "average_prediction": 762707.7914705917,
     "feature": "mortgage_rate"
   },
   {
     "value": 6.985714285714286,
-    "average_prediction": 757719.3304139809,
+    "average_prediction": 761882.4461030179,
     "feature": "mortgage_rate"
   },
   {
     "value": 7.083469387755102,
-    "average_prediction": 759252.6034925252,
+    "average_prediction": 761808.0491602912,
     "feature": "mortgage_rate"
   },
   {
     "value": 7.181224489795919,
-    "average_prediction": 759512.3911756806,
+    "average_prediction": 762112.5831753865,
     "feature": "mortgage_rate"
   },
   {
     "value": 7.278979591836735,
-    "average_prediction": 763106.5301105075,
+    "average_prediction": 764954.3203619589,
     "feature": "mortgage_rate"
   },
   {
     "value": 7.376734693877551,
-    "average_prediction": 764700.1111170951,
+    "average_prediction": 765907.0794691761,
     "feature": "mortgage_rate"
   },
   {
     "value": 7.474489795918368,
-    "average_prediction": 764521.2812609599,
+    "average_prediction": 765548.376400716,
     "feature": "mortgage_rate"
   },
   {
     "value": 7.572244897959184,
-    "average_prediction": 764516.9311580715,
+    "average_prediction": 765728.1461340948,
     "feature": "mortgage_rate"
   },
   {
     "value": 7.67,
-    "average_prediction": 764557.2332392831,
+    "average_prediction": 775502.8031026396,
     "feature": "mortgage_rate"
   },
   {
     "value": 164.7,
-    "average_prediction": 627585.8469359993,
+    "average_prediction": 676224.8543227069,
     "feature": "cpi"
   },
   {
     "value": 167.73808163265306,
-    "average_prediction": 539049.5005462008,
+    "average_prediction": 556467.3794743988,
     "feature": "cpi"
   },
   {
     "value": 170.7761632653061,
-    "average_prediction": 514177.5709063334,
+    "average_prediction": 524807.4795093529,
     "feature": "cpi"
   },
   {
     "value": 173.81424489795918,
-    "average_prediction": 509656.9642542526,
+    "average_prediction": 514154.3931494086,
     "feature": "cpi"
   },
   {
     "value": 176.85232653061223,
-    "average_prediction": 523326.88913671335,
+    "average_prediction": 527466.912398714,
     "feature": "cpi"
   },
   {
     "value": 179.8904081632653,
-    "average_prediction": 525283.6981795125,
+    "average_prediction": 529372.9607543456,
     "feature": "cpi"
   },
   {
     "value": 182.92848979591835,
-    "average_prediction": 531890.9630184278,
+    "average_prediction": 538688.2437073125,
     "feature": "cpi"
   },
   {
     "value": 185.96657142857143,
-    "average_prediction": 538526.6866646404,
+    "average_prediction": 543064.717517362,
     "feature": "cpi"
   },
   {
     "value": 189.00465306122447,
-    "average_prediction": 542324.9625552678,
+    "average_prediction": 545558.1675697826,
     "feature": "cpi"
   },
   {
     "value": 192.04273469387755,
-    "average_prediction": 544997.490527701,
+    "average_prediction": 548535.282009236,
     "feature": "cpi"
   },
   {
     "value": 195.0808163265306,
-    "average_prediction": 556230.5011669191,
+    "average_prediction": 559660.7775191327,
     "feature": "cpi"
   },
   {
     "value": 198.11889795918367,
-    "average_prediction": 613689.8154016987,
+    "average_prediction": 616648.3677389751,
     "feature": "cpi"
   },
   {
     "value": 201.15697959183672,
-    "average_prediction": 597219.2233157736,
+    "average_prediction": 599290.2629381411,
     "feature": "cpi"
   },
   {
     "value": 204.1950612244898,
-    "average_prediction": 620505.4435016253,
+    "average_prediction": 624236.1531700967,
     "feature": "cpi"
   },
   {
     "value": 207.23314285714284,
-    "average_prediction": 625895.3722575579,
+    "average_prediction": 629572.2041273614,
     "feature": "cpi"
   },
   {
     "value": 210.2712244897959,
-    "average_prediction": 654664.3963233121,
+    "average_prediction": 652504.803082079,
     "feature": "cpi"
   },
   {
     "value": 213.30930612244896,
-    "average_prediction": 654454.1692966208,
+    "average_prediction": 652106.1334065548,
     "feature": "cpi"
   },
   {
     "value": 216.34738775510203,
-    "average_prediction": 670014.6672516299,
+    "average_prediction": 661810.4347699322,
     "feature": "cpi"
   },
   {
     "value": 219.38546938775508,
-    "average_prediction": 651184.4522639281,
+    "average_prediction": 649729.6663827838,
     "feature": "cpi"
   },
   {
     "value": 222.42355102040815,
-    "average_prediction": 650961.6637147376,
+    "average_prediction": 649739.1414823224,
     "feature": "cpi"
   },
   {
     "value": 225.4616326530612,
-    "average_prediction": 645536.9929930196,
+    "average_prediction": 644178.9419125946,
     "feature": "cpi"
   },
   {
     "value": 228.49971428571428,
-    "average_prediction": 644223.2982314368,
+    "average_prediction": 643437.1921541416,
     "feature": "cpi"
   },
   {
     "value": 231.53779591836735,
-    "average_prediction": 665690.0350629572,
+    "average_prediction": 644992.1205190674,
     "feature": "cpi"
   },
   {
     "value": 234.5758775510204,
-    "average_prediction": 650610.042405156,
+    "average_prediction": 645387.3338774629,
     "feature": "cpi"
   },
   {
     "value": 237.61395918367344,
-    "average_prediction": 675188.9594809257,
+    "average_prediction": 669065.5589426799,
     "feature": "cpi"
   },
   {
     "value": 240.65204081632652,
-    "average_prediction": 683952.4650854425,
+    "average_prediction": 680142.0691903137,
     "feature": "cpi"
   },
   {
     "value": 243.6901224489796,
-    "average_prediction": 691872.5386305249,
+    "average_prediction": 688214.9973311843,
     "feature": "cpi"
   },
   {
     "value": 246.72820408163264,
-    "average_prediction": 698280.2379018024,
+    "average_prediction": 694087.0370128603,
     "feature": "cpi"
   },
   {
     "value": 249.7662857142857,
-    "average_prediction": 729426.402975911,
+    "average_prediction": 727213.2948105558,
     "feature": "cpi"
   },
   {
     "value": 252.80436734693876,
-    "average_prediction": 734380.8119902003,
+    "average_prediction": 732934.6383628916,
     "feature": "cpi"
   },
   {
     "value": 255.84244897959184,
-    "average_prediction": 738670.9842748223,
+    "average_prediction": 737269.6617017047,
     "feature": "cpi"
   },
   {
     "value": 258.8805306122449,
-    "average_prediction": 741144.9845200941,
+    "average_prediction": 739782.4918022299,
     "feature": "cpi"
   },
   {
     "value": 261.91861224489793,
-    "average_prediction": 741541.4288084524,
+    "average_prediction": 740396.6893919057,
     "feature": "cpi"
   },
   {
     "value": 264.956693877551,
-    "average_prediction": 775395.8073191461,
+    "average_prediction": 774311.4265473518,
     "feature": "cpi"
   },
   {
     "value": 267.9947755102041,
-    "average_prediction": 1129825.100217995,
+    "average_prediction": 1125847.9744212965,
     "feature": "cpi"
   },
   {
     "value": 271.0328571428571,
-    "average_prediction": 1162348.5995606664,
+    "average_prediction": 1158292.4121607684,
     "feature": "cpi"
   },
   {
     "value": 274.0709387755102,
-    "average_prediction": 1179941.9931461802,
+    "average_prediction": 1175460.1750336946,
     "feature": "cpi"
   },
   {
     "value": 277.10902040816325,
-    "average_prediction": 1182292.8944787863,
+    "average_prediction": 1177989.4987862946,
     "feature": "cpi"
   },
   {
     "value": 280.1471020408163,
-    "average_prediction": 1189887.289403687,
+    "average_prediction": 1185876.623560392,
     "feature": "cpi"
   },
   {
     "value": 283.1851836734694,
-    "average_prediction": 1191028.3581883106,
+    "average_prediction": 1187166.8110508895,
     "feature": "cpi"
   },
   {
     "value": 286.2232653061224,
-    "average_prediction": 1198675.3520900658,
+    "average_prediction": 1193943.4416825324,
     "feature": "cpi"
   },
   {
     "value": 289.2613469387755,
-    "average_prediction": 1200760.7553968022,
+    "average_prediction": 1196146.1469555777,
     "feature": "cpi"
   },
   {
     "value": 292.29942857142856,
-    "average_prediction": 1201759.528043349,
+    "average_prediction": 1197329.627953465,
     "feature": "cpi"
   },
   {
     "value": 295.3375102040816,
-    "average_prediction": 1204233.8958689615,
+    "average_prediction": 1199825.3170510884,
     "feature": "cpi"
   },
   {
     "value": 298.37559183673466,
-    "average_prediction": 1206979.7659350624,
+    "average_prediction": 1200997.162261337,
     "feature": "cpi"
   },
   {
     "value": 301.41367346938773,
-    "average_prediction": 1206660.1819771535,
+    "average_prediction": 1202789.8919328803,
     "feature": "cpi"
   },
   {
     "value": 304.4517551020408,
-    "average_prediction": 1214410.8154467538,
+    "average_prediction": 1210744.7587242268,
     "feature": "cpi"
   },
   {
     "value": 307.4898367346939,
-    "average_prediction": 1222912.7087926005,
+    "average_prediction": 1219419.107720856,
     "feature": "cpi"
   },
   {
     "value": 310.52791836734696,
-    "average_prediction": 1228416.643014199,
+    "average_prediction": 1227099.382927651,
     "feature": "cpi"
   },
   {
     "value": 313.566,
-    "average_prediction": 1231404.2926331772,
+    "average_prediction": 1229903.0489849132,
     "feature": "cpi"
   },
   {
     "value": 1877.08,
-    "average_prediction": 663592.6807448232,
+    "average_prediction": 663065.7059603613,
     "feature": "sp500"
   },
   {
     "value": 1930.7130612244898,
-    "average_prediction": 663633.0584623418,
+    "average_prediction": 663106.0836778798,
     "feature": "sp500"
   },
   {
     "value": 1984.3461224489795,
-    "average_prediction": 663827.7501415494,
+    "average_prediction": 663286.3341673838,
     "feature": "sp500"
   },
   {
     "value": 2037.9791836734694,
-    "average_prediction": 663366.7863440661,
+    "average_prediction": 663345.4093792293,
     "feature": "sp500"
   },
   {
     "value": 2091.612244897959,
-    "average_prediction": 665721.265040488,
+    "average_prediction": 665602.0112013062,
     "feature": "sp500"
   },
   {
     "value": 2145.2453061224487,
-    "average_prediction": 667147.9689616999,
+    "average_prediction": 666947.7127982137,
     "feature": "sp500"
   },
   {
     "value": 2198.878367346939,
-    "average_prediction": 683121.18869355,
+    "average_prediction": 682794.9668939452,
     "feature": "sp500"
   },
   {
     "value": 2252.5114285714285,
-    "average_prediction": 682990.1820630969,
+    "average_prediction": 682838.840859126,
     "feature": "sp500"
   },
   {
     "value": 2306.144489795918,
-    "average_prediction": 687896.6528179176,
+    "average_prediction": 687469.8679300114,
     "feature": "sp500"
   },
   {
     "value": 2359.7775510204083,
-    "average_prediction": 689428.3698833602,
+    "average_prediction": 688989.234047058,
     "feature": "sp500"
   },
   {
     "value": 2413.410612244898,
-    "average_prediction": 716532.2374776946,
+    "average_prediction": 716221.7593251942,
     "feature": "sp500"
   },
   {
     "value": 2467.0436734693876,
-    "average_prediction": 718226.7028775066,
+    "average_prediction": 717908.8281440762,
     "feature": "sp500"
   },
   {
     "value": 2520.6767346938777,
-    "average_prediction": 728909.7786348424,
+    "average_prediction": 728289.0923015261,
     "feature": "sp500"
   },
   {
     "value": 2574.3097959183674,
-    "average_prediction": 731232.7443737538,
+    "average_prediction": 730471.202222234,
     "feature": "sp500"
   },
   {
     "value": 2627.942857142857,
-    "average_prediction": 731420.4001768226,
+    "average_prediction": 730585.7943213714,
     "feature": "sp500"
   },
   {
     "value": 2681.575918367347,
-    "average_prediction": 782182.5289805472,
+    "average_prediction": 781433.3757725098,
     "feature": "sp500"
   },
   {
     "value": 2735.208979591837,
-    "average_prediction": 779890.3213171631,
+    "average_prediction": 779142.4595365233,
     "feature": "sp500"
   },
   {
     "value": 2788.8420408163265,
-    "average_prediction": 779882.2314612516,
+    "average_prediction": 779525.094198508,
     "feature": "sp500"
   },
   {
     "value": 2842.4751020408166,
-    "average_prediction": 781811.4263992656,
+    "average_prediction": 781706.378213652,
     "feature": "sp500"
   },
   {
     "value": 2896.1081632653063,
-    "average_prediction": 782390.3418772897,
+    "average_prediction": 782172.0260972123,
     "feature": "sp500"
   },
   {
     "value": 2949.741224489796,
-    "average_prediction": 783218.8605743215,
+    "average_prediction": 782953.6548827358,
     "feature": "sp500"
   },
   {
     "value": 3003.374285714286,
-    "average_prediction": 783837.9607323307,
+    "average_prediction": 783735.7704708637,
     "feature": "sp500"
   },
   {
     "value": 3057.0073469387758,
-    "average_prediction": 784107.5906695632,
+    "average_prediction": 783993.7603680007,
     "feature": "sp500"
   },
   {
     "value": 3110.6404081632654,
-    "average_prediction": 784286.7864049583,
+    "average_prediction": 784118.0460246179,
     "feature": "sp500"
   },
   {
     "value": 3164.2734693877555,
-    "average_prediction": 784282.085412026,
+    "average_prediction": 784126.6965551191,
     "feature": "sp500"
   },
   {
     "value": 3217.906530612245,
-    "average_prediction": 784901.5370758575,
+    "average_prediction": 784726.8177377186,
     "feature": "sp500"
   },
   {
     "value": 3271.539591836735,
-    "average_prediction": 792104.6597036824,
+    "average_prediction": 792063.6221748042,
     "feature": "sp500"
   },
   {
     "value": 3325.172653061225,
-    "average_prediction": 792155.7561266995,
+    "average_prediction": 792124.25321376,
     "feature": "sp500"
   },
   {
     "value": 3378.8057142857147,
-    "average_prediction": 806679.5134576634,
+    "average_prediction": 806905.7268288066,
     "feature": "sp500"
   },
   {
     "value": 3432.4387755102043,
-    "average_prediction": 816154.0479303761,
+    "average_prediction": 816356.0824625907,
     "feature": "sp500"
   },
   {
     "value": 3486.0718367346944,
-    "average_prediction": 827928.8244633223,
+    "average_prediction": 828181.6794656761,
     "feature": "sp500"
   },
   {
     "value": 3539.7048979591837,
-    "average_prediction": 850069.709968569,
+    "average_prediction": 850265.7528029621,
     "feature": "sp500"
   },
   {
     "value": 3593.337959183674,
-    "average_prediction": 852848.2161737344,
+    "average_prediction": 853035.7772069357,
     "feature": "sp500"
   },
   {
     "value": 3646.971020408164,
-    "average_prediction": 852710.7819508058,
+    "average_prediction": 852918.6232688437,
     "feature": "sp500"
   },
   {
     "value": 3700.604081632653,
-    "average_prediction": 853530.4183119305,
+    "average_prediction": 853978.4093766958,
     "feature": "sp500"
   },
   {
     "value": 3754.237142857143,
-    "average_prediction": 853722.4857484564,
+    "average_prediction": 854337.2964559293,
     "feature": "sp500"
   },
   {
     "value": 3807.870204081633,
-    "average_prediction": 854333.47681869,
+    "average_prediction": 855155.697312518,
     "feature": "sp500"
   },
   {
     "value": 3861.5032653061226,
-    "average_prediction": 855116.0237825192,
+    "average_prediction": 855925.811731546,
     "feature": "sp500"
   },
   {
     "value": 3915.1363265306127,
-    "average_prediction": 856108.0006541024,
+    "average_prediction": 856895.6239938688,
     "feature": "sp500"
   },
   {
     "value": 3968.7693877551023,
-    "average_prediction": 856223.5365627769,
+    "average_prediction": 856872.0005225873,
     "feature": "sp500"
   },
   {
     "value": 4022.402448979592,
-    "average_prediction": 855469.5424924744,
+    "average_prediction": 856084.4454997308,
     "feature": "sp500"
   },
   {
     "value": 4076.035510204082,
-    "average_prediction": 855444.6847435893,
+    "average_prediction": 856016.6074936849,
     "feature": "sp500"
   },
   {
     "value": 4129.668571428572,
-    "average_prediction": 855590.6762677543,
+    "average_prediction": 856275.1762827619,
     "feature": "sp500"
   },
   {
     "value": 4183.3016326530615,
-    "average_prediction": 855454.8100222776,
+    "average_prediction": 856069.3124841542,
     "feature": "sp500"
   },
   {
     "value": 4236.934693877552,
-    "average_prediction": 855613.067575471,
+    "average_prediction": 856242.0351255537,
     "feature": "sp500"
   },
   {
     "value": 4290.567755102042,
-    "average_prediction": 855995.2593770638,
+    "average_prediction": 856555.6392416274,
     "feature": "sp500"
   },
   {
     "value": 4344.200816326531,
-    "average_prediction": 856114.6068844636,
+    "average_prediction": 856657.9137863603,
     "feature": "sp500"
   },
   {
     "value": 4397.833877551021,
-    "average_prediction": 856138.8134359285,
+    "average_prediction": 856663.4384131241,
     "feature": "sp500"
   },
   {
     "value": 4451.466938775511,
-    "average_prediction": 856314.3152281247,
+    "average_prediction": 856717.1722743305,
     "feature": "sp500"
   },
   {
     "value": 4505.1,
-    "average_prediction": 856779.514580653,
+    "average_prediction": 857221.1519423416,
     "feature": "sp500"
   },
   {
     "value": 19.9,
-    "average_prediction": 800338.5143269423,
+    "average_prediction": 771051.3430628272,
     "feature": "summit_pop"
   },
   {
     "value": 20.976,
-    "average_prediction": 800522.0634289505,
+    "average_prediction": 771603.1485988288,
     "feature": "summit_pop"
   },
   {
     "value": 21.702,
-    "average_prediction": 801368.0581286938,
+    "average_prediction": 771523.8997645879,
     "feature": "summit_pop"
   },
   {
     "value": 23.069,
-    "average_prediction": 801419.1124446747,
+    "average_prediction": 770592.330667716,
     "feature": "summit_pop"
   },
   {
     "value": 23.709,
-    "average_prediction": 766951.3650043369,
+    "average_prediction": 758428.8948187545,
     "feature": "summit_pop"
   },
   {
     "value": 24.722,
-    "average_prediction": 765858.7468257659,
+    "average_prediction": 756935.9452517992,
     "feature": "summit_pop"
   },
   {
     "value": 24.995,
-    "average_prediction": 765982.2918065749,
+    "average_prediction": 757058.3152343143,
     "feature": "summit_pop"
   },
   {
     "value": 25.219,
-    "average_prediction": 765812.7944080248,
+    "average_prediction": 757101.9137315794,
     "feature": "summit_pop"
   },
   {
     "value": 25.336,
-    "average_prediction": 765916.1853557861,
+    "average_prediction": 757213.781394638,
     "feature": "summit_pop"
   },
   {
     "value": 25.358,
-    "average_prediction": 780322.8508814621,
+    "average_prediction": 771616.5224301876,
     "feature": "summit_pop"
   },
   {
     "value": 25.791,
-    "average_prediction": 780355.5825718272,
+    "average_prediction": 771887.969200776,
     "feature": "summit_pop"
   },
   {
     "value": 26.31,
-    "average_prediction": 781675.6672610221,
+    "average_prediction": 773413.4903106497,
     "feature": "summit_pop"
   },
   {
     "value": 26.771,
-    "average_prediction": 782949.8455031577,
+    "average_prediction": 774400.061465779,
     "feature": "summit_pop"
   },
   {
     "value": 27.217,
-    "average_prediction": 787166.9751055388,
+    "average_prediction": 790611.2519692581,
     "feature": "summit_pop"
   },
   {
     "value": 28.048,
-    "average_prediction": 778945.0134126996,
+    "average_prediction": 767915.6874449599,
     "feature": "summit_pop"
   },
   {
     "value": 28.075,
-    "average_prediction": 782751.4096450962,
+    "average_prediction": 771561.85510694,
     "feature": "summit_pop"
   },
   {
     "value": 28.307,
-    "average_prediction": 782748.810019625,
+    "average_prediction": 771564.240134184,
     "feature": "summit_pop"
   },
   {
     "value": 28.741,
-    "average_prediction": 780962.1025181906,
+    "average_prediction": 771295.5070839083,
     "feature": "summit_pop"
   },
   {
     "value": 29.333,
-    "average_prediction": 780248.610287493,
+    "average_prediction": 770291.1054357903,
     "feature": "summit_pop"
   },
   {
     "value": 30.064,
-    "average_prediction": 764177.1055399555,
+    "average_prediction": 760550.994284015,
     "feature": "summit_pop"
   },
   {
     "value": 30.573,
-    "average_prediction": 764313.7965271516,
+    "average_prediction": 760553.7268389696,
     "feature": "summit_pop"
   },
   {
     "value": 30.771,
-    "average_prediction": 764464.6042174251,
+    "average_prediction": 760832.8849404176,
     "feature": "summit_pop"
   },
   {
     "value": 30.824,
-    "average_prediction": 764352.9828900654,
+    "average_prediction": 760764.2241009425,
     "feature": "summit_pop"
   },
   {
     "value": 30.848,
-    "average_prediction": 764352.9828900654,
+    "average_prediction": 760764.2241009425,
     "feature": "summit_pop"
   },
   {
     "value": 30.851,
-    "average_prediction": 764907.1926109452,
+    "average_prediction": 761859.587496609,
     "feature": "summit_pop"
   },
   {
     "value": 30.882,
-    "average_prediction": 764399.3580585473,
+    "average_prediction": 761557.5114154953,
     "feature": "summit_pop"
   },
   {
     "value": 30.905,
-    "average_prediction": 764252.2288011031,
+    "average_prediction": 761745.8700425252,
     "feature": "summit_pop"
   },
   {
     "value": 31.235,
-    "average_prediction": 763916.2176847254,
+    "average_prediction": 761584.6685680306,
     "feature": "summit_pop"
   },
   {
     "value": 31.239,
-    "average_prediction": 763942.7145261426,
+    "average_prediction": 761575.5485854597,
     "feature": "summit_pop"
   },
   {
     "value": 3.0,
-    "average_prediction": 756101.0558649574,
+    "average_prediction": 756101.0558649573,
     "feature": "grade_numeric"
   },
   {
     "value": 3.0,
-    "average_prediction": 756101.0558649574,
+    "average_prediction": 756101.0558649573,
     "feature": "cond_numeric"
   },
   {
     "value": 0.0995074121400477,
-    "average_prediction": 812007.7292927839,
+    "average_prediction": 804391.5808339772,
     "feature": "dist_to_lift"
   },
   {
     "value": 0.2611286962578845,
-    "average_prediction": 794928.641134961,
+    "average_prediction": 791604.7225823072,
     "feature": "dist_to_lift"
   },
   {
     "value": 0.42274998037572126,
-    "average_prediction": 789811.963961969,
+    "average_prediction": 786512.8617346528,
     "feature": "dist_to_lift"
   },
   {
     "value": 0.584371264493558,
-    "average_prediction": 795475.7882924147,
+    "average_prediction": 791252.6818010529,
     "feature": "dist_to_lift"
   },
   {
     "value": 0.7459925486113947,
-    "average_prediction": 785575.0850014851,
+    "average_prediction": 781131.3697726824,
     "feature": "dist_to_lift"
   },
   {
     "value": 0.9076138327292316,
-    "average_prediction": 779840.7013511206,
+    "average_prediction": 775091.401746535,
     "feature": "dist_to_lift"
   },
   {
     "value": 1.0692351168470684,
-    "average_prediction": 772380.6998983701,
+    "average_prediction": 767011.5907972344,
     "feature": "dist_to_lift"
   },
   {
     "value": 1.230856400964905,
-    "average_prediction": 797133.4604494305,
+    "average_prediction": 789441.2137975964,
     "feature": "dist_to_lift"
   },
   {
     "value": 1.3924776850827418,
-    "average_prediction": 796852.7113509817,
+    "average_prediction": 789081.9340326557,
     "feature": "dist_to_lift"
   },
   {
     "value": 1.5540989692005787,
-    "average_prediction": 796056.3034048064,
+    "average_prediction": 788335.5740127255,
     "feature": "dist_to_lift"
   },
   {
     "value": 1.7157202533184155,
-    "average_prediction": 795810.7385275806,
+    "average_prediction": 788115.2147483496,
     "feature": "dist_to_lift"
   },
   {
     "value": 1.877341537436252,
-    "average_prediction": 795835.3912311286,
+    "average_prediction": 787895.3327404413,
     "feature": "dist_to_lift"
   },
   {
     "value": 2.038962821554089,
-    "average_prediction": 795569.1964010202,
+    "average_prediction": 787445.8954773619,
     "feature": "dist_to_lift"
   },
   {
     "value": 2.200584105671926,
-    "average_prediction": 795428.3281122689,
+    "average_prediction": 787227.377978815,
     "feature": "dist_to_lift"
   },
   {
     "value": 2.3622053897897626,
-    "average_prediction": 795835.6959277259,
+    "average_prediction": 787452.6788613652,
     "feature": "dist_to_lift"
   },
   {
     "value": 2.5238266739075996,
-    "average_prediction": 795754.500824098,
+    "average_prediction": 787588.0582797022,
     "feature": "dist_to_lift"
   },
   {
     "value": 2.6854479580254362,
-    "average_prediction": 795477.1034229455,
+    "average_prediction": 787175.4143961949,
     "feature": "dist_to_lift"
   },
   {
     "value": 2.847069242143273,
-    "average_prediction": 795330.9121356909,
+    "average_prediction": 787204.1706583791,
     "feature": "dist_to_lift"
   },
   {
     "value": 3.00869052626111,
-    "average_prediction": 795242.5724766285,
+    "average_prediction": 787055.9768154077,
     "feature": "dist_to_lift"
   },
   {
     "value": 3.1703118103789465,
-    "average_prediction": 793851.9615216501,
+    "average_prediction": 786905.7298152241,
     "feature": "dist_to_lift"
   },
   {
     "value": 3.3319330944967835,
-    "average_prediction": 794968.4285268864,
+    "average_prediction": 788358.0764477267,
     "feature": "dist_to_lift"
   },
   {
     "value": 3.49355437861462,
-    "average_prediction": 794960.1927369584,
+    "average_prediction": 788350.5077492894,
     "feature": "dist_to_lift"
   },
   {
     "value": 3.6551756627324568,
-    "average_prediction": 794976.0680242075,
+    "average_prediction": 788359.4048781873,
     "feature": "dist_to_lift"
   },
   {
     "value": 3.816796946850294,
-    "average_prediction": 795020.1573372004,
+    "average_prediction": 788234.4287077278,
     "feature": "dist_to_lift"
   },
   {
     "value": 3.9784182309681304,
-    "average_prediction": 794957.8650701983,
+    "average_prediction": 788320.2095084316,
     "feature": "dist_to_lift"
   },
   {
     "value": 4.140039515085967,
-    "average_prediction": 794924.8034256464,
+    "average_prediction": 788290.7444786385,
     "feature": "dist_to_lift"
   },
   {
     "value": 4.301660799203804,
-    "average_prediction": 795419.673719525,
+    "average_prediction": 788748.764828227,
     "feature": "dist_to_lift"
   },
   {
     "value": 4.463282083321641,
-    "average_prediction": 795374.1582594668,
+    "average_prediction": 788727.4788872793,
     "feature": "dist_to_lift"
   },
   {
     "value": 4.624903367439477,
-    "average_prediction": 795381.3583882165,
+    "average_prediction": 788724.1668946377,
     "feature": "dist_to_lift"
   },
   {
     "value": 4.786524651557314,
-    "average_prediction": 804974.384634237,
+    "average_prediction": 798462.280160865,
     "feature": "dist_to_lift"
   },
   {
     "value": 4.948145935675151,
-    "average_prediction": 804919.4593141802,
+    "average_prediction": 798479.2689392655,
     "feature": "dist_to_lift"
   },
   {
     "value": 5.109767219792987,
-    "average_prediction": 804919.7829899737,
+    "average_prediction": 798481.6007596591,
     "feature": "dist_to_lift"
   },
   {
     "value": 5.271388503910824,
-    "average_prediction": 804911.5373855138,
+    "average_prediction": 798509.2062812166,
     "feature": "dist_to_lift"
   },
   {
     "value": 5.433009788028661,
-    "average_prediction": 827387.5917431709,
+    "average_prediction": 815004.7490464279,
     "feature": "dist_to_lift"
   },
   {
     "value": 5.594631072146497,
-    "average_prediction": 827743.1804794638,
+    "average_prediction": 815441.7354696259,
     "feature": "dist_to_lift"
   },
   {
     "value": 5.756252356264334,
-    "average_prediction": 827986.017580282,
+    "average_prediction": 815685.936084938,
     "feature": "dist_to_lift"
   },
   {
     "value": 5.9178736403821715,
-    "average_prediction": 827981.0963210096,
+    "average_prediction": 815648.622548056,
     "feature": "dist_to_lift"
   },
   {
     "value": 6.079494924500008,
-    "average_prediction": 827966.9299709402,
+    "average_prediction": 815635.0320898693,
     "feature": "dist_to_lift"
   },
   {
     "value": 6.241116208617845,
-    "average_prediction": 827984.5531840943,
+    "average_prediction": 815660.3697010422,
     "feature": "dist_to_lift"
   },
   {
     "value": 6.402737492735682,
-    "average_prediction": 827921.2353778507,
+    "average_prediction": 815591.8402071424,
     "feature": "dist_to_lift"
   },
   {
     "value": 6.564358776853519,
-    "average_prediction": 827921.0734242469,
+    "average_prediction": 815553.7687735157,
     "feature": "dist_to_lift"
   },
   {
     "value": 6.725980060971355,
-    "average_prediction": 828356.5688329862,
+    "average_prediction": 815852.8001559015,
     "feature": "dist_to_lift"
   },
   {
     "value": 6.887601345089192,
-    "average_prediction": 828359.4287566218,
+    "average_prediction": 815851.904625468,
     "feature": "dist_to_lift"
   },
   {
     "value": 7.049222629207029,
-    "average_prediction": 828326.7499013974,
+    "average_prediction": 815795.1855628794,
     "feature": "dist_to_lift"
   },
   {
     "value": 7.210843913324865,
-    "average_prediction": 828208.4949683312,
+    "average_prediction": 815712.6076750107,
     "feature": "dist_to_lift"
   },
   {
     "value": 7.372465197442702,
-    "average_prediction": 828217.1367431862,
+    "average_prediction": 816041.1028450346,
     "feature": "dist_to_lift"
   },
   {
     "value": 7.534086481560539,
-    "average_prediction": 822303.1267311857,
+    "average_prediction": 809512.3084940736,
     "feature": "dist_to_lift"
   },
   {
     "value": 7.6957077656783754,
-    "average_prediction": 825090.1146168942,
+    "average_prediction": 814237.0836667946,
     "feature": "dist_to_lift"
   },
   {
     "value": 7.8573290497962125,
-    "average_prediction": 825092.69145301,
+    "average_prediction": 814237.0836667946,
     "feature": "dist_to_lift"
   },
   {
     "value": 8.018950333914049,
-    "average_prediction": 825091.8321865414,
+    "average_prediction": 814236.224400326,
     "feature": "dist_to_lift"
   }
 ]

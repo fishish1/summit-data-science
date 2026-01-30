@@ -61,9 +61,36 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function initUI() {
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const appNav = document.getElementById('app-nav');
+    const sidebar = document.getElementById('sidebar');
+
+    if (menuToggle && appNav) {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            appNav.classList.toggle('show');
+            sidebar.classList.toggle('nav-open');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (appNav.classList.contains('show') && !sidebar.contains(e.target)) {
+                appNav.classList.remove('show');
+                sidebar.classList.remove('nav-open');
+            }
+        });
+    }
+
     // Main Nav logic
     document.querySelectorAll('.nav-item').forEach(btn => {
         btn.addEventListener('click', () => {
+            // Close mobile menu if open
+            if (appNav) {
+                appNav.classList.remove('show');
+                sidebar.classList.remove('nav-open');
+            }
+
             document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             state.activePage = btn.dataset.page;
@@ -290,12 +317,14 @@ function initStoryMap() {
                 { name: "Breckenridge Ski Resort", lat: 39.4805, lon: -106.0666, color: "red", type: "Resort" },
                 { name: "Keystone Resort", lat: 39.605, lon: -105.9439, color: "red", type: "Resort" },
                 { name: "Copper Mountain", lat: 39.5022, lon: -106.1506, color: "red", type: "Resort" },
-                { name: "A-Basin", lat: 39.6425, lon: -105.8719, "type": "Resort", color: "red" },
+                { name: "Arapahoe Basin", lat: 39.6425, lon: -105.8719, "type": "Resort", color: "red" },
 
                 // Town Centers (Blue)
-                { name: "Main St, Breck", lat: 39.4817, lon: -106.0384, color: "blue", type: "Town" },
-                { name: "Main St, Frisco", lat: 39.5744, lon: -106.0975, color: "blue", type: "Town" },
-                { name: "Silverthorne Outlets", lat: 39.6296, lon: -106.0713, color: "blue", type: "Town" },
+                { name: "Breckenridge", lat: 39.4817, lon: -106.0384, color: "blue", type: "Town" },
+                { name: "Frisco", lat: 39.5744, lon: -106.0975, color: "blue", type: "Town" },
+                { name: "Silverthorne", lat: 39.6296, lon: -106.0713, color: "blue", type: "Town" },
+                { name: "Dillon", lat: 39.6294, lon: -106.0438, color: "blue", type: "Town" },
+                { name: "Keystone", lat: 39.6080, lon: -105.9525, color: "blue", type: "Town" },
 
                 // Key Locations (Gold/Cyan)
                 { name: "Dillon Reservoir", lat: 39.615, lon: -106.05, color: "cyan", type: "Feature" },
@@ -332,7 +361,7 @@ async function renderOverviewData() {
         banner.innerHTML = `
             <div class="metric-item"><div class="metric-value">50,000+</div><div class="metric-label">Parcel Records</div></div>
             <div class="metric-item"><div class="metric-value">20+ Years</div><div class="metric-label">Sales History</div></div>
-            <div class="metric-item"><div class="metric-value">100+</div><div class="metric-label">Engineered Features</div></div>
+            <div class="metric-item"><div class="metric-value">100+</div><div class="metric-label">Data Points Per Property</div></div>
         `;
 
 
@@ -433,7 +462,7 @@ async function renderMarketHistory() {
             const cityData = trends.filter(d => d.city === city);
             return { x: cityData.map(d => d.tx_year), y: cityData.map(d => d.avg_price_3yr_ma), name: city, type: 'scatter' };
         });
-        Plotly.newPlot('chart-market-trends', traces, { height: 400, margin: { t: 20 } });
+        Plotly.newPlot('chart-market-trends', traces, { height: 400, margin: { t: 20 }, font: { family: 'Space Grotesk' } }, { responsive: true });
 
         // 2. Buyer Origins (Market share) with percentage toggle
         const owners = await (await fetch('data/owner_trends.json')).json();
@@ -463,8 +492,9 @@ async function renderMarketHistory() {
                 Plotly.newPlot('chart-buyer-origins', ownerTraces, {
                     height: 400,
                     margin: { t: 20 },
-                    yaxis: { title: 'Percentage (%)', ticksuffix: '%' }
-                });
+                    yaxis: { title: 'Percentage (%)', ticksuffix: '%' },
+                    font: { family: 'Space Grotesk' }
+                }, { responsive: true });
             } else {
                 // Show absolute counts
                 const ownerTraces = types.map(t => {
@@ -481,8 +511,9 @@ async function renderMarketHistory() {
                 Plotly.newPlot('chart-buyer-origins', ownerTraces, {
                     height: 400,
                     margin: { t: 20 },
-                    yaxis: { title: 'Number of Buyers' }
-                });
+                    yaxis: { title: 'Number of Buyers' },
+                    font: { family: 'Space Grotesk' }
+                }, { responsive: true });
             }
         };
 
@@ -503,7 +534,7 @@ async function renderMarketHistory() {
             const d = seasonal.find(x => x.month_name === m && x.city === c);
             return d ? d.sales_count : 0;
         }));
-        Plotly.newPlot('chart-seasonality', [{ z: zData, x: uniqueCities, y: months, type: 'heatmap', colorscale: 'YlOrRd' }], { height: 400, margin: { t: 20 } });
+        Plotly.newPlot('chart-seasonality', [{ z: zData, x: uniqueCities, y: months, type: 'heatmap', colorscale: 'YlOrRd' }], { height: 400, margin: { t: 20 }, font: { family: 'Space Grotesk' } }, { responsive: true });
 
         // 4. Supply Growth
         // 4. Supply Growth vs Density
@@ -585,7 +616,7 @@ async function renderCorrelationMatrix() {
         Plotly.newPlot('chart-correlations', [{
             z: zData, x: labels, y: labels,
             type: 'heatmap', colorscale: 'RdBu', zmin: -1, zmax: 1
-        }], { height: 500, margin: { t: 20 }, font: { family: 'Space Grotesk' } });
+        }], { height: 500, margin: { t: 20 }, font: { family: 'Space Grotesk' } }, { responsive: true });
     } catch (e) {
         console.error('Failed to load correlation matrix:', e);
     }
@@ -635,7 +666,7 @@ async function renderModelDetail(run) {
             yaxis: { automargin: true },
             margin: { l: 150 },
             font: { family: 'Space Grotesk' }
-        });
+        }, { responsive: true });
 
         // 2. PDP Lines
         const pdpResp = await fetch('data/pdp_data.json');
@@ -685,7 +716,7 @@ async function renderModelDetail(run) {
                 yaxis: { title: 'Predicted Log Price' },
                 xaxis: { title: formatFeatureName(feature) },
                 font: { family: 'Space Grotesk' }
-            });
+            }, { responsive: true });
         };
 
         const pdpSelect = document.getElementById('pdp-feature-select-experiments');

@@ -23,6 +23,10 @@
     --radius: 12px;
 }
 
+.mobile-only {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -334,6 +338,27 @@ select:focus {
     grid-column: 1 / -1;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.col-chart,
+.col-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+
+    .col-chart,
+    .col-text {
+        min-width: 100%;
+    }
+}
+
 #raw-sample-container {
     max-width: 80vw;
     width: 100%;
@@ -477,6 +502,29 @@ select:focus {
     font-size: 1.25rem;
     color: #64748b;
     margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.intro-reason {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.intro-reason strong {
+    display: block;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.intro-reason p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
 }
 
 .grid-3 {
@@ -484,6 +532,18 @@ select:focus {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin: 1.5rem 0;
+}
+
+@media (max-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
 }
 
 .code-box {
@@ -600,15 +660,183 @@ select:focus {
         flex-direction: column;
     }
 
+    .mobile-only {
+        display: flex;
+    }
+
     #sidebar {
         width: 100%;
         height: auto;
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 2000;
+        /* Higher priority */
         border-right: none;
         border-bottom: 1px solid var(--border);
+        padding: 0.75rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        /* Solid background */
+        backdrop-filter: none;
+        /* Simplify for visibility debug */
+        overflow: visible !important;
+        /* Critical: Prevent clipping absolute child */
+    }
+
+    #sidebar header {
+        width: 100%;
+    }
+
+    .sidebar-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #sidebar header h1 {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+
+    #sidebar header p {
+        display: none;
+    }
+
+    #menu-toggle {
+        background: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger-icon {
+        position: relative;
+        width: 24px;
+        height: 2px;
+        background: var(--ink);
+        transition: all 0.3s ease;
+    }
+
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background: var(--ink);
+        left: 0;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger-icon::before {
+        top: -8px;
+    }
+
+    .hamburger-icon::after {
+        bottom: -8px;
+    }
+
+    /* X state */
+    .nav-open .hamburger-icon {
+        background: transparent;
+    }
+
+    .nav-open .hamburger-icon::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav-open .hamburger-icon::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+
+    #app-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        /* Take full viewport width */
+        background: white;
+        padding: 1rem;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        gap: 0.25rem;
+        z-index: 3000;
+        /* Extremely high to beat any chart/header */
+    }
+
+    #app-nav.show {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin-bottom: 0.25rem;
+        padding: 0.875rem 1rem;
+        color: #1e293b !important;
+        /* Force readable color */
+        display: block !important;
+    }
+
+    #main-content {
+        padding: 1rem;
     }
 
     .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card h1 {
+        font-size: 1.75rem;
+    }
+
+    #metrics-banner,
+    .metrics-banner {
+        position: relative !important;
+        top: 0 !important;
+        padding-top: 0.5rem;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    #app-nav {
+        width: 100%;
+    }
+
+    .metric-card .value {
+        font-size: 1.4rem;
+    }
+
+    #metrics-banner {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        position: relative;
+        /* Disable sticky on phones to save space */
+        top: 0;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .controls-grid {
         grid-template-columns: 1fr;
     }
 }

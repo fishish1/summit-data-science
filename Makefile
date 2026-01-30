@@ -37,9 +37,10 @@ tournament:
 	$(VENV)/python src/summit_housing/ml/tournament.py --runs 5
 
 export:
-	@echo "📊 Exporting data to static site..."
+	@echo "📊 Exporting data and models to static site..."
 	$(VENV)/python scripts/export_extra_data.py
-	@echo "✅ Export complete!"
+	$(VENV)/python scripts/export_to_onnx.py
+	@echo "✅ All exports complete!"
 	@echo ""
 	@echo "To view the static site:"
 	@echo "  make serve-static"

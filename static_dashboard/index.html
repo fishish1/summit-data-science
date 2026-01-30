@@ -29,7 +29,12 @@
         <!-- Sidebar Navigation & Inputs -->
         <aside id="sidebar">
             <header>
-                <h1>🏔️ Summit Housing</h1>
+                <div class="sidebar-top">
+                    <h1>🏔️ Summit Housing</h1>
+                    <button id="menu-toggle" class="mobile-only" aria-label="Toggle Menu">
+                        <span class="hamburger-icon"></span>
+                    </button>
+                </div>
                 <p>Data Science Project</p>
             </header>
 
@@ -50,22 +55,24 @@
                     <h1>🏔️ Summit County Housing Analysis</h1>
                     <p class="subtitle">A Personal Data Science Project</p>
                     <div class="story-text">
-                        <h3>Why I built this</h3>
-                        <p>I created this project for three simple reasons:</p>
-                        <ol style="font-size: 1.1rem; color: #475569; line-height: 1.8; margin-left: 1.5rem;">
-                            <li><strong>I live in Summit County</strong> and I'm genuinely curious about what drives
-                                housing prices here. The market is unique due to its ski resort economy and location.
-                            </li>
-                            <li><strong>I have the technical skills</strong> to scrape the data and explore it. I
-                                figured, why not put my SQL, Python, and web scraping skills to use on something I
-                                actually care about?</li>
-                            <li><strong>I wanted to test my ML abilities</strong> by building a real price predictor.
-                                Could I train a model that help to look into the future? This was my chance to find out.
-                            </li>
-                        </ol>
-                        <p style="margin-top: 1.5rem;">What started as curiosity turned into a full-stack data science
-                            project: web scraping, SQL analytics, machine learning, model explainability, and a static
-                            dashboard you can explore right in your browser.</p>
+                        <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--ink);">
+                            What started as curiosity became a full-stack data science exploration.
+                        </p>
+
+                        <div class="grid-3" style="margin-bottom: 3rem;">
+                            <div class="intro-reason">
+                                <strong>🏔️ Local Context</strong>
+                                <p>Understanding the housing market in my area.</p>
+                            </div>
+                            <div class="intro-reason">
+                                <strong>🛠️ Data Engineering</strong>
+                                <p>Building a production-grade ETL pipeline from raw, messy public records.</p>
+                            </div>
+                            <div class="intro-reason">
+                                <strong>🔮 ML Inference</strong>
+                                <p>Testing the limits of browser-based ML... and my own skillset.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -280,12 +287,13 @@
             <section id="story-page" class="page-section hidden">
                 <div class="card full-width">
                     <h2>Summit County Housing Data Story</h2>
-                    <p class="story-text">Exploring the market forces and trends defined by high-altitude geography.</p>
+                    <p class="story-text">Exploring publicly available data to understand the housing market in Summit
+                        County, Colorado.</p>
                 </div>
 
                 <!-- Property Distribution & Resort Proximity -->
                 <div class="card full-width">
-                    <h3>📍 Property Distribution & Resort Proximity</h3>
+                    <h3>📍 Points of Interest</h3>
                     <div id="map-hotspots" style="height: 450px; border-radius: 8px;"></div>
                 </div>
 
@@ -302,10 +310,10 @@
                         </div>
                         <div class="col-text" style="flex: 1; padding: 1rem;">
                             <p>Summit County is defined by its world-class skiing. To understand the premium of
-                                "ski-in/ski-out" living, we analyzed the precise <strong>Distance to Ski Lifts</strong>
+                                "ski-in/ski-out" living, I analyzed the precise <strong>Distance to Ski Lifts</strong>
                                 for every property.</p>
-                            <p>The map visualizes this value gradient—from the premium "Gold Zones" (Red) at the base of
-                                the resorts to the residential pockets further away (Blue).</p>
+                            <p>The map visualizes this value gradient—from the areas closest to the base of the resorts
+                                to the residential pockets further away.</p>
                         </div>
                     </div>
                 </div>
