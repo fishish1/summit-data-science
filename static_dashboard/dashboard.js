@@ -114,7 +114,8 @@ let state = {
         acres: 0.1, mortgage_rate: 6.5, sp500: 5000, cpi: 310,
         summit_pop: 31, grade_numeric: 4, cond_numeric: 4, scenic_view: 0,
         city: 'BRECKENRIDGE', prop_type: 'Single Family'
-    }
+    },
+    records: []
 };
 
 // --- Initialization ---
@@ -123,10 +124,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     initTheme();
     initScrolly(); // Initialize scrollytelling observer
     showSkeletons();
-    await loadModels();
+    // Load Models and Data
+    await Promise.all([
+        loadModels(),
+        loadRecords()
+    ]);
+
     hideSkeletons();
     updateDashboard();
 });
+
+async function loadRecords() {
+    try {
+        const resp = await fetch('data/records_sample_curated.json?t=' + new Date().getTime());
+        state.records = await resp.json();
+    } catch (e) {
+        console.error("Failed to load records database", e);
+    }
+}
 
 function showSkeletons() {
     const charts = ['main-chart', 'chart-sqft', 'chart-rates', 'chart-market-trends', 'chart-buyer-origins', 'chart-seasonality', 'chart-supply', 'chart-correlations'];
@@ -398,7 +413,12 @@ function initUI() {
         { id: 'grade', key: 'grade_numeric', type: 'num' },
         { id: 'view', key: 'scenic_view', type: 'num' },
         { id: 'rate', key: 'mortgage_rate', type: 'num' },
-        { id: 'cpi', key: 'cpi', type: 'num' }
+        { id: 'cpi', key: 'cpi', type: 'num' },
+        { id: 'garage', key: 'garage_size', type: 'num' },
+        { id: 'acres', key: 'acres', type: 'num' },
+        { id: 'cond', key: 'cond_numeric', type: 'num' },
+        { id: 'sp500', key: 'sp500', type: 'num' },
+        { id: 'pop', key: 'summit_pop', type: 'num' }
     ];
 
     let debounceTimer;
@@ -1222,6 +1242,7 @@ async function renderPredictor() {
 
         await updatePredictorCharts(price);
         await renderSHAPExplainer(price);
+        renderComps(price);
     } catch (e) {
         console.error('Inference failed:', e);
     }
@@ -1412,6 +1433,81 @@ async function updatePredictorCharts(currentPrice) {
             }
         ]
     }, { responsive: true, displayModeBar: false });
+}
+
+function renderComps(predictedPrice) {
+    const container = document.getElementById('comps-container');
+    if (!container || state.records.length === 0) return;
+
+    // Filter by Hard Constraints (City & Type)
+    // We relax strict constraint if not enough data, but start strict
+    let candidates = state.records.filter(r =>
+        r.town === getTownCode(state.inputs.city) && (r.est_price || r.docfee1) > 10000
+    );
+
+    // If we have fewer than 10 candidates, try to find broadly similar ones
+    if (candidates.length < 5) {
+        candidates = state.records.filter(r => (r.est_price || r.docfee1) > 10000); // Fallback to all valid records
+    }
+
+    // Calculate Similarity Score
+    // Euclidean distance on normalized key features: SFLA, Year Built, Beds, Baths
+    // We normalize roughly by standard deviation to give equal weight
+    const user = state.inputs;
+
+    const similar = candidates.map(r => {
+        const d_sqft = Math.abs(r.sfla - user.sfla) / 500; // 500 sqft diff is 1 unit
+        const d_year = Math.abs(r.year_blt - user.year_blt) / 10; // 10 years is 1 unit
+        const bedroomCount = r.bedroom_count || r.beds || 3;
+        const d_beds = Math.abs(bedroomCount - user.beds) / 1;
+
+        // Total Distance
+        const distance = d_sqft + d_year + d_beds;
+
+        // Similarity % (heuristic)
+        const similarity = Math.max(10, 100 - (distance * 10));
+
+        return { ...r, similarity, distance };
+    });
+
+    // Sort by Similarity DESC
+    similar.sort((a, b) => b.similarity - a.similarity);
+
+    // Take top 3
+    const top3 = similar.slice(0, 3);
+
+    container.innerHTML = top3.map(r => `
+        <div class="comp-card">
+            <div class="comp-similarity">${Math.round(r.similarity)}% Match</div>
+            <div style="font-weight:600; margin-bottom:4px;">${limitAddress(r.FullAddress || r.address)}, ${r.city}</div>
+            <div class="comp-price">${formatCurrency(r.est_price || r.docfee1)}</div>
+            <div class="comp-detail">
+                <span>Sold: ${r.recdate1 ? r.recdate1.split(' ')[0] : 'N/A'}</span>
+                <span>${r.styledesc || 'Ref'} • ${r.sfla} SqFt</span>
+            </div>
+            <div class="comp-detail">
+                <span>${r.bedroom_count || r.beds || 0} Bed / ${r.bath_count || r.baths || r.bath_tot || 0} Bath</span>
+                <span>${r.year_blt} Built</span>
+            </div>
+        </div>
+    `).join('');
+}
+
+function getTownCode(city) {
+    const map = {
+        'BRECKENRIDGE': 'B', 'FRISCO': 'F', 'DILLON': 'D',
+        'SILVERTHORNE': 'S', 'KEYSTONE': 'K', 'COPPER MOUNTAIN': 'C'
+    };
+    return map[city] || 'B';
+}
+
+function limitAddress(addr) {
+    if (!addr) return 'Unknown Address';
+    return addr.length > 25 ? addr.substring(0, 22) + '...' : addr;
+}
+
+function formatCurrency(val) {
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(val);
 }
 
 async function renderSHAPExplainer(currentPrice) {
