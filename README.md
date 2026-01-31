@@ -114,8 +114,8 @@ make serve-static
 
 This project exports data to a **static web dashboard** for public viewing.
 
-**Live Dashboard:** [brian.fishman.info/projects/summit](https://brian.fishman.info/projects/summit/)  
-**Frontend Repo:** [github.com/fishish1/brian.fishman.info](https://github.com/fishish1/brian.fishman.info)
+**Live Dashboard:** [brian.fishman.info/projects/summit](https://brian.fishman.info/projects/summit/)
+
 
 ### Exporting Data
 
