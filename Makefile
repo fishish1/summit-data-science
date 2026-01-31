@@ -1,4 +1,4 @@
-.PHONY: setup test ingest run clean lint export serve-static
+.PHONY: setup test ingest run clean lint export serve-static screenshots
 
 VENV = .venv/bin
 PYTHON = python3
@@ -9,7 +9,7 @@ setup:
 	@echo "Installing dependencies..."
 	$(VENV)/pip install --upgrade pip
 	$(VENV)/pip install -e .[dev]
-	@echo "✅ Setup complete! Run 'make run' to start the dashboard."
+	@echo "✅ Setup complete! Run './quickstart.sh' to start the dashboard."
 
 test:
 	$(VENV)/pytest -v
@@ -38,6 +38,7 @@ tournament:
 
 export:
 	@echo "📊 Exporting data and models to static site..."
+	$(VENV)/python scripts/prepare_mortgage_data.py
 	$(VENV)/python scripts/export_extra_data.py
 	$(VENV)/python scripts/export_to_onnx.py
 	@echo "✅ All exports complete!"
@@ -58,3 +59,8 @@ clean:
 	rm -rf .pytest_cache
 	rm -rf src/__pycache__
 	rm -rf tests/__pycache__
+
+screenshots:
+	@echo "📸 Capturing portfolio screenshots..."
+	@./scripts/capture_portfolio_screenshots.sh
+

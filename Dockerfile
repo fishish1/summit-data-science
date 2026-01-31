@@ -21,8 +21,8 @@ COPY data/ data/
 RUN pip install --upgrade pip && \
     pip install .
 
-# Expose Streamlit Port
-EXPOSE 8501
+# Expose Static Site Port
+EXPOSE 8000
 
-# Default Command: Check for DB, if missing ingest, then run
-CMD ["sh", "-c", "python -m summit_housing.ingestion && streamlit run src/summit_housing/dashboard/Introduction.py"]
+# Default Command: Check for DB, ensure export is fresh, and serve static site
+CMD ["sh", "-c", "python -m summit_housing.ingestion && make export && make serve-static"]

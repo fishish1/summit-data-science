@@ -46,22 +46,7 @@ else
 fi
 
 echo ""
-echo "Select Launch Mode:"
-echo "  1) Streamlit App (Python Dynamic - For DS Exploration)"
-echo "  2) Static Dashboard (HTML/JS - The Final Product)"
+echo "🚀 Launching Static Dashboard..."
+echo "   Ensure you have run 'make export' recently to see latest data."
 echo ""
-read -p "Enter choice [1/2]: " choice
-
-if [ "$choice" = "2" ]; then
-    echo ""
-    echo "🚀 Launching Static Dashboard..."
-    echo "   Ensure you have run 'make export' recently to see latest data."
-    echo ""
-    make serve-static
-else
-    echo ""
-    echo "🚀 Launching Streamlit App..."
-    echo "   Dashboard will open at: http://localhost:8501"
-    echo ""
-    make run
-fi
+make serve-static

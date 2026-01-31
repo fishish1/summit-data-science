@@ -106,6 +106,35 @@ def main():
     # 0. Sync Frontend Assets
     sync_frontend_assets()
     
+    # 0.5. Export Metadata (data freshness)
+    print("Exporting Metadata...")
+    try:
+        import datetime
+        project_root = Path(__file__).resolve().parent.parent
+        records_file = project_root / "data/records.csv"
+        
+        if records_file.exists():
+            # Get the modification time of the records file
+            mtime = records_file.stat().st_mtime
+            last_updated = datetime.datetime.fromtimestamp(mtime).strftime("%Y-%m-%d")
+            
+            metadata = {
+                "last_updated": last_updated,
+                "data_source": "Summit County Assessor Records",
+                "export_date": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            }
+            
+            # Export to all paths
+            for base_path in EXPORT_PATHS:
+                output_path = base_path / "metadata.json"
+                with open(output_path, 'w') as f:
+                    json.dump(metadata, f, indent=2)
+                print(f"   Exported metadata to {output_path}")
+        else:
+            print("   ⚠️ records.csv not found, skipping metadata export")
+    except Exception as e:
+        print(f"   Warning: Metadata export failed: {e}")
+    
     # 1. Standard Analytics
     print("Exporting Market Trends...")
     trends = analytics.get_market_trends(exclude_multiunit=True)

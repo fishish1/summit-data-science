@@ -33,7 +33,7 @@ make lint
 ```
 summit-housing/
 ├── src/summit_housing/       # Main application code
-│   ├── dashboard/            # Streamlit UI components
+│   ├── dashboard/            # Streamlit UI components (Deprecated)
 │   ├── ml/                   # Machine learning models
 │   ├── queries.py            # SQL analytics layer
 │   ├── ingestion.py          # ETL pipeline
@@ -49,7 +49,7 @@ summit-housing/
 
 ### Running the Dashboard Locally
 ```bash
-make run
+make serve-static
 ```
 
 ### Rebuilding the Database

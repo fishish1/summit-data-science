@@ -208,7 +208,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load Models and Data
     await Promise.all([
         loadModels(),
-        loadRecords()
+        loadRecords(),
+        loadMetadata()
     ]);
 
     hideSkeletons();
@@ -221,6 +222,34 @@ async function loadRecords() {
         state.records = await resp.json();
     } catch (e) {
         console.error("Failed to load records database", e);
+    }
+}
+
+async function loadMetadata() {
+    try {
+        const resp = await fetch('data/metadata.json?t=' + new Date().getTime());
+        const metadata = await resp.json();
+
+        // Format the date nicely
+        const lastUpdated = metadata.last_updated;
+        const date = new Date(lastUpdated);
+        const formattedDate = date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Update footer location
+        const footerEl = document.getElementById('last-updated-footer');
+
+        if (footerEl) footerEl.textContent = formattedDate;
+
+    } catch (e) {
+        console.error("Failed to load metadata", e);
+        // Fallback text
+        const fallback = "January 2026";
+        const footerEl = document.getElementById('last-updated-footer');
+        if (footerEl) footerEl.textContent = fallback;
     }
 }
 

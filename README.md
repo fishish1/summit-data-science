@@ -1,7 +1,7 @@
 # Summit County Housing: Analytics & ML Portfolio
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b)
+
 ![SQL](https://img.shields.io/badge/SQL-Advanced-orange)
 ![Docker](https://img.shields.io/badge/Docker-Ready-green)
 
@@ -13,7 +13,7 @@ This project demonstrates the full Data Science lifecycle:
 3.  **Modeling**: Unified GBM and Neural Network training with temporal cross-validation.
 4.  **MLOps**: Automated "Champion/Challenger" registry and centralized YAML-driven configuration.
 5.  **Productization**: Uncertainty estimation (Quantile Regression) and luxury segment calibration.
-6.  **Deployment**: Serving insights via an interactive Streamlit dashboard.
+6.  **Deployment**: Serving insights via a static web dashboard.
 
 ## 🚀 Key Technical Features
 
@@ -72,7 +72,7 @@ The script will:
 1. Create a virtual environment
 2. Install all dependencies
 3. Build the database (if needed)
-4. Launch the dashboard at http://localhost:8501
+4. Launch the static dashboard at http://localhost:8000
 
 ### Option B: Docker (Zero Python Setup)
 You don't need Python installed. Just Docker.
@@ -80,7 +80,7 @@ You don't need Python installed. Just Docker.
 ```bash
 docker-compose up --build
 ```
-*App will be available at http://localhost:8501*
+*App will be available at http://localhost:8000*
 
 ### Option C: Manual Setup (For Developers)
 For those who want more control over the process.
@@ -103,10 +103,10 @@ make train-gbm   # Train just GBM
 make train-nn    # Train just Neural Network
 
 # 5. Launch Dashboard
-make run
+make serve-static
 ```
 
-**Dashboard will be available at:** http://localhost:8501
+**Dashboard will be available at:** http://localhost:8000
 
 ---
 
@@ -172,6 +172,16 @@ summit-data-science/          ← Backend Repo
 
 ---
 
+## 📸 Project Screenshots
+
+The project includes an automated system to capture high-quality desktop and mobile screenshots for portfolio use.
+
+- **Command**: `make screenshots`
+- **Output**: `screenshots/` directory
+- **Details**: See [SCREENSHOT_SYSTEM.md](SCREENSHOT_SYSTEM.md) for full documentation and integration guides.
+
+---
+
 ## 📂 Project Structure
 
 ```text
@@ -181,7 +191,7 @@ summit-data-science/          ← Backend Repo
 ├── scripts/               # Utility and debugging scripts
 ├── src/
 │   └── summit_housing/
-│       ├── dashboard/     # Streamlit application
+│       ├── dashboard/     # Streamlit application (Deprecated)
 │       ├── ingestion.py   # ETL pipeline (CSV -> SQLite)
 │       ├── ml.py          # Training and Inference logic
 │       ├── models.py      # PyTorch Model Definitions
